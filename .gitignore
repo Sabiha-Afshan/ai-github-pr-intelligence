@@ -1,0 +1,37 @@
+# Secrets
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Raw API data and cache
+data/raw/
+data/cache/
+
+# Local vector storage
+data/vector_store/
+
+# Trained models
+models/
+*.joblib
+*.pkl
+
+# Large generated outputs
+outputs/
+reports/generated/
+
+# Local model files
+*.gguf
+
+# Operating system files
+.DS_Store
+Thumbs.db
