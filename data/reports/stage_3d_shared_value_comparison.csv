@@ -1,0 +1,13 @@
+reference_dataset,comparison_dataset,column,compared_row_count,mismatch_count,validation_passed
+Detailed dataset,Validated dataset,repository,600,0,True
+Detailed dataset,Validated dataset,was_merged,600,0,True
+Detailed dataset,Validated dataset,created_at,600,0,True
+Detailed dataset,Validated dataset,period,600,0,True
+Detailed dataset,Outlier-flagged dataset,repository,600,0,True
+Detailed dataset,Outlier-flagged dataset,was_merged,600,0,True
+Detailed dataset,Outlier-flagged dataset,created_at,600,0,True
+Detailed dataset,Outlier-flagged dataset,period,600,0,True
+Detailed dataset,Feature-engineered dataset,repository,600,0,True
+Detailed dataset,Feature-engineered dataset,was_merged,600,0,True
+Detailed dataset,Feature-engineered dataset,created_at,600,0,True
+Detailed dataset,Feature-engineered dataset,period,600,0,True

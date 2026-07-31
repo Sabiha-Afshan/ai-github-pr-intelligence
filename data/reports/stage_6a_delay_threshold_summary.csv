@@ -1,0 +1,5 @@
+target_column,threshold_hours,population_count,non_delayed_count,delayed_count,delayed_rate,minority_class_count,both_classes_present,suitable_for_modelling,is_primary_target
+delayed_over_24_hours,24.0,300,189,111,0.37,111,True,True,False
+merge_delay_target,48.0,300,207,93,0.31,93,True,True,True
+delayed_over_72_hours,72.0,300,213,87,0.29,87,True,True,False
+delayed_over_168_hours,168.0,300,227,73,0.24333333333333335,73,True,True,False

@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-07-31 01:45:42.957541+00:00",
+  "stage": "Stage 7B",
+  "component": "Unified structured PR intelligence dataset",
+  "source_pr_count": 600,
+  "model1_score_count": 600,
+  "model2_score_count": 300,
+  "policy_score_count": 600,
+  "unified_row_count": 600,
+  "priority_counts": {
+    "Routine": 361,
+    "Critical": 83,
+    "High": 83,
+    "Moderate": 73
+  },
+  "output_validation": {
+    "expected_row_count": 600,
+    "actual_row_count": 600,
+    "row_count_valid": true,
+    "unique_pr_count_valid": true,
+    "expected_merge_score_count": 600,
+    "actual_merge_score_count": 600,
+    "merge_score_count_valid": true,
+    "expected_delay_score_count": 300,
+    "actual_delay_score_count": 300,
+    "delay_score_count_valid": true,
+    "policy_score_count_valid": true,
+    "probability_ranges_valid": true,
+    "priority_score_range_valid": true,
+    "priority_values_valid": true,
+    "recommendation_complete": true,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "unified_dataset_exists": true,
+    "model1_score_report_exists": true,
+    "model2_score_report_exists": true,
+    "priority_summary_exists": true,
+    "model1_retrained": false,
+    "model2_retrained": false,
+    "model1_threshold_changed": false,
+    "model2_threshold_changed": false,
+    "validation_passed": true
+  },
+  "model_usage_policy": {
+    "model1_retrained": false,
+    "model2_retrained": false,
+    "model1_threshold_changed": false,
+    "model2_threshold_changed": false,
+    "model1_usage": "Inference across all 600 historical PR snapshots",
+    "model2_usage": "Inference only for the 300 merged-PR population",
+    "automatic_merge_action": false,
+    "human_review_required": true
+  },
+  "review_priority_policy": {
+    "policy_score_weight": 0.65,
+    "maximum_merge_blocker_component": 20,
+    "maximum_delay_component": 15,
+    "priority_bands": [
+      "Routine",
+      "Moderate",
+      "High",
+      "Critical"
+    ],
+    "purpose": "Review prioritisation and decision support only"
+  },
+  "output_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\unified_pr_intelligence.csv",
+  "overall_verification_passed": true
+}

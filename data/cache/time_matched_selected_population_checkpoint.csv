@@ -1,0 +1,601 @@
+repository,pr_number,expected_outcome,period,period_start_date,period_end_date,created_at,html_url
+pallets/flask,2575,Closed without merge,2018-Q1,2018-01-01,2018-03-31,2018-01-03T10:46:23Z,https://github.com/pallets/flask/pull/2575
+pallets/flask,2577,Merged,2018-Q1,2018-01-01,2018-03-31,2018-01-03T21:10:09Z,https://github.com/pallets/flask/pull/2577
+pallets/flask,2579,Closed without merge,2018-Q1,2018-01-01,2018-03-31,2018-01-04T16:43:16Z,https://github.com/pallets/flask/pull/2579
+pallets/flask,2582,Merged,2018-Q1,2018-01-01,2018-03-31,2018-01-06T09:24:12Z,https://github.com/pallets/flask/pull/2582
+pallets/flask,2588,Closed without merge,2018-Q1,2018-01-01,2018-03-31,2018-01-08T19:13:50Z,https://github.com/pallets/flask/pull/2588
+pallets/flask,2592,Merged,2018-Q1,2018-01-01,2018-03-31,2018-01-10T21:57:34Z,https://github.com/pallets/flask/pull/2592
+pallets/flask,2600,Closed without merge,2018-Q1,2018-01-01,2018-03-31,2018-01-17T08:31:36Z,https://github.com/pallets/flask/pull/2600
+pallets/flask,2603,Merged,2018-Q1,2018-01-01,2018-03-31,2018-01-22T03:10:48Z,https://github.com/pallets/flask/pull/2603
+pallets/flask,2609,Merged,2018-Q1,2018-01-01,2018-03-31,2018-01-28T20:08:33Z,https://github.com/pallets/flask/pull/2609
+pallets/flask,2614,Closed without merge,2018-Q1,2018-01-01,2018-03-31,2018-01-31T10:16:10Z,https://github.com/pallets/flask/pull/2614
+pallets/flask,2619,Closed without merge,2018-Q1,2018-01-01,2018-03-31,2018-02-01T22:17:24Z,https://github.com/pallets/flask/pull/2619
+pallets/flask,2622,Merged,2018-Q1,2018-01-01,2018-03-31,2018-02-06T16:07:04Z,https://github.com/pallets/flask/pull/2622
+pallets/flask,2630,Merged,2018-Q1,2018-01-01,2018-03-31,2018-02-12T22:32:34Z,https://github.com/pallets/flask/pull/2630
+pallets/flask,2633,Closed without merge,2018-Q1,2018-01-01,2018-03-31,2018-02-18T08:13:08Z,https://github.com/pallets/flask/pull/2633
+pallets/flask,2637,Merged,2018-Q1,2018-01-01,2018-03-31,2018-02-24T16:04:26Z,https://github.com/pallets/flask/pull/2637
+pallets/flask,2641,Closed without merge,2018-Q1,2018-01-01,2018-03-31,2018-02-26T07:19:48Z,https://github.com/pallets/flask/pull/2641
+pallets/flask,2650,Closed without merge,2018-Q1,2018-01-01,2018-03-31,2018-03-05T09:44:20Z,https://github.com/pallets/flask/pull/2650
+pallets/flask,2652,Merged,2018-Q1,2018-01-01,2018-03-31,2018-03-05T23:50:57Z,https://github.com/pallets/flask/pull/2652
+pallets/flask,2672,Closed without merge,2018-Q1,2018-01-01,2018-03-31,2018-03-26T19:01:47Z,https://github.com/pallets/flask/pull/2672
+pallets/flask,2676,Merged,2018-Q1,2018-01-01,2018-03-31,2018-03-29T20:58:11Z,https://github.com/pallets/flask/pull/2676
+pallets/flask,2682,Closed without merge,2018-Q2,2018-04-01,2018-06-30,2018-04-06T09:25:36Z,https://github.com/pallets/flask/pull/2682
+pallets/flask,2685,Merged,2018-Q2,2018-04-01,2018-06-30,2018-04-09T07:13:09Z,https://github.com/pallets/flask/pull/2685
+pallets/flask,2699,Merged,2018-Q2,2018-04-01,2018-06-30,2018-04-12T18:09:00Z,https://github.com/pallets/flask/pull/2699
+pallets/flask,2719,Merged,2018-Q2,2018-04-01,2018-06-30,2018-04-24T00:09:59Z,https://github.com/pallets/flask/pull/2719
+pallets/flask,2730,Merged,2018-Q2,2018-04-01,2018-06-30,2018-04-27T11:44:50Z,https://github.com/pallets/flask/pull/2730
+pallets/flask,2740,Closed without merge,2018-Q2,2018-04-01,2018-06-30,2018-04-28T14:03:44Z,https://github.com/pallets/flask/pull/2740
+pallets/flask,2746,Merged,2018-Q2,2018-04-01,2018-06-30,2018-04-29T22:35:46Z,https://github.com/pallets/flask/pull/2746
+pallets/flask,2753,Closed without merge,2018-Q2,2018-04-01,2018-06-30,2018-05-02T15:36:35Z,https://github.com/pallets/flask/pull/2753
+pallets/flask,2765,Merged,2018-Q2,2018-04-01,2018-06-30,2018-05-08T16:10:09Z,https://github.com/pallets/flask/pull/2765
+pallets/flask,2775,Closed without merge,2018-Q2,2018-04-01,2018-06-30,2018-05-12T14:17:46Z,https://github.com/pallets/flask/pull/2775
+pallets/flask,2781,Closed without merge,2018-Q2,2018-04-01,2018-06-30,2018-05-13T20:49:57Z,https://github.com/pallets/flask/pull/2781
+pallets/flask,2783,Closed without merge,2018-Q2,2018-04-01,2018-06-30,2018-05-14T18:12:26Z,https://github.com/pallets/flask/pull/2783
+pallets/flask,2793,Merged,2018-Q2,2018-04-01,2018-06-30,2018-05-21T06:11:04Z,https://github.com/pallets/flask/pull/2793
+pallets/flask,2797,Closed without merge,2018-Q2,2018-04-01,2018-06-30,2018-05-23T03:44:13Z,https://github.com/pallets/flask/pull/2797
+pallets/flask,2808,Merged,2018-Q2,2018-04-01,2018-06-30,2018-05-29T17:08:52Z,https://github.com/pallets/flask/pull/2808
+pallets/flask,2809,Closed without merge,2018-Q2,2018-04-01,2018-06-30,2018-05-30T01:21:54Z,https://github.com/pallets/flask/pull/2809
+pallets/flask,2834,Merged,2018-Q2,2018-04-01,2018-06-30,2018-06-17T04:16:40Z,https://github.com/pallets/flask/pull/2834
+pallets/flask,2835,Closed without merge,2018-Q2,2018-04-01,2018-06-30,2018-06-18T21:33:02Z,https://github.com/pallets/flask/pull/2835
+pallets/flask,2849,Closed without merge,2018-Q2,2018-04-01,2018-06-30,2018-06-29T04:07:06Z,https://github.com/pallets/flask/pull/2849
+pallets/flask,2850,Merged,2018-Q2,2018-04-01,2018-06-30,2018-06-29T19:36:20Z,https://github.com/pallets/flask/pull/2850
+pallets/flask,2854,Merged,2018-Q3,2018-07-01,2018-09-30,2018-07-06T20:21:18Z,https://github.com/pallets/flask/pull/2854
+pallets/flask,2855,Closed without merge,2018-Q3,2018-07-01,2018-09-30,2018-07-08T03:20:58Z,https://github.com/pallets/flask/pull/2855
+pallets/flask,2858,Closed without merge,2018-Q3,2018-07-01,2018-09-30,2018-07-10T21:36:38Z,https://github.com/pallets/flask/pull/2858
+pallets/flask,2859,Closed without merge,2018-Q3,2018-07-01,2018-09-30,2018-07-11T05:39:24Z,https://github.com/pallets/flask/pull/2859
+pallets/flask,2861,Merged,2018-Q3,2018-07-01,2018-09-30,2018-07-11T14:54:46Z,https://github.com/pallets/flask/pull/2861
+pallets/flask,2862,Closed without merge,2018-Q3,2018-07-01,2018-09-30,2018-07-12T03:19:16Z,https://github.com/pallets/flask/pull/2862
+pallets/flask,2871,Closed without merge,2018-Q3,2018-07-01,2018-09-30,2018-07-24T06:56:26Z,https://github.com/pallets/flask/pull/2871
+pallets/flask,2872,Merged,2018-Q3,2018-07-01,2018-09-30,2018-07-24T18:00:40Z,https://github.com/pallets/flask/pull/2872
+pallets/flask,2874,Closed without merge,2018-Q3,2018-07-01,2018-09-30,2018-07-26T16:35:30Z,https://github.com/pallets/flask/pull/2874
+pallets/flask,2877,Merged,2018-Q3,2018-07-01,2018-09-30,2018-07-29T02:24:34Z,https://github.com/pallets/flask/pull/2877
+pallets/flask,2889,Closed without merge,2018-Q3,2018-07-01,2018-09-30,2018-08-20T14:56:21Z,https://github.com/pallets/flask/pull/2889
+pallets/flask,2898,Merged,2018-Q3,2018-07-01,2018-09-30,2018-08-31T22:11:54Z,https://github.com/pallets/flask/pull/2898
+pallets/flask,2904,Closed without merge,2018-Q3,2018-07-01,2018-09-30,2018-09-11T09:57:08Z,https://github.com/pallets/flask/pull/2904
+pallets/flask,2910,Merged,2018-Q3,2018-07-01,2018-09-30,2018-09-17T08:35:28Z,https://github.com/pallets/flask/pull/2910
+pallets/flask,2913,Merged,2018-Q3,2018-07-01,2018-09-30,2018-09-18T07:49:41Z,https://github.com/pallets/flask/pull/2913
+pallets/flask,2915,Merged,2018-Q3,2018-07-01,2018-09-30,2018-09-19T16:56:57Z,https://github.com/pallets/flask/pull/2915
+pallets/flask,2917,Merged,2018-Q3,2018-07-01,2018-09-30,2018-09-21T05:19:19Z,https://github.com/pallets/flask/pull/2917
+pallets/flask,2921,Closed without merge,2018-Q3,2018-07-01,2018-09-30,2018-09-23T10:31:43Z,https://github.com/pallets/flask/pull/2921
+pallets/flask,2928,Merged,2018-Q3,2018-07-01,2018-09-30,2018-09-28T20:30:27Z,https://github.com/pallets/flask/pull/2928
+pallets/flask,2929,Closed without merge,2018-Q3,2018-07-01,2018-09-30,2018-09-30T05:27:54Z,https://github.com/pallets/flask/pull/2929
+pallets/flask,2930,Closed without merge,2018-Q4,2018-10-01,2018-12-31,2018-10-01T20:16:06Z,https://github.com/pallets/flask/pull/2930
+pallets/flask,2934,Merged,2018-Q4,2018-10-01,2018-12-31,2018-10-04T12:52:24Z,https://github.com/pallets/flask/pull/2934
+pallets/flask,2940,Merged,2018-Q4,2018-10-01,2018-12-31,2018-10-13T17:12:54Z,https://github.com/pallets/flask/pull/2940
+pallets/flask,2944,Closed without merge,2018-Q4,2018-10-01,2018-12-31,2018-10-15T14:51:06Z,https://github.com/pallets/flask/pull/2944
+pallets/flask,2955,Closed without merge,2018-Q4,2018-10-01,2018-12-31,2018-10-19T14:31:00Z,https://github.com/pallets/flask/pull/2955
+pallets/flask,2963,Merged,2018-Q4,2018-10-01,2018-12-31,2018-10-24T15:12:15Z,https://github.com/pallets/flask/pull/2963
+pallets/flask,2969,Merged,2018-Q4,2018-10-01,2018-12-31,2018-10-27T12:35:16Z,https://github.com/pallets/flask/pull/2969
+pallets/flask,2973,Closed without merge,2018-Q4,2018-10-01,2018-12-31,2018-10-28T00:57:23Z,https://github.com/pallets/flask/pull/2973
+pallets/flask,2983,Closed without merge,2018-Q4,2018-10-01,2018-12-31,2018-11-01T18:42:49Z,https://github.com/pallets/flask/pull/2983
+pallets/flask,2986,Merged,2018-Q4,2018-10-01,2018-12-31,2018-11-01T20:42:50Z,https://github.com/pallets/flask/pull/2986
+pallets/flask,2993,Merged,2018-Q4,2018-10-01,2018-12-31,2018-11-12T20:49:50Z,https://github.com/pallets/flask/pull/2993
+pallets/flask,3001,Closed without merge,2018-Q4,2018-10-01,2018-12-31,2018-11-19T15:32:43Z,https://github.com/pallets/flask/pull/3001
+pallets/flask,3011,Merged,2018-Q4,2018-10-01,2018-12-31,2018-12-01T01:05:07Z,https://github.com/pallets/flask/pull/3011
+pallets/flask,3015,Closed without merge,2018-Q4,2018-10-01,2018-12-31,2018-12-05T05:53:18Z,https://github.com/pallets/flask/pull/3015
+pallets/flask,3030,Closed without merge,2018-Q4,2018-10-01,2018-12-31,2018-12-14T17:00:38Z,https://github.com/pallets/flask/pull/3030
+pallets/flask,3031,Merged,2018-Q4,2018-10-01,2018-12-31,2018-12-14T17:00:49Z,https://github.com/pallets/flask/pull/3031
+pallets/flask,3042,Closed without merge,2018-Q4,2018-10-01,2018-12-31,2018-12-21T17:56:15Z,https://github.com/pallets/flask/pull/3042
+pallets/flask,3049,Merged,2018-Q4,2018-10-01,2018-12-31,2018-12-27T08:58:02Z,https://github.com/pallets/flask/pull/3049
+pallets/flask,3052,Closed without merge,2018-Q4,2018-10-01,2018-12-31,2018-12-28T23:58:42Z,https://github.com/pallets/flask/pull/3052
+pallets/flask,3056,Merged,2018-Q4,2018-10-01,2018-12-31,2018-12-31T08:28:33Z,https://github.com/pallets/flask/pull/3056
+pallets/flask,3058,Closed without merge,2019-Q1,2019-01-01,2019-03-31,2019-01-03T05:06:06Z,https://github.com/pallets/flask/pull/3058
+pallets/flask,3059,Merged,2019-Q1,2019-01-01,2019-03-31,2019-01-04T01:25:53Z,https://github.com/pallets/flask/pull/3059
+pallets/flask,3060,Closed without merge,2019-Q1,2019-01-01,2019-03-31,2019-01-04T07:50:41Z,https://github.com/pallets/flask/pull/3060
+pallets/flask,3063,Merged,2019-Q1,2019-01-01,2019-03-31,2019-01-05T20:53:22Z,https://github.com/pallets/flask/pull/3063
+pallets/flask,3065,Merged,2019-Q1,2019-01-01,2019-03-31,2019-01-06T18:27:26Z,https://github.com/pallets/flask/pull/3065
+pallets/flask,3067,Merged,2019-Q1,2019-01-01,2019-03-31,2019-01-06T23:11:14Z,https://github.com/pallets/flask/pull/3067
+pallets/flask,3069,Merged,2019-Q1,2019-01-01,2019-03-31,2019-01-08T08:06:12Z,https://github.com/pallets/flask/pull/3069
+pallets/flask,3073,Closed without merge,2019-Q1,2019-01-01,2019-03-31,2019-01-12T17:12:15Z,https://github.com/pallets/flask/pull/3073
+pallets/flask,3075,Closed without merge,2019-Q1,2019-01-01,2019-03-31,2019-01-15T14:15:08Z,https://github.com/pallets/flask/pull/3075
+pallets/flask,3079,Closed without merge,2019-Q1,2019-01-01,2019-03-31,2019-01-19T02:08:19Z,https://github.com/pallets/flask/pull/3079
+pallets/flask,3082,Merged,2019-Q1,2019-01-01,2019-03-31,2019-01-25T08:46:28Z,https://github.com/pallets/flask/pull/3082
+pallets/flask,3100,Closed without merge,2019-Q1,2019-01-01,2019-03-31,2019-02-21T16:34:20Z,https://github.com/pallets/flask/pull/3100
+pallets/flask,3101,Merged,2019-Q1,2019-01-01,2019-03-31,2019-02-23T00:03:22Z,https://github.com/pallets/flask/pull/3101
+pallets/flask,3104,Merged,2019-Q1,2019-01-01,2019-03-31,2019-02-24T22:05:08Z,https://github.com/pallets/flask/pull/3104
+pallets/flask,3109,Closed without merge,2019-Q1,2019-01-01,2019-03-31,2019-03-02T01:01:36Z,https://github.com/pallets/flask/pull/3109
+pallets/flask,3112,Closed without merge,2019-Q1,2019-01-01,2019-03-31,2019-03-05T22:27:30Z,https://github.com/pallets/flask/pull/3112
+pallets/flask,3113,Merged,2019-Q1,2019-01-01,2019-03-31,2019-03-06T02:42:04Z,https://github.com/pallets/flask/pull/3113
+pallets/flask,3121,Closed without merge,2019-Q1,2019-01-01,2019-03-31,2019-03-12T11:24:38Z,https://github.com/pallets/flask/pull/3121
+pallets/flask,3128,Closed without merge,2019-Q1,2019-01-01,2019-03-31,2019-03-23T16:24:27Z,https://github.com/pallets/flask/pull/3128
+pallets/flask,3129,Merged,2019-Q1,2019-01-01,2019-03-31,2019-03-23T23:11:40Z,https://github.com/pallets/flask/pull/3129
+pallets/flask,3136,Closed without merge,2019-Q2,2019-04-01,2019-06-30,2019-04-03T08:09:26Z,https://github.com/pallets/flask/pull/3136
+pallets/flask,3137,Merged,2019-Q2,2019-04-01,2019-06-30,2019-04-03T08:47:28Z,https://github.com/pallets/flask/pull/3137
+pallets/flask,3149,Closed without merge,2019-Q2,2019-04-01,2019-06-30,2019-04-11T15:22:53Z,https://github.com/pallets/flask/pull/3149
+pallets/flask,3156,Closed without merge,2019-Q2,2019-04-01,2019-06-30,2019-04-15T18:13:15Z,https://github.com/pallets/flask/pull/3156
+pallets/flask,3159,Merged,2019-Q2,2019-04-01,2019-06-30,2019-04-23T17:56:40Z,https://github.com/pallets/flask/pull/3159
+pallets/flask,3173,Merged,2019-Q2,2019-04-01,2019-06-30,2019-05-06T13:41:55Z,https://github.com/pallets/flask/pull/3173
+pallets/flask,3177,Closed without merge,2019-Q2,2019-04-01,2019-06-30,2019-05-06T16:35:08Z,https://github.com/pallets/flask/pull/3177
+pallets/flask,3183,Merged,2019-Q2,2019-04-01,2019-06-30,2019-05-06T19:41:04Z,https://github.com/pallets/flask/pull/3183
+pallets/flask,3184,Closed without merge,2019-Q2,2019-04-01,2019-06-30,2019-05-06T19:48:21Z,https://github.com/pallets/flask/pull/3184
+pallets/flask,3192,Closed without merge,2019-Q2,2019-04-01,2019-06-30,2019-05-09T14:16:38Z,https://github.com/pallets/flask/pull/3192
+pallets/flask,3199,Merged,2019-Q2,2019-04-01,2019-06-30,2019-05-14T20:16:56Z,https://github.com/pallets/flask/pull/3199
+pallets/flask,3200,Closed without merge,2019-Q2,2019-04-01,2019-06-30,2019-05-14T23:35:15Z,https://github.com/pallets/flask/pull/3200
+pallets/flask,3205,Closed without merge,2019-Q2,2019-04-01,2019-06-30,2019-05-17T00:09:58Z,https://github.com/pallets/flask/pull/3205
+pallets/flask,3230,Merged,2019-Q2,2019-04-01,2019-06-30,2019-05-31T12:16:08Z,https://github.com/pallets/flask/pull/3230
+pallets/flask,3236,Merged,2019-Q2,2019-04-01,2019-06-30,2019-05-31T15:51:25Z,https://github.com/pallets/flask/pull/3236
+pallets/flask,3238,Closed without merge,2019-Q2,2019-04-01,2019-06-30,2019-05-31T15:57:29Z,https://github.com/pallets/flask/pull/3238
+pallets/flask,3244,Merged,2019-Q2,2019-04-01,2019-06-30,2019-05-31T19:37:44Z,https://github.com/pallets/flask/pull/3244
+pallets/flask,3260,Merged,2019-Q2,2019-04-01,2019-06-30,2019-06-12T13:59:17Z,https://github.com/pallets/flask/pull/3260
+pallets/flask,3267,Closed without merge,2019-Q2,2019-04-01,2019-06-30,2019-06-20T07:23:52Z,https://github.com/pallets/flask/pull/3267
+pallets/flask,3274,Merged,2019-Q2,2019-04-01,2019-06-30,2019-06-30T09:08:01Z,https://github.com/pallets/flask/pull/3274
+pallets/flask,3276,Closed without merge,2019-Q3,2019-07-01,2019-09-30,2019-07-01T13:33:13Z,https://github.com/pallets/flask/pull/3276
+pallets/flask,3278,Merged,2019-Q3,2019-07-01,2019-09-30,2019-07-01T14:26:08Z,https://github.com/pallets/flask/pull/3278
+pallets/flask,3280,Closed without merge,2019-Q3,2019-07-01,2019-09-30,2019-07-01T14:28:28Z,https://github.com/pallets/flask/pull/3280
+pallets/flask,3282,Merged,2019-Q3,2019-07-01,2019-09-30,2019-07-01T22:03:32Z,https://github.com/pallets/flask/pull/3282
+pallets/flask,3290,Merged,2019-Q3,2019-07-01,2019-09-30,2019-07-07T19:40:29Z,https://github.com/pallets/flask/pull/3290
+pallets/flask,3296,Closed without merge,2019-Q3,2019-07-01,2019-09-30,2019-07-10T15:34:39Z,https://github.com/pallets/flask/pull/3296
+pallets/flask,3299,Merged,2019-Q3,2019-07-01,2019-09-30,2019-07-10T18:47:10Z,https://github.com/pallets/flask/pull/3299
+pallets/flask,3308,Merged,2019-Q3,2019-07-01,2019-09-30,2019-07-21T13:40:54Z,https://github.com/pallets/flask/pull/3308
+pallets/flask,3309,Closed without merge,2019-Q3,2019-07-01,2019-09-30,2019-07-22T07:27:40Z,https://github.com/pallets/flask/pull/3309
+pallets/flask,3321,Merged,2019-Q3,2019-07-01,2019-09-30,2019-08-01T14:59:28Z,https://github.com/pallets/flask/pull/3321
+pallets/flask,3324,Closed without merge,2019-Q3,2019-07-01,2019-09-30,2019-08-07T21:16:22Z,https://github.com/pallets/flask/pull/3324
+pallets/flask,3333,Closed without merge,2019-Q3,2019-07-01,2019-09-30,2019-08-13T14:16:01Z,https://github.com/pallets/flask/pull/3333
+pallets/flask,3336,Merged,2019-Q3,2019-07-01,2019-09-30,2019-08-16T01:06:03Z,https://github.com/pallets/flask/pull/3336
+pallets/flask,3337,Closed without merge,2019-Q3,2019-07-01,2019-09-30,2019-08-16T02:58:12Z,https://github.com/pallets/flask/pull/3337
+pallets/flask,3338,Closed without merge,2019-Q3,2019-07-01,2019-09-30,2019-08-17T00:37:55Z,https://github.com/pallets/flask/pull/3338
+pallets/flask,3344,Merged,2019-Q3,2019-07-01,2019-09-30,2019-08-28T22:54:24Z,https://github.com/pallets/flask/pull/3344
+pallets/flask,3360,Closed without merge,2019-Q3,2019-07-01,2019-09-30,2019-09-10T13:29:09Z,https://github.com/pallets/flask/pull/3360
+pallets/flask,3369,Merged,2019-Q3,2019-07-01,2019-09-30,2019-09-22T11:00:01Z,https://github.com/pallets/flask/pull/3369
+pallets/flask,3376,Merged,2019-Q3,2019-07-01,2019-09-30,2019-09-24T13:41:30Z,https://github.com/pallets/flask/pull/3376
+pallets/flask,3378,Closed without merge,2019-Q3,2019-07-01,2019-09-30,2019-09-24T14:49:44Z,https://github.com/pallets/flask/pull/3378
+pallets/flask,3381,Merged,2019-Q4,2019-10-01,2019-12-31,2019-10-05T22:15:53Z,https://github.com/pallets/flask/pull/3381
+pallets/flask,3382,Merged,2019-Q4,2019-10-01,2019-12-31,2019-10-06T17:58:31Z,https://github.com/pallets/flask/pull/3382
+pallets/flask,3386,Closed without merge,2019-Q4,2019-10-01,2019-12-31,2019-10-11T11:35:11Z,https://github.com/pallets/flask/pull/3386
+pallets/flask,3390,Closed without merge,2019-Q4,2019-10-01,2019-12-31,2019-10-12T23:33:51Z,https://github.com/pallets/flask/pull/3390
+pallets/flask,3395,Merged,2019-Q4,2019-10-01,2019-12-31,2019-10-14T20:52:58Z,https://github.com/pallets/flask/pull/3395
+pallets/flask,3397,Closed without merge,2019-Q4,2019-10-01,2019-12-31,2019-10-15T10:58:09Z,https://github.com/pallets/flask/pull/3397
+pallets/flask,3401,Merged,2019-Q4,2019-10-01,2019-12-31,2019-10-18T23:08:46Z,https://github.com/pallets/flask/pull/3401
+pallets/flask,3405,Closed without merge,2019-Q4,2019-10-01,2019-12-31,2019-10-25T21:23:05Z,https://github.com/pallets/flask/pull/3405
+pallets/flask,3407,Closed without merge,2019-Q4,2019-10-01,2019-12-31,2019-10-27T01:54:24Z,https://github.com/pallets/flask/pull/3407
+pallets/flask,3408,Merged,2019-Q4,2019-10-01,2019-12-31,2019-10-28T09:18:48Z,https://github.com/pallets/flask/pull/3408
+pallets/flask,3412,Merged,2019-Q4,2019-10-01,2019-12-31,2019-11-01T11:02:20Z,https://github.com/pallets/flask/pull/3412
+pallets/flask,3419,Closed without merge,2019-Q4,2019-10-01,2019-12-31,2019-11-07T18:58:25Z,https://github.com/pallets/flask/pull/3419
+pallets/flask,3421,Closed without merge,2019-Q4,2019-10-01,2019-12-31,2019-11-11T22:41:23Z,https://github.com/pallets/flask/pull/3421
+pallets/flask,3425,Merged,2019-Q4,2019-10-01,2019-12-31,2019-11-13T22:14:30Z,https://github.com/pallets/flask/pull/3425
+pallets/flask,3426,Closed without merge,2019-Q4,2019-10-01,2019-12-31,2019-11-14T02:20:41Z,https://github.com/pallets/flask/pull/3426
+pallets/flask,3432,Closed without merge,2019-Q4,2019-10-01,2019-12-31,2019-11-18T16:03:25Z,https://github.com/pallets/flask/pull/3432
+pallets/flask,3434,Merged,2019-Q4,2019-10-01,2019-12-31,2019-11-18T20:40:47Z,https://github.com/pallets/flask/pull/3434
+pallets/flask,3437,Merged,2019-Q4,2019-10-01,2019-12-31,2019-11-22T16:13:37Z,https://github.com/pallets/flask/pull/3437
+pallets/flask,3456,Merged,2019-Q4,2019-10-01,2019-12-31,2019-12-26T01:36:30Z,https://github.com/pallets/flask/pull/3456
+pallets/flask,3458,Closed without merge,2019-Q4,2019-10-01,2019-12-31,2019-12-29T14:23:19Z,https://github.com/pallets/flask/pull/3458
+pallets/flask,3460,Merged,2020-Q1,2020-01-01,2020-03-31,2020-01-03T07:09:55Z,https://github.com/pallets/flask/pull/3460
+pallets/flask,3461,Closed without merge,2020-Q1,2020-01-01,2020-03-31,2020-01-03T14:07:33Z,https://github.com/pallets/flask/pull/3461
+pallets/flask,3467,Closed without merge,2020-Q1,2020-01-01,2020-03-31,2020-01-14T02:12:47Z,https://github.com/pallets/flask/pull/3467
+pallets/flask,3473,Merged,2020-Q1,2020-01-01,2020-03-31,2020-01-22T15:15:59Z,https://github.com/pallets/flask/pull/3473
+pallets/flask,3479,Merged,2020-Q1,2020-01-01,2020-03-31,2020-02-06T20:05:40Z,https://github.com/pallets/flask/pull/3479
+pallets/flask,3483,Closed without merge,2020-Q1,2020-01-01,2020-03-31,2020-02-06T23:41:11Z,https://github.com/pallets/flask/pull/3483
+pallets/flask,3487,Closed without merge,2020-Q1,2020-01-01,2020-03-31,2020-02-07T11:51:48Z,https://github.com/pallets/flask/pull/3487
+pallets/flask,3488,Closed without merge,2020-Q1,2020-01-01,2020-03-31,2020-02-07T12:30:26Z,https://github.com/pallets/flask/pull/3488
+pallets/flask,3489,Closed without merge,2020-Q1,2020-01-01,2020-03-31,2020-02-07T12:51:25Z,https://github.com/pallets/flask/pull/3489
+pallets/flask,3491,Closed without merge,2020-Q1,2020-01-01,2020-03-31,2020-02-08T10:05:58Z,https://github.com/pallets/flask/pull/3491
+pallets/flask,3492,Merged,2020-Q1,2020-01-01,2020-03-31,2020-02-10T00:13:54Z,https://github.com/pallets/flask/pull/3492
+pallets/flask,3497,Merged,2020-Q1,2020-01-01,2020-03-31,2020-02-10T19:24:59Z,https://github.com/pallets/flask/pull/3497
+pallets/flask,3507,Closed without merge,2020-Q1,2020-01-01,2020-03-31,2020-02-18T06:25:20Z,https://github.com/pallets/flask/pull/3507
+pallets/flask,3510,Closed without merge,2020-Q1,2020-01-01,2020-03-31,2020-02-20T19:00:37Z,https://github.com/pallets/flask/pull/3510
+pallets/flask,3517,Merged,2020-Q1,2020-01-01,2020-03-31,2020-02-27T22:08:02Z,https://github.com/pallets/flask/pull/3517
+pallets/flask,3524,Merged,2020-Q1,2020-01-01,2020-03-31,2020-03-02T18:21:23Z,https://github.com/pallets/flask/pull/3524
+pallets/flask,3530,Merged,2020-Q1,2020-01-01,2020-03-31,2020-03-05T10:34:31Z,https://github.com/pallets/flask/pull/3530
+pallets/flask,3537,Merged,2020-Q1,2020-01-01,2020-03-31,2020-03-18T07:09:04Z,https://github.com/pallets/flask/pull/3537
+pallets/flask,3544,Merged,2020-Q1,2020-01-01,2020-03-31,2020-03-25T14:21:36Z,https://github.com/pallets/flask/pull/3544
+pallets/flask,3548,Closed without merge,2020-Q1,2020-01-01,2020-03-31,2020-03-28T17:39:00Z,https://github.com/pallets/flask/pull/3548
+pallets/flask,3554,Merged,2020-Q2,2020-04-01,2020-06-30,2020-04-04T18:58:38Z,https://github.com/pallets/flask/pull/3554
+pallets/flask,3563,Merged,2020-Q2,2020-04-01,2020-06-30,2020-04-07T22:55:50Z,https://github.com/pallets/flask/pull/3563
+pallets/flask,3567,Closed without merge,2020-Q2,2020-04-01,2020-06-30,2020-04-10T06:25:55Z,https://github.com/pallets/flask/pull/3567
+pallets/flask,3579,Merged,2020-Q2,2020-04-01,2020-06-30,2020-04-20T19:20:59Z,https://github.com/pallets/flask/pull/3579
+pallets/flask,3581,Closed without merge,2020-Q2,2020-04-01,2020-06-30,2020-04-22T00:04:18Z,https://github.com/pallets/flask/pull/3581
+pallets/flask,3587,Closed without merge,2020-Q2,2020-04-01,2020-06-30,2020-04-24T09:27:46Z,https://github.com/pallets/flask/pull/3587
+pallets/flask,3601,Closed without merge,2020-Q2,2020-04-01,2020-06-30,2020-05-07T04:21:08Z,https://github.com/pallets/flask/pull/3601
+pallets/flask,3605,Closed without merge,2020-Q2,2020-04-01,2020-06-30,2020-05-09T13:59:57Z,https://github.com/pallets/flask/pull/3605
+pallets/flask,3616,Merged,2020-Q2,2020-04-01,2020-06-30,2020-05-18T21:59:52Z,https://github.com/pallets/flask/pull/3616
+pallets/flask,3622,Closed without merge,2020-Q2,2020-04-01,2020-06-30,2020-05-25T05:15:46Z,https://github.com/pallets/flask/pull/3622
+pallets/flask,3624,Merged,2020-Q2,2020-04-01,2020-06-30,2020-05-27T08:34:06Z,https://github.com/pallets/flask/pull/3624
+pallets/flask,3636,Merged,2020-Q2,2020-04-01,2020-06-30,2020-06-03T08:52:49Z,https://github.com/pallets/flask/pull/3636
+pallets/flask,3643,Closed without merge,2020-Q2,2020-04-01,2020-06-30,2020-06-08T04:31:01Z,https://github.com/pallets/flask/pull/3643
+pallets/flask,3644,Merged,2020-Q2,2020-04-01,2020-06-30,2020-06-08T08:44:34Z,https://github.com/pallets/flask/pull/3644
+pallets/flask,3648,Merged,2020-Q2,2020-04-01,2020-06-30,2020-06-10T08:38:28Z,https://github.com/pallets/flask/pull/3648
+pallets/flask,3652,Closed without merge,2020-Q2,2020-04-01,2020-06-30,2020-06-15T10:07:38Z,https://github.com/pallets/flask/pull/3652
+pallets/flask,3657,Closed without merge,2020-Q2,2020-04-01,2020-06-30,2020-06-17T23:59:11Z,https://github.com/pallets/flask/pull/3657
+pallets/flask,3659,Merged,2020-Q2,2020-04-01,2020-06-30,2020-06-18T03:01:07Z,https://github.com/pallets/flask/pull/3659
+pallets/flask,3669,Merged,2020-Q2,2020-04-01,2020-06-30,2020-06-30T17:18:23Z,https://github.com/pallets/flask/pull/3669
+pallets/flask,3670,Closed without merge,2020-Q2,2020-04-01,2020-06-30,2020-06-30T17:22:42Z,https://github.com/pallets/flask/pull/3670
+pallets/flask,3671,Merged,2020-Q3,2020-07-01,2020-09-30,2020-07-02T08:18:54Z,https://github.com/pallets/flask/pull/3671
+pallets/flask,3677,Merged,2020-Q3,2020-07-01,2020-09-30,2020-07-06T08:39:31Z,https://github.com/pallets/flask/pull/3677
+pallets/flask,3683,Closed without merge,2020-Q3,2020-07-01,2020-09-30,2020-07-09T18:14:26Z,https://github.com/pallets/flask/pull/3683
+pallets/flask,3686,Merged,2020-Q3,2020-07-01,2020-09-30,2020-07-15T08:08:42Z,https://github.com/pallets/flask/pull/3686
+pallets/flask,3690,Closed without merge,2020-Q3,2020-07-01,2020-09-30,2020-07-21T03:22:41Z,https://github.com/pallets/flask/pull/3690
+pallets/flask,3698,Closed without merge,2020-Q3,2020-07-01,2020-09-30,2020-07-26T07:25:10Z,https://github.com/pallets/flask/pull/3698
+pallets/flask,3699,Merged,2020-Q3,2020-07-01,2020-09-30,2020-07-26T13:29:56Z,https://github.com/pallets/flask/pull/3699
+pallets/flask,3703,Closed without merge,2020-Q3,2020-07-01,2020-09-30,2020-07-28T10:43:26Z,https://github.com/pallets/flask/pull/3703
+pallets/flask,3709,Merged,2020-Q3,2020-07-01,2020-09-30,2020-07-30T19:11:22Z,https://github.com/pallets/flask/pull/3709
+pallets/flask,3716,Merged,2020-Q3,2020-07-01,2020-09-30,2020-08-03T09:00:24Z,https://github.com/pallets/flask/pull/3716
+pallets/flask,3728,Merged,2020-Q3,2020-07-01,2020-09-30,2020-08-13T08:50:43Z,https://github.com/pallets/flask/pull/3728
+pallets/flask,3732,Closed without merge,2020-Q3,2020-07-01,2020-09-30,2020-08-16T07:49:50Z,https://github.com/pallets/flask/pull/3732
+pallets/flask,3733,Closed without merge,2020-Q3,2020-07-01,2020-09-30,2020-08-17T07:13:51Z,https://github.com/pallets/flask/pull/3733
+pallets/flask,3737,Closed without merge,2020-Q3,2020-07-01,2020-09-30,2020-08-22T18:02:43Z,https://github.com/pallets/flask/pull/3737
+pallets/flask,3742,Merged,2020-Q3,2020-07-01,2020-09-30,2020-08-24T08:17:05Z,https://github.com/pallets/flask/pull/3742
+pallets/flask,3748,Closed without merge,2020-Q3,2020-07-01,2020-09-30,2020-08-30T05:32:42Z,https://github.com/pallets/flask/pull/3748
+pallets/flask,3756,Merged,2020-Q3,2020-07-01,2020-09-30,2020-09-14T08:18:58Z,https://github.com/pallets/flask/pull/3756
+pallets/flask,3757,Closed without merge,2020-Q3,2020-07-01,2020-09-30,2020-09-14T11:29:06Z,https://github.com/pallets/flask/pull/3757
+pallets/flask,3771,Merged,2020-Q3,2020-07-01,2020-09-30,2020-09-28T14:18:55Z,https://github.com/pallets/flask/pull/3771
+pallets/flask,3772,Closed without merge,2020-Q3,2020-07-01,2020-09-30,2020-09-30T18:53:18Z,https://github.com/pallets/flask/pull/3772
+pallets/flask,3773,Merged,2020-Q4,2020-10-01,2020-12-31,2020-10-01T08:24:05Z,https://github.com/pallets/flask/pull/3773
+pallets/flask,3774,Closed without merge,2020-Q4,2020-10-01,2020-12-31,2020-10-01T08:24:37Z,https://github.com/pallets/flask/pull/3774
+pallets/flask,3778,Closed without merge,2020-Q4,2020-10-01,2020-12-31,2020-10-06T09:44:52Z,https://github.com/pallets/flask/pull/3778
+pallets/flask,3784,Closed without merge,2020-Q4,2020-10-01,2020-12-31,2020-10-09T14:51:38Z,https://github.com/pallets/flask/pull/3784
+pallets/flask,3785,Merged,2020-Q4,2020-10-01,2020-12-31,2020-10-10T05:36:13Z,https://github.com/pallets/flask/pull/3785
+pallets/flask,3790,Merged,2020-Q4,2020-10-01,2020-12-31,2020-10-15T21:01:43Z,https://github.com/pallets/flask/pull/3790
+pallets/flask,3793,Closed without merge,2020-Q4,2020-10-01,2020-12-31,2020-10-16T21:49:23Z,https://github.com/pallets/flask/pull/3793
+pallets/flask,3798,Closed without merge,2020-Q4,2020-10-01,2020-12-31,2020-10-19T09:23:42Z,https://github.com/pallets/flask/pull/3798
+pallets/flask,3802,Merged,2020-Q4,2020-10-01,2020-12-31,2020-10-21T20:20:14Z,https://github.com/pallets/flask/pull/3802
+pallets/flask,3804,Closed without merge,2020-Q4,2020-10-01,2020-12-31,2020-10-23T14:12:08Z,https://github.com/pallets/flask/pull/3804
+pallets/flask,3807,Closed without merge,2020-Q4,2020-10-01,2020-12-31,2020-10-25T11:12:14Z,https://github.com/pallets/flask/pull/3807
+pallets/flask,3812,Closed without merge,2020-Q4,2020-10-01,2020-12-31,2020-10-26T22:06:54Z,https://github.com/pallets/flask/pull/3812
+pallets/flask,3816,Merged,2020-Q4,2020-10-01,2020-12-31,2020-10-29T15:52:26Z,https://github.com/pallets/flask/pull/3816
+pallets/flask,3819,Merged,2020-Q4,2020-10-01,2020-12-31,2020-11-01T09:29:04Z,https://github.com/pallets/flask/pull/3819
+pallets/flask,3823,Merged,2020-Q4,2020-10-01,2020-12-31,2020-11-01T13:27:53Z,https://github.com/pallets/flask/pull/3823
+pallets/flask,3824,Closed without merge,2020-Q4,2020-10-01,2020-12-31,2020-11-02T12:47:48Z,https://github.com/pallets/flask/pull/3824
+pallets/flask,3828,Merged,2020-Q4,2020-10-01,2020-12-31,2020-11-05T17:23:01Z,https://github.com/pallets/flask/pull/3828
+pallets/flask,3836,Merged,2020-Q4,2020-10-01,2020-12-31,2020-11-17T17:53:12Z,https://github.com/pallets/flask/pull/3836
+pallets/flask,3850,Closed without merge,2020-Q4,2020-10-01,2020-12-31,2020-12-09T06:12:48Z,https://github.com/pallets/flask/pull/3850
+pallets/flask,3854,Merged,2020-Q4,2020-10-01,2020-12-31,2020-12-21T16:44:53Z,https://github.com/pallets/flask/pull/3854
+pallets/flask,3855,Merged,2021-Q1,2021-01-01,2021-03-31,2021-01-01T09:42:03Z,https://github.com/pallets/flask/pull/3855
+pallets/flask,3858,Closed without merge,2021-Q1,2021-01-01,2021-03-31,2021-01-01T09:43:05Z,https://github.com/pallets/flask/pull/3858
+pallets/flask,3859,Merged,2021-Q1,2021-01-01,2021-03-31,2021-01-01T09:43:18Z,https://github.com/pallets/flask/pull/3859
+pallets/flask,3868,Closed without merge,2021-Q1,2021-01-01,2021-03-31,2021-01-08T16:25:39Z,https://github.com/pallets/flask/pull/3868
+pallets/flask,3876,Closed without merge,2021-Q1,2021-01-01,2021-03-31,2021-01-22T08:37:37Z,https://github.com/pallets/flask/pull/3876
+pallets/flask,3880,Merged,2021-Q1,2021-01-01,2021-03-31,2021-01-27T17:18:01Z,https://github.com/pallets/flask/pull/3880
+pallets/flask,3887,Merged,2021-Q1,2021-01-01,2021-03-31,2021-02-01T11:52:16Z,https://github.com/pallets/flask/pull/3887
+pallets/flask,3891,Merged,2021-Q1,2021-01-01,2021-03-31,2021-02-01T11:57:11Z,https://github.com/pallets/flask/pull/3891
+pallets/flask,3895,Merged,2021-Q1,2021-01-01,2021-03-31,2021-02-02T06:54:02Z,https://github.com/pallets/flask/pull/3895
+pallets/flask,3896,Closed without merge,2021-Q1,2021-01-01,2021-03-31,2021-02-02T10:40:34Z,https://github.com/pallets/flask/pull/3896
+pallets/flask,3897,Closed without merge,2021-Q1,2021-01-01,2021-03-31,2021-02-02T19:06:03Z,https://github.com/pallets/flask/pull/3897
+pallets/flask,3907,Merged,2021-Q1,2021-01-01,2021-03-31,2021-02-14T11:18:40Z,https://github.com/pallets/flask/pull/3907
+pallets/flask,3910,Closed without merge,2021-Q1,2021-01-01,2021-03-31,2021-02-16T08:00:24Z,https://github.com/pallets/flask/pull/3910
+pallets/flask,3920,Closed without merge,2021-Q1,2021-01-01,2021-03-31,2021-02-22T21:52:38Z,https://github.com/pallets/flask/pull/3920
+pallets/flask,3922,Merged,2021-Q1,2021-01-01,2021-03-31,2021-02-24T18:32:38Z,https://github.com/pallets/flask/pull/3922
+pallets/flask,3924,Closed without merge,2021-Q1,2021-01-01,2021-03-31,2021-02-28T22:49:48Z,https://github.com/pallets/flask/pull/3924
+pallets/flask,3932,Merged,2021-Q1,2021-01-01,2021-03-31,2021-03-10T13:43:37Z,https://github.com/pallets/flask/pull/3932
+pallets/flask,3940,Closed without merge,2021-Q1,2021-01-01,2021-03-31,2021-03-16T20:13:14Z,https://github.com/pallets/flask/pull/3940
+pallets/flask,3943,Merged,2021-Q1,2021-01-01,2021-03-31,2021-03-22T17:04:34Z,https://github.com/pallets/flask/pull/3943
+pallets/flask,3946,Closed without merge,2021-Q1,2021-01-01,2021-03-31,2021-03-27T15:27:03Z,https://github.com/pallets/flask/pull/3946
+pallets/flask,3951,Closed without merge,2021-Q2,2021-04-01,2021-06-30,2021-04-05T09:30:59Z,https://github.com/pallets/flask/pull/3951
+pallets/flask,3952,Merged,2021-Q2,2021-04-01,2021-06-30,2021-04-05T17:10:22Z,https://github.com/pallets/flask/pull/3952
+pallets/flask,3971,Merged,2021-Q2,2021-04-01,2021-06-30,2021-04-24T16:46:57Z,https://github.com/pallets/flask/pull/3971
+pallets/flask,3975,Closed without merge,2021-Q2,2021-04-01,2021-06-30,2021-04-28T05:50:26Z,https://github.com/pallets/flask/pull/3975
+pallets/flask,3982,Closed without merge,2021-Q2,2021-04-01,2021-06-30,2021-04-28T16:02:44Z,https://github.com/pallets/flask/pull/3982
+pallets/flask,3989,Merged,2021-Q2,2021-04-01,2021-06-30,2021-05-02T19:55:34Z,https://github.com/pallets/flask/pull/3989
+pallets/flask,4011,Merged,2021-Q2,2021-04-01,2021-06-30,2021-05-11T22:29:27Z,https://github.com/pallets/flask/pull/4011
+pallets/flask,4013,Closed without merge,2021-Q2,2021-04-01,2021-06-30,2021-05-12T05:03:15Z,https://github.com/pallets/flask/pull/4013
+pallets/flask,4033,Closed without merge,2021-Q2,2021-04-01,2021-06-30,2021-05-13T06:41:34Z,https://github.com/pallets/flask/pull/4033
+pallets/flask,4047,Merged,2021-Q2,2021-04-01,2021-06-30,2021-05-13T23:19:50Z,https://github.com/pallets/flask/pull/4047
+pallets/flask,4070,Closed without merge,2021-Q2,2021-04-01,2021-06-30,2021-05-17T19:27:18Z,https://github.com/pallets/flask/pull/4070
+pallets/flask,4071,Merged,2021-Q2,2021-04-01,2021-06-30,2021-05-17T21:33:11Z,https://github.com/pallets/flask/pull/4071
+pallets/flask,4100,Merged,2021-Q2,2021-04-01,2021-06-30,2021-05-24T08:33:59Z,https://github.com/pallets/flask/pull/4100
+pallets/flask,4111,Closed without merge,2021-Q2,2021-04-01,2021-06-30,2021-05-27T19:53:48Z,https://github.com/pallets/flask/pull/4111
+pallets/flask,4133,Closed without merge,2021-Q2,2021-04-01,2021-06-30,2021-06-05T16:39:06Z,https://github.com/pallets/flask/pull/4133
+pallets/flask,4139,Merged,2021-Q2,2021-04-01,2021-06-30,2021-06-07T14:35:24Z,https://github.com/pallets/flask/pull/4139
+pallets/flask,4173,Closed without merge,2021-Q2,2021-04-01,2021-06-30,2021-06-24T20:17:01Z,https://github.com/pallets/flask/pull/4173
+pallets/flask,4175,Merged,2021-Q2,2021-04-01,2021-06-30,2021-06-26T11:04:26Z,https://github.com/pallets/flask/pull/4175
+pallets/flask,4181,Merged,2021-Q3,2021-07-01,2021-09-30,2021-07-01T08:02:20Z,https://github.com/pallets/flask/pull/4181
+pallets/flask,4184,Merged,2021-Q3,2021-07-01,2021-09-30,2021-07-01T08:03:45Z,https://github.com/pallets/flask/pull/4184
+pallets/flask,4186,Closed without merge,2021-Q3,2021-07-01,2021-09-30,2021-07-05T07:46:47Z,https://github.com/pallets/flask/pull/4186
+pallets/flask,4190,Merged,2021-Q3,2021-07-01,2021-09-30,2021-07-07T07:29:05Z,https://github.com/pallets/flask/pull/4190
+pallets/flask,4196,Closed without merge,2021-Q3,2021-07-01,2021-09-30,2021-07-09T16:57:12Z,https://github.com/pallets/flask/pull/4196
+pallets/flask,4200,Closed without merge,2021-Q3,2021-07-01,2021-09-30,2021-07-14T18:26:32Z,https://github.com/pallets/flask/pull/4200
+pallets/flask,4209,Merged,2021-Q3,2021-07-01,2021-09-30,2021-08-01T08:04:23Z,https://github.com/pallets/flask/pull/4209
+pallets/flask,4221,Merged,2021-Q3,2021-07-01,2021-09-30,2021-08-05T06:36:30Z,https://github.com/pallets/flask/pull/4221
+pallets/flask,4223,Closed without merge,2021-Q3,2021-07-01,2021-09-30,2021-08-05T20:50:09Z,https://github.com/pallets/flask/pull/4223
+pallets/flask,4234,Merged,2021-Q3,2021-07-01,2021-09-30,2021-08-13T11:19:18Z,https://github.com/pallets/flask/pull/4234
+pallets/flask,4237,Closed without merge,2021-Q3,2021-07-01,2021-09-30,2021-08-15T09:21:18Z,https://github.com/pallets/flask/pull/4237
+pallets/flask,4250,Closed without merge,2021-Q3,2021-07-01,2021-09-30,2021-08-29T17:26:59Z,https://github.com/pallets/flask/pull/4250
+pallets/flask,4254,Merged,2021-Q3,2021-07-01,2021-09-30,2021-09-01T08:03:33Z,https://github.com/pallets/flask/pull/4254
+pallets/flask,4263,Closed without merge,2021-Q3,2021-07-01,2021-09-30,2021-09-10T15:11:44Z,https://github.com/pallets/flask/pull/4263
+pallets/flask,4266,Merged,2021-Q3,2021-07-01,2021-09-30,2021-09-14T16:30:35Z,https://github.com/pallets/flask/pull/4266
+pallets/flask,4271,Merged,2021-Q3,2021-07-01,2021-09-30,2021-09-27T08:49:50Z,https://github.com/pallets/flask/pull/4271
+pallets/flask,4272,Closed without merge,2021-Q3,2021-07-01,2021-09-30,2021-09-29T08:39:15Z,https://github.com/pallets/flask/pull/4272
+pallets/flask,4274,Closed without merge,2021-Q3,2021-07-01,2021-09-30,2021-09-29T12:33:45Z,https://github.com/pallets/flask/pull/4274
+pallets/flask,4276,Closed without merge,2021-Q4,2021-10-01,2021-12-31,2021-10-01T08:02:27Z,https://github.com/pallets/flask/pull/4276
+pallets/flask,4281,Closed without merge,2021-Q4,2021-10-01,2021-12-31,2021-10-01T08:06:00Z,https://github.com/pallets/flask/pull/4281
+pallets/flask,4283,Merged,2021-Q4,2021-10-01,2021-12-31,2021-10-01T16:40:02Z,https://github.com/pallets/flask/pull/4283
+pallets/flask,4287,Merged,2021-Q4,2021-10-01,2021-12-31,2021-10-04T14:28:00Z,https://github.com/pallets/flask/pull/4287
+pallets/flask,4298,Merged,2021-Q4,2021-10-01,2021-12-31,2021-10-07T13:34:39Z,https://github.com/pallets/flask/pull/4298
+pallets/flask,4304,Merged,2021-Q4,2021-10-01,2021-12-31,2021-10-18T08:39:54Z,https://github.com/pallets/flask/pull/4304
+pallets/flask,4319,Closed without merge,2021-Q4,2021-10-01,2021-12-31,2021-11-01T08:02:23Z,https://github.com/pallets/flask/pull/4319
+pallets/flask,4324,Closed without merge,2021-Q4,2021-10-01,2021-12-31,2021-11-01T08:04:50Z,https://github.com/pallets/flask/pull/4324
+pallets/flask,4326,Merged,2021-Q4,2021-10-01,2021-12-31,2021-11-01T19:38:57Z,https://github.com/pallets/flask/pull/4326
+pallets/flask,4335,Merged,2021-Q4,2021-10-01,2021-12-31,2021-11-12T02:35:19Z,https://github.com/pallets/flask/pull/4335
+pallets/flask,4343,Merged,2021-Q4,2021-10-01,2021-12-31,2021-11-16T16:44:02Z,https://github.com/pallets/flask/pull/4343
+pallets/flask,4358,Closed without merge,2021-Q4,2021-10-01,2021-12-31,2021-12-01T08:04:15Z,https://github.com/pallets/flask/pull/4358
+pallets/flask,4363,Closed without merge,2021-Q4,2021-10-01,2021-12-31,2021-12-01T08:07:23Z,https://github.com/pallets/flask/pull/4363
+pallets/flask,4368,Closed without merge,2021-Q4,2021-10-01,2021-12-31,2021-12-02T02:40:43Z,https://github.com/pallets/flask/pull/4368
+pallets/flask,4374,Closed without merge,2021-Q4,2021-10-01,2021-12-31,2021-12-09T03:51:49Z,https://github.com/pallets/flask/pull/4374
+pallets/flask,4382,Merged,2021-Q4,2021-10-01,2021-12-31,2021-12-12T04:22:02Z,https://github.com/pallets/flask/pull/4382
+pallets/flask,4394,Closed without merge,2021-Q4,2021-10-01,2021-12-31,2021-12-28T16:11:08Z,https://github.com/pallets/flask/pull/4394
+pallets/flask,4397,Merged,2021-Q4,2021-10-01,2021-12-31,2021-12-31T05:19:48Z,https://github.com/pallets/flask/pull/4397
+pallets/flask,4399,Closed without merge,2022-Q1,2022-01-01,2022-03-31,2022-01-01T16:03:49Z,https://github.com/pallets/flask/pull/4399
+pallets/flask,4401,Closed without merge,2022-Q1,2022-01-01,2022-03-31,2022-01-01T16:05:21Z,https://github.com/pallets/flask/pull/4401
+pallets/flask,4405,Closed without merge,2022-Q1,2022-01-01,2022-03-31,2022-01-03T21:07:40Z,https://github.com/pallets/flask/pull/4405
+pallets/flask,4412,Merged,2022-Q1,2022-01-01,2022-03-31,2022-01-11T13:07:14Z,https://github.com/pallets/flask/pull/4412
+pallets/flask,4415,Closed without merge,2022-Q1,2022-01-01,2022-03-31,2022-01-12T10:48:55Z,https://github.com/pallets/flask/pull/4415
+pallets/flask,4432,Merged,2022-Q1,2022-01-01,2022-03-31,2022-01-27T10:49:20Z,https://github.com/pallets/flask/pull/4432
+pallets/flask,4435,Closed without merge,2022-Q1,2022-01-01,2022-03-31,2022-02-01T16:03:01Z,https://github.com/pallets/flask/pull/4435
+pallets/flask,4437,Closed without merge,2022-Q1,2022-01-01,2022-03-31,2022-02-01T16:04:14Z,https://github.com/pallets/flask/pull/4437
+pallets/flask,4439,Closed without merge,2022-Q1,2022-01-01,2022-03-31,2022-02-01T16:05:15Z,https://github.com/pallets/flask/pull/4439
+pallets/flask,4445,Merged,2022-Q1,2022-01-01,2022-03-31,2022-02-09T19:23:16Z,https://github.com/pallets/flask/pull/4445
+pallets/flask,4461,Merged,2022-Q1,2022-01-01,2022-03-31,2022-02-23T03:07:21Z,https://github.com/pallets/flask/pull/4461
+pallets/flask,4463,Closed without merge,2022-Q1,2022-01-01,2022-03-31,2022-02-23T17:05:43Z,https://github.com/pallets/flask/pull/4463
+pallets/flask,4469,Merged,2022-Q1,2022-01-01,2022-03-31,2022-02-27T13:23:40Z,https://github.com/pallets/flask/pull/4469
+pallets/flask,4479,Merged,2022-Q1,2022-01-01,2022-03-31,2022-03-08T21:46:37Z,https://github.com/pallets/flask/pull/4479
+pallets/flask,4491,Merged,2022-Q1,2022-01-01,2022-03-31,2022-03-22T09:31:18Z,https://github.com/pallets/flask/pull/4491
+pallets/flask,4497,Merged,2022-Q1,2022-01-01,2022-03-31,2022-03-26T01:27:24Z,https://github.com/pallets/flask/pull/4497
+pallets/flask,4506,Closed without merge,2022-Q1,2022-01-01,2022-03-31,2022-03-29T18:53:22Z,https://github.com/pallets/flask/pull/4506
+pallets/flask,4511,Merged,2022-Q1,2022-01-01,2022-03-31,2022-03-30T21:35:33Z,https://github.com/pallets/flask/pull/4511
+pallets/flask,4513,Closed without merge,2022-Q2,2022-04-01,2022-06-30,2022-04-01T11:00:50Z,https://github.com/pallets/flask/pull/4513
+pallets/flask,4515,Merged,2022-Q2,2022-04-01,2022-06-30,2022-04-01T16:04:09Z,https://github.com/pallets/flask/pull/4515
+pallets/flask,4522,Closed without merge,2022-Q2,2022-04-01,2022-06-30,2022-04-06T09:49:31Z,https://github.com/pallets/flask/pull/4522
+pallets/flask,4534,Merged,2022-Q2,2022-04-01,2022-06-30,2022-04-12T16:27:56Z,https://github.com/pallets/flask/pull/4534
+pallets/flask,4540,Closed without merge,2022-Q2,2022-04-01,2022-06-30,2022-04-15T01:15:02Z,https://github.com/pallets/flask/pull/4540
+pallets/flask,4560,Merged,2022-Q2,2022-04-01,2022-06-30,2022-04-28T18:18:36Z,https://github.com/pallets/flask/pull/4560
+pallets/flask,4577,Merged,2022-Q2,2022-04-01,2022-06-30,2022-05-02T17:44:21Z,https://github.com/pallets/flask/pull/4577
+pallets/flask,4591,Merged,2022-Q2,2022-04-01,2022-06-30,2022-05-10T06:15:39Z,https://github.com/pallets/flask/pull/4591
+pallets/flask,4598,Closed without merge,2022-Q2,2022-04-01,2022-06-30,2022-05-19T03:52:09Z,https://github.com/pallets/flask/pull/4598
+pallets/flask,4610,Merged,2022-Q2,2022-04-01,2022-06-30,2022-05-26T19:25:02Z,https://github.com/pallets/flask/pull/4610
+pallets/flask,4623,Closed without merge,2022-Q2,2022-04-01,2022-06-30,2022-06-06T19:47:51Z,https://github.com/pallets/flask/pull/4623
+pallets/flask,4624,Merged,2022-Q2,2022-04-01,2022-06-30,2022-06-06T22:42:07Z,https://github.com/pallets/flask/pull/4624
+pallets/flask,4631,Closed without merge,2022-Q2,2022-04-01,2022-06-30,2022-06-10T07:36:29Z,https://github.com/pallets/flask/pull/4631
+pallets/flask,4640,Closed without merge,2022-Q2,2022-04-01,2022-06-30,2022-06-14T15:22:22Z,https://github.com/pallets/flask/pull/4640
+pallets/flask,4645,Merged,2022-Q2,2022-04-01,2022-06-30,2022-06-17T14:40:39Z,https://github.com/pallets/flask/pull/4645
+pallets/flask,4648,Closed without merge,2022-Q2,2022-04-01,2022-06-30,2022-06-18T01:50:43Z,https://github.com/pallets/flask/pull/4648
+pallets/flask,4657,Closed without merge,2022-Q2,2022-04-01,2022-06-30,2022-06-28T15:46:56Z,https://github.com/pallets/flask/pull/4657
+pallets/flask,4662,Merged,2022-Q2,2022-04-01,2022-06-30,2022-06-30T04:15:16Z,https://github.com/pallets/flask/pull/4662
+pallets/flask,4665,Merged,2022-Q3,2022-07-01,2022-09-30,2022-07-01T16:05:53Z,https://github.com/pallets/flask/pull/4665
+pallets/flask,4673,Closed without merge,2022-Q3,2022-07-01,2022-09-30,2022-07-04T13:03:50Z,https://github.com/pallets/flask/pull/4673
+pallets/flask,4675,Merged,2022-Q3,2022-07-01,2022-09-30,2022-07-06T09:49:25Z,https://github.com/pallets/flask/pull/4675
+pallets/flask,4678,Closed without merge,2022-Q3,2022-07-01,2022-09-30,2022-07-06T20:07:30Z,https://github.com/pallets/flask/pull/4678
+pallets/flask,4685,Merged,2022-Q3,2022-07-01,2022-09-30,2022-07-09T12:42:36Z,https://github.com/pallets/flask/pull/4685
+pallets/flask,4694,Merged,2022-Q3,2022-07-01,2022-09-30,2022-07-13T20:52:14Z,https://github.com/pallets/flask/pull/4694
+pallets/flask,4698,Closed without merge,2022-Q3,2022-07-01,2022-09-30,2022-07-16T16:39:54Z,https://github.com/pallets/flask/pull/4698
+pallets/flask,4721,Merged,2022-Q3,2022-07-01,2022-09-30,2022-08-01T23:18:12Z,https://github.com/pallets/flask/pull/4721
+pallets/flask,4748,Merged,2022-Q3,2022-07-01,2022-09-30,2022-08-05T18:26:26Z,https://github.com/pallets/flask/pull/4748
+pallets/flask,4752,Closed without merge,2022-Q3,2022-07-01,2022-09-30,2022-08-07T17:20:19Z,https://github.com/pallets/flask/pull/4752
+pallets/flask,4758,Merged,2022-Q3,2022-07-01,2022-09-30,2022-08-09T08:48:09Z,https://github.com/pallets/flask/pull/4758
+pallets/flask,4764,Closed without merge,2022-Q3,2022-07-01,2022-09-30,2022-08-15T04:50:47Z,https://github.com/pallets/flask/pull/4764
+pallets/flask,4768,Closed without merge,2022-Q3,2022-07-01,2022-09-30,2022-08-15T19:21:42Z,https://github.com/pallets/flask/pull/4768
+pallets/flask,4781,Closed without merge,2022-Q3,2022-07-01,2022-09-30,2022-08-22T09:00:05Z,https://github.com/pallets/flask/pull/4781
+pallets/flask,4783,Merged,2022-Q3,2022-07-01,2022-09-30,2022-08-22T16:03:09Z,https://github.com/pallets/flask/pull/4783
+pallets/flask,4797,Closed without merge,2022-Q3,2022-07-01,2022-09-30,2022-09-01T06:58:25Z,https://github.com/pallets/flask/pull/4797
+pallets/flask,4809,Closed without merge,2022-Q3,2022-07-01,2022-09-30,2022-09-07T18:43:24Z,https://github.com/pallets/flask/pull/4809
+pallets/flask,4821,Merged,2022-Q3,2022-07-01,2022-09-30,2022-09-18T11:13:15Z,https://github.com/pallets/flask/pull/4821
+pallets/flask,4829,Closed without merge,2022-Q4,2022-10-01,2022-12-31,2022-10-01T11:22:22Z,https://github.com/pallets/flask/pull/4829
+pallets/flask,4833,Merged,2022-Q4,2022-10-01,2022-12-31,2022-10-03T23:30:29Z,https://github.com/pallets/flask/pull/4833
+pallets/flask,4835,Merged,2022-Q4,2022-10-01,2022-12-31,2022-10-05T01:15:26Z,https://github.com/pallets/flask/pull/4835
+pallets/flask,4843,Closed without merge,2022-Q4,2022-10-01,2022-12-31,2022-10-10T07:26:11Z,https://github.com/pallets/flask/pull/4843
+pallets/flask,4847,Merged,2022-Q4,2022-10-01,2022-12-31,2022-10-15T22:41:12Z,https://github.com/pallets/flask/pull/4847
+pallets/flask,4855,Closed without merge,2022-Q4,2022-10-01,2022-12-31,2022-10-26T10:37:46Z,https://github.com/pallets/flask/pull/4855
+pallets/flask,4859,Closed without merge,2022-Q4,2022-10-01,2022-12-31,2022-11-04T15:38:27Z,https://github.com/pallets/flask/pull/4859
+pallets/flask,4862,Merged,2022-Q4,2022-10-01,2022-12-31,2022-11-07T23:01:47Z,https://github.com/pallets/flask/pull/4862
+pallets/flask,4871,Closed without merge,2022-Q4,2022-10-01,2022-12-31,2022-11-17T07:40:56Z,https://github.com/pallets/flask/pull/4871
+pallets/flask,4882,Merged,2022-Q4,2022-10-01,2022-12-31,2022-11-27T09:52:13Z,https://github.com/pallets/flask/pull/4882
+pallets/flask,4889,Closed without merge,2022-Q4,2022-10-01,2022-12-31,2022-12-01T01:58:24Z,https://github.com/pallets/flask/pull/4889
+pallets/flask,4897,Closed without merge,2022-Q4,2022-10-01,2022-12-31,2022-12-05T15:00:32Z,https://github.com/pallets/flask/pull/4897
+pallets/flask,4899,Merged,2022-Q4,2022-10-01,2022-12-31,2022-12-06T00:34:54Z,https://github.com/pallets/flask/pull/4899
+pallets/flask,4912,Closed without merge,2022-Q4,2022-10-01,2022-12-31,2022-12-20T05:26:36Z,https://github.com/pallets/flask/pull/4912
+pallets/flask,4913,Merged,2022-Q4,2022-10-01,2022-12-31,2022-12-21T03:43:53Z,https://github.com/pallets/flask/pull/4913
+pallets/flask,4921,Merged,2022-Q4,2022-10-01,2022-12-31,2022-12-22T17:29:58Z,https://github.com/pallets/flask/pull/4921
+pallets/flask,4926,Merged,2022-Q4,2022-10-01,2022-12-31,2022-12-24T17:35:02Z,https://github.com/pallets/flask/pull/4926
+pallets/flask,4927,Closed without merge,2022-Q4,2022-10-01,2022-12-31,2022-12-26T17:52:37Z,https://github.com/pallets/flask/pull/4927
+pallets/flask,4933,Merged,2023-Q1,2023-01-01,2023-03-31,2023-01-01T16:01:01Z,https://github.com/pallets/flask/pull/4933
+pallets/flask,4934,Closed without merge,2023-Q1,2023-01-01,2023-03-31,2023-01-01T21:34:25Z,https://github.com/pallets/flask/pull/4934
+pallets/flask,4936,Closed without merge,2023-Q1,2023-01-01,2023-03-31,2023-01-04T18:58:01Z,https://github.com/pallets/flask/pull/4936
+pallets/flask,4943,Merged,2023-Q1,2023-01-01,2023-03-31,2023-01-09T18:38:17Z,https://github.com/pallets/flask/pull/4943
+pallets/flask,4955,Closed without merge,2023-Q1,2023-01-01,2023-03-31,2023-01-26T16:23:57Z,https://github.com/pallets/flask/pull/4955
+pallets/flask,4958,Merged,2023-Q1,2023-01-01,2023-03-31,2023-02-01T16:01:24Z,https://github.com/pallets/flask/pull/4958
+pallets/flask,4966,Merged,2023-Q1,2023-01-01,2023-03-31,2023-02-09T02:42:52Z,https://github.com/pallets/flask/pull/4966
+pallets/flask,4970,Closed without merge,2023-Q1,2023-01-01,2023-03-31,2023-02-10T18:08:06Z,https://github.com/pallets/flask/pull/4970
+pallets/flask,4972,Merged,2023-Q1,2023-01-01,2023-03-31,2023-02-10T18:51:13Z,https://github.com/pallets/flask/pull/4972
+pallets/flask,4995,Merged,2023-Q1,2023-01-01,2023-03-31,2023-02-23T16:40:23Z,https://github.com/pallets/flask/pull/4995
+pallets/flask,4999,Closed without merge,2023-Q1,2023-01-01,2023-03-31,2023-02-23T20:37:37Z,https://github.com/pallets/flask/pull/4999
+pallets/flask,5000,Closed without merge,2023-Q1,2023-01-01,2023-03-31,2023-02-23T22:03:29Z,https://github.com/pallets/flask/pull/5000
+pallets/flask,5005,Merged,2023-Q1,2023-01-01,2023-03-31,2023-03-01T16:57:32Z,https://github.com/pallets/flask/pull/5005
+pallets/flask,5008,Closed without merge,2023-Q1,2023-01-01,2023-03-31,2023-03-02T21:00:20Z,https://github.com/pallets/flask/pull/5008
+pallets/flask,5017,Closed without merge,2023-Q1,2023-01-01,2023-03-31,2023-03-06T17:34:44Z,https://github.com/pallets/flask/pull/5017
+pallets/flask,5024,Merged,2023-Q1,2023-01-01,2023-03-31,2023-03-11T15:30:35Z,https://github.com/pallets/flask/pull/5024
+pallets/flask,5036,Closed without merge,2023-Q1,2023-01-01,2023-03-31,2023-03-27T10:23:37Z,https://github.com/pallets/flask/pull/5036
+pallets/flask,5037,Merged,2023-Q1,2023-01-01,2023-03-31,2023-03-31T19:21:11Z,https://github.com/pallets/flask/pull/5037
+pallets/flask,5038,Merged,2023-Q2,2023-04-01,2023-06-30,2023-04-01T16:57:02Z,https://github.com/pallets/flask/pull/5038
+pallets/flask,5044,Closed without merge,2023-Q2,2023-04-01,2023-06-30,2023-04-07T12:43:06Z,https://github.com/pallets/flask/pull/5044
+pallets/flask,5048,Closed without merge,2023-Q2,2023-04-01,2023-06-30,2023-04-09T00:07:32Z,https://github.com/pallets/flask/pull/5048
+pallets/flask,5053,Merged,2023-Q2,2023-04-01,2023-06-30,2023-04-12T17:35:33Z,https://github.com/pallets/flask/pull/5053
+pallets/flask,5066,Merged,2023-Q2,2023-04-01,2023-06-30,2023-04-15T18:54:23Z,https://github.com/pallets/flask/pull/5066
+pallets/flask,5068,Closed without merge,2023-Q2,2023-04-01,2023-06-30,2023-04-16T10:21:06Z,https://github.com/pallets/flask/pull/5068
+pallets/flask,5075,Closed without merge,2023-Q2,2023-04-01,2023-06-30,2023-04-21T01:03:54Z,https://github.com/pallets/flask/pull/5075
+pallets/flask,5077,Merged,2023-Q2,2023-04-01,2023-06-30,2023-04-24T18:19:08Z,https://github.com/pallets/flask/pull/5077
+pallets/flask,5101,Merged,2023-Q2,2023-04-01,2023-06-30,2023-05-01T15:21:11Z,https://github.com/pallets/flask/pull/5101
+pallets/flask,5108,Merged,2023-Q2,2023-04-01,2023-06-30,2023-05-02T14:07:29Z,https://github.com/pallets/flask/pull/5108
+pallets/flask,5120,Closed without merge,2023-Q2,2023-04-01,2023-06-30,2023-05-10T02:51:23Z,https://github.com/pallets/flask/pull/5120
+pallets/flask,5125,Closed without merge,2023-Q2,2023-04-01,2023-06-30,2023-05-14T13:44:32Z,https://github.com/pallets/flask/pull/5125
+pallets/flask,5127,Merged,2023-Q2,2023-04-01,2023-06-30,2023-05-15T19:24:37Z,https://github.com/pallets/flask/pull/5127
+pallets/flask,5141,Closed without merge,2023-Q2,2023-04-01,2023-06-30,2023-05-24T16:49:52Z,https://github.com/pallets/flask/pull/5141
+pallets/flask,5150,Merged,2023-Q2,2023-04-01,2023-06-30,2023-06-01T16:56:51Z,https://github.com/pallets/flask/pull/5150
+pallets/flask,5163,Closed without merge,2023-Q2,2023-04-01,2023-06-30,2023-06-12T12:37:50Z,https://github.com/pallets/flask/pull/5163
+pallets/flask,5178,Closed without merge,2023-Q2,2023-04-01,2023-06-30,2023-06-28T16:04:56Z,https://github.com/pallets/flask/pull/5178
+pallets/flask,5180,Merged,2023-Q2,2023-04-01,2023-06-30,2023-06-30T00:25:26Z,https://github.com/pallets/flask/pull/5180
+pallets/flask,5182,Merged,2023-Q3,2023-07-01,2023-09-30,2023-07-01T14:11:40Z,https://github.com/pallets/flask/pull/5182
+pallets/flask,5184,Merged,2023-Q3,2023-07-01,2023-09-30,2023-07-01T16:16:23Z,https://github.com/pallets/flask/pull/5184
+pallets/flask,5187,Merged,2023-Q3,2023-07-01,2023-09-30,2023-07-04T06:36:30Z,https://github.com/pallets/flask/pull/5187
+pallets/flask,5188,Closed without merge,2023-Q3,2023-07-01,2023-09-30,2023-07-05T00:48:40Z,https://github.com/pallets/flask/pull/5188
+pallets/flask,5194,Closed without merge,2023-Q3,2023-07-01,2023-09-30,2023-07-08T09:31:30Z,https://github.com/pallets/flask/pull/5194
+pallets/flask,5196,Closed without merge,2023-Q3,2023-07-01,2023-09-30,2023-07-08T13:34:05Z,https://github.com/pallets/flask/pull/5196
+pallets/flask,5202,Closed without merge,2023-Q3,2023-07-01,2023-09-30,2023-07-16T17:20:14Z,https://github.com/pallets/flask/pull/5202
+pallets/flask,5205,Closed without merge,2023-Q3,2023-07-01,2023-09-30,2023-07-17T11:47:18Z,https://github.com/pallets/flask/pull/5205
+pallets/flask,5212,Merged,2023-Q3,2023-07-01,2023-09-30,2023-08-01T16:56:19Z,https://github.com/pallets/flask/pull/5212
+pallets/flask,5216,Closed without merge,2023-Q3,2023-07-01,2023-09-30,2023-08-12T10:16:14Z,https://github.com/pallets/flask/pull/5216
+pallets/flask,5217,Merged,2023-Q3,2023-07-01,2023-09-30,2023-08-12T11:43:29Z,https://github.com/pallets/flask/pull/5217
+pallets/flask,5225,Closed without merge,2023-Q3,2023-07-01,2023-09-30,2023-08-17T03:21:39Z,https://github.com/pallets/flask/pull/5225
+pallets/flask,5227,Closed without merge,2023-Q3,2023-07-01,2023-09-30,2023-08-17T03:26:02Z,https://github.com/pallets/flask/pull/5227
+pallets/flask,5232,Merged,2023-Q3,2023-07-01,2023-09-30,2023-08-21T17:56:32Z,https://github.com/pallets/flask/pull/5232
+pallets/flask,5242,Merged,2023-Q3,2023-07-01,2023-09-30,2023-08-29T13:08:11Z,https://github.com/pallets/flask/pull/5242
+pallets/flask,5244,Closed without merge,2023-Q3,2023-07-01,2023-09-30,2023-08-31T02:01:10Z,https://github.com/pallets/flask/pull/5244
+pallets/flask,5248,Merged,2023-Q3,2023-07-01,2023-09-30,2023-09-01T16:30:38Z,https://github.com/pallets/flask/pull/5248
+pallets/flask,5264,Merged,2023-Q3,2023-07-01,2023-09-30,2023-09-24T15:19:08Z,https://github.com/pallets/flask/pull/5264
+pallets/flask,5270,Merged,2023-Q4,2023-10-01,2023-12-31,2023-10-01T16:25:23Z,https://github.com/pallets/flask/pull/5270
+pallets/flask,5271,Closed without merge,2023-Q4,2023-10-01,2023-12-31,2023-10-01T16:50:51Z,https://github.com/pallets/flask/pull/5271
+pallets/flask,5273,Closed without merge,2023-Q4,2023-10-01,2023-12-31,2023-10-01T16:50:59Z,https://github.com/pallets/flask/pull/5273
+pallets/flask,5287,Merged,2023-Q4,2023-10-01,2023-12-31,2023-10-05T14:00:16Z,https://github.com/pallets/flask/pull/5287
+pallets/flask,5289,Closed without merge,2023-Q4,2023-10-01,2023-12-31,2023-10-05T20:04:14Z,https://github.com/pallets/flask/pull/5289
+pallets/flask,5300,Closed without merge,2023-Q4,2023-10-01,2023-12-31,2023-10-18T11:15:15Z,https://github.com/pallets/flask/pull/5300
+pallets/flask,5303,Merged,2023-Q4,2023-10-01,2023-12-31,2023-10-20T15:18:10Z,https://github.com/pallets/flask/pull/5303
+pallets/flask,5313,Merged,2023-Q4,2023-10-01,2023-12-31,2023-10-28T08:36:04Z,https://github.com/pallets/flask/pull/5313
+pallets/flask,5316,Closed without merge,2023-Q4,2023-10-01,2023-12-31,2023-11-01T16:31:28Z,https://github.com/pallets/flask/pull/5316
+pallets/flask,5330,Merged,2023-Q4,2023-10-01,2023-12-31,2023-11-09T17:01:40Z,https://github.com/pallets/flask/pull/5330
+pallets/flask,5336,Merged,2023-Q4,2023-10-01,2023-12-31,2023-11-13T11:34:27Z,https://github.com/pallets/flask/pull/5336
+pallets/flask,5338,Closed without merge,2023-Q4,2023-10-01,2023-12-31,2023-11-15T17:58:08Z,https://github.com/pallets/flask/pull/5338
+pallets/flask,5344,Merged,2023-Q4,2023-10-01,2023-12-31,2023-11-24T22:07:31Z,https://github.com/pallets/flask/pull/5344
+pallets/flask,5346,Closed without merge,2023-Q4,2023-10-01,2023-12-31,2023-11-26T09:43:18Z,https://github.com/pallets/flask/pull/5346
+pallets/flask,5352,Merged,2023-Q4,2023-10-01,2023-12-31,2023-12-01T15:47:16Z,https://github.com/pallets/flask/pull/5352
+pallets/flask,5355,Merged,2023-Q4,2023-10-01,2023-12-31,2023-12-05T18:05:22Z,https://github.com/pallets/flask/pull/5355
+pallets/flask,5357,Closed without merge,2023-Q4,2023-10-01,2023-12-31,2023-12-07T03:48:37Z,https://github.com/pallets/flask/pull/5357
+pallets/flask,5370,Closed without merge,2023-Q4,2023-10-01,2023-12-31,2023-12-26T12:25:06Z,https://github.com/pallets/flask/pull/5370
+pallets/flask,5374,Merged,2024-Q1,2024-01-01,2024-03-31,2024-01-01T15:11:20Z,https://github.com/pallets/flask/pull/5374
+pallets/flask,5376,Closed without merge,2024-Q1,2024-01-01,2024-03-31,2024-01-01T15:43:08Z,https://github.com/pallets/flask/pull/5376
+pallets/flask,5377,Merged,2024-Q1,2024-01-01,2024-03-31,2024-01-01T20:24:11Z,https://github.com/pallets/flask/pull/5377
+pallets/flask,5382,Merged,2024-Q1,2024-01-01,2024-03-31,2024-01-15T15:50:22Z,https://github.com/pallets/flask/pull/5382
+pallets/flask,5384,Closed without merge,2024-Q1,2024-01-01,2024-03-31,2024-01-18T17:23:44Z,https://github.com/pallets/flask/pull/5384
+pallets/flask,5386,Merged,2024-Q1,2024-01-01,2024-03-31,2024-01-18T19:42:52Z,https://github.com/pallets/flask/pull/5386
+pallets/flask,5389,Merged,2024-Q1,2024-01-01,2024-03-31,2024-01-23T16:40:43Z,https://github.com/pallets/flask/pull/5389
+pallets/flask,5393,Merged,2024-Q1,2024-01-01,2024-03-31,2024-01-26T02:21:43Z,https://github.com/pallets/flask/pull/5393
+pallets/flask,5401,Merged,2024-Q1,2024-01-01,2024-03-31,2024-02-01T15:41:58Z,https://github.com/pallets/flask/pull/5401
+pallets/flask,5402,Closed without merge,2024-Q1,2024-01-01,2024-03-31,2024-02-03T11:40:52Z,https://github.com/pallets/flask/pull/5402
+pallets/flask,5403,Merged,2024-Q1,2024-01-01,2024-03-31,2024-02-03T21:02:49Z,https://github.com/pallets/flask/pull/5403
+pallets/flask,5409,Closed without merge,2024-Q1,2024-01-01,2024-03-31,2024-02-09T04:10:04Z,https://github.com/pallets/flask/pull/5409
+pallets/flask,5420,Closed without merge,2024-Q1,2024-01-01,2024-03-31,2024-02-23T04:48:22Z,https://github.com/pallets/flask/pull/5420
+pallets/flask,5423,Merged,2024-Q1,2024-01-01,2024-03-31,2024-02-27T00:25:19Z,https://github.com/pallets/flask/pull/5423
+pallets/flask,5425,Closed without merge,2024-Q1,2024-01-01,2024-03-31,2024-03-01T15:07:57Z,https://github.com/pallets/flask/pull/5425
+pallets/flask,5433,Closed without merge,2024-Q1,2024-01-01,2024-03-31,2024-03-08T10:38:37Z,https://github.com/pallets/flask/pull/5433
+pallets/flask,5444,Closed without merge,2024-Q1,2024-01-01,2024-03-31,2024-03-22T16:57:17Z,https://github.com/pallets/flask/pull/5444
+pallets/flask,5449,Closed without merge,2024-Q1,2024-01-01,2024-03-31,2024-03-30T20:02:35Z,https://github.com/pallets/flask/pull/5449
+pallets/flask,5451,Closed without merge,2024-Q2,2024-04-01,2024-06-30,2024-04-01T15:16:45Z,https://github.com/pallets/flask/pull/5451
+pallets/flask,5452,Closed without merge,2024-Q2,2024-04-01,2024-06-30,2024-04-01T15:59:56Z,https://github.com/pallets/flask/pull/5452
+pallets/flask,5457,Merged,2024-Q2,2024-04-01,2024-06-30,2024-04-07T00:22:58Z,https://github.com/pallets/flask/pull/5457
+pallets/flask,5460,Merged,2024-Q2,2024-04-01,2024-06-30,2024-04-07T18:36:22Z,https://github.com/pallets/flask/pull/5460
+pallets/flask,5463,Closed without merge,2024-Q2,2024-04-01,2024-06-30,2024-04-11T10:15:26Z,https://github.com/pallets/flask/pull/5463
+pallets/flask,5464,Merged,2024-Q2,2024-04-01,2024-06-30,2024-04-15T16:35:07Z,https://github.com/pallets/flask/pull/5464
+pallets/flask,5467,Closed without merge,2024-Q2,2024-04-01,2024-06-30,2024-04-23T23:32:06Z,https://github.com/pallets/flask/pull/5467
+pallets/flask,5470,Merged,2024-Q2,2024-04-01,2024-06-30,2024-04-23T23:42:51Z,https://github.com/pallets/flask/pull/5470
+pallets/flask,5474,Closed without merge,2024-Q2,2024-04-01,2024-06-30,2024-05-01T15:24:05Z,https://github.com/pallets/flask/pull/5474
+pallets/flask,5476,Merged,2024-Q2,2024-04-01,2024-06-30,2024-05-06T17:19:28Z,https://github.com/pallets/flask/pull/5476
+pallets/flask,5478,Closed without merge,2024-Q2,2024-04-01,2024-06-30,2024-05-07T01:05:29Z,https://github.com/pallets/flask/pull/5478
+pallets/flask,5481,Merged,2024-Q2,2024-04-01,2024-06-30,2024-05-11T15:38:08Z,https://github.com/pallets/flask/pull/5481
+pallets/flask,5482,Closed without merge,2024-Q2,2024-04-01,2024-06-30,2024-05-11T21:17:27Z,https://github.com/pallets/flask/pull/5482
+pallets/flask,5487,Merged,2024-Q2,2024-04-01,2024-06-30,2024-05-21T23:53:37Z,https://github.com/pallets/flask/pull/5487
+pallets/flask,5493,Merged,2024-Q2,2024-04-01,2024-06-30,2024-06-01T15:55:46Z,https://github.com/pallets/flask/pull/5493
+pallets/flask,5497,Closed without merge,2024-Q2,2024-04-01,2024-06-30,2024-06-07T06:33:32Z,https://github.com/pallets/flask/pull/5497
+pallets/flask,5499,Merged,2024-Q2,2024-04-01,2024-06-30,2024-06-10T02:23:45Z,https://github.com/pallets/flask/pull/5499
+pallets/flask,5511,Closed without merge,2024-Q2,2024-04-01,2024-06-30,2024-06-27T00:05:37Z,https://github.com/pallets/flask/pull/5511
+pallets/flask,5514,Merged,2024-Q3,2024-07-01,2024-09-30,2024-07-01T15:28:18Z,https://github.com/pallets/flask/pull/5514
+pallets/flask,5516,Merged,2024-Q3,2024-07-01,2024-09-30,2024-07-01T15:56:21Z,https://github.com/pallets/flask/pull/5516
+pallets/flask,5517,Merged,2024-Q3,2024-07-01,2024-09-30,2024-07-02T00:15:34Z,https://github.com/pallets/flask/pull/5517
+pallets/flask,5522,Merged,2024-Q3,2024-07-01,2024-09-30,2024-07-09T10:21:00Z,https://github.com/pallets/flask/pull/5522
+pallets/flask,5524,Closed without merge,2024-Q3,2024-07-01,2024-09-30,2024-07-09T21:47:32Z,https://github.com/pallets/flask/pull/5524
+pallets/flask,5526,Merged,2024-Q3,2024-07-01,2024-09-30,2024-07-10T11:57:00Z,https://github.com/pallets/flask/pull/5526
+pallets/flask,5532,Closed without merge,2024-Q3,2024-07-01,2024-09-30,2024-07-19T00:20:44Z,https://github.com/pallets/flask/pull/5532
+pallets/flask,5538,Closed without merge,2024-Q3,2024-07-01,2024-09-30,2024-08-01T15:28:29Z,https://github.com/pallets/flask/pull/5538
+pallets/flask,5539,Merged,2024-Q3,2024-07-01,2024-09-30,2024-08-01T15:48:35Z,https://github.com/pallets/flask/pull/5539
+pallets/flask,5541,Merged,2024-Q3,2024-07-01,2024-09-30,2024-08-05T23:09:20Z,https://github.com/pallets/flask/pull/5541
+pallets/flask,5546,Closed without merge,2024-Q3,2024-07-01,2024-09-30,2024-08-06T23:22:09Z,https://github.com/pallets/flask/pull/5546
+pallets/flask,5550,Closed without merge,2024-Q3,2024-07-01,2024-09-30,2024-08-07T02:19:06Z,https://github.com/pallets/flask/pull/5550
+pallets/flask,5552,Closed without merge,2024-Q3,2024-07-01,2024-09-30,2024-08-10T00:55:35Z,https://github.com/pallets/flask/pull/5552
+pallets/flask,5599,Merged,2024-Q3,2024-07-01,2024-09-30,2024-09-07T11:14:57Z,https://github.com/pallets/flask/pull/5599
+pallets/flask,5602,Closed without merge,2024-Q3,2024-07-01,2024-09-30,2024-09-09T16:58:47Z,https://github.com/pallets/flask/pull/5602
+pallets/flask,5607,Closed without merge,2024-Q3,2024-07-01,2024-09-30,2024-09-18T19:38:53Z,https://github.com/pallets/flask/pull/5607
+pallets/flask,5609,Merged,2024-Q3,2024-07-01,2024-09-30,2024-09-22T13:44:44Z,https://github.com/pallets/flask/pull/5609
+pallets/flask,5610,Closed without merge,2024-Q3,2024-07-01,2024-09-30,2024-09-29T06:36:57Z,https://github.com/pallets/flask/pull/5610
+pallets/flask,5611,Closed without merge,2024-Q4,2024-10-01,2024-12-31,2024-10-10T10:48:28Z,https://github.com/pallets/flask/pull/5611
+pallets/flask,5613,Closed without merge,2024-Q4,2024-10-01,2024-12-31,2024-10-16T20:45:42Z,https://github.com/pallets/flask/pull/5613
+pallets/flask,5614,Closed without merge,2024-Q4,2024-10-01,2024-12-31,2024-10-16T23:12:27Z,https://github.com/pallets/flask/pull/5614
+pallets/flask,5615,Merged,2024-Q4,2024-10-01,2024-12-31,2024-10-18T20:20:56Z,https://github.com/pallets/flask/pull/5615
+pallets/flask,5617,Closed without merge,2024-Q4,2024-10-01,2024-12-31,2024-10-22T18:44:41Z,https://github.com/pallets/flask/pull/5617
+pallets/flask,5623,Merged,2024-Q4,2024-10-01,2024-12-31,2024-10-31T19:30:34Z,https://github.com/pallets/flask/pull/5623
+pallets/flask,5629,Closed without merge,2024-Q4,2024-10-01,2024-12-31,2024-11-07T17:48:47Z,https://github.com/pallets/flask/pull/5629
+pallets/flask,5630,Merged,2024-Q4,2024-10-01,2024-12-31,2024-11-07T19:37:42Z,https://github.com/pallets/flask/pull/5630
+pallets/flask,5634,Merged,2024-Q4,2024-10-01,2024-12-31,2024-11-11T04:18:14Z,https://github.com/pallets/flask/pull/5634
+pallets/flask,5643,Closed without merge,2024-Q4,2024-10-01,2024-12-31,2024-11-17T18:21:04Z,https://github.com/pallets/flask/pull/5643
+pallets/flask,5647,Merged,2024-Q4,2024-10-01,2024-12-31,2024-11-23T00:37:56Z,https://github.com/pallets/flask/pull/5647
+pallets/flask,5659,Merged,2024-Q4,2024-10-01,2024-12-31,2024-12-23T23:00:56Z,https://github.com/pallets/flask/pull/5659
+pallets/flask,5671,Merged,2025-Q1,2025-01-01,2025-03-31,2025-01-25T22:31:09Z,https://github.com/pallets/flask/pull/5671
+pallets/flask,5672,Closed without merge,2025-Q1,2025-01-01,2025-03-31,2025-01-27T21:26:10Z,https://github.com/pallets/flask/pull/5672
+pallets/flask,5674,Merged,2025-Q1,2025-01-01,2025-03-31,2025-01-30T03:42:21Z,https://github.com/pallets/flask/pull/5674
+pallets/flask,5678,Closed without merge,2025-Q1,2025-01-01,2025-03-31,2025-02-16T13:31:20Z,https://github.com/pallets/flask/pull/5678
+pallets/flask,5685,Closed without merge,2025-Q1,2025-01-01,2025-03-31,2025-03-01T01:29:13Z,https://github.com/pallets/flask/pull/5685
+pallets/flask,5693,Closed without merge,2025-Q1,2025-01-01,2025-03-31,2025-03-20T07:16:08Z,https://github.com/pallets/flask/pull/5693
+pallets/flask,5695,Merged,2025-Q1,2025-01-01,2025-03-31,2025-03-24T09:49:53Z,https://github.com/pallets/flask/pull/5695
+pallets/flask,5698,Closed without merge,2025-Q1,2025-01-01,2025-03-31,2025-03-25T03:14:40Z,https://github.com/pallets/flask/pull/5698
+pallets/flask,5700,Merged,2025-Q1,2025-01-01,2025-03-31,2025-03-29T22:26:58Z,https://github.com/pallets/flask/pull/5700
+pallets/flask,5701,Merged,2025-Q1,2025-01-01,2025-03-31,2025-03-29T22:31:22Z,https://github.com/pallets/flask/pull/5701
+pallets/flask,5702,Merged,2025-Q1,2025-01-01,2025-03-31,2025-03-29T22:43:56Z,https://github.com/pallets/flask/pull/5702
+pallets/flask,5706,Closed without merge,2025-Q1,2025-01-01,2025-03-31,2025-03-30T12:42:36Z,https://github.com/pallets/flask/pull/5706
+pallets/flask,5708,Closed without merge,2025-Q2,2025-04-01,2025-06-30,2025-04-06T07:33:41Z,https://github.com/pallets/flask/pull/5708
+pallets/flask,5713,Closed without merge,2025-Q2,2025-04-01,2025-06-30,2025-04-10T22:25:36Z,https://github.com/pallets/flask/pull/5713
+pallets/flask,5717,Closed without merge,2025-Q2,2025-04-01,2025-06-30,2025-04-12T21:02:30Z,https://github.com/pallets/flask/pull/5717
+pallets/flask,5723,Merged,2025-Q2,2025-04-01,2025-06-30,2025-05-01T15:48:38Z,https://github.com/pallets/flask/pull/5723
+pallets/flask,5727,Merged,2025-Q2,2025-04-01,2025-06-30,2025-05-12T00:59:11Z,https://github.com/pallets/flask/pull/5727
+pallets/flask,5730,Merged,2025-Q2,2025-04-01,2025-06-30,2025-05-13T14:51:56Z,https://github.com/pallets/flask/pull/5730
+pallets/flask,5731,Merged,2025-Q2,2025-04-01,2025-06-30,2025-05-13T15:34:34Z,https://github.com/pallets/flask/pull/5731
+pallets/flask,5732,Closed without merge,2025-Q2,2025-04-01,2025-06-30,2025-05-14T08:00:01Z,https://github.com/pallets/flask/pull/5732
+pallets/flask,5735,Closed without merge,2025-Q2,2025-04-01,2025-06-30,2025-05-16T22:20:48Z,https://github.com/pallets/flask/pull/5735
+pallets/flask,5736,Merged,2025-Q2,2025-04-01,2025-06-30,2025-05-17T04:29:30Z,https://github.com/pallets/flask/pull/5736
+pallets/flask,5737,Merged,2025-Q2,2025-04-01,2025-06-30,2025-05-18T15:13:11Z,https://github.com/pallets/flask/pull/5737
+pallets/flask,5742,Merged,2025-Q2,2025-04-01,2025-06-30,2025-05-21T18:37:43Z,https://github.com/pallets/flask/pull/5742
+pallets/flask,5743,Closed without merge,2025-Q2,2025-04-01,2025-06-30,2025-05-22T18:30:21Z,https://github.com/pallets/flask/pull/5743
+pallets/flask,5750,Closed without merge,2025-Q2,2025-04-01,2025-06-30,2025-06-03T01:59:22Z,https://github.com/pallets/flask/pull/5750
+pallets/flask,5754,Merged,2025-Q2,2025-04-01,2025-06-30,2025-06-08T16:44:14Z,https://github.com/pallets/flask/pull/5754
+pallets/flask,5757,Merged,2025-Q2,2025-04-01,2025-06-30,2025-06-09T21:32:15Z,https://github.com/pallets/flask/pull/5757
+pallets/flask,5761,Closed without merge,2025-Q2,2025-04-01,2025-06-30,2025-06-17T17:15:01Z,https://github.com/pallets/flask/pull/5761
+pallets/flask,5765,Closed without merge,2025-Q2,2025-04-01,2025-06-30,2025-06-29T17:04:39Z,https://github.com/pallets/flask/pull/5765
+pallets/flask,5767,Closed without merge,2025-Q3,2025-07-01,2025-09-30,2025-07-07T07:48:47Z,https://github.com/pallets/flask/pull/5767
+pallets/flask,5772,Closed without merge,2025-Q3,2025-07-01,2025-09-30,2025-07-12T08:38:30Z,https://github.com/pallets/flask/pull/5772
+pallets/flask,5777,Merged,2025-Q3,2025-07-01,2025-09-30,2025-07-16T10:07:40Z,https://github.com/pallets/flask/pull/5777
+pallets/flask,5780,Closed without merge,2025-Q3,2025-07-01,2025-09-30,2025-07-23T11:13:32Z,https://github.com/pallets/flask/pull/5780
+pallets/flask,5788,Closed without merge,2025-Q3,2025-07-01,2025-09-30,2025-07-31T18:46:12Z,https://github.com/pallets/flask/pull/5788
+pallets/flask,5793,Closed without merge,2025-Q3,2025-07-01,2025-09-30,2025-08-03T14:25:04Z,https://github.com/pallets/flask/pull/5793
+pallets/flask,5795,Merged,2025-Q3,2025-07-01,2025-09-30,2025-08-07T04:47:00Z,https://github.com/pallets/flask/pull/5795
+pallets/flask,5797,Merged,2025-Q3,2025-07-01,2025-09-30,2025-08-18T16:48:05Z,https://github.com/pallets/flask/pull/5797
+pallets/flask,5798,Merged,2025-Q3,2025-07-01,2025-09-30,2025-08-18T18:44:00Z,https://github.com/pallets/flask/pull/5798
+pallets/flask,5799,Merged,2025-Q3,2025-07-01,2025-09-30,2025-08-19T15:22:33Z,https://github.com/pallets/flask/pull/5799
+pallets/flask,5800,Merged,2025-Q3,2025-07-01,2025-09-30,2025-08-19T20:42:29Z,https://github.com/pallets/flask/pull/5800
+pallets/flask,5801,Closed without merge,2025-Q3,2025-07-01,2025-09-30,2025-08-26T11:46:57Z,https://github.com/pallets/flask/pull/5801
+pallets/flask,5807,Closed without merge,2025-Q3,2025-07-01,2025-09-30,2025-09-06T16:14:19Z,https://github.com/pallets/flask/pull/5807
+pallets/flask,5808,Merged,2025-Q3,2025-07-01,2025-09-30,2025-09-06T16:33:44Z,https://github.com/pallets/flask/pull/5808
+pallets/flask,5811,Closed without merge,2025-Q3,2025-07-01,2025-09-30,2025-09-11T05:25:34Z,https://github.com/pallets/flask/pull/5811
+pallets/flask,5812,Merged,2025-Q3,2025-07-01,2025-09-30,2025-09-12T22:45:00Z,https://github.com/pallets/flask/pull/5812
+pallets/flask,5818,Merged,2025-Q3,2025-07-01,2025-09-30,2025-09-20T00:47:44Z,https://github.com/pallets/flask/pull/5818
+pallets/flask,5824,Closed without merge,2025-Q3,2025-07-01,2025-09-30,2025-09-29T17:11:11Z,https://github.com/pallets/flask/pull/5824
+pallets/flask,5826,Closed without merge,2025-Q4,2025-10-01,2025-12-31,2025-10-08T13:14:31Z,https://github.com/pallets/flask/pull/5826
+pallets/flask,5827,Merged,2025-Q4,2025-10-01,2025-12-31,2025-10-09T07:06:09Z,https://github.com/pallets/flask/pull/5827
+pallets/flask,5829,Merged,2025-Q4,2025-10-01,2025-12-31,2025-10-14T07:43:09Z,https://github.com/pallets/flask/pull/5829
+pallets/flask,5844,Merged,2025-Q4,2025-10-01,2025-12-31,2025-11-05T17:14:08Z,https://github.com/pallets/flask/pull/5844
+pallets/flask,5845,Closed without merge,2025-Q4,2025-10-01,2025-12-31,2025-11-09T06:28:20Z,https://github.com/pallets/flask/pull/5845
+pallets/flask,5858,Closed without merge,2025-Q4,2025-10-01,2025-12-31,2025-12-08T01:10:05Z,https://github.com/pallets/flask/pull/5858
+pallets/flask,5865,Merged,2025-Q4,2025-10-01,2025-12-31,2025-12-17T15:22:57Z,https://github.com/pallets/flask/pull/5865
+pallets/flask,5874,Closed without merge,2025-Q4,2025-10-01,2025-12-31,2025-12-29T05:02:44Z,https://github.com/pallets/flask/pull/5874
+pallets/flask,5875,Closed without merge,2026-Q1,2026-01-01,2026-03-31,2026-01-01T10:24:01Z,https://github.com/pallets/flask/pull/5875
+pallets/flask,5885,Closed without merge,2026-Q1,2026-01-01,2026-03-31,2026-01-10T20:02:42Z,https://github.com/pallets/flask/pull/5885
+pallets/flask,5896,Closed without merge,2026-Q1,2026-01-01,2026-03-31,2026-01-24T08:39:08Z,https://github.com/pallets/flask/pull/5896
+pallets/flask,5898,Merged,2026-Q1,2026-01-01,2026-03-31,2026-01-25T00:51:47Z,https://github.com/pallets/flask/pull/5898
+pallets/flask,5899,Merged,2026-Q1,2026-01-01,2026-03-31,2026-01-25T03:51:26Z,https://github.com/pallets/flask/pull/5899
+pallets/flask,5900,Merged,2026-Q1,2026-01-01,2026-03-31,2026-01-25T18:34:37Z,https://github.com/pallets/flask/pull/5900
+pallets/flask,5903,Merged,2026-Q1,2026-01-01,2026-03-31,2026-01-27T08:24:02Z,https://github.com/pallets/flask/pull/5903
+pallets/flask,5911,Closed without merge,2026-Q1,2026-01-01,2026-03-31,2026-02-06T21:12:31Z,https://github.com/pallets/flask/pull/5911
+pallets/flask,5917,Merged,2026-Q1,2026-01-01,2026-03-31,2026-02-12T21:06:34Z,https://github.com/pallets/flask/pull/5917
+pallets/flask,5923,Closed without merge,2026-Q1,2026-01-01,2026-03-31,2026-02-18T15:51:17Z,https://github.com/pallets/flask/pull/5923
+pallets/flask,5924,Merged,2026-Q1,2026-01-01,2026-03-31,2026-02-19T03:42:42Z,https://github.com/pallets/flask/pull/5924
+pallets/flask,5928,Merged,2026-Q1,2026-01-01,2026-03-31,2026-02-20T03:51:07Z,https://github.com/pallets/flask/pull/5928
+pallets/flask,5938,Closed without merge,2026-Q1,2026-01-01,2026-03-31,2026-02-27T01:24:07Z,https://github.com/pallets/flask/pull/5938
+pallets/flask,5945,Merged,2026-Q1,2026-01-01,2026-03-31,2026-03-08T23:11:47Z,https://github.com/pallets/flask/pull/5945
+pallets/flask,5950,Closed without merge,2026-Q1,2026-01-01,2026-03-31,2026-03-17T13:01:28Z,https://github.com/pallets/flask/pull/5950
+pallets/flask,5955,Closed without merge,2026-Q1,2026-01-01,2026-03-31,2026-03-22T18:17:50Z,https://github.com/pallets/flask/pull/5955
+pallets/flask,5962,Merged,2026-Q1,2026-01-01,2026-03-31,2026-03-24T13:54:00Z,https://github.com/pallets/flask/pull/5962
+pallets/flask,5966,Closed without merge,2026-Q1,2026-01-01,2026-03-31,2026-03-27T21:19:29Z,https://github.com/pallets/flask/pull/5966
+pallets/flask,5982,Closed without merge,2026-Q2,2026-04-01,2026-06-30,2026-04-07T00:18:44Z,https://github.com/pallets/flask/pull/5982
+pallets/flask,6013,Merged,2026-Q2,2026-04-01,2026-06-30,2026-05-02T03:56:17Z,https://github.com/pallets/flask/pull/6013

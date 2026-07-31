@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-07-30 17:11:47.374399+00:00",
+  "stage": "Stage 3C",
+  "basic_integrity": {
+    "row_count": 600,
+    "expected_row_count": 600,
+    "unique_pr_count": 600,
+    "invalid_pr_count": 0,
+    "duplicate_pr_count": 0,
+    "invalid_split_count": 0,
+    "invalid_period_count": 0,
+    "split_distribution": {
+      "train": 440,
+      "validation": 84,
+      "test": 76
+    },
+    "expected_distribution": {
+      "train": 440,
+      "validation": 84,
+      "test": 76
+    },
+    "validation_passed": true
+  },
+  "quarter_assignment": {
+    "quarter_count": 34,
+    "divided_quarter_count": 0,
+    "divided_quarters": [],
+    "validation_passed": true
+  },
+  "chronological_order": {
+    "boundaries": {
+      "train": {
+        "row_count": 440,
+        "minimum_period": "2018Q1",
+        "maximum_period": "2023Q3",
+        "minimum_period_sort": 8073,
+        "maximum_period_sort": 8095
+      },
+      "validation": {
+        "row_count": 84,
+        "minimum_period": "2023Q4",
+        "maximum_period": "2024Q4",
+        "minimum_period_sort": 8096,
+        "maximum_period_sort": 8100
+      },
+      "test": {
+        "row_count": 76,
+        "minimum_period": "2025Q1",
+        "maximum_period": "2026Q2",
+        "minimum_period_sort": 8101,
+        "maximum_period_sort": 8106
+      }
+    },
+    "required_splits_present": true,
+    "train_before_validation": true,
+    "validation_before_test": true,
+    "validation_passed": true
+  },
+  "timestamp_ordering": {
+    "invalid_timestamp_count": 0,
+    "timestamp_boundaries": {
+      "train": {
+        "minimum_created_at": "2018-01-03 10:46:23+00:00",
+        "maximum_created_at": "2023-09-24 15:19:08+00:00"
+      },
+      "validation": {
+        "minimum_created_at": "2023-10-01 16:25:23+00:00",
+        "maximum_created_at": "2024-12-23 23:00:56+00:00"
+      },
+      "test": {
+        "minimum_created_at": "2025-01-25 22:31:09+00:00",
+        "maximum_created_at": "2026-05-02 03:56:17+00:00"
+      }
+    },
+    "train_before_validation": true,
+    "validation_before_test": true,
+    "validation_passed": true
+  },
+  "membership_alignment": {
+    "split_unique_pr_count": 600,
+    "feature_unique_pr_count": 600,
+    "matched_pr_count": 600,
+    "missing_from_features_count": 0,
+    "missing_from_splits_count": 0,
+    "missing_from_features": [],
+    "missing_from_splits": [],
+    "exact_alignment": true,
+    "validation_passed": true
+  },
+  "overall_verification_passed": true
+}

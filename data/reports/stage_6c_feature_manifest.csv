@@ -1,0 +1,59 @@
+feature_position,feature,feature_type,preprocessing,fit_source
+1,additions_iqr_outlier,binary,Most-frequent imputation,Training split only
+2,body_length_iqr_outlier,binary,Most-frequent imputation,Training split only
+3,body_word_count_iqr_outlier,binary,Most-frequent imputation,Training split only
+4,changed_files_iqr_outlier,binary,Most-frequent imputation,Training split only
+5,commit_count_iqr_outlier,binary,Most-frequent imputation,Training split only
+6,configuration_files_changed_iqr_outlier,binary,Most-frequent imputation,Training split only
+7,created_on_weekend,binary,Most-frequent imputation,Training split only
+8,deletions_iqr_outlier,binary,Most-frequent imputation,Training split only
+9,documentation_files_changed_iqr_outlier,binary,Most-frequent imputation,Training split only
+10,files_added_iqr_outlier,binary,Most-frequent imputation,Training split only
+11,files_modified_iqr_outlier,binary,Most-frequent imputation,Training split only
+12,files_removed_iqr_outlier,binary,Most-frequent imputation,Training split only
+13,files_renamed,binary,Most-frequent imputation,Training split only
+14,files_renamed_iqr_outlier,binary,Most-frequent imputation,Training split only
+15,has_any_iqr_outlier,binary,Most-frequent imputation,Training split only
+16,has_configuration_changes,binary,Most-frequent imputation,Training split only
+17,has_description,binary,Most-frequent imputation,Training split only
+18,has_detailed_description,binary,Most-frequent imputation,Training split only
+19,has_documentation_changes,binary,Most-frequent imputation,Training split only
+20,has_multiple_commits,binary,Most-frequent imputation,Training split only
+21,has_security_sensitive_changes,binary,Most-frequent imputation,Training split only
+22,has_test_changes,binary,Most-frequent imputation,Training split only
+23,requested_reviewer_count,binary,Most-frequent imputation,Training split only
+24,requested_reviewer_count_iqr_outlier,binary,Most-frequent imputation,Training split only
+25,security_sensitive_files_changed_iqr_outlier,binary,Most-frequent imputation,Training split only
+26,short_title,binary,Most-frequent imputation,Training split only
+27,test_files_changed_iqr_outlier,binary,Most-frequent imputation,Training split only
+28,title_length_iqr_outlier,binary,Most-frequent imputation,Training split only
+29,total_changes_iqr_outlier,binary,Most-frequent imputation,Training split only
+30,very_long_description,binary,Most-frequent imputation,Training split only
+31,additions,continuous,Median imputation and training-fitted standardization,Training split only
+32,body_length,continuous,Median imputation and training-fitted standardization,Training split only
+33,body_word_count,continuous,Median imputation and training-fitted standardization,Training split only
+34,change_density_per_file,continuous,Median imputation and training-fitted standardization,Training split only
+35,changed_files,continuous,Median imputation and training-fitted standardization,Training split only
+36,commit_count,continuous,Median imputation and training-fitted standardization,Training split only
+37,configuration_files_changed,continuous,Median imputation and training-fitted standardization,Training split only
+38,created_day_of_week,continuous,Median imputation and training-fitted standardization,Training split only
+39,created_hour_utc,continuous,Median imputation and training-fitted standardization,Training split only
+40,deletion_ratio,continuous,Median imputation and training-fitted standardization,Training split only
+41,deletions,continuous,Median imputation and training-fitted standardization,Training split only
+42,documentation_files_changed,continuous,Median imputation and training-fitted standardization,Training split only
+43,files_added,continuous,Median imputation and training-fitted standardization,Training split only
+44,files_modified,continuous,Median imputation and training-fitted standardization,Training split only
+45,files_removed,continuous,Median imputation and training-fitted standardization,Training split only
+46,iqr_outlier_feature_count,continuous,Median imputation and training-fitted standardization,Training split only
+47,label_count,continuous,Median imputation and training-fitted standardization,Training split only
+48,log1p_additions,continuous,Median imputation and training-fitted standardization,Training split only
+49,log1p_body_length,continuous,Median imputation and training-fitted standardization,Training split only
+50,log1p_body_word_count,continuous,Median imputation and training-fitted standardization,Training split only
+51,log1p_changed_files,continuous,Median imputation and training-fitted standardization,Training split only
+52,log1p_commit_count,continuous,Median imputation and training-fitted standardization,Training split only
+53,log1p_deletions,continuous,Median imputation and training-fitted standardization,Training split only
+54,log1p_total_changes,continuous,Median imputation and training-fitted standardization,Training split only
+55,security_sensitive_files_changed,continuous,Median imputation and training-fitted standardization,Training split only
+56,test_files_changed,continuous,Median imputation and training-fitted standardization,Training split only
+57,title_length,continuous,Median imputation and training-fitted standardization,Training split only
+58,total_changes,continuous,Median imputation and training-fitted standardization,Training split only

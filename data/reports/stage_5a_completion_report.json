@@ -1,0 +1,315 @@
+{
+  "generated_at": "2026-07-30 20:59:44.955797+00:00",
+  "stage": "Stage 5A",
+  "source_feature_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_feature_engineered.csv",
+  "source_split_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\evaluation\\corrected_model1_time_based_split_assignments.csv",
+  "generated_modelling_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model1_merge_outcome_modelling_dataset.csv",
+  "identifier_validation": {
+    "pr_number_present": true,
+    "unique_pr_count": 600,
+    "duplicate_pr_count": 0,
+    "validation_passed": true
+  },
+  "required_columns_validation": {
+    "target_column_present": true,
+    "split_column_present": true,
+    "identifier_column_present": true,
+    "validation_passed": true
+  },
+  "target_validation": {
+    "target_column": "was_merged",
+    "target_present": true,
+    "missing_target_count": 0,
+    "target_distribution": {
+      "0": 300,
+      "1": 300
+    },
+    "validation_passed": true
+  },
+  "split_validation": {
+    "split_column": "split",
+    "missing_split_count": 0,
+    "split_distribution": {
+      "train": 440,
+      "validation": 84,
+      "test": 76
+    },
+    "expected_distribution": {
+      "train": 440,
+      "validation": 84,
+      "test": 76
+    },
+    "validation_passed": true
+  },
+  "feature_validation": {
+    "row_count": 600,
+    "feature_count": 68,
+    "feature_names": [
+      "draft",
+      "resolution_hours",
+      "merge_hours",
+      "additions",
+      "deletions",
+      "total_changes",
+      "changed_files",
+      "commit_count",
+      "title_length",
+      "body_length",
+      "body_word_count",
+      "label_count",
+      "requested_reviewer_count",
+      "file_records_returned",
+      "test_files_changed",
+      "documentation_files_changed",
+      "configuration_files_changed",
+      "security_sensitive_files_changed",
+      "files_added",
+      "files_modified",
+      "files_removed",
+      "files_renamed",
+      "has_test_changes",
+      "has_documentation_changes",
+      "has_configuration_changes",
+      "has_security_sensitive_changes",
+      "commit_count_iqr_outlier",
+      "resolution_hours_iqr_outlier",
+      "configuration_files_changed_iqr_outlier",
+      "test_files_changed_iqr_outlier",
+      "deletions_iqr_outlier",
+      "files_modified_iqr_outlier",
+      "additions_iqr_outlier",
+      "total_changes_iqr_outlier",
+      "body_length_iqr_outlier",
+      "body_word_count_iqr_outlier",
+      "files_added_iqr_outlier",
+      "changed_files_iqr_outlier",
+      "documentation_files_changed_iqr_outlier",
+      "security_sensitive_files_changed_iqr_outlier",
+      "files_removed_iqr_outlier",
+      "files_renamed_iqr_outlier",
+      "title_length_iqr_outlier",
+      "requested_reviewer_count_iqr_outlier",
+      "iqr_outlier_feature_count",
+      "has_any_iqr_outlier",
+      "merge_target",
+      "log1p_body_length",
+      "log1p_body_word_count",
+      "log1p_additions",
+      "log1p_deletions",
+      "log1p_total_changes",
+      "log1p_changed_files",
+      "log1p_commit_count",
+      "has_description",
+      "has_detailed_description",
+      "short_title",
+      "very_long_description",
+      "change_density_per_file",
+      "deletion_ratio",
+      "has_zero_code_change",
+      "has_multiple_commits",
+      "created_year",
+      "created_month",
+      "created_quarter",
+      "created_day_of_week",
+      "created_hour_utc",
+      "created_on_weekend"
+    ],
+    "total_missing_feature_values": 300,
+    "columns_with_missing_values": 1,
+    "infinite_value_count": 0,
+    "duplicated_feature_names": [],
+    "target_in_features": false,
+    "identified_leakage_columns": [],
+    "row_alignment_passed": true,
+    "validation_passed": true
+  },
+  "selected_features": [
+    "draft",
+    "resolution_hours",
+    "merge_hours",
+    "additions",
+    "deletions",
+    "total_changes",
+    "changed_files",
+    "commit_count",
+    "title_length",
+    "body_length",
+    "body_word_count",
+    "label_count",
+    "requested_reviewer_count",
+    "file_records_returned",
+    "test_files_changed",
+    "documentation_files_changed",
+    "configuration_files_changed",
+    "security_sensitive_files_changed",
+    "files_added",
+    "files_modified",
+    "files_removed",
+    "files_renamed",
+    "has_test_changes",
+    "has_documentation_changes",
+    "has_configuration_changes",
+    "has_security_sensitive_changes",
+    "commit_count_iqr_outlier",
+    "resolution_hours_iqr_outlier",
+    "configuration_files_changed_iqr_outlier",
+    "test_files_changed_iqr_outlier",
+    "deletions_iqr_outlier",
+    "files_modified_iqr_outlier",
+    "additions_iqr_outlier",
+    "total_changes_iqr_outlier",
+    "body_length_iqr_outlier",
+    "body_word_count_iqr_outlier",
+    "files_added_iqr_outlier",
+    "changed_files_iqr_outlier",
+    "documentation_files_changed_iqr_outlier",
+    "security_sensitive_files_changed_iqr_outlier",
+    "files_removed_iqr_outlier",
+    "files_renamed_iqr_outlier",
+    "title_length_iqr_outlier",
+    "requested_reviewer_count_iqr_outlier",
+    "iqr_outlier_feature_count",
+    "has_any_iqr_outlier",
+    "merge_target",
+    "log1p_body_length",
+    "log1p_body_word_count",
+    "log1p_additions",
+    "log1p_deletions",
+    "log1p_total_changes",
+    "log1p_changed_files",
+    "log1p_commit_count",
+    "has_description",
+    "has_detailed_description",
+    "short_title",
+    "very_long_description",
+    "change_density_per_file",
+    "deletion_ratio",
+    "has_zero_code_change",
+    "has_multiple_commits",
+    "created_year",
+    "created_month",
+    "created_quarter",
+    "created_day_of_week",
+    "created_hour_utc",
+    "created_on_weekend"
+  ],
+  "excluded_features": [
+    {
+      "column": "repository",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "pr_number",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "title",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "body",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "html_url",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "author_login",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "author_association",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "state",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "base_branch",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "head_branch",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "created_at",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "updated_at",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "closed_at",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "merged_at",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "was_merged",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "labels",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "requested_reviewers",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "expected_outcome",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "period",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "period_start_date",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "period_end_date",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "actual_outcome",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    },
+    {
+      "column": "outcome_matches_selection",
+      "reason": "Constant or empty feature"
+    },
+    {
+      "column": "label_count_iqr_outlier",
+      "reason": "Constant or empty feature"
+    },
+    {
+      "column": "outcome_label",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "pr_size_band",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "created_day_name",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "author_role_group",
+      "reason": "Not safely convertible to a numeric feature"
+    },
+    {
+      "column": "split",
+      "reason": "Identifier, target, timestamp, split or leakage column"
+    }
+  ],
+  "overall_verification_passed": true
+}

@@ -1,0 +1,18 @@
+{
+  "population_validation": {
+    "row_count": 600,
+    "unique_pr_count": 600,
+    "expected_record_count": 600,
+    "record_count_matches": true,
+    "duplicate_pr_count": 0,
+    "target_column": null,
+    "class_distribution": {},
+    "minimum_pr_number": 2575,
+    "maximum_pr_number": 6013,
+    "validation_passed": true
+  },
+  "canonical_row_count": 600,
+  "canonical_unique_pr_count": 600,
+  "summary_coverage_count": 45,
+  "detailed_coverage_count": 600
+}

@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-07-31 01:34:10.825964+00:00",
+  "stage": "Stage 7A",
+  "component": "Deterministic PR policy and risk intelligence",
+  "source_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_feature_engineered.csv",
+  "output_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pr_policy_intelligence.csv",
+  "evaluated_pr_count": 600,
+  "rule_count": 12,
+  "triggered_rule_count": 1147,
+  "manual_review_count": 166,
+  "high_or_critical_pr_count": 166,
+  "source_validation": {
+    "row_count": 600,
+    "column_count": 96,
+    "missing_required_columns": [],
+    "duplicate_pr_count": 0,
+    "validation_passed": true
+  },
+  "output_validation": {
+    "expected_pr_count": 600,
+    "summary_row_count": 600,
+    "summary_row_count_valid": true,
+    "rule_count": 12,
+    "expected_long_row_count": 7200,
+    "actual_long_row_count": 7200,
+    "long_row_count_valid": true,
+    "unique_pr_count_valid": true,
+    "score_range_valid": true,
+    "risk_bands_valid": true,
+    "triggered_values_valid": true,
+    "triggered_rule_count_valid": true,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "policy_dataset_exists": true,
+    "long_results_exist": true,
+    "rule_summary_exists": true,
+    "risk_band_summary_exists": true,
+    "rule_catalogue_exists": true,
+    "validation_passed": true
+  },
+  "risk_scoring_policy": {
+    "minimum_score": 0,
+    "maximum_score": 100,
+    "risk_bands": {
+      "Low": "0–19",
+      "Moderate": "20–39",
+      "High": "40–69",
+      "Critical": "70–100"
+    },
+    "manual_review_rule": "Required when score is at least 40 or a critical rule is triggered.",
+    "automatic_merge_decision": false,
+    "human_review_required_for_actions": true
+  },
+  "rule_engine_properties": {
+    "deterministic": true,
+    "auditable": true,
+    "model_based": false,
+    "llm_based": false,
+    "causal_claims_allowed": false
+  },
+  "overall_verification_passed": true
+}

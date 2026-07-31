@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-07-30 22:29:35.256024+00:00",
+  "stage": "Stage 5D",
+  "target": "was_merged",
+  "target_definition": {
+    "0": "Closed without merge",
+    "1": "Merged"
+  },
+  "training_rows": 440,
+  "validation_rows": 84,
+  "test_rows_reserved": 76,
+  "test_set_used": false,
+  "neutral_feature_count": 61,
+  "trained_models": [
+    "contributor_neutral_logistic_regression",
+    "contributor_neutral_random_forest",
+    "author_association_random_forest_benchmark"
+  ],
+  "final_application_candidate": "contributor_neutral_random_forest",
+  "final_model_selection_note": "The contributor-neutral Random Forest is the designated application candidate. The author-association model is retained only for fairness and shortcut analysis.",
+  "selected_thresholds": {
+    "contributor_neutral_logistic_regression": 0.25,
+    "contributor_neutral_random_forest": 0.4,
+    "author_association_random_forest_benchmark": 0.3
+  },
+  "model_paths": {
+    "contributor_neutral_logistic_regression": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\models\\merge_outcome\\contributor_neutral_logistic_regression.joblib",
+    "contributor_neutral_random_forest": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\models\\merge_outcome\\contributor_neutral_random_forest.joblib",
+    "author_association_random_forest_benchmark": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\models\\merge_outcome\\author_association_random_forest_benchmark.joblib"
+  },
+  "fairness_comparison": {
+    "neutral_random_forest_roc_auc": 0.7273242630385488,
+    "author_benchmark_roc_auc": 0.8611111111111112,
+    "roc_auc_difference": 0.13378684807256236,
+    "neutral_random_forest_accuracy": 0.7142857142857143,
+    "author_benchmark_accuracy": 0.8333333333333334,
+    "accuracy_difference": 0.11904761904761907,
+    "interpretation": "The author-association model is used only to measure repository-specific shortcut effects. It is not eligible for final application use."
+  },
+  "result_validation": {
+    "expected_models": [
+      "author_association_random_forest_benchmark",
+      "contributor_neutral_logistic_regression",
+      "contributor_neutral_random_forest"
+    ],
+    "actual_models": [
+      "author_association_random_forest_benchmark",
+      "contributor_neutral_logistic_regression",
+      "contributor_neutral_random_forest"
+    ],
+    "selected_thresholds": {
+      "contributor_neutral_logistic_regression": 0.25,
+      "contributor_neutral_random_forest": 0.4,
+      "author_association_random_forest_benchmark": 0.3
+    },
+    "prediction_counts": {
+      "contributor_neutral_logistic_regression": 84,
+      "contributor_neutral_random_forest": 84,
+      "author_association_random_forest_benchmark": 84
+    },
+    "metrics_valid": true,
+    "thresholds_valid": true,
+    "prediction_counts_valid": true,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "saved_model_count": 3,
+    "all_models_exist": true,
+    "comparison_exists": true,
+    "threshold_report_exists": true,
+    "prediction_report_exists": true,
+    "test_set_used": false,
+    "validation_passed": true
+  },
+  "validation_metrics": [
+    {
+      "validation_rank": 1,
+      "threshold": 0.3,
+      "accuracy": 0.8333333333333334,
+      "balanced_accuracy": 0.8333333333333333,
+      "precision": 0.7692307692307693,
+      "recall": 0.9523809523809523,
+      "f1": 0.851063829787234,
+      "roc_auc": 0.8611111111111112,
+      "average_precision": 0.8388547991506394,
+      "log_loss": 0.4234757965339144,
+      "brier_score": 0.13393713315985256,
+      "true_negative": 30.0,
+      "false_positive": 12.0,
+      "false_negative": 2.0,
+      "true_positive": 40.0,
+      "model_name": "author_association_random_forest_benchmark",
+      "validation_rows": 84,
+      "training_rows": 440,
+      "training_seconds": 0.8162841000012122,
+      "model_role": "Fairness and shortcut benchmark",
+      "eligible_for_final_application": false
+    },
+    {
+      "validation_rank": 2,
+      "threshold": 0.4,
+      "accuracy": 0.7142857142857143,
+      "balanced_accuracy": 0.7142857142857143,
+      "precision": 0.6551724137931034,
+      "recall": 0.9047619047619048,
+      "f1": 0.76,
+      "roc_auc": 0.7273242630385488,
+      "average_precision": 0.6898613428901464,
+      "log_loss": 0.6188269663841461,
+      "brier_score": 0.21414680617540555,
+      "true_negative": 22.0,
+      "false_positive": 20.0,
+      "false_negative": 4.0,
+      "true_positive": 38.0,
+      "model_name": "contributor_neutral_random_forest",
+      "validation_rows": 84,
+      "training_rows": 440,
+      "training_seconds": 0.860583100002259,
+      "model_role": "Final contributor-neutral candidate",
+      "eligible_for_final_application": true
+    },
+    {
+      "validation_rank": 3,
+      "threshold": 0.25,
+      "accuracy": 0.6309523809523809,
+      "balanced_accuracy": 0.6309523809523809,
+      "precision": 0.5846153846153846,
+      "recall": 0.9047619047619048,
+      "f1": 0.7102803738317757,
+      "roc_auc": 0.6343537414965986,
+      "average_precision": 0.5503907638941811,
+      "log_loss": 1.1205688004776835,
+      "brier_score": 0.2760041748802646,
+      "true_negative": 15.0,
+      "false_positive": 27.0,
+      "false_negative": 4.0,
+      "true_positive": 38.0,
+      "model_name": "contributor_neutral_logistic_regression",
+      "validation_rows": 84,
+      "training_rows": 440,
+      "training_seconds": 0.035090799967292696,
+      "model_role": "Interpretable neutral baseline",
+      "eligible_for_final_application": false
+    }
+  ],
+  "overall_verification_passed": true
+}

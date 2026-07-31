@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-07-30 17:53:43.333112+00:00",
+  "stage": "Stage 3D",
+  "stage_3_status": "complete",
+  "dataset_status_passed": true,
+  "membership_alignment_passed": true,
+  "target_consistency_passed": true,
+  "shared_value_consistency_passed": true,
+  "previous_stage_reports_passed": true,
+  "previous_stage_reports": [
+    {
+      "stage": "Stage 3A",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_3a_completion_report.json",
+      "exists": true,
+      "pass_value": true,
+      "validation_passed": true
+    },
+    {
+      "stage": "Stage 3B",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_3b_completion_report.json",
+      "exists": true,
+      "pass_value": true,
+      "validation_passed": true
+    },
+    {
+      "stage": "Stage 3C",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_3c_completion_report.json",
+      "exists": true,
+      "pass_value": true,
+      "validation_passed": true
+    }
+  ],
+  "authoritative_sources": {
+    "detailed_data": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_time_matched_600_detailed.csv",
+    "validated_data": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_validated.csv",
+    "outlier_data": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_outlier_flagged.csv",
+    "model_features": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_feature_engineered.csv",
+    "split_assignments": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\evaluation\\corrected_model1_time_based_split_assignments.csv"
+  },
+  "dataset_counts": {
+    "Detailed dataset": {
+      "rows": 600,
+      "columns": 49,
+      "unique_prs": 600
+    },
+    "Validated dataset": {
+      "rows": 600,
+      "columns": 49,
+      "unique_prs": 600
+    },
+    "Outlier-flagged dataset": {
+      "rows": 600,
+      "columns": 70,
+      "unique_prs": 600
+    },
+    "Feature-engineered dataset": {
+      "rows": 600,
+      "columns": 96,
+      "unique_prs": 600
+    },
+    "Split assignments": {
+      "rows": 600,
+      "columns": 6,
+      "unique_prs": 600
+    }
+  },
+  "overall_verification_passed": true
+}

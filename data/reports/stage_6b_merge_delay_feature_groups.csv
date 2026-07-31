@@ -1,0 +1,11 @@
+decision,reason,column_count
+approved,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,58
+blocked,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,13
+blocked,"Direct or derived outcome, duration or target leakage.",10
+blocked,Chronological period shortcut or raw timestamp.,6
+blocked,Constant or near-empty feature within the merged-PR population.,4
+blocked,Raw text or serialized content requires a separate controlled text pipeline.,3
+blocked,Contributor identity or relationship shortcut.,2
+blocked,Extraction-quality or API-response metadata.,1
+blocked,"Repository, record or URL identifier.",1
+metadata,"Required identifier, split or target column.",3

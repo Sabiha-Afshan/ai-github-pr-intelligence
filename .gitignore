@@ -1,37 +1,81 @@
-# Secrets
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables and secrets
 .env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
 
 # Jupyter
 .ipynb_checkpoints/
-__pycache__/
-*.pyc
-
-# VS Code
-.vscode/
 
 # Logs
 logs/
 *.log
 
-# Raw API data and cache
-data/raw/
-data/cache/
+# Local Streamlit configuration
+.streamlit/secrets.toml
 
-# Local vector storage
-data/vector_store/
-
-# Trained models
-models/
+# Local model and vector-store files
+*.faiss
+*.index
+*.npy
+*.npz
 *.joblib
 *.pkl
+*.pickle
+*.bin
+*.safetensors
 
-# Large generated outputs
-outputs/
-reports/generated/
+# Generated vector-store metadata
+data/vector_store/pr_chunk_metadata.jsonl
 
-# Local model files
-*.gguf
+# Local caches
+.cache/
+huggingface/
+
+# Temporary files
+*.tmp
+*.temp
 
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# Editor
+.vscode/settings.json
+
+# Large generated outputs
+data/checkpoints/
+data/evaluation/
+evaluation/
+
+
+# Generated embeddings and serialized models
+*.npy
+*.npz
+*.joblib
+*.pkl
+*.pickle
+*.bin
+*.safetensors
+
+# Generated vector metadata
+data/vector_store/pr_chunk_metadata.jsonl
+
+# Model and package caches
+.cache/
+huggingface/
+
+# Optional generated knowledge-base files
+data/knowledge_base/*.jsonl

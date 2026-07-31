@@ -1,0 +1,3 @@
+validation_rank,threshold,accuracy,balanced_accuracy,precision,recall,f1,roc_auc,average_precision,log_loss,brier_score,true_negative,false_positive,false_negative,true_positive,predicted_positive_count,predicted_negative_count,model_name,nominated_candidate
+1,0.55,0.8333333333333334,0.825925925925926,0.75,0.8,0.7741935483870968,0.8395061728395062,0.7846460366068209,0.5313685879058403,0.161435778193271,23,4,3,12,16,26,merge_delay_logistic_regression,True
+2,0.525,0.8333333333333334,0.7962962962962963,0.8333333333333334,0.6666666666666666,0.7407407407407407,0.817283950617284,0.7167283642283642,0.4997938434328194,0.1611009836154147,25,2,5,10,12,30,merge_delay_random_forest,False

@@ -1,0 +1,69 @@
+repository,pr_number,title,body,state,draft,author_login,author_association,created_at,updated_at,closed_at,merged_at,target_branch,source_branch,html_url,labels,was_merged,merge_target,outcome_label,additions,deletions,changed_files,commit_count,raw_data_available,total_changes,changed_file_paths,test_file_count,documentation_file_count,configuration_file_count,security_sensitive_file_count,generated_file_count,has_test_changes,has_documentation_changes,has_configuration_changes,has_security_sensitive_changes,file_category_counts
+pallets/flask,6108,AI junk,"## Description
+This PR resolves issue #6093 by replacing `partition("":"")` with `rpartition("":"")` when parsing `SERVER_NAME` in `app.py` and request host cookies in `testing.py`.
+
+## Details
+- Properly handles IPv6 addresses containing multiple colons (e.g. `[::1]:8080` or `::1`).",closed,False,amir-rezaei,NONE,2026-07-27T20:04:49Z,2026-07-27T20:16:05Z,2026-07-27T20:15:16Z,,main,fix/ipv6-host-rpartition-parsing,https://github.com/pallets/flask/pull/6108,[],False,0,Closed without merge,4,2,2,1,True,6,"['src/flask/app.py', 'src/flask/testing.py']",0,0,0,0,0,False,False,False,False,{'python_source': 2}
+pallets/flask,6106,AI junk,"<!-- Fixes #11 -->
+
+## Summary
+Fix typo in docs
+
+## Changes
+- Formatting update in README.md
+
+## Testing
+N/A",closed,False,saitejabandaru-in,NONE,2026-07-26T14:51:53Z,2026-07-26T14:56:41Z,2026-07-26T14:52:49Z,,main,fix-docs-1785077509,https://github.com/pallets/flask/pull/6106,[],False,0,Closed without merge,1,0,1,1,True,1,['README.md'],0,1,0,0,0,False,True,False,False,{'documentation': 1}
+pallets/flask,6105,modofied requirement,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,sbisl,NONE,2026-07-25T14:43:47Z,2026-07-25T14:53:47Z,2026-07-25T14:53:47Z,,main,jenkins-test,https://github.com/pallets/flask/pull/6105,[],False,0,Closed without merge,3,0,1,1,True,3,['examples/celery/requirements.txt'],0,1,1,0,0,False,True,True,False,{'documentation': 1}
+pallets/flask,6104,[Draft] hello,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,Akankshaaaa-01,NONE,2026-07-24T10:30:05Z,2026-07-24T17:21:56Z,2026-07-24T10:31:18Z,,main,patch-1,https://github.com/pallets/flask/pull/6104,[],False,0,Closed without merge,0,1,1,1,True,1,['src/flask/app.py'],0,0,0,0,0,False,False,False,False,{'python_source': 1}
+pallets/flask,6103,Fix grammar in quickstart documentation,"Fix a grammar issue in the quickstart documentation.
+
+Changed ""tell the Flask"" to ""tell Flask"" because Flask is a project name.",closed,False,ARYANatGIT,NONE,2026-07-23T15:50:23Z,2026-07-23T16:06:41Z,2026-07-23T16:06:41Z,,main,fix-doc-typo,https://github.com/pallets/flask/pull/6103,[],False,0,Closed without merge,1,1,1,1,True,2,['docs/quickstart.rst'],0,1,0,0,0,False,True,False,False,{'documentation': 1}

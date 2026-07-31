@@ -1,0 +1,6 @@
+dataset_name,file_path,exists,status,row_count,column_count,unique_pr_count,duplicate_pr_count,missing_pr_count,target_required,target_column_present,target_missing_count,target_distribution,validation_passed
+Detailed dataset,C:\Users\sabih\OneDrive\Desktop\Courseworks\AI GitHub PR Intelligence\data\processed\pallets_flask_time_matched_600_detailed.csv,True,verified,600,49,600,0,0,True,True,0.0,"{'0': 300, '1': 300}",True
+Validated dataset,C:\Users\sabih\OneDrive\Desktop\Courseworks\AI GitHub PR Intelligence\data\processed\pallets_flask_corrected_600_validated.csv,True,verified,600,49,600,0,0,True,True,0.0,"{'0': 300, '1': 300}",True
+Outlier-flagged dataset,C:\Users\sabih\OneDrive\Desktop\Courseworks\AI GitHub PR Intelligence\data\processed\pallets_flask_corrected_600_outlier_flagged.csv,True,verified,600,70,600,0,0,True,True,0.0,"{'0': 300, '1': 300}",True
+Feature-engineered dataset,C:\Users\sabih\OneDrive\Desktop\Courseworks\AI GitHub PR Intelligence\data\processed\pallets_flask_corrected_600_feature_engineered.csv,True,verified,600,96,600,0,0,True,True,0.0,"{'0': 300, '1': 300}",True
+Split assignments,C:\Users\sabih\OneDrive\Desktop\Courseworks\AI GitHub PR Intelligence\data\evaluation\corrected_model1_time_based_split_assignments.csv,True,verified,600,6,600,0,0,False,False,,{},True

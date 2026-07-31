@@ -1,0 +1,32 @@
+[project]
+name = "ai-github-pr-intelligence"
+version = "0.1.0"
+description = "Portfolio-grade governed AI GitHub Pull Request Intelligence platform"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+exclude = [
+    ".venv",
+    ".git",
+    "__pycache__",
+    "data",
+    "models",
+    "evaluation",
+    "notebooks",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"

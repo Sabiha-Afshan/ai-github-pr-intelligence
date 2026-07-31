@@ -1,0 +1,8 @@
+feature_group,feature_count,features
+Outlier indicators,19,"additions_iqr_outlier, body_length_iqr_outlier, body_word_count_iqr_outlier, changed_files_iqr_outlier, commit_count_iqr_outlier, configuration_files_changed_iqr_outlier, deletions_iqr_outlier, documentation_files_changed_iqr_outlier, files_added_iqr_outlier, files_modified_iqr_outlier, files_removed_iqr_outlier, files_renamed_iqr_outlier, has_any_iqr_outlier, iqr_outlier_feature_count, requested_reviewer_count_iqr_outlier, security_sensitive_files_changed_iqr_outlier, test_files_changed_iqr_outlier, title_length_iqr_outlier, total_changes_iqr_outlier"
+File composition,13,"configuration_files_changed, documentation_files_changed, file_records_returned, files_added, files_modified, files_removed, files_renamed, has_configuration_changes, has_documentation_changes, has_security_sensitive_changes, has_test_changes, security_sensitive_files_changed, test_files_changed"
+PR structure,10,"body_length, body_word_count, draft, has_description, has_detailed_description, label_count, requested_reviewer_count, short_title, title_length, very_long_description"
+Code change,7,"additions, change_density_per_file, changed_files, deletion_ratio, deletions, has_zero_code_change, total_changes"
+Log transformations,7,"log1p_additions, log1p_body_length, log1p_body_word_count, log1p_changed_files, log1p_commit_count, log1p_deletions, log1p_total_changes"
+Submission timing,3,"created_day_of_week, created_hour_utc, created_on_weekend"
+Commit activity,2,"commit_count, has_multiple_commits"

@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-07-31 01:55:39.544779+00:00",
+  "stage": "Stage 8A",
+  "component": "Structured RAG knowledge-base preparation",
+  "source_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\unified_pr_intelligence.csv",
+  "document_count": 600,
+  "chunk_count": 3986,
+  "maximum_chunk_words": 180,
+  "chunk_overlap_words": 25,
+  "average_chunks_per_document": 6.6433,
+  "section_distribution": {
+    "Change evidence": 600,
+    "Deterministic policy intelligence": 600,
+    "PR description": 986,
+    "PR identity": 600,
+    "Predictive intelligence": 600,
+    "Unified review priority": 600
+  },
+  "priority_distribution": {
+    "Routine": 361,
+    "Critical": 83,
+    "High": 83,
+    "Moderate": 73
+  },
+  "source_validation": {
+    "row_count": 600,
+    "column_count": 120,
+    "expected_row_count": 600,
+    "expected_row_count_valid": true,
+    "missing_required_columns": [],
+    "duplicate_pr_count": 0,
+    "blank_pr_identifier_count": 0,
+    "validation_passed": true
+  },
+  "output_validation": {
+    "expected_document_count": 600,
+    "actual_document_count": 600,
+    "document_count_valid": true,
+    "unique_document_ids_valid": true,
+    "document_content_complete": true,
+    "document_metadata_complete": true,
+    "actual_chunk_count": 3986,
+    "chunk_count_valid": true,
+    "unique_chunk_ids_valid": true,
+    "every_document_has_chunk": true,
+    "maximum_chunk_words": 180,
+    "chunk_word_limits_valid": true,
+    "manifest_document_count_valid": true,
+    "manifest_chunk_count_valid": true,
+    "priority_metadata_complete": true,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "documents_jsonl_exists": true,
+    "chunks_jsonl_exists": true,
+    "document_manifest_exists": true,
+    "chunk_manifest_exists": true,
+    "documents_jsonl_non_empty": true,
+    "chunks_jsonl_non_empty": true,
+    "validation_passed": true
+  },
+  "knowledge_policy": {
+    "one_document_per_pr": true,
+    "stable_document_ids": true,
+    "stable_chunk_ids": true,
+    "section_aware_chunking": true,
+    "human_decision_authority_retained": true,
+    "model_predictions_presented_as_facts": false,
+    "causal_claims_allowed": false,
+    "embeddings_created": false,
+    "vector_index_created": false,
+    "llm_called": false
+  },
+  "outputs": {
+    "documents_jsonl": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\knowledge_base\\pr_documents.jsonl",
+    "chunks_jsonl": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\knowledge_base\\pr_chunks.jsonl",
+    "document_manifest": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_8a_document_manifest.csv",
+    "chunk_manifest": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_8a_chunk_manifest.csv"
+  },
+  "overall_verification_passed": true
+}

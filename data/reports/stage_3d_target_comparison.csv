@@ -1,0 +1,4 @@
+reference_dataset,comparison_dataset,missing_membership_count,target_mismatch_count,validation_passed
+Detailed dataset,Validated dataset,0,0,True
+Detailed dataset,Outlier-flagged dataset,0,0,True
+Detailed dataset,Feature-engineered dataset,0,0,True

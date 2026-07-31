@@ -1,0 +1,16 @@
+{
+  "random_forest_roc_auc": 0.731859410430839,
+  "challenger_roc_auc": 0.703514739229025,
+  "roc_auc_change": -0.028344671201814053,
+  "random_forest_balanced_accuracy": 0.7142857142857142,
+  "challenger_balanced_accuracy": 0.6904761904761905,
+  "balanced_accuracy_change": -0.023809523809523725,
+  "random_forest_f1": 0.75,
+  "challenger_f1": 0.7111111111111111,
+  "f1_change": -0.03888888888888886,
+  "minimum_required_roc_auc_improvement": 0.02,
+  "meaningful_roc_auc_improvement": false,
+  "strong_secondary_improvement": false,
+  "challenger_selected": false,
+  "selected_final_model": "contributor_neutral_random_forest_tuned"
+}

@@ -1,0 +1,145 @@
+{
+  "generated_at": "2026-07-30 21:43:19.568318+00:00",
+  "stage": "Stage 5C",
+  "scikit_learn_version": "1.9.0",
+  "source_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model1_merge_outcome_approved_features.csv",
+  "preprocessor_artifact": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\models\\model1_preprocessor.joblib",
+  "source_validation": {
+    "row_count": 600,
+    "column_count": 64,
+    "feature_count": 61,
+    "missing_required_columns": [],
+    "non_numeric_features": [],
+    "duplicate_pr_count": 0,
+    "infinite_value_count": 0,
+    "validation_passed": true
+  },
+  "binary_feature_count": 31,
+  "continuous_feature_count": 30,
+  "binary_features": [
+    "draft",
+    "requested_reviewer_count",
+    "has_test_changes",
+    "has_documentation_changes",
+    "has_configuration_changes",
+    "has_security_sensitive_changes",
+    "commit_count_iqr_outlier",
+    "configuration_files_changed_iqr_outlier",
+    "test_files_changed_iqr_outlier",
+    "deletions_iqr_outlier",
+    "files_modified_iqr_outlier",
+    "additions_iqr_outlier",
+    "total_changes_iqr_outlier",
+    "body_length_iqr_outlier",
+    "body_word_count_iqr_outlier",
+    "files_added_iqr_outlier",
+    "changed_files_iqr_outlier",
+    "documentation_files_changed_iqr_outlier",
+    "security_sensitive_files_changed_iqr_outlier",
+    "files_removed_iqr_outlier",
+    "files_renamed_iqr_outlier",
+    "title_length_iqr_outlier",
+    "requested_reviewer_count_iqr_outlier",
+    "has_any_iqr_outlier",
+    "has_description",
+    "has_detailed_description",
+    "short_title",
+    "very_long_description",
+    "has_zero_code_change",
+    "has_multiple_commits",
+    "created_on_weekend"
+  ],
+  "continuous_features": [
+    "additions",
+    "deletions",
+    "total_changes",
+    "changed_files",
+    "commit_count",
+    "title_length",
+    "body_length",
+    "body_word_count",
+    "label_count",
+    "file_records_returned",
+    "test_files_changed",
+    "documentation_files_changed",
+    "configuration_files_changed",
+    "security_sensitive_files_changed",
+    "files_added",
+    "files_modified",
+    "files_removed",
+    "files_renamed",
+    "iqr_outlier_feature_count",
+    "log1p_body_length",
+    "log1p_body_word_count",
+    "log1p_additions",
+    "log1p_deletions",
+    "log1p_total_changes",
+    "log1p_changed_files",
+    "log1p_commit_count",
+    "change_density_per_file",
+    "deletion_ratio",
+    "created_day_of_week",
+    "created_hour_utc"
+  ],
+  "transformed_validation": {
+    "split_results": {
+      "train": {
+        "row_count": 440,
+        "feature_count": 61,
+        "missing_value_count": 0,
+        "infinite_value_count": 0,
+        "validation_passed": true
+      },
+      "validation": {
+        "row_count": 84,
+        "feature_count": 61,
+        "missing_value_count": 0,
+        "infinite_value_count": 0,
+        "validation_passed": true
+      },
+      "test": {
+        "row_count": 76,
+        "feature_count": 61,
+        "missing_value_count": 0,
+        "infinite_value_count": 0,
+        "validation_passed": true
+      }
+    },
+    "consistent_feature_columns": true,
+    "target_results": {
+      "train_target_count": 440,
+      "validation_target_count": 84,
+      "test_target_count": 76,
+      "train_target_values": [
+        0,
+        1
+      ],
+      "validation_target_values": [
+        0,
+        1
+      ],
+      "test_target_values": [
+        0,
+        1
+      ]
+    },
+    "targets_valid": true,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "preprocessor_exists": true,
+    "preprocessor_size_bytes": 8069,
+    "train_output_exists": true,
+    "validation_output_exists": true,
+    "test_output_exists": true,
+    "feature_manifest_exists": true,
+    "validation_passed": true
+  },
+  "generated_files": {
+    "train": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model1_preprocessed_train.csv",
+    "validation": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model1_preprocessed_validation.csv",
+    "test": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model1_preprocessed_test.csv",
+    "feature_manifest": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_5c_feature_manifest.csv"
+  },
+  "overall_verification_passed": true
+}

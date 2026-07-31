@@ -1,0 +1,131 @@
+{
+  "generated_at": "2026-07-30 23:52:11.973101+00:00",
+  "stage": "Stage 6A",
+  "model": "Model 2 — Merge-delay prediction",
+  "source_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_feature_engineered.csv",
+  "output_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model2_merge_delay_population.csv",
+  "prediction_design": {
+    "population": "Merged pull requests only",
+    "primary_target": "merge_delay_target",
+    "target_definition": "1 when merge_hours is greater than 48 hours; otherwise 0",
+    "primary_threshold_hours": 48.0,
+    "model_timing": "Historical PR snapshot benchmark. Features must exclude target, merge duration and post-outcome fields.",
+    "intended_use": "Review prioritisation and delay-risk decision support, not automatic action."
+  },
+  "source_validation": {
+    "row_count": 600,
+    "column_count": 96,
+    "missing_required_columns": [],
+    "duplicate_pr_count": 0,
+    "validation_passed": true
+  },
+  "merge_duration_summary": {
+    "row_count": 300,
+    "minimum_hours": 0.0047222222222222,
+    "mean_hours": 371.0040777777778,
+    "median_hours": 3.4665277777777774,
+    "maximum_hours": 12553.5,
+    "p25_hours": 0.10020833333333327,
+    "p75_hours": 135.12555555555554,
+    "p90_hours": 1052.5780555555584,
+    "p95_hours": 2271.678666666667,
+    "p99_hours": 4549.362969444435
+  },
+  "primary_target_summary": {
+    "target_column": "merge_delay_target",
+    "threshold_hours": 48.0,
+    "population_count": 300,
+    "non_delayed_count": 207,
+    "delayed_count": 93,
+    "delayed_rate": 0.31,
+    "minority_class_count": 93,
+    "both_classes_present": true,
+    "suitable_for_modelling": true,
+    "is_primary_target": true
+  },
+  "split_target_summary": [
+    {
+      "split": "train",
+      "row_count": 220,
+      "delayed_count": 63,
+      "non_delayed_count": 157,
+      "delayed_rate": 0.2863636363636364,
+      "both_classes_present": true
+    },
+    {
+      "split": "validation",
+      "row_count": 42,
+      "delayed_count": 15,
+      "non_delayed_count": 27,
+      "delayed_rate": 0.35714285714285715,
+      "both_classes_present": true
+    },
+    {
+      "split": "test",
+      "row_count": 38,
+      "delayed_count": 15,
+      "non_delayed_count": 23,
+      "delayed_rate": 0.39473684210526316,
+      "both_classes_present": true
+    }
+  ],
+  "split_balance_valid": true,
+  "threshold_suitability_valid": true,
+  "dataset_validation": {
+    "row_count": 300,
+    "column_count": 101,
+    "missing_required_columns": [],
+    "duplicate_pr_count": 0,
+    "non_merged_pr_count": 0,
+    "invalid_merge_duration_count": 0,
+    "invalid_primary_target_count": 0,
+    "primary_target_values": [
+      0,
+      1
+    ],
+    "split_values": [
+      "test",
+      "train",
+      "validation"
+    ],
+    "validation_passed": true
+  },
+  "chronological_validation": {
+    "created_at_exists": true,
+    "invalid_created_at_count": 0,
+    "split_ranges": {
+      "train": {
+        "row_count": 220,
+        "minimum_created_at": "2018-01-03 21:10:09+00:00",
+        "maximum_created_at": "2023-09-24 15:19:08+00:00"
+      },
+      "validation": {
+        "row_count": 42,
+        "minimum_created_at": "2023-10-01 16:25:23+00:00",
+        "maximum_created_at": "2024-12-23 23:00:56+00:00"
+      },
+      "test": {
+        "row_count": 38,
+        "minimum_created_at": "2025-01-25 22:31:09+00:00",
+        "maximum_created_at": "2026-05-02 03:56:17+00:00"
+      }
+    },
+    "each_split_present": true,
+    "chronological_order_valid": true,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "output_dataset_exists": true,
+    "threshold_report_exists": true,
+    "split_report_exists": true,
+    "leakage_report_exists": true,
+    "validation_passed": true
+  },
+  "target_leakage_policy": {
+    "merge_hours_used_for": "Target construction and reporting only",
+    "merge_hours_allowed_as_feature": false,
+    "outcome_timestamps_allowed_as_features": false,
+    "target_columns_allowed_as_features": false
+  },
+  "overall_verification_passed": true
+}

@@ -1,0 +1,4 @@
+split,row_count,delayed_count,non_delayed_count,delayed_rate,both_classes_present
+train,220,63,157,0.2863636363636364,True
+validation,42,15,27,0.35714285714285715,True
+test,38,15,23,0.39473684210526316,True

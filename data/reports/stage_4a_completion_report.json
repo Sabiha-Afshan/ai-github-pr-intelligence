@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-07-30 20:14:23.429048+00:00",
+  "stage": "Stage 4A",
+  "dataset_description": {
+    "row_count": 600,
+    "column_count": 106,
+    "unique_pr_count": 600,
+    "minimum_created_at": "2018-01-03 10:46:23+00:00",
+    "maximum_created_at": "2026-05-02 03:56:17+00:00",
+    "missing_value_count": 1235,
+    "duplicate_row_count": 0
+  },
+  "summary_metrics": {
+    "total_prs": 600,
+    "unique_prs": 600,
+    "merged_prs": 300,
+    "unmerged_prs": 300,
+    "merge_rate_percent": 50.0,
+    "date_range_start": "2018-01-03 10:46:23+00:00",
+    "date_range_end": "2026-05-02 03:56:17+00:00",
+    "median_total_changes": 8.5,
+    "average_total_changes": 1078.03,
+    "p90_total_changes": 114.2,
+    "median_changed_files": 1.0,
+    "average_changed_files": 7.86,
+    "median_commit_count": 1.0,
+    "average_commit_count": 15.48,
+    "median_lifecycle_days": 0.06,
+    "average_lifecycle_days": 13.59,
+    "median_merge_duration_days": 0.14,
+    "average_merge_duration_days": 15.46
+  },
+  "validation_checks": {
+    "row_count_is_600": true,
+    "unique_pr_count_is_600": true,
+    "merged_count_is_300": true,
+    "unmerged_count_is_300": true,
+    "quarterly_total_is_600": true,
+    "outcome_total_is_600": true
+  },
+  "generated_reports": {
+    "outcome_metrics": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4a_outcome_metrics.csv",
+    "quarterly_metrics": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4a_quarterly_metrics.csv",
+    "size_band_metrics": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4a_size_band_metrics.csv",
+    "missing_value_summary": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4a_missing_value_summary.csv"
+  },
+  "overall_verification_passed": true
+}

@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-07-30 21:08:29.165853+00:00",
+  "stage": "Stage 5B",
+  "source_modelling_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model1_merge_outcome_modelling_dataset.csv",
+  "approved_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model1_merge_outcome_approved_features.csv",
+  "candidate_feature_count": 68,
+  "approved_feature_count": 61,
+  "excluded_feature_count": 7,
+  "approved_features": [
+    "draft",
+    "additions",
+    "deletions",
+    "total_changes",
+    "changed_files",
+    "commit_count",
+    "title_length",
+    "body_length",
+    "body_word_count",
+    "label_count",
+    "requested_reviewer_count",
+    "file_records_returned",
+    "test_files_changed",
+    "documentation_files_changed",
+    "configuration_files_changed",
+    "security_sensitive_files_changed",
+    "files_added",
+    "files_modified",
+    "files_removed",
+    "files_renamed",
+    "has_test_changes",
+    "has_documentation_changes",
+    "has_configuration_changes",
+    "has_security_sensitive_changes",
+    "commit_count_iqr_outlier",
+    "configuration_files_changed_iqr_outlier",
+    "test_files_changed_iqr_outlier",
+    "deletions_iqr_outlier",
+    "files_modified_iqr_outlier",
+    "additions_iqr_outlier",
+    "total_changes_iqr_outlier",
+    "body_length_iqr_outlier",
+    "body_word_count_iqr_outlier",
+    "files_added_iqr_outlier",
+    "changed_files_iqr_outlier",
+    "documentation_files_changed_iqr_outlier",
+    "security_sensitive_files_changed_iqr_outlier",
+    "files_removed_iqr_outlier",
+    "files_renamed_iqr_outlier",
+    "title_length_iqr_outlier",
+    "requested_reviewer_count_iqr_outlier",
+    "iqr_outlier_feature_count",
+    "has_any_iqr_outlier",
+    "log1p_body_length",
+    "log1p_body_word_count",
+    "log1p_additions",
+    "log1p_deletions",
+    "log1p_total_changes",
+    "log1p_changed_files",
+    "log1p_commit_count",
+    "has_description",
+    "has_detailed_description",
+    "short_title",
+    "very_long_description",
+    "change_density_per_file",
+    "deletion_ratio",
+    "has_zero_code_change",
+    "has_multiple_commits",
+    "created_day_of_week",
+    "created_hour_utc",
+    "created_on_weekend"
+  ],
+  "excluded_features": [
+    {
+      "feature": "resolution_hours",
+      "reason": "Available only after PR resolution"
+    },
+    {
+      "feature": "merge_hours",
+      "reason": "Direct post-outcome leakage"
+    },
+    {
+      "feature": "resolution_hours_iqr_outlier",
+      "reason": "Manually blocked because the feature contains or derives from leakage"
+    },
+    {
+      "feature": "merge_target",
+      "reason": "Target or target-derived feature"
+    },
+    {
+      "feature": "created_year",
+      "reason": "Manually blocked because the feature contains or derives from leakage"
+    },
+    {
+      "feature": "created_month",
+      "reason": "Manually blocked because the feature contains or derives from leakage"
+    },
+    {
+      "feature": "created_quarter",
+      "reason": "Manually blocked because the feature contains or derives from leakage"
+    }
+  ],
+  "approval_validation": {
+    "approved_feature_count": 61,
+    "blocked_features_present": [],
+    "duplicate_features": [],
+    "suspicious_derived_features": [],
+    "validation_passed": true
+  },
+  "dataset_validation": {
+    "row_count": 600,
+    "unique_pr_count": 600,
+    "approved_feature_count": 61,
+    "expected_non_feature_columns": 3,
+    "actual_column_count": 64,
+    "validation_passed": true
+  },
+  "overall_verification_passed": true
+}

@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-07-31 16:43:45.869967+00:00",
+  "stage": "Stage 8B",
+  "component": "Local embeddings and FAISS vector index",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_device": "cpu",
+  "source_chunk_count": 3986,
+  "indexed_vector_count": 3986,
+  "embedding_dimension": 384,
+  "boilerplate_cleaned_chunk_count": 255,
+  "index_type": "IndexFlatIP",
+  "similarity_metric": "Cosine similarity using normalized vectors",
+  "output_validation": {
+    "expected_chunk_count": 3986,
+    "embedding_count": 3986,
+    "embedding_count_valid": true,
+    "embedding_dimension": 384,
+    "embedding_dimension_valid": true,
+    "embedding_values_valid": true,
+    "embeddings_normalized": true,
+    "index_vector_count": 3986,
+    "index_count_valid": true,
+    "metadata_count": 3986,
+    "metadata_count_valid": true,
+    "vector_positions_valid": true,
+    "unique_chunk_ids_valid": true,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "faiss_index_exists": true,
+    "embeddings_exist": true,
+    "metadata_exists": true,
+    "index_configuration_exists": true,
+    "embedding_manifest_exists": true,
+    "retrieval_diagnostics_exist": true,
+    "exact_pr_lookup_passed": true,
+    "semantic_retrieval_passed": true,
+    "validation_passed": true
+  },
+  "retrieval_diagnostic_count": 11,
+  "retrieval_policy": {
+    "exact_pr_number_lookup": true,
+    "semantic_vector_search": true,
+    "metadata_filtering": true,
+    "original_evidence_preserved": true,
+    "cleaned_text_used_for_embedding": true,
+    "llm_called": false,
+    "ollama_called": false
+  },
+  "outputs": {
+    "faiss_index": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\vector_store\\pr_chunks.faiss",
+    "embeddings": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\vector_store\\pr_chunk_embeddings.npy",
+    "metadata": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\vector_store\\pr_chunk_metadata.jsonl",
+    "index_configuration": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\vector_store\\index_configuration.json",
+    "embedding_manifest": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_8b_embedding_manifest.csv",
+    "retrieval_diagnostics": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_8b_retrieval_diagnostics.csv"
+  },
+  "overall_verification_passed": true
+}

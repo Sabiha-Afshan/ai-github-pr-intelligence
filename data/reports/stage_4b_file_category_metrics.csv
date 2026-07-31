@@ -1,0 +1,5 @@
+file_category,source_column,pr_count_with_category,dataset_percent_with_category,merge_rate_with_category,pr_count_without_category,merge_rate_without_category,merge_rate_difference,total_files_changed,median_files_changed_when_present
+Documentation,documentation_files_changed,342,57.0,55.56,258,42.64,12.92,1370.0,1.0
+Configuration,configuration_files_changed,120,20.0,56.67,480,48.33,8.34,312.0,1.0
+Tests,test_files_changed,111,18.5,52.25,489,49.49,2.76,592.0,1.0
+Security-sensitive,security_sensitive_files_changed,34,5.67,44.12,566,50.35,-6.23,111.0,1.0

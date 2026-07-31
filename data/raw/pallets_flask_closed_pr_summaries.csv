@@ -1,0 +1,3047 @@
+repository,pr_number,title,body,state,draft,author_login,author_association,created_at,updated_at,closed_at,merged_at,target_branch,source_branch,html_url,labels,was_merged,merge_target,outcome_label,additions,deletions,changed_files,commit_count,raw_data_available
+pallets/flask,6108,AI junk,"## Description
+This PR resolves issue #6093 by replacing `partition("":"")` with `rpartition("":"")` when parsing `SERVER_NAME` in `app.py` and request host cookies in `testing.py`.
+
+## Details
+- Properly handles IPv6 addresses containing multiple colons (e.g. `[::1]:8080` or `::1`).",closed,False,amir-rezaei,NONE,2026-07-27T20:04:49Z,2026-07-27T20:16:05Z,2026-07-27T20:15:16Z,,main,fix/ipv6-host-rpartition-parsing,https://github.com/pallets/flask/pull/6108,[],False,0,Closed without merge,,,,,True
+pallets/flask,6106,AI junk,"<!-- Fixes #11 -->
+
+## Summary
+Fix typo in docs
+
+## Changes
+- Formatting update in README.md
+
+## Testing
+N/A",closed,False,saitejabandaru-in,NONE,2026-07-26T14:51:53Z,2026-07-26T14:56:41Z,2026-07-26T14:52:49Z,,main,fix-docs-1785077509,https://github.com/pallets/flask/pull/6106,[],False,0,Closed without merge,,,,,True
+pallets/flask,6105,modofied requirement,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,sbisl,NONE,2026-07-25T14:43:47Z,2026-07-25T14:53:47Z,2026-07-25T14:53:47Z,,main,jenkins-test,https://github.com/pallets/flask/pull/6105,[],False,0,Closed without merge,,,,,True
+pallets/flask,6104,[Draft] hello,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,Akankshaaaa-01,NONE,2026-07-24T10:30:05Z,2026-07-24T17:21:56Z,2026-07-24T10:31:18Z,,main,patch-1,https://github.com/pallets/flask/pull/6104,[],False,0,Closed without merge,,,,,True
+pallets/flask,6103,Fix grammar in quickstart documentation,"Fix a grammar issue in the quickstart documentation.
+
+Changed ""tell the Flask"" to ""tell Flask"" because Flask is a project name.",closed,False,ARYANatGIT,NONE,2026-07-23T15:50:23Z,2026-07-23T16:06:41Z,2026-07-23T16:06:41Z,,main,fix-doc-typo,https://github.com/pallets/flask/pull/6103,[],False,0,Closed without merge,,,,,True
+pallets/flask,6102,AI junk,Fixes #3168,closed,False,vtino17,NONE,2026-07-22T07:55:22Z,2026-07-22T13:22:13Z,2026-07-22T13:22:06Z,,main,fix/dev-warning,https://github.com/pallets/flask/pull/6102,[],False,0,Closed without merge,,,,,True
+pallets/flask,6101,Fixed monkeypatch and werkzeug deprecation,"Added fixes introduces in the PR #6072  and fixed the deprecation error encountered in the aforementioned PR.
+
+Fixes Issue: #6071 
+Fixes PR: #6072 
+
+Testing:
+
+pypy3.11: OK ✔ in 32.09 seconds
+docs: OK ✔ in 35.11 seconds
+  py3.14: OK (21.92=setup[12.60]+cmd[9.32] seconds)
+  py3.14t: OK (18.54=setup[4.81]+cmd[13.73] seconds)
+  py3.13: OK (16.17=setup[2.54]+cmd[13.63] seconds)
+  py3.12: OK (21.51=setup[12.76]+cmd[8.75] seconds)
+  py3.11: OK (16.17=setup[2.83]+cmd[13.34] seconds)
+  py3.10: OK (22.89=setup[13.22]+cmd[9.68] seconds)
+  py3.9: OK (22.07=setup[1.70]+cmd[20.37] seconds)
+  pypy3.11: OK (32.09=setup[12.34]+cmd[19.75] seconds)
+  tests-min: OK (28.08=setup[7.55]+cmd[7.61,12.91] seconds)
+  tests-dev: FAIL code 1 (28.08=setup[4.02]+cmd[10.76,13.29] seconds)
+
+But i don't understand for the tests-dev fail, if you can run it in git action to check if it is not a local setup/dependencies problem
+would be wonderful.",closed,False,darkhpk,NONE,2026-07-22T00:42:59Z,2026-07-22T02:17:37Z,2026-07-22T02:14:54Z,,stable,stable,https://github.com/pallets/flask/pull/6101,[],False,0,Closed without merge,,,,,True
+pallets/flask,6100,AI junk,"In `wsgi_app`, the call to `response(environ, start_response)` sits outside the inner `try/except` that catches dispatch errors. When this call raises (for example, a streaming response body fails or the client disconnects mid-delivery), the `error` variable remains `None`. The `finally` block then calls `ctx.pop(error)` with `error=None`, so all `teardown_request` functions receive `exc=None` instead of the actual exception. This silently discards the error, making it impossible for teardown logic to make informed cleanup decisions (such as rolling back a database transaction versus committing).
+
+The fix wraps `response(environ, start_response)` in a `try/except BaseException` that captures the error into the `error` variable before re-raising. The `finally` block then passes the correct exception to `ctx.pop(error)`. Using `BaseException` ensures that `KeyboardInterrupt`, `SystemExit`, and other non-`Exception` throwables during WSGI response delivery are also captured. The exception is always re-raised after capture — it is never swallowed or handled, preserving the existing contract that `wsgi_app` propagates unexpected errors to the WSGI server.
+
+A regression test is added that creates a `Response` subclass whose `__call__` raises `RuntimeError`, registers a `teardown_request` handler, and asserts that the handler receives the `RuntimeError` instance. This test fails on the unpatched code (teardown receives `None`) and passes with the fix. The full Flask test suite (492 tests) passes with no regressions.",closed,False,ghost,NONE,2026-07-20T20:28:31Z,2026-07-20T22:06:42Z,2026-07-20T22:05:17Z,,main,fix/wsgi-teardown-error-propagation,https://github.com/pallets/flask/pull/6100,[],False,0,Closed without merge,,,,,True
+pallets/flask,6099,AI junk,"Fixes #6071.
+
+The test suite imports \
+otset\ from \_pytest.monkeypatch\ in two places and also pokes the private \_setitem\ list directly. pytest 9.1 removed \
+otset\ from that module, which causes a collection-time crash before any test can run.
+
+Both usages only needed the sentinel to mean 'delete this env var'. \monkeypatch.delenv(key, raising=False)\ does exactly the same thing using the stable public API, so the sentinel is not needed at all.
+
+**tests/conftest.py**
+- Drop \rom _pytest import monkeypatch\.
+- Replace the \
+otset\ tuple with a plain tuple of key names (\_FLASK_ENV_KEYS\).
+- Use \pytest.MonkeyPatch()\ directly (public class, available since pytest 6.0).
+- \_reset_os_environ\ now calls \monkeypatch.delenv(key, raising=False)\ per key instead of appending to the private \_setitem\ list.
+
+**tests/test_cli.py**
+- Remove \rom _pytest.monkeypatch import notset\.
+- Replace \monkeypatch._setitem.append((os.environ, item, notset))\ with \monkeypatch.delenv(item, raising=False)\ in \	est_load_dotenv\ and \	est_dotenv_path\. The old comment '# can't use monkeypatch.delitem since the keys don't exist yet' no longer applies — \delenv(raising=False)\ handles missing keys fine.",closed,False,eeshsaxena,NONE,2026-07-20T01:51:12Z,2026-07-20T02:09:15Z,2026-07-20T02:08:46Z,,main,fix/pytest-91-remove-private-notset,https://github.com/pallets/flask/pull/6099,[],False,0,Closed without merge,,,,,True
+pallets/flask,6098,AI junk,"## Summary
+
+This PR adds a new `flask create` command that generates a complete Flask project structure with customizable features.
+
+## Features
+
+- **SQLite/SQLAlchemy** database integration with models and CRUD operations
+- **Flask-Login** authentication with admin user and login/logout
+- **Admin panel** with user management dashboard
+- **Bootstrap CSS** UI for responsive templates
+- **REST API** endpoints with full CRUD support
+
+## Usage
+
+```bash
+# Create full project with all features (default)
+flask create --project --name my-app
+
+# Create with specific features
+flask create --project --includes sqlite,admin-user --name simple-app
+
+# Create in specific directory
+flask create --project --path ./projects --name full-app
+```
+
+## Options
+
+- `--project` - Create a new project structure
+- `--includes` - Comma-separated features: `sqlite`, `admin-user`, `admin-panel`, `bootstrap`, `api`, `all`
+- `--path` - Path where project will be created (default: `.`)
+- `--name` - Name of the project (default: `flask-app`)
+
+## Generated Structure
+
+```
+project-name/
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── extensions.py
+│   ├── routes.py
+│   ├── auth.py
+│   ├── admin.py
+│   └── api.py
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   └── admin/
+├── static/
+│   └── style.css
+├── config.py
+├── requirements.txt
+├── run.py
+└── .env
+```
+
+## Testing
+
+Verified that the generated project:
+- Creates a working Flask application
+- Initializes SQLite database with tables
+- Creates admin user successfully
+- All imports work correctly with relative imports",closed,False,Ibrahimibrahimi,NONE,2026-07-16T21:16:10Z,2026-07-16T21:21:48Z,2026-07-16T21:21:43Z,,main,main,https://github.com/pallets/flask/pull/6098,[],False,0,Closed without merge,,,,,True
+pallets/flask,6094,AI junk,"## Description
+
+Fixes incorrect host parsing for IPv6 addresses in two locations.
+
+## Problem
+
+Two places used `.partition("":"")` to split host:port, which breaks for IPv6 addresses like `[::1]:8000` because the colon inside the bracket notation is not the host:port separator.
+
+1. **testing.py:180** - `ctx.request.host.partition("":"")[0]` returns `[::1` instead of `::1` for IPv6 host headers
+2. **app.py:724** - `server_name.partition("":"")` returns `[::1` as host and `8000]` as port for IPv6 SERVER_NAME
+
+## Fix
+
+- **testing.py**: Use bracket-aware parsing - if host starts with `[`, extract hostname between brackets; otherwise use existing partition logic
+- **app.py**: Use bracket-aware parsing - if server_name starts with `[`, find the `]` bracket and parse port after it; otherwise use existing partition logic
+
+## Testing
+
+Added comprehensive test cases covering:
+- IPv4 with port: `127.0.0.1:8000`
+- IPv6 with port: `[::1]:8000`
+- IPv4 without port: `localhost`
+- IPv6 without port: `[::1]`
+- IPv6 full address: `[2001:db8::1]:8080`
+
+All tests pass.
+
+Closes #6093",closed,False,abhi-0203,NONE,2026-07-14T04:41:33Z,2026-07-14T12:47:33Z,2026-07-14T12:47:29Z,,main,fix/ipv6-host-parsing,https://github.com/pallets/flask/pull/6094,[],False,0,Closed without merge,,,,,True
+pallets/flask,6091,AI junk,"## Summary
+
+Fixes #6071 and two pre-existing CI failures on `main`.
+
+### pytest 9.1 compatibility (#6071)
+
+pytest 9.1 removed the private `notset` sentinel from `_pytest.monkeypatch` (now `NOTSET` in `_pytest.compat`). The test suite imported `notset` and directly manipulated `monkeypatch._setitem`, causing a collection-time crash with pytest 9.1+.
+
+- **`tests/conftest.py`**: Use `pytest.MonkeyPatch()` + `delenv()` instead of `_pytest.monkeypatch.MonkeyPatch()` + `notset`. The `_reset_os_environ` fixture now also cleans up dotenv test keys (`FOO`, `BAR`, `SPAM`, `HAM`, `EGGS`) that `load_dotenv()` sets directly, bypassing monkeypatch's tracking.
+- **`tests/test_cli.py`**: Replace `from _pytest.monkeypatch import notset` and `monkeypatch._setitem.append((os.environ, item, notset))` with `monkeypatch.delenv(item, raising=False)`.
+
+### Development Versions CI: deprecated werkzeug API
+
+werkzeug main (3.2 dev) deprecated `parse_cache_control_header` and `parse_set_header` (removal in 3.3). With `filterwarnings = [""error""]`, the `DeprecationWarning` crashes test collection.
+
+- **`tests/test_blueprints.py`**: Use `ResponseCacheControl.from_header()` instead of `parse_cache_control_header()`, with `hasattr` fallback to the old function for `werkzeug < 3.2`.
+- **`tests/test_views.py`**: Use `HeaderSet.from_header()` instead of `parse_set_header()`, with `hasattr` fallback for `werkzeug < 3.2`.
+
+### Minimum Versions CI: click ParamType subscripting
+
+`click.ParamType` became subscriptable in click 8.2, but Flask declares `click>=8.1.3` as minimum. `class CertParamType(click.ParamType[t.Any])` crashes on click 8.1.3 with `TypeError: type 'ParamType' is not subscriptable`.
+
+- **`src/flask/cli.py`**: Use `click.ParamType` directly as the base class — the generic parameter is only for type checkers and has no runtime effect.
+
+## Test Plan
+
+- [x] Full test suite passes on pytest 9.1.1 + werkzeug main + click main (491 passed)
+- [x] Full test suite passes on pytest 9.1.1 + werkzeug 3.1.0 + click 8.1.3 (133 passed for affected modules)
+- [x] Test suite crashes without the pytest fix (ImportError on `notset`)
+- [x] No deprecation warnings from werkzeug with `filterwarnings = [""error""]`",closed,False,usamashehab,NONE,2026-07-11T01:11:52Z,2026-07-11T01:25:20Z,2026-07-11T01:24:38Z,,main,fix/pytest-9.1-compat-6071,https://github.com/pallets/flask/pull/6091,[],False,0,Closed without merge,,,,,True
+pallets/flask,6090,AI junk,"## Summary
+
+- add `app.query()` and `blueprint.query()` route shortcuts
+- dispatch `QUERY` requests to `MethodView.query()` and include the method in automatic method discovery
+- add focused route and class-based view tests
+- document `QUERY` for safe, body-carrying read-only queries
+
+## Why
+
+HTTP `QUERY` (RFC 10008) provides a standardized way to send a safe, idempotent query with a request body. Flask already accepts arbitrary method names through `route`; this adds the ergonomic APIs users expect alongside `get`, `post`, `put`, `patch`, and `delete`.
+
+## Validation
+
+- `python -m pytest -q tests/test_basic.py tests/test_views.py` — 149 passed
+- `python -m compileall -q src/flask/sansio/scaffold.py src/flask/views.py tests/test_basic.py tests/test_views.py`
+- `git diff --check`
+
+Fixes #6065",closed,False,aouxwoux,NONE,2026-07-10T11:42:03Z,2026-07-10T15:34:34Z,2026-07-10T12:31:19Z,,main,codex/http-query-support,https://github.com/pallets/flask/pull/6090,[],False,0,Closed without merge,,,,,True
+pallets/flask,6089,AI junk,"## Summary
+
+`SECRET_KEY_FALLBACKS` is documented and implemented as a list of old signing keys. If an app accidentally configures it as a scalar string or bytes value, the session interface currently calls `keys.extend(fallbacks)`, which expands the value into one-character or one-byte fallback keys before constructing the `itsdangerous` serializer.
+
+This rejects scalar `str` and `bytes` fallback values before building the key list, while preserving the existing list-based key rotation behavior.
+
+## Security impact
+
+For an affected app using signed cookie sessions, a misconfigured value such as `SECRET_KEY_FALLBACKS = ""old-secret""` could make Flask accept cookies signed with a single-character fallback key such as `""o""`. I verified the pre-fix behavior with a cookie signed using `""o""`; the session loaded successfully when `SECRET_KEY_FALLBACKS` was a string. After this change, the same request raises a configuration `TypeError` instead of accepting the forged session.
+
+This can also happen through environment configuration if a value is supplied as a plain string instead of JSON/list syntax.
+
+## Validation
+
+- `python3 -m py_compile src/flask/sessions.py tests/test_basic.py`
+- `/tmp/flask-verify-venv/bin/ruff check src/flask/sessions.py tests/test_basic.py`
+- `/tmp/flask-verify-venv/bin/ruff format --check src/flask/sessions.py tests/test_basic.py`
+- `/tmp/flask-verify-venv/bin/python -m pytest tests/test_basic.py::test_session_secret_key_fallbacks tests/test_basic.py::test_session_secret_key_fallbacks_rejects_string_or_bytes -q`
+- local full suite before cleanup: `493 passed in 6.36s`",closed,False,M0nd0R,NONE,2026-07-09T21:58:27Z,2026-07-09T22:19:31Z,2026-07-09T22:19:24Z,,main,security/secret-key-fallback-type-check,https://github.com/pallets/flask/pull/6089,[],False,0,Closed without merge,,,,,True
+pallets/flask,6088,tests: avoid private pytest monkeypatch internals for pytest 9.1,"Closes #6071
+
+Avoid private pytest monkeypatch internals in the test suite so collection works with pytest 9.1, where `notset` is no longer exported from `_pytest.monkeypatch`.
+
+- Set the Flask CLI environment baseline with public `monkeypatch.delenv(..., raising=False)` calls for each test.
+- Replace direct `_setitem` manipulation in dotenv tests with an explicit fixture that ensures their test variables are absent before and after each test.
+
+The existing per-test environment isolation is preserved without relying on pytest's internal sentinel or undo-stack representation.
+
+Tests:
+
+- `.venv\\Scripts\\python.exe -m pytest tests/test_cli.py -q` (58 passed)
+- `.venv\\Scripts\\python.exe -m pytest tests -q` (491 passed)
+- `.venv\\Scripts\\ruff.exe check tests/conftest.py tests/test_cli.py`",closed,False,Muhtasim-Munif-Fahim,NONE,2026-07-09T21:04:58Z,2026-07-11T21:58:37Z,2026-07-09T21:06:09Z,,main,codex/flask-pytest-9-monkeypatch-compat,https://github.com/pallets/flask/pull/6088,[],False,0,Closed without merge,,,,,True
+pallets/flask,6087,AI junk,"## Summary
+
+Updates Flask's tests to support pytest 9.1, where the `notset` sentinel is no longer available from `_pytest.monkeypatch`.
+
+The tests now use a small compatibility import:
+
+- older pytest: `_pytest.monkeypatch.notset`
+- pytest 9.1+: `_pytest.compat.NOTSET`
+
+This keeps the existing monkeypatch behavior while allowing the test suite to collect and run with pytest 9.1.
+
+## Problem observed
+
+With pytest 9.1.1, test collection failed with:
+
+`ImportError: cannot import name 'notset' from '_pytest.monkeypatch'`
+
+## Validation
+
+pytest 9.1.1:
+
+`uv run --with pytest==9.1.1 pytest tests/`
+
+Result:
+
+`491 passed`
+
+Current project pytest:
+
+`uv run pytest tests/`
+
+Result:
+
+`491 passed`
+
+Ruff check:
+
+`uv run ruff check tests/conftest.py tests/test_cli.py`
+
+Result:
+
+`All checks passed!`
+
+## Related issue
+
+Fixes #6071.",closed,False,mohamedjaazeer4-sketch,NONE,2026-07-08T09:35:50Z,2026-07-08T12:59:17Z,2026-07-08T12:59:09Z,,main,fix-pytest-91-notset,https://github.com/pallets/flask/pull/6087,[],False,0,Closed without merge,,,,,True
+pallets/flask,6086,Add hardcoded secret key to app.py,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,koppularoshitha,NONE,2026-07-08T05:25:30Z,2026-07-08T06:26:17Z,2026-07-08T06:26:17Z,,main,koppularoshitha-patch-1,https://github.com/pallets/flask/pull/6086,[],False,0,Closed without merge,,,,,True
+pallets/flask,6085,Fix test suite crash caused by Pytest 9.1 update,"Hello! I noticed the test suite was crashing because the newly released Pytest version 9.1 completely removed the notset attribute from their monkeypatch library.
+
+To fix this I went into the test configuration and command line interface files to remove the old setup code that relied on that deleted variable. I replaced that old logic with the standard delenv method and passed the raising flag as False. This safely clears out the environment variables without throwing an error if they are already empty.
+
+I ran the full test suite locally and everything is passing perfectly again. Let me know if you need me to adjust anything else!",closed,False,Nagendraprasad-hub,NONE,2026-07-07T16:29:17Z,2026-07-07T18:19:03Z,2026-07-07T18:19:03Z,,main,fix-pytest-compatibility,https://github.com/pallets/flask/pull/6085,[],False,0,Closed without merge,,,,,True
+pallets/flask,6083,AI junk,"`pytest 9.1` removed the internal `notset` sentinel object from `_pytest.monkeypatch` (moving it to `_pytest.compat.NOTSET`). This causes a collection-time crash because the test suite imports `notset` from the old location in `conftest.py` and `test_cli.py`.
+
+We resolve this by falling back to import `NOTSET` from `_pytest.compat` first, then `_pytest.monkeypatch` for backward compatibility.",closed,False,Hasnaathussain,NONE,2026-07-07T12:58:14Z,2026-07-07T15:08:26Z,2026-07-07T14:09:26Z,,main,fix/6071-pytest-9-1-notset-collection-crash,https://github.com/pallets/flask/pull/6083,[],False,0,Closed without merge,,,,,True
+pallets/flask,6081,AI junk,"The Blueprint constructor rejects a name that contains a dot, because dots are the separator used for nested blueprint names and endpoints. The name can also be overridden at registration with the name option, but that path was not validated, so a dotted name was silently accepted.
+
+A dotted registered name is then treated as a nested hierarchy. For example register_blueprint(bp, name=""a.b"") registers the blueprint as ""a.b"" while request.blueprints reports [""a.b"", ""a""], referencing a parent scope ""a"" that was never registered. Endpoints and blueprint scoped lookups (error handlers, url_for, request.blueprint) walk that non existent scope.
+
+Apply the same check to the name option so both paths raise the same ValueError. Added a test alongside the existing constructor test.",closed,False,iammcoding,NONE,2026-07-05T13:20:10Z,2026-07-05T13:34:07Z,2026-07-05T13:29:01Z,,main,fix-blueprint-dotted-name,https://github.com/pallets/flask/pull/6081,[],False,0,Closed without merge,,,,,True
+pallets/flask,6080,fix: copy jinja_options per-instance to prevent shared mutable class default,"## Summary
+
+- `jinja_options: dict[str, t.Any] = {}` at `sansio/app.py:248` is a class-level mutable dict shared across all Flask instances and subclasses.
+- Mutations to `jinja_options` on one instance silently bleed into all other instances.
+- Fix: copy in `__init__` with `self.jinja_options = dict(self.__class__.jinja_options)`.
+
+## Test plan
+- [ ] Create two Flask instances; mutate `app1.jinja_options`; verify `app2.jinja_options` is unaffected.
+- [ ] Subclass Flask with custom `jinja_options`; verify instances of both the base and the subclass have independent dicts.
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)",closed,False,webdevdot,NONE,2026-07-04T04:57:59Z,2026-07-04T12:37:17Z,2026-07-04T12:37:17Z,,main,fix/jinja-options-mutable-default,https://github.com/pallets/flask/pull/6080,[],False,0,Closed without merge,,,,,True
+pallets/flask,6079,docs: improve wording and grammar in API documentation,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,dhruvatr,NONE,2026-07-03T05:16:17Z,2026-07-03T16:36:06Z,2026-07-03T16:36:06Z,,main,patch-1,https://github.com/pallets/flask/pull/6079,[],False,0,Closed without merge,,,,,True
+pallets/flask,6078,AI junk,"Use the monkeypatch module's current sentinel name instead of importing the removed `_pytest.monkeypatch.notset` symbol directly.
+
+Pytest 9.1 exposes the sentinel as `_pytest.monkeypatch.NOTSET`, while pytest 9.0 still uses `_pytest.monkeypatch.notset`. This keeps the existing monkeypatch bookkeeping behavior on both versions, while allowing Flask's tests to collect and run with pytest 9.1.
+
+This also keeps `CertParamType` generic for static type checkers while avoiding runtime subscripting of `click.ParamType` on older supported Click versions, and avoids Werkzeug main deprecation warnings in tests by preferring the newer datastructure parsing helpers when they are available.
+
+fixes #6071
+
+Validation:
+- With pytest 9.0.3 / Click 8.1.3 / Werkzeug 3.1.0:
+  - `python -m pytest tests -q`
+- With pytest 9.1.1 / Click 8.4.2 / Werkzeug 3.1.8:
+  - `python -m pytest tests -q`
+- `python -m mypy`
+- `pyright --pythonpath <venv>/bin/python`
+- `python -m py_compile src/flask/cli.py tests/conftest.py tests/test_cli.py tests/test_blueprints.py tests/test_views.py`
+- `python -m ruff check src/flask/cli.py tests/conftest.py tests/test_cli.py tests/test_blueprints.py tests/test_views.py`
+- `git diff --check`",closed,False,ishaanlabs-gg,NONE,2026-07-02T15:55:08Z,2026-07-02T17:10:10Z,2026-07-02T17:10:05Z,,main,fix-pytest-91-notset,https://github.com/pallets/flask/pull/6078,[],False,0,Closed without merge,,,,,True
+pallets/flask,6077,Dockerize Flask Tutorial Application,"## Summary
+- Added a Dockerfile to containerize the Flask tutorial application.
+- Added a deploy.sh script to automate Docker build and deployment.
+- Verified the application runs successfully inside a Docker container.
+- Initialized the SQLite database using the Flask CLI.
+
+## Testing
+- Built the Docker image successfully.
+- Ran the container on port 5000.
+- Verified the application in the browser.",closed,False,Akshay4527,NONE,2026-07-02T15:06:45Z,2026-07-03T00:13:43Z,2026-07-02T15:10:10Z,,main,feature/dockerize,https://github.com/pallets/flask/pull/6077,[],False,0,Closed without merge,,,,,True
+pallets/flask,6076,Containerize and deploy Flask tutorial app with Docker,"Containerizes the Flaskr tutorial app as part of the Omega Solutions DevOps internship assignment.
+
+- Added Dockerfile (python:3.12-slim base, handles flit_core build requirement, initializes SQLite db on startup)
+- Added deploy.sh to automate build/run with idempotent redeployment
+- Documented build/run instructions and troubleshooting in README.md
+- Added screenshots of the running app and container logs",closed,False,gasalabi,NONE,2026-07-02T11:13:36Z,2026-07-02T11:40:33Z,2026-07-02T11:15:52Z,,main,feature/dockerize,https://github.com/pallets/flask/pull/6076,[],False,0,Closed without merge,,,,,True
+pallets/flask,6075,Containerize and deploy Flask tutorial app with Docker,"Containerizes the Flaskr tutorial app as part of the Omega Solutions DevOps internship assignment.
+
+- Added Dockerfile (python:3.12-slim base, handles flit_core build requirement, initializes SQLite db on startup)
+- Added deploy.sh to automate build/run with idempotent redeployment
+- Documented build/run instructions and troubleshooting in README.md
+- Added screenshots of the running app and container logs",closed,False,gasalabi,NONE,2026-07-02T11:06:03Z,2026-07-02T11:07:13Z,2026-07-02T11:07:13Z,,main,feature/dockerize,https://github.com/pallets/flask/pull/6075,[],False,0,Closed without merge,,,,,True
+pallets/flask,6074,Dockerize Flask tutorial application,"## Summary
+
+This pull request containerizes the Flask tutorial application for development deployment.
+
+### Changes Made
+
+* Added Dockerfile for containerization
+* Added requirements.txt
+* Created deploy.sh automation script
+* Updated README.md with deployment instructions
+* Added deployment screenshots
+
+### Features
+
+* Dockerized Flask application
+* Automated deployment workflow
+* Deployment documentation included
+
+### Verification
+
+* Docker image builds successfully
+* Container runs successfully
+* Flask application accessible at `http://localhost:5000`",closed,False,sunis2005,NONE,2026-07-02T10:19:13Z,2026-07-02T16:21:14Z,2026-07-02T10:23:17Z,,main,feature/dockerize,https://github.com/pallets/flask/pull/6074,[],False,0,Closed without merge,,,,,True
+pallets/flask,6073,Dockerize Flask tutorial application,"## Summary
+
+This pull request containerizes the Flask tutorial application for development deployment.
+
+### Changes Made
+
+* Added Dockerfile for containerization
+* Added requirements.txt
+* Created deploy.sh automation script
+* Updated README.md with deployment instructions
+* Added deployment screenshots
+
+### Features
+
+* Dockerized Flask application
+* Automated deployment workflow
+* Deployment documentation included
+
+### Verification
+
+* Docker image builds successfully
+* Container runs successfully
+* Flask application accessible at `http://localhost:5000`",closed,False,sunis2005,NONE,2026-07-02T07:56:41Z,2026-07-02T07:58:57Z,2026-07-02T07:58:56Z,,main,feature/dockerize,https://github.com/pallets/flask/pull/6073,[],False,0,Closed without merge,,,,,True
+pallets/flask,6072,Fix pytest >= 9.1 compatibility,"pytest 9.1 removed the private `notset` sentinel from `_pytest.monkeypatch` (now `NOTSET` in `_pytest.compat`). Add compatibility shim in tests/test_cli.py
+
+Assisted-by: Claude Opus 4.6
+
+fixes #6071",closed,False,hrnciar,NONE,2026-07-02T07:39:47Z,2026-07-02T12:44:00Z,2026-07-02T12:44:00Z,,main,patch-2,https://github.com/pallets/flask/pull/6072,[],False,0,Closed without merge,,,,,True
+pallets/flask,6070,Dockerize Flask tutorial application,"## Summary
+
+This pull request containerizes the Flask tutorial application for development deployment.
+
+### Changes Made
+
+* Added Dockerfile for containerization
+* Added requirements.txt
+* Created deploy.sh automation script
+* Updated README.md with deployment instructions
+* Added deployment screenshots
+
+### Features
+
+* Dockerized Flask application
+* Automated deployment workflow
+* Idempotent deployment script
+* Documentation for setup and troubleshooting
+
+### Verification
+
+* Docker image builds successfully
+* Container runs successfully
+* Flask application accessible at `http://localhost:5000`",closed,False,sunis2005,NONE,2026-07-02T06:56:14Z,2026-07-02T06:58:04Z,2026-07-02T06:58:04Z,,main,feature/dockerize,https://github.com/pallets/flask/pull/6070,[],False,0,Closed without merge,,,,,True
+pallets/flask,6069,ignore jinja suffix when selecting autoescape,"strip a trailing .jinja/.jinja2/.j2 suffix in select_jinja_autoescape before matching the extension, otherwise a template using the common Jinja naming convention like page.html.jinja or icon.svg.j2 renders without HTML escaping while a plain notes.txt.j2 stays unescaped.",closed,False,arib06,NONE,2026-07-01T05:23:32Z,2026-07-01T12:04:24Z,2026-07-01T11:15:42Z,,main,jinja-suffix-autoescape,https://github.com/pallets/flask/pull/6069,[],False,0,Closed without merge,,,,,True
+pallets/flask,6067,Add is_json_response hook for custom JSON response types,"### Summary
+
+Add `is_json_response` hook on `Flask` so subclasses can extend which return types get serialized as JSON, e.g. `msgspec.Struct` or `pydantic.BaseModel`. The default implementation matches `dict` and `list` — same behavior as before.
+
+### Usage Example
+
+```python
+import typing as t
+
+import msgspec
+from flask import Flask as _Flask, Response
+from flask.json.provider import DefaultJSONProvider
+
+
+class User(msgspec.Struct):
+    name: str
+    age: int
+
+
+class MsgspecJSONProvider(DefaultJSONProvider):
+    # dumps and loads omitted
+
+    def response(self, *args: t.Any, **kwargs: t.Any) -> Response:
+        obj = self._prepare_response_obj(args, kwargs)
+        data: bytes = msgspec.json.encode(obj)
+        return self._app.response_class(data, mimetype=self.mimetype)
+
+
+class Flask(_Flask):
+    json_provider_class = MsgspecJSONProvider
+
+    @staticmethod
+    def is_json_response(rv: object) -> bool:
+        return isinstance(rv, (dict, list, msgspec.Struct))
+
+
+app = Flask(__name__)
+
+
+@app.get(""/user"")
+def get_user() -> User:
+    return User(name=""Douglas"", age=42)
+```",closed,False,azhvanko,NONE,2026-06-29T10:29:48Z,2026-06-29T15:51:23Z,2026-06-29T14:13:37Z,,stable,is-json-response,https://github.com/pallets/flask/pull/6067,[],False,0,Closed without merge,,,,,True
+pallets/flask,6064,Add query() route shortcut and MethodView support for HTTP QUERY,"## Description
+
+[RFC 10008](https://www.rfc-editor.org/info/rfc10008/) (June 2026) standardizes
+the `QUERY` HTTP method: a safe, idempotent request method that carries content
+in the request body (standardizing the ""POST for a read-only query with a large
+body"" workaround used by GraphQL and REST search endpoints).
+
+Flask already routes and dispatches arbitrary method names, so this adds the
+idiomatic ergonomics that mirror the existing
+`get`/`post`/`put`/`delete`/`patch` shortcuts:
+
+- `Scaffold.query()` registers a route with `methods=[""QUERY""]`, inherited by
+  both `Flask` and `Blueprint`.
+- `""query""` is added to `views.http_method_funcs`, so `MethodView` dispatches a
+  `QUERY` request to a `query` handler.
+
+Higher-level RFC 10008 features (the `Accept-Query` header, server-assigned
+query-result URIs, caching semantics) are application/Werkzeug concerns and are
+intentionally out of scope.
+
+## Related
+
+fixes #6065
+
+## Checklist
+
+- [x] Tests added that fail without the change (`test_query_method_route`,
+      `test_query_method_view`).
+- [x] Code docs updated (`query()` docstring with `.. versionadded:: 3.2`); the
+      method is surfaced via the `Flask`/`Blueprint` autoclass, so no manual
+      `docs/` change is needed.
+- [x] `CHANGES.rst` entry added, linking to the issue.
+- [x] `.. versionadded::` added (new method, so `versionadded` rather than
+      `versionchanged`).
+
+---
+
+Note: tests use `client.open(method=""QUERY"")` rather than `client.query()` so
+they pass against the released Werkzeug. A `Client.query()` shortcut is a
+separate, independent Werkzeug change (pallets/werkzeug#3194).",closed,False,aliunsal,NONE,2026-06-23T21:12:53Z,2026-06-24T06:41:39Z,2026-06-24T06:41:17Z,,main,main,https://github.com/pallets/flask/pull/6064,[],False,0,Closed without merge,,,,,True
+pallets/flask,6062,Add request id response header,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,AdviSriv,NONE,2026-06-22T09:13:29Z,2026-06-22T09:14:58Z,2026-06-22T09:14:33Z,,main,sample_feature_branch,https://github.com/pallets/flask/pull/6062,[],False,0,Closed without merge,,,,,True
+pallets/flask,6061,docs: Fix grammar and capitalization in quickstart.rst,Fixed two minor documentation issues: 	ell the Flask -> 	ell Flask and pin -> PIN (capitalization).,closed,False,Rfannn,NONE,2026-06-20T09:40:33Z,2026-06-20T12:01:15Z,2026-06-20T12:01:15Z,,main,doc-fixes,https://github.com/pallets/flask/pull/6061,[],False,0,Closed without merge,,,,,True
+pallets/flask,6060,AI spam,"## Bug
+
+`Config.from_prefixed_env` silently crashes with an opaque `TypeError` when a flat env var and a nested env var share the same config key prefix.
+
+**Root cause:** env vars are loaded in `sorted()` order, so `FLASK_FOO=bar` is always processed before `FLASK_FOO__X=1`. After the flat key sets `self[""FOO""] = ""bar""`, the nested traversal does:
+
+```python
+current = self[""FOO""]   # ""bar"" (str)
+current[""X""] = value    # TypeError: 'str' object does not support item assignment
+```
+
+The internal `TypeError` gives no hint which env var caused the conflict.
+
+## Fix
+
+Add an `isinstance` check before descending into the intermediate dict. When the existing value is not a `dict`, raise a `ValueError` that names the conflicting environment variable.
+
+## Verification
+
+```
+$ pytest tests/test_config.py -v -k prefixed
+tests/test_config.py::test_from_prefixed_env PASSED
+tests/test_config.py::test_from_prefixed_env_custom_prefix PASSED
+tests/test_config.py::test_from_prefixed_env_nested PASSED
+tests/test_config.py::test_from_prefixed_env_non_dict_intermediate PASSED
+4 passed in 0.07s
+```
+
+> AI-assisted contribution.",closed,False,JSap0914,NONE,2026-06-17T06:30:12Z,2026-06-17T12:46:31Z,2026-06-17T12:45:34Z,,main,fix/from-prefixed-env-non-dict-intermediate,https://github.com/pallets/flask/pull/6060,[],False,0,Closed without merge,,,,,True
+pallets/flask,6053,AI spam,"## Description
+added 1 missing blank line(s) before headers in `README.md`
+
+## Type of change
+- [x] Documentation improvement
+
+## Checklist
+- [x] I have read the CONTRIBUTING guide
+- [x] My changes follow the existing style",closed,False,mulkymalikuldhrs,NONE,2026-06-10T22:54:11Z,2026-06-10T23:43:23Z,2026-06-10T23:43:11Z,,main,fix-0wndp9,https://github.com/pallets/flask/pull/6053,[],False,0,Closed without merge,,,,,True
+pallets/flask,6046,docs: adiciona marcação para futura melhoria,Esta alteração foi realizada para demonstrar o processo de contribuição em projetos open source utilizando Git e GitHub.,closed,False,fstanno,NONE,2026-06-08T18:02:17Z,2026-06-08T18:26:26Z,2026-06-08T18:26:25Z,,main,feature/melhoria-documentacao,https://github.com/pallets/flask/pull/6046,[],False,0,Closed without merge,,,,,True
+pallets/flask,6045,docs: fix request args examples in errorhandling,"### Description
+
+This PR fixes documentation examples in `docs/errorhandling.rst`.
+
+Changes:
+
+* Replace `request.arg.get(...)` with `request.args.get(...)` in two examples.
+* Fix the `user_api` example signature to match the route definition.
+
+These changes ensure the examples are accurate and prevent confusion for users following the documentation.",closed,False,riyatyagi123,NONE,2026-06-07T17:05:15Z,2026-06-07T17:38:48Z,2026-06-07T17:38:48Z,,main,fix-errorhandling-docs,https://github.com/pallets/flask/pull/6045,[],False,0,Closed without merge,,,,,True
+pallets/flask,6041,AI spam,"## Summary
+
+Adds a module-level docstring to `src/flask/typing.py` documenting its role as the type alias provider for Flask's public API.
+
+## Changes
+
+- Added a concise docstring describing the module's purpose
+- No behavioral changes",closed,False,omsrisrieternalradhakrsna,NONE,2026-05-31T07:55:51Z,2026-05-31T13:20:20Z,2026-05-31T13:20:07Z,,main,docs/add-typing-docstring,https://github.com/pallets/flask/pull/6041,[],False,0,Closed without merge,,,,,True
+pallets/flask,6040,AI spam,"## Summary
+
+Adds a module-level docstring to `src/flask/signals.py` documenting its role as the application signal provider.
+
+## Why this helps
+
+The signals module defines all of Flask's Blinker signals for application events (request lifecycle, template rendering, context changes) but had no documentation explaining what they are for or how they fit together. A docstring helps contributors understand the signal system at a glance.
+
+## Changes
+
+- Added a concise docstring describing the module's purpose and the signal types it provides
+- No behavioral changes, no import changes",closed,False,omsrisrieternalradhakrsna,NONE,2026-05-31T07:54:03Z,2026-05-31T13:21:40Z,2026-05-31T13:21:32Z,,main,docs/add-module-docstrings,https://github.com/pallets/flask/pull/6040,[],False,0,Closed without merge,,,,,True
+pallets/flask,6039,AI spam,"## Summary
+
+Avoid subscripted `click.ParamType[...]` at runtime for the `flask run --cert` option type, while preserving the generic base for static type checking.
+
+## Root cause
+
+`CertParamType` inherited from `click.ParamType[str | os.PathLike[str] | ssl.SSLContext]`. That expression is evaluated when `flask.cli` is imported. With Flask's minimum Click version, `ParamType` is not subscriptable at runtime; with newer Click, the expression also requires `ssl` at runtime. Both cases can break `import flask` before any CLI command runs.
+
+## Checks
+
+- `uv run python -c ""import flask""`
+- `uv run pytest tests/test_cli.py -q`
+- `uv run ruff check src/flask/cli.py`
+- `uv run --locked --no-default-groups --group dev tox run -e tests-min -- tests/test_cli.py -q`
+- `uv run --locked --no-default-groups --group dev tox run -e typing`",closed,False,jiyujie2006,NONE,2026-05-31T07:04:33Z,2026-05-31T13:22:06Z,2026-05-31T13:22:06Z,,main,codex/import-ssl-for-cli-cert-type,https://github.com/pallets/flask/pull/6039,[],False,0,Closed without merge,,,,,True
+pallets/flask,6037,AI junk,"## Fix: `ssl` import moved out of `TYPE_CHECKING` block
+
+### Problem
+`from flask.cli import CertParamType` raises `NameError: name 'ssl' is not defined` because `ssl` is only imported under `TYPE_CHECKING`, but referenced in the class signature:
+```python
+class CertParamType(click.ParamType[str | os.PathLike[str] | ssl.SSLContext]):
+```
+
+### Root Cause
+Even with `from __future__ import annotations`, `click.ParamType` is not subscriptable. The subscript causes eager evaluation of the type arguments at class definition time.
+
+### Fix
+1. Move `import ssl` out of the `if t.TYPE_CHECKING:` block to the top-level imports
+2. Remove subscript from `click.ParamType[...]` since ParamType is not generic
+
+### Verification
+- All 491 tests pass
+- `from flask import Flask` imports without error",closed,False,Architect8989,NONE,2026-05-26T03:40:26Z,2026-05-28T03:07:07Z,2026-05-26T03:47:27Z,,main,fix/cli-ssl-import,https://github.com/pallets/flask/pull/6037,[],False,0,Closed without merge,,,,,True
+pallets/flask,6036,edited 'a' to 'an' before 'SQL',"Since 'SQL' makes a vowel sound, it should be 'an' instead of 'a'.",closed,False,jaketanis,CONTRIBUTOR,2026-05-25T16:09:08Z,2026-05-26T15:26:12Z,2026-05-25T19:48:50Z,,stable,jaketanis-doc-update,https://github.com/pallets/flask/pull/6036,[],False,0,Closed without merge,,,,,True
+pallets/flask,6035,AI junk,"## Summary
+fix: Add repuation builder comment
+
+## Verification
+- GPG signed commit",closed,False,JosefVacha,NONE,2026-05-24T23:40:20Z,2026-05-24T23:53:24Z,2026-05-24T23:41:52Z,,main,fix/reputation-19,https://github.com/pallets/flask/pull/6035,[],False,0,Closed without merge,,,,,True
+pallets/flask,6034,AI junk,"## Summary
+Replaces print() with logger for better logging.
+
+## Verification
+- GPG signed commit",closed,False,JosefVacha,NONE,2026-05-24T23:39:08Z,2026-05-24T23:52:57Z,2026-05-24T23:40:51Z,,main,fix/print-logger-4,https://github.com/pallets/flask/pull/6034,[],False,0,Closed without merge,,,,,True
+pallets/flask,6030,Improve error message for methods argument in HTTP method decorators,"## Summary
+
+Improves the error message when users mistakenly pass the 'methods' argument to HTTP method decorators like , , etc.
+
+## Changes
+
+- Updated the TypeError message to be more descriptive
+- Now tells users which decorator they used and explicitly states to use  instead
+
+## Before
+
+
+## After
+
+
+This helps developers understand the issue faster and how to fix it.",closed,False,goingforstudying-ctrl,NONE,2026-05-21T17:18:13Z,2026-05-30T18:09:00Z,2026-05-21T17:26:17Z,,main,docs-fix-typo,https://github.com/pallets/flask/pull/6030,[],False,0,Closed without merge,,,,,True
+pallets/flask,6029,"docs(lazyloading): fix duplicate ""is""","> **Heads-up:** I realise this PR may not be welcome here. It was prepared
+> by an AI agent (Cursor / Claude Opus 4.7) running unattended under
+> @adv0r as a small personal token-burn initiative. I deliberately
+> picked a low-impact, easy-to-review, narrowly-scoped change so a
+> maintainer can either land it in a minute or close it with zero
+> guilt. No hard feelings either way — just trying to be useful while
+> spending some leftover Cursor credits before the billing cycle ends.
+
+## What
+
+Fix a duplicate `is` in `docs/patterns/lazyloading.rst` — `What's important here is is that` → `What's important here is that`.
+
+## Why
+
+Small reST docs cleanup. The published Lazy Loading pattern page reads cleaner.
+
+## How verified
+
+Single-character/word change in a `.rst` file, no directive structure touched.
+
+## Maintainer note
+
+Feel free to close if not worth the review cycle.",closed,True,adv0r,NONE,2026-05-21T12:07:06Z,2026-05-21T21:04:15Z,2026-05-21T13:47:56Z,,main,tokenburn/typo-lazyloading,https://github.com/pallets/flask/pull/6029,[],False,0,Closed without merge,,,,,True
+pallets/flask,6028,Fix FLASK_DEBUG env var ignored with click 8.4.0,"## Summary
+
+Fixes #6025.
+
+- In click 8.4.0, `ctx.get_parameter_source()` returns `None` during eager callbacks instead of `ParameterSource.DEFAULT`
+- The guard in `_set_debug` only skipped for `source is not None`, so when `source=None` (click 8.4.0), the callback proceeded to overwrite `FLASK_DEBUG=1` with `""0""`
+- Changed `if source is not None and source in (...)` → `if source is None or source in (...)` to treat `None` the same as `DEFAULT`
+
+## Changes
+
+- `src/flask/cli.py`: 1-line fix in `_set_debug` guard condition
+- `tests/test_cli.py`: Regression test that sets `FLASK_DEBUG=1` env var and verifies it isn't overwritten when `--debug` isn't explicitly passed
+
+## Test plan
+
+- [x] Added `test_flaskgroup_debug_env` regression test
+- [x] Verified the fix matches the root cause analysis in #6025
+- [x] `_set_app` callback does not have this issue (it checks `value is None`, not parameter source)
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)",closed,False,Terrajlz,NONE,2026-05-19T17:37:58Z,2026-05-19T18:41:30Z,2026-05-19T18:41:30Z,,main,fix/flask-debug-env-click-840,https://github.com/pallets/flask/pull/6028,[],False,0,Closed without merge,,,,,True
+pallets/flask,6027,"Docs: Enhance deployment guides, tutorial warnings and API examples","This PR introduces quality-of-life and safety improvements across the documentation.
+
+I have separated these changes into seperate commits for easier review:
+
+Gunicorn: Added examples for `gunicorn.conf.py`, background process management, and a note about using `ProxyFix`.
+Tutorial (Database): Added a warning that `init-db` drops existing tables to prevent accidental data loss for beginners.
+Tutorial (Deploy): Added a security warning advising users to exclude `config.py` from version control to protect `SECRET_KEY`.
+API (Signals): Modernized the code examples to use the idiomatic `@signal.connect_via(app)` decorator pattern instead of manual `.connect()` calls.
+
+(Note: No tests, `CHANGES.rst` entries or `.. versionchanged::` directives were added as this is strictly a documentation update to existing features.)",closed,False,MervanPalmer,NONE,2026-05-19T14:46:06Z,2026-05-19T15:15:23Z,2026-05-19T15:15:23Z,,main,docs-improvements,https://github.com/pallets/flask/pull/6027,[],False,0,Closed without merge,,,,,True
+pallets/flask,6026,"Docs: Enhance deployment guides, tutorial warnings and API examples","This PR introduces quality-of-life and safety improvements across the documentation.
+
+I have separated these changes into seperate commits for easier review:
+
+Gunicorn: Added examples for `gunicorn.conf.py`, background process management, and a note about using `ProxyFix`.
+Tutorial (Database): Added a warning that `init-db` drops existing tables to prevent accidental data loss for beginners.
+Tutorial (Deploy): Added a security warning advising users to exclude `config.py` from version control to protect `SECRET_KEY`.
+API (Signals): Modernized the code examples to use the idiomatic `@signal.connect_via(app)` decorator pattern instead of manual `.connect()` calls.
+
+(Note: No tests, `CHANGES.rst` entries or `.. versionchanged::` directives were added as this is strictly a documentation update to existing features.)*",closed,False,MervanPalmer,NONE,2026-05-19T14:07:41Z,2026-05-19T14:42:18Z,2026-05-19T14:42:18Z,,main,docs-improvements,https://github.com/pallets/flask/pull/6026,[],False,0,Closed without merge,,,,,True
+pallets/flask,6024,fix: silence ENOTDIR in Config.from_file() to match from_pyfile(),"## What
+
+`Config.from_file()` was missing `errno.ENOTDIR` from its silent error check, making it behave inconsistently with `Config.from_pyfile()`.
+
+**Before (from_file):**
+```python
+if silent and e.errno in (errno.ENOENT, errno.EISDIR):
+    return False
+```
+
+**After (from_file):**
+```python
+if silent and e.errno in (errno.ENOENT, errno.EISDIR, errno.ENOTDIR):
+    return False
+```
+
+`from_pyfile()` has always included `errno.ENOTDIR` in this check.
+
+## Why it matters
+
+`ENOTDIR` is raised when a path component in the given filename is a regular file rather than a directory (e.g. trying to open `/some/file/config.json` where `/some/file` is a regular file). With `silent=True`, callers expect all ""file not accessible"" errors to be swallowed and `False` returned. The missing code caused an unexpected `OSError` to bubble up instead.
+
+Fixes #6023",closed,False,nileshpatil6,NONE,2026-05-16T14:38:10Z,2026-05-16T15:00:07Z,2026-05-16T15:00:07Z,,main,fix/from-file-silent-enotdir,https://github.com/pallets/flask/pull/6024,[],False,0,Closed without merge,,,,,True
+pallets/flask,6021,docs: fix duplicated word in lazy loading docs,Small focused cleanup. Kimi-assisted edit; reviewed locally. Verification: git diff --check passed.,closed,False,lphuc2250gma,NONE,2026-05-13T16:12:29Z,2026-05-13T16:19:36Z,2026-05-13T16:19:36Z,,main,docs/fix-duplicated-is-in-lazy-loading-doc,https://github.com/pallets/flask/pull/6021,[],False,0,Closed without merge,,,,,True
+pallets/flask,6020,docs: fix duplicated word in lazy loading docs,"Fixes a duplicated word in the lazy loading pattern docs.
+
+Docs-only change; no tests needed.",closed,False,lphuc2250gma,NONE,2026-05-13T15:49:22Z,2026-05-13T15:58:02Z,2026-05-13T15:58:02Z,,main,docs/fix-duplicated-is-in-lazy-loading-doc,https://github.com/pallets/flask/pull/6020,[],False,0,Closed without merge,,,,,True
+pallets/flask,6019,docs: update Flask-MongoEngine link to maintainers' canonical URL,"The link in `docs/patterns/mongoengine.rst` to `https://flask-mongoengine.readthedocs.io` returns HTTP 403 — that subdomain no longer hosts Flask-MongoEngine's documentation.
+
+The [Flask-MongoEngine README](https://github.com/MongoEngine/flask-mongoengine#usage-and-api-documentation) directs readers to `docs.mongoengine.org/projects/flask-mongoengine/`. Following the Sphinx-on-Read-the-Docs convention, the canonical working URL is:
+
+```
+https://docs.mongoengine.org/projects/flask-mongoengine/en/latest/
+```
+
+This PR updates the link in `docs/patterns/mongoengine.rst` accordingly.
+
+### Note on verification
+
+If you `curl` the new URL you'll see a 403 too — `docs.mongoengine.org` uses a Cloudflare-style JavaScript challenge, so non-browser clients get blocked. A real browser passes the challenge and loads the docs normally.
+
+### Differs from #5384 / #5385
+
+Those PRs proposed redirecting the link to a third-party fork of Flask-MongoEngine. This PR keeps the link pointed at the **original** Flask-MongoEngine project at `MongoEngine/flask-mongoengine` — just at the docs URL their own README publishes, instead of the now-broken Read-the-Docs subdomain.",closed,False,martymcenroe,NONE,2026-05-13T13:06:44Z,2026-05-13T14:34:12Z,2026-05-13T14:29:55Z,,main,fix/flask-mongoengine-docs-link,https://github.com/pallets/flask/pull/6019,[],False,0,Closed without merge,,,,,True
+pallets/flask,6018,Add security warning when dev server binds to non-localhost,"## Summary
+
+Adds a `RuntimeWarning` when Flask's development server is bound to a non-localhost address. The Werkzeug debugger allows arbitrary code execution when exposed to the network, yet many tutorials and quick-start guides instruct users to bind to `0.0.0.0` without warning them of the risks.
+
+## Security Impact
+
+Binding the Werkzeug development server to a non-localhost address while debug mode is enabled exposes the interactive debugger to the network. The debugger's PIN-protected console can execute arbitrary Python code. This change warns users when:
+
+1. The host is set to a non-local address (anything other than `127.0.0.1`, `localhost`, or `::1`)
+2. Debug mode is additionally enabled — an escalated warning for the most dangerous configuration
+
+## Implementation
+
+- Uses `warnings.warn()` with `RuntimeWarning` so the warning is visible but doesn't prevent the server from starting
+- Uses `stacklevel=2` so the warning points to the user's `app.run()` call, not the internal implementation
+- No breaking changes — existing behavior is preserved; the warning is advisory
+
+This aligns with the Google Patch Rewards qualifying submissions: ""Elimination of error-prone design patterns or library calls."" Binding a debug-capable server to 0.0.0.0 without warnings is a well-known footgun that has led to real-world compromises.
+
+`kumquat`
+
+## Checklist
+
+- [x] No breaking changes to existing behavior
+- [x] Uses standard library `warnings` module (no new dependencies)
+- [x] Warning points to correct caller location via `stacklevel`
+- [x] Compatible with all Python versions Flask supports",closed,False,zinc-builds,NONE,2026-05-10T23:38:43Z,2026-05-26T00:30:17Z,2026-05-10T23:54:22Z,,main,security/dev-server-host-warning,https://github.com/pallets/flask/pull/6018,[],False,0,Closed without merge,,,,,True
+pallets/flask,6017,Improve Git Bash virtual environment activation docsImprove Git Bash virtual environment activation docs,"Adds a note for Git Bash users on Windows when activating
+a virtual environment.
+
+This helps avoid activation command issues during setup.",closed,False,HarsshA2660,NONE,2026-05-08T09:43:36Z,2026-05-23T00:30:05Z,2026-05-08T09:48:36Z,,main,docs-fix,https://github.com/pallets/flask/pull/6017,[],False,0,Closed without merge,,,,,True
+pallets/flask,6016,spam,spam,closed,False,virus-16,NONE,2026-05-03T13:09:10Z,2026-05-18T00:29:11Z,2026-05-03T13:10:35Z,,main,1,https://github.com/pallets/flask/pull/6016,[],False,0,Closed without merge,,,,,True
+pallets/flask,6015,spam,Spam,closed,False,harimsd07,NONE,2026-05-02T14:56:43Z,2026-05-17T00:27:56Z,2026-05-02T15:02:18Z,,main,legacyfix/modernize,https://github.com/pallets/flask/pull/6015,[],False,0,Closed without merge,,,,,True
+pallets/flask,6014,Document 'uv' package for project setup,I just recently learned about `uv` and it would be great if newcomers were introduced to it.,closed,False,mlmejo,NONE,2026-05-02T08:21:41Z,2026-05-18T00:29:12Z,2026-05-02T11:57:13Z,,main,patch-1,https://github.com/pallets/flask/pull/6014,[],False,0,Closed without merge,,,,,True
+pallets/flask,6013,autoescape selection uses case-insensitive comparison,Use case-insensitive comparison on file extension. Previously only lower case was used.,closed,False,davidism,MEMBER,2026-05-02T03:56:17Z,2026-05-17T00:27:57Z,2026-05-02T03:58:57Z,2026-05-02T03:58:57Z,main,autoescape-case,https://github.com/pallets/flask/pull/6013,[],True,1,Merged,,,,,True
+pallets/flask,6010,Add regression tests for session membership access setting Vary: CookieTest patch,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,Devansh-66,NONE,2026-04-25T09:20:29Z,2026-05-10T00:26:33Z,2026-04-25T09:57:47Z,,main,test-patch,https://github.com/pallets/flask/pull/6010,[],False,0,Closed without merge,,,,,True
+pallets/flask,6009,Stage,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,popeye-007,NONE,2026-04-24T04:30:37Z,2026-05-09T00:26:38Z,2026-04-24T04:34:28Z,,main,stage,https://github.com/pallets/flask/pull/6009,[],False,0,Closed without merge,,,,,True
+pallets/flask,6008,<spam>,"# Improve error messages when after_request hooks forget to return response
+
+## Summary
+
+This PR adds validation in the `process_response` method to detect when `after_request` hooks return `None` and raise an immediate, descriptive error. Previously, returning `None` from an `after_request` hook would silently set the response to `None`, causing a cryptic `TypeError: 'NoneType' object is not callable` later during WSGI response delivery. Now users get a clear message identifying the offending hook by name.
+
+## Root Cause
+
+The `process_response` method in `src/flask/app.py` calls each `after_request` function and reassigns the response variable to its return value without validation. When a hook returns `None` (e.g., `lambda _: None`), the response becomes `None`. This error only surfaces later in `wsgi_app` when Flask attempts to call `response(environ, start_response)`, producing an unhelpful error message that doesn't indicate an `after_request` hook is responsible.
+
+## Changes Made
+
+Modified the `process_response` method in `src/flask/app.py` to validate the return value of each `after_request` function. After calling each hook, we now check if the return value is `None` and raise a `TypeError` with a descriptive message that includes the hook's function name. This validation applies to all `after_request` functions across both the app and blueprint scopes.
+
+## Testing
+
+All 487 existing tests pass with this change. The fix provides immediate feedback at the point of failure, making debugging significantly easier for users who accidentally omit a return statement in their `after_request` hooks.",closed,False,shr7q,NONE,2026-04-22T23:32:50Z,2026-05-08T00:26:17Z,2026-04-22T23:46:14Z,,main,swe-agent/improve-error-messages-on-simple-after-r-1776900764,https://github.com/pallets/flask/pull/6008,[],False,0,Closed without merge,,,,,True
+pallets/flask,6006,test,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,albert-cgai,NONE,2026-04-21T14:29:20Z,2026-05-06T00:25:06Z,2026-04-21T14:29:40Z,,main,ahan/test,https://github.com/pallets/flask/pull/6006,[],False,0,Closed without merge,,,,,True
+pallets/flask,6005,test,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,albert-cgai,NONE,2026-04-21T14:25:43Z,2026-05-06T00:25:07Z,2026-04-21T14:27:49Z,,main,ahan/test,https://github.com/pallets/flask/pull/6005,[],False,0,Closed without merge,,,,,True
+pallets/flask,6004,docs(readme): add explicit install step for quick start,"## What changed
+
+The README quickstart section now includes:
+
+- explicit `pip install flask` step
+- clearer ""create app.py"" instruction
+- clearer ""run the development server"" step
+
+## Why
+
+First-time users copying the README often miss the install step, causing confusion. This makes the onboarding path unambiguous.",closed,False,tboyila,NONE,2026-04-19T13:21:23Z,2026-05-04T00:25:22Z,2026-04-19T14:25:18Z,,main,docs/flask-contrib-improvements,https://github.com/pallets/flask/pull/6004,[],False,0,Closed without merge,,,,,True
+pallets/flask,6003,feat(cli): add --json flag to flask routes command,"## Summary
+
+- Adds a `--json` flag to `flask routes` that outputs the route table as a JSON array instead of the text table
+- Each entry has `endpoint`, `methods` (sorted list), and `rule`; subdomain apps also emit `subdomain`, host-matching apps emit `host`
+- `HEAD` and `OPTIONS` are filtered unless `--all-methods` is also passed; empty apps produce `[]`
+- The `--sort` flag is honoured in JSON mode (`match` preserves natural `iter_rules()` order)
+- Fully backwards-compatible — all existing `flask routes` invocations are unaffected
+
+## Test plan
+
+- [ ] `test_json_output` — basic shape: keys `endpoint`, `methods`, `rule` present; methods is a list
+- [ ] `test_json_no_routes` — empty app returns `[]`
+- [ ] `test_json_excludes_head_options_by_default` — HEAD/OPTIONS absent without `--all-methods`
+- [ ] `test_json_all_methods` — HEAD/OPTIONS present with `--all-methods`
+- [ ] `test_json_with_subdomain` — `subdomain` key present and correct value
+- [ ] `test_json_with_host_matching` — `host` key present and correct value
+- [ ] `test_json_sort` (parametrized) — `endpoint` and `rule` sort keys produce sorted output
+- [ ] `test_json_sort_match_preserves_iter_rules_order` — `--sort match` preserves natural route order
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)",closed,False,sahilmalhotra1987,NONE,2026-04-19T06:57:43Z,2026-05-04T00:25:23Z,2026-04-19T08:08:20Z,,main,feat/routes-json-flag,https://github.com/pallets/flask/pull/6003,[],False,0,Closed without merge,,,,,True
+pallets/flask,5998,<spam>,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,kolesnykovyurii,NONE,2026-04-15T13:25:22Z,2026-04-30T00:25:50Z,2026-04-15T13:25:33Z,,main,feature/file-manager,https://github.com/pallets/flask/pull/5998,[],False,0,Closed without merge,,,,,True
+pallets/flask,5997,<spam>,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,kolesnykovyurii,NONE,2026-04-15T12:56:16Z,2026-04-30T00:25:51Z,2026-04-15T12:59:12Z,,main,demo/payment-service,https://github.com/pallets/flask/pull/5997,[],False,0,Closed without merge,,,,,True
+pallets/flask,5996,<spam>,spam,closed,False,WhitehatD,NONE,2026-04-15T00:47:19Z,2026-04-30T00:25:52Z,2026-04-15T01:00:52Z,,main,add-ai-governance,https://github.com/pallets/flask/pull/5996,[],False,0,Closed without merge,,,,,True
+pallets/flask,5994,<spam>,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,samtang-oai,NONE,2026-04-13T22:58:20Z,2026-04-28T00:24:43Z,2026-04-13T22:59:33Z,,main,samtang/test1,https://github.com/pallets/flask/pull/5994,[],False,0,Closed without merge,,,,,True
+pallets/flask,5992,<spam>,Invalid AI security slop,closed,False,AhsanSheraz,NONE,2026-04-10T16:10:21Z,2026-05-08T00:26:16Z,2026-04-10T16:12:32Z,,main,fix/celery-example-security-vulnerabilities,https://github.com/pallets/flask/pull/5992,[],False,0,Closed without merge,,,,,True
+pallets/flask,5990,<spam>,"## What
+
+Adds an `AGENTS.md` file with project conventions, constraints, hub files, and build commands for AI coding agents.
+
+## Key findings
+
+- **Library mode** — publishable library, focus on public API surface
+- **Hub files** — `src/flask/globals.py` (24 imports), `src/flask/helpers.py` (24 imports), `src/flask/signals.py` (20 imports)
+- **Tests** — pytest, in separate `tests/` directory
+- **Conventions** — `__init__.py` barrel exports (7 non-empty), Flask routes (9 files)
+- **Circular deps** — `flask/__init__.py → app.py → ctx.py`
+
+## Generated with
+
+```bash
+npx sourcebook init
+```
+
+[sourcebook]() scans import graph, git history, and file structure. Only includes what agents can't infer from code. No LLM required.
+
+Starting point — maintainers know the project best. Feel free to edit.",closed,False,rharper105,NONE,2026-04-09T21:58:12Z,2026-04-24T00:22:45Z,2026-04-09T22:00:49Z,,main,add-agents-md,https://github.com/pallets/flask/pull/5990,[],False,0,Closed without merge,,,,,True
+pallets/flask,5989,"docs: fix doubled word ""the"" in TESTING config description","The `TESTING` config description in `docs/config.rst` contained a doubled word ""the the"".
+
+Fixes pallets/flask#5988",closed,False,pallabbabu,NONE,2026-04-09T04:27:33Z,2026-04-24T00:22:46Z,2026-04-09T04:30:06Z,,stable,docs/fix-config-typo,https://github.com/pallets/flask/pull/5989,[],False,0,Closed without merge,,,,,True
+pallets/flask,5984,test: plant bugs and vulnerabilities for code review tool comparison,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,sowmiyaarunagiri01-design,NONE,2026-04-07T16:17:18Z,2026-04-22T00:18:22Z,2026-04-07T16:23:25Z,,main,planted-bugs-test,https://github.com/pallets/flask/pull/5984,[],False,0,Closed without merge,,,,,True
+pallets/flask,5982,Security: Path traversal risk in Blueprint.open_resource,"## Problem
+
+The open_resource method joins the user-provided 'resource' parameter with root_path using os.path.join without sanitizing for path traversal sequences (e.g., '../'). If a developer passes user-controlled input to this method, it could allow reading arbitrary files on the filesystem.
+
+**Severity**: `low`
+**File**: `src/flask/blueprints.py`
+
+## Solution
+
+Add path traversal validation by resolving the final path and checking it is still within root_path: resolved = os.path.realpath(path); if not resolved.startswith(os.path.realpath(self.root_path)): raise ValueError('Path traversal detected').
+
+## Changes
+
+- `src/flask/blueprints.py` (modified)
+
+## Testing
+
+- [ ] Existing tests pass
+- [ ] Manual review completed
+- [ ] No new warnings/errors introduced",closed,False,barttran2k,NONE,2026-04-07T00:18:44Z,2026-04-22T00:18:23Z,2026-04-07T01:11:58Z,,main,contribai/fix/security/path-traversal-risk-in-blueprint-open-re,https://github.com/pallets/flask/pull/5982,[],False,0,Closed without merge,,,,,True
+pallets/flask,5966,✨ Quality: Celery task result endpoint crashes on task failure,"## ✨ Code Quality
+
+### Problem
+When a Celery task fails, `result.ready()` evaluates to `True` but `result.successful()` is `False`. 
+Calling `result.get()` without `propagate=False` on a failed task will re-raise the task's exception, causing the Flask endpoint to crash with a 500 Internal Server Error instead of returning the task's failed status. 
+Additionally, if `result.result` is an Exception object, returning it directly in the dictionary will cause a `TypeError` during JSON serialization.
+
+
+**Severity**: `medium`
+**File**: `examples/celery/src/task_app/views.py`
+
+### Solution
+When a Celery task fails, `result.ready()` evaluates to `True` but `result.successful()` is `False`. 
+Calling `result.get()` without `propagate=False` on a failed task will re-raise the task's exception, causing the Flask endpoint to crash with a 500 Internal Server Error instead of returning the task's failed status. 
+Additionally, if `result.result` is an Exception object, returning it directly in the dictionary will cause a `TypeError` during JSON serialization.
+
+
+### Changes
+- `examples/celery/src/task_app/views.py` (modified)
+
+
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+
+
+---
+
+<details>
+<summary>🤖 About this PR</summary>
+
+This pull request was generated by [ContribAI](https://github.com/tang-vu/ContribAI), an AI agent
+that helps improve open source projects. The change was:
+
+1. **Discovered** by automated code analysis
+2. **Generated** by AI with context-aware code generation
+3. **Self-reviewed** by AI quality checks
+
+If you have questions or feedback about this PR, please comment below.
+We appreciate your time reviewing this contribution!
+
+</details>
+
+
+Closes #5965",closed,False,tang-vu,NONE,2026-03-27T21:19:29Z,2026-04-11T00:16:33Z,2026-03-27T21:21:35Z,,main,contribai/improve/quality/celery-task-result-endpoint-crashes-on-t,https://github.com/pallets/flask/pull/5966,[],False,0,Closed without merge,,,,,True
+pallets/flask,5964,Handle missing secret key during session save,"I noticed a real crash path in session saving: `SecureCookieSessionInterface.save_session` called `dumps()` on `get_signing_serializer(app)` without checking whether the serializer existed.
+
+I validated the behavior locally with a minimal reproduction where a session object was present, then `app.secret_key` became falsy before save. In that flow, Flask raised an internal `AttributeError` (`'NoneType' object has no attribute 'dumps'`) instead of the normal session configuration error.
+
+Then I fixed the code in a streamlined way:
+
+- I added a guard in `save_session` to handle a missing serializer explicitly.
+- I raised the same user-facing `RuntimeError` message Flask already uses for missing secret key session failures.
+- I removed the `type: ignore[union-attr]` usage by handling the union properly.
+- I deduplicated the error message by using a shared constant for both `NullSession` and `save_session`.
+
+After that, I added a focused regression test that reproduces the exact scenario:
+
+- Start with a valid secret key.
+- Create a modified session.
+- Clear the secret key.
+- Call `save_session` and assert Flask raises the expected runtime error message.
+
+I also made sure the patch stayed minimal and clean:
+
+- Only two files are changed:
+  - `src/flask/sessions.py`
+  - `tests/test_session_interface.py`
+- No scratch files or unrelated edits remain.
+
+Validation I ran:
+
+- Direct repro before/after behavior check (crash replaced with expected runtime error).
+- Focused test run:
+  - `pytest tests/test_session_interface.py -q`
+  - Result: `2 passed`",closed,False,pefia,NONE,2026-03-27T11:30:45Z,2026-05-08T15:31:18Z,2026-03-27T11:37:36Z,,main,fix-session-save-missing-secret-key,https://github.com/pallets/flask/pull/5964,[],False,0,Closed without merge,,,,,True
+pallets/flask,5962,remove unicode host test,"This test is invalid, the `Host` header cannot contain non-ASCII. It was added in https://github.com/pallets/flask/pull/2994. It appears there was some confusion over Python 2/3 handling of strings, rather than testing this because it was a valid `Host` header.
+
+closes #5961",closed,False,davidism,MEMBER,2026-03-24T13:54:00Z,2026-04-08T00:18:11Z,2026-03-24T13:55:58Z,2026-03-24T13:55:57Z,main,remove-unicode-test,https://github.com/pallets/flask/pull/5962,[],True,1,Merged,,,,,True
+pallets/flask,5960,style: ensure trailing newline at EOF in README,"Many editors expect a trailing newline for POSIX compliance. This adds one to the README.
+
+No functional change.",closed,False,yurtzy,NONE,2026-03-23T11:57:44Z,2026-04-07T00:17:09Z,2026-03-23T12:01:34Z,,main,style-newline,https://github.com/pallets/flask/pull/5960,[],False,0,Closed without merge,,,,,True
+pallets/flask,5959,test: add OpenClaw agent contribution marker,"Adds a harmless marker file to demonstrate external contribution from the OpenClaw agent. No functional change.
+
+This PR validates the agent's ability to make real external contributions.",closed,False,yurtzy,NONE,2026-03-23T11:51:34Z,2026-04-07T00:17:07Z,2026-03-23T11:56:45Z,,main,openclaw-test2,https://github.com/pallets/flask/pull/5959,[],False,0,Closed without merge,,,,,True
+pallets/flask,5958,docs: fix spacing in Python version requirement,"Small readability improvement in README: change ""Python >=3.7"" to ""Python >= 3.7"" for clarity.",closed,False,yurtzy,NONE,2026-03-23T11:43:38Z,2026-04-07T00:17:08Z,2026-03-23T11:50:11Z,,main,openclaw-docfix,https://github.com/pallets/flask/pull/5958,[],False,0,Closed without merge,,,,,True
+pallets/flask,5956,"Default SESSION_COOKIE_SAMESITE to ""Lax""","Change the default value of `SESSION_COOKIE_SAMESITE` from `None` to `""Lax""`.
+
+When set to `None`, Flask does not include the `SameSite` attribute on session cookies, relying on browser defaults. While modern browsers default to `Lax` behavior when the attribute is absent, setting it explicitly ensures consistent CSRF defense-in-depth across all browser versions, including older ones that do not apply the `Lax` default.
+
+Django has defaulted to `""Lax""` since 2.1 (2018). Express.js and Rails also default to `Lax`. This aligns Flask with the ecosystem standard.
+
+Applications that require cross-site cookie behavior can set `SESSION_COOKIE_SAMESITE` to `None` (with `SESSION_COOKIE_SECURE=True`).
+
+All existing tests pass with this change (486 passed, 0 regressions).",closed,False,kodareef5,NONE,2026-03-22T23:51:38Z,2026-04-06T00:16:48Z,2026-03-23T00:04:08Z,,main,default-samesite-lax,https://github.com/pallets/flask/pull/5956,[],False,0,Closed without merge,,,,,True
+pallets/flask,5955,Fix Config.from_file silent error handling to include ENOTDIR,"## Description
+
+`Config.from_file()` is missing `errno.ENOTDIR` in its silent error handling, while `Config.from_pyfile()` correctly includes it.
+
+When a component of the config file path is a regular file rather than a directory (e.g., trying to load `file/config.json` where `file` is a regular file), `from_file(silent=True)` raises an `OSError` instead of silently returning `False`.
+
+This inconsistency was originally reported in #5912.
+
+## Changes
+
+- **src/flask/config.py**: Added `errno.ENOTDIR` to the error check in `from_file()`, matching the existing behavior of `from_pyfile()` (line 211).
+- **tests/test_config.py**: Added `test_config_from_file_not_a_directory` to verify the fix.
+
+## Before
+
+```python
+# from_pyfile (line 211) - correct
+if silent and e.errno in (errno.ENOENT, errno.EISDIR, errno.ENOTDIR):
+
+# from_file (line 296) - missing ENOTDIR
+if silent and e.errno in (errno.ENOENT, errno.EISDIR):
+```
+
+## After
+
+Both methods now handle the same errno values consistently.",closed,False,r266-tech,NONE,2026-03-22T18:17:50Z,2026-04-06T00:16:49Z,2026-03-22T18:42:27Z,,main,fix-from-file-enotdir,https://github.com/pallets/flask/pull/5955,[],False,0,Closed without merge,,,,,True
+pallets/flask,5954,docs: add gitcgr code graph badge,"Adds a [gitcgr](https://gitcgr.com) badge to the README showing code graph statistics for this repository.
+
+**Badge preview:**
+
+[![gitcgr](https://gitcgr.com/badge/pallets/flask.svg)](https://gitcgr.com/pallets/flask)
+
+---
+
+[gitcgr.com](https://gitcgr.com) visualizes any GitHub repo as an interactive code graph — just change `hub` to `cgr` in the URL.
+
+Generated automatically by [gitcgr](https://gitcgr.com).",closed,False,vitali87,NONE,2026-03-22T14:34:45Z,2026-03-22T14:37:49Z,2026-03-22T14:37:49Z,,main,add-gitcgr-badge,https://github.com/pallets/flask/pull/5954,[],False,0,Closed without merge,,,,,True
+pallets/flask,5953,Add Qlty code coverage reporting to CI,"## Summary
+- Added `pytest-cov` to test dependencies and updated `uv.lock`
+- Configured the Python 3.13 CI matrix entry to generate Cobertura XML coverage data
+- Added Qlty GitHub Action step to upload coverage reports to Qlty Cloud
+
+## Manual steps required
+- Add `QLTY_COVERAGE_TOKEN` as a repository secret in GitHub Settings > Secrets and variables > Actions. The token can be found in Qlty Cloud under Workspace Settings > Code Coverage.
+
+## Test plan
+- [ ] Verify all existing matrix test jobs still pass without coverage flags
+- [ ] Verify Python 3.13 job generates `coverage.xml` and uploads to Qlty
+- [ ] Confirm coverage data appears in Qlty Cloud dashboard
+
+🤖 Generated with Claude Code",closed,False,davehenton,NONE,2026-03-18T14:10:13Z,2026-04-02T00:15:14Z,2026-03-18T14:11:33Z,,main,qlty-coverage-integration,https://github.com/pallets/flask/pull/5953,[],False,0,Closed without merge,,,,,True
+pallets/flask,5952,Added comprehensive example to Html escaping,Added comprehensive real world example under the 'HTML Escaping' title. So that readers can better understand the main logic behind html escaping. Especially good for beginners who have not much experience with web apps.,closed,False,ahmet0033,NONE,2026-03-17T13:20:19Z,2026-04-01T00:18:16Z,2026-03-17T13:32:51Z,,main,html_escaping_comprehensive_example,https://github.com/pallets/flask/pull/5952,[],False,0,Closed without merge,,,,,True
+pallets/flask,5951,Added a real world html escaping example,"Added a comprehensive real world example under the 'HTML Escaping' title, so readers can better understand the main logic of html escaping.",closed,False,ahmet0033,NONE,2026-03-17T13:07:34Z,2026-04-01T00:18:17Z,2026-03-17T13:17:46Z,,main,html_escaping_comprehensive_example,https://github.com/pallets/flask/pull/5951,[],False,0,Closed without merge,,,,,True
+pallets/flask,5950,Added a comprehensive real world example to the 'HTML Escaping',"Added a comprehensive real world example under the 'HTML Escaping' title ,so readers can better understand the main logic of html escaping.",closed,False,ahmet0033,NONE,2026-03-17T13:01:28Z,2026-04-01T00:18:18Z,2026-03-17T13:04:11Z,,main,html_escaping_comprehensive_example,https://github.com/pallets/flask/pull/5950,[],False,0,Closed without merge,,,,,True
+pallets/flask,5949,docs: mention Redis requirement in Celery example README,"Fixes #5948.
+
+The Celery example README currently jumps from installing dependencies straight to starting a worker, but the example is configured to use Redis as the broker and result backend. This adds a short note explaining that Redis must be installed and running locally first, plus a concrete Debian / Ubuntu example and a quick verification step.
+
+This is a documentation-only change.",closed,False,Yuki9814,NONE,2026-03-15T17:25:49Z,2026-03-31T00:16:10Z,2026-03-15T17:33:35Z,,main,codex/docs-celery-redis,https://github.com/pallets/flask/pull/5949,[],False,0,Closed without merge,,,,,True
+pallets/flask,5946,Remove dead code,"Remove three internal items that are defined but never referenced anywhere in the codebase:
+                                                                 
+
+1. `_path_is_ancestor()` in `cli.py`: utility function with zero callers                                                   
+2. `UnexpectedUnicodeError` in `debughelpers.py`: exception class never raised or caught
+3. `BeforeFirstRequestCallable` in `typing.py`:  type alias left over from the removed `before_first_request` feature
+
+Verified with grep across all file types. Each appears only at its definition, with zero imports or references.
+
+Found during static analysis with Skylos.",closed,False,duriantaco,NONE,2026-03-11T05:53:41Z,2026-03-26T00:16:10Z,2026-03-11T13:16:15Z,,main,remove-dead-code,https://github.com/pallets/flask/pull/5946,[],False,0,Closed without merge,,,,,True
+pallets/flask,5945,add zizmor to scan workflows,"https://docs.zizmor.sh/
+
+Among the findings:
+
+- apply empty permissions with `permissions: {}`, although we have read only defaults set at the organization level
+- use concurrency group for each workflow
+- disable credentials for checkout
+- remove some template variables in favor of env vars",closed,False,davidism,MEMBER,2026-03-08T23:11:47Z,2026-03-29T00:16:24Z,2026-03-08T23:15:00Z,2026-03-08T23:15:00Z,stable,zizmor,https://github.com/pallets/flask/pull/5945,[],True,1,Merged,,,,,True
+pallets/flask,5944,Add ENOTDIR handling to Config.from_file with silent=True,"Fixes #5912. The from_file() method was missing errno.ENOTDIR in its silent error handling, while from_pyfile() correctly included it. This caused from_file() with silent=True to raise OSError when a path component is a regular file instead of a directory, instead of silently returning False.",closed,False,04cb,NONE,2026-03-07T05:41:59Z,2026-03-22T00:13:23Z,2026-03-07T14:13:26Z,,main,fix/config-from-file-enotdir,https://github.com/pallets/flask/pull/5944,[],False,0,Closed without merge,,,,,True
+pallets/flask,5939,Reduce dispatch_request processing time by 8%,"1. Initialized Shadow Dictionary: Added self._sync_view_functions dictionary to the Flask class's __init__ method in src/flask/app.py.
+2. Optimized dispatch_request: Modified the request dispatching lifecycle to check the _sync_view_functions cache first. On the first request to an endpoint, it evaluates iscoroutinefunction (via ensure_sync) and caches the result. Subsequent requests to that endpoint hit the dictionary cache, entirely bypassing the CPU overhead of introspecting the function's async nature.
+
+This approach safely handles view_functions regardless of how they were registered (via add_url_rule, Blueprint registrations, or direct mutation) while achieving the performance goals of reducing hot-path introspection. The iscoroutinefunction method requires unwrapping decorators (using inspect.unwrap) and checking internal code flags, and it is relatively expensive in Python.
+
+**Current Estimated Performance**
+Total time:  9.5344 seconds (for 100,000 iterations)
+Performance: 10,488.30 requests / second
+Time/Req:    95.34 microseconds
+
+**New Estimated Performance**
+Total time:  8.7554 seconds (for 100,000 iterations)
+Performance: 11,421.47 requests / second
+Time/Req:    87.55 microseconds
+
+The optimization caches the results of app.ensure_sync (which otherwise checks asyncio.iscoroutinefunction repeatedly), the difference in these numbers represents the CPU overhead eliminated during the dispatch phase.",closed,False,dalekube,NONE,2026-03-02T01:23:01Z,2026-03-29T00:16:23Z,2026-03-02T02:56:12Z,,main,dale-ensure-sync,https://github.com/pallets/flask/pull/5939,[],False,0,Closed without merge,,,,,True
+pallets/flask,5938,fix: replace 1 bare except clauses with except Exception,Replace bare `except:` clauses with `except Exception:` for PEP 8 compliance.,closed,False,haosenwang1018,NONE,2026-02-27T01:24:07Z,2026-03-14T00:13:06Z,2026-02-27T01:26:56Z,,main,fix/bare-excepts,https://github.com/pallets/flask/pull/5938,[],False,0,Closed without merge,,,,,True
+pallets/flask,5937,fix: replace bare except clause with except Exception,Replace bare except clause with except Exception.,closed,False,haosenwang1018,NONE,2026-02-26T00:44:41Z,2026-03-13T00:12:54Z,2026-02-26T00:51:44Z,,main,fix/bare-excepts,https://github.com/pallets/flask/pull/5937,[],False,0,Closed without merge,,,,,True
+pallets/flask,5931,ci: declare explicit read-only GITHUB_TOKEN permissions,## Summary\n- add explicit `permissions: contents: read` to workflows that currently rely on implicit defaults\n\n## Changed workflows\n- `.github/workflows/pre-commit.yaml`\n- `.github/workflows/tests.yaml`\n\n## Why\nThese jobs only need repository read access for checkout. Declaring explicit permissions follows GitHub least-privilege guidance and makes intent clear/auditable.\n\n## Notes\n- configuration-only change; no test or lint logic modified\n,closed,False,Rohan5commit,NONE,2026-02-21T10:35:47Z,2026-03-08T00:12:41Z,2026-02-21T10:41:20Z,,main,ci/explicit-workflow-token-permissions,https://github.com/pallets/flask/pull/5931,[],False,0,Closed without merge,,,,,True
+pallets/flask,5930,Add basic pip installation instruction to README,"This PR adds basic pip installation instructions to the README file to help new users install Flask quickly.
+
+This change only updates documentation and does not modify any functionality.",closed,False,23f3003202,NONE,2026-02-21T10:11:03Z,2026-03-08T00:12:42Z,2026-02-21T10:40:10Z,,main,add-installation-section-readme,https://github.com/pallets/flask/pull/5930,[],False,0,Closed without merge,,,,,True
+pallets/flask,5928,all teardown callbacks are called despite errors,"Previously, Flask documented that teardown callbacks must not fail. Now, all callbacks will be called, and any errors are collected to be raised at the end. This applies to app and request teardown callbacks and signals. On Python >= 3.11, this will result in an `ExceptionGroup` each for app and request teardown, collected in an `ExceptionGroup` for overall teardown. On 3.10, the first collected error is raise, which basically matches what happens now.
+
+Also adjusts a bunch of tests to clean up any resources. None were failing with `ResourceWarning`, but this ensures they don't even if they fail for some other reason.",closed,False,davidism,MEMBER,2026-02-20T03:51:07Z,2026-03-07T00:12:24Z,2026-02-20T04:00:34Z,2026-02-20T04:00:34Z,main,teardown,https://github.com/pallets/flask/pull/5928,[],True,1,Merged,,,,,True
+pallets/flask,5927,ensure context cleanup runs even if teardown raises,"In `AppContext.pop()`, if `do_teardown_appcontext` raises an exception, `_cv_app.reset()` and the context token cleanup are skipped. This leaves the context variable in a corrupted state, which can cause subsequent operations to see stale context data.
+
+Similarly, if `do_teardown_request` raises, `_request.close()` is not called, potentially leaking file handles from the request body.
+
+This adds nested `try/finally` blocks to ensure:
+
+- `_request.close()` runs even if `do_teardown_request` raises
+- `_cv_app.reset()` and token cleanup run even if `do_teardown_appcontext` raises
+- The `appcontext_popped` signal is always sent
+
+While teardown functions should avoid raising exceptions per the documentation, the framework-level cleanup should still be guaranteed regardless.",closed,False,bysiber,NONE,2026-02-20T00:49:38Z,2026-03-07T00:12:25Z,2026-02-20T01:07:36Z,,main,fix/ensure-context-cleanup-on-teardown-error,https://github.com/pallets/flask/pull/5927,[],False,0,Closed without merge,,,,,True
+pallets/flask,5924,release version 3.1.3,,closed,False,davidism,MEMBER,2026-02-19T03:42:42Z,2026-03-06T00:17:52Z,2026-02-19T05:01:53Z,2026-02-19T05:01:53Z,stable,release-3.1.3,https://github.com/pallets/flask/pull/5924,[],True,1,Merged,,,,,True
+pallets/flask,5923,Fix ENOTDIR handling in Config.from_file() with silent=True,"## Summary
+- `from_pyfile()` correctly suppresses `errno.ENOTDIR` when `silent=True`, but `from_file()` was missing it
+- This caused an `OSError` when a path component is a regular file instead of a directory (e.g. `~/.myapp` is a file and loading `~/.myapp/config.toml`)
+- One-line fix to add `errno.ENOTDIR` to the silent error tuple, matching `from_pyfile()` behavior
+
+## Test plan
+- [x] Added `test_config_enotdir_silent` — creates a file where a directory is expected and confirms `from_file(..., silent=True)` returns `False` instead of raising
+- [x] All 20 existing config tests pass",closed,False,apoorvdarshan,NONE,2026-02-18T15:51:17Z,2026-03-05T00:13:16Z,2026-02-18T16:02:56Z,,main,fix-from-file-enotdir-silent,https://github.com/pallets/flask/pull/5923,[],False,0,Closed without merge,,,,,True
+pallets/flask,5922,Add test runner script with base and new modes,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,Mishradity,NONE,2026-02-18T11:23:55Z,2026-03-05T00:13:17Z,2026-02-18T15:18:21Z,,main,eshway-task,https://github.com/pallets/flask/pull/5922,[],False,0,Closed without merge,,,,,True
+pallets/flask,5921,docs: fix duplicated word in lazyloading guide,## Summary\n- fix duplicated word in docs/patterns/lazyloading.rst\n- no behavior changes; docs-only cleanup\n\n## Testing\n- not applicable (docs-only),closed,False,novavale,NONE,2026-02-17T17:15:39Z,2026-03-04T00:12:29Z,2026-02-17T17:38:33Z,,main,fix-docs-lazyloading-typo,https://github.com/pallets/flask/pull/5921,[],False,0,Closed without merge,,,,,True
+pallets/flask,5920,Add contribution note to README for collaboration demo,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,suryakathyakeyaboddi-creator,NONE,2026-02-14T04:10:00Z,2026-03-01T00:13:22Z,2026-02-14T05:03:50Z,,main,add-readme-note,https://github.com/pallets/flask/pull/5920,[],False,0,Closed without merge,,,,,True
+pallets/flask,5917,fix provide_automatic_options override,"`OPTIONS` is added correctly whenever `provide_automatic_options` is set. Previously, it was only added if the argument was not passed and was not set as an attribute; it could only be disabled, not enabled.
+
+Also cleans up the tests about options. Fixes some other tests that were inadvertently adding duplicate routes.
+
+fixes #5916",closed,False,davidism,MEMBER,2026-02-12T21:06:34Z,2026-02-27T00:14:20Z,2026-02-12T21:07:51Z,2026-02-12T21:07:51Z,main,automatic-options,https://github.com/pallets/flask/pull/5917,[],True,1,Merged,,,,,True
+pallets/flask,5914,add ENOTDIR to from_file silent error handling,"Add `errno.ENOTDIR` to the silent error handling in `Config.from_file()`, matching the existing behavior of `Config.from_pyfile()`. When a path component is a regular file instead of a directory, `from_file(..., silent=True)` now returns `False` instead of raising `OSError`.
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+-->
+
+fixes #5912
+
+- Added test for the ENOTDIR case.
+- Added CHANGES.rst entry.
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,abdullahmujahidali,NONE,2026-02-09T02:34:33Z,2026-02-24T00:13:10Z,2026-02-09T03:59:06Z,,main,fix/from-file-enotdir-silent,https://github.com/pallets/flask/pull/5914,[],False,0,Closed without merge,,,,,True
+pallets/flask,5913,Fix Config.from_file() silent mode not handling ENOTDIR,"## Summary
+
+- `Config.from_file()` with `silent=True` raises `NotADirectoryError` when a path component is a regular file rather than a directory (e.g. `~/.myapp/config.json` when `~/.myapp` is a regular file). This is inconsistent with `Config.from_pyfile()`, which correctly handles this case by returning `False`.
+- The root cause is that `errno.ENOTDIR` was added to `from_pyfile` in PR #2581 (fixing #2545) but was never applied to `from_json` (now `from_file`), even though the original issue title mentioned ""from_json, etc.""
+- This PR adds `errno.ENOTDIR` to `from_file()`'s silent error handling to match `from_pyfile()`.
+
+fixes #5912
+
+## Test plan
+
+- [x] Added `test_config_enotdir_from_file` -- verifies `from_file(..., silent=True)` returns `False` when `ENOTDIR` is encountered
+- [x] Added `test_config_enotdir_from_pyfile` -- documents the existing correct behavior of `from_pyfile` for the same scenario
+- [x] Verified that `test_config_enotdir_from_file` fails without the fix (`NotADirectoryError` is raised)
+- [x] Full `test_config.py` suite passes (21/21 tests)
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)",closed,False,veeceey,NONE,2026-02-08T23:04:19Z,2026-02-23T00:13:18Z,2026-02-08T23:27:49Z,,main,fix/issue-5912,https://github.com/pallets/flask/pull/5913,[],False,0,Closed without merge,,,,,True
+pallets/flask,5911,Fix request resource leak when teardown handlers raise,"Ensure that `request.close()` is always executed even if
+`do_teardown_request()` raises an exception.
+
+Currently, if a user-defined teardown handler raises an exception,
+`request.close()` is skipped, which can lead to resource leaks
+
+This change wraps teardown execution in a `try/finally` block to
+guarantee cleanup without altering normal behavior.",closed,False,THE-Amrit-mahto-05,NONE,2026-02-06T21:12:31Z,2026-02-21T00:12:36Z,2026-02-06T21:17:26Z,,main,fix-request-close-on-teardown-error,https://github.com/pallets/flask/pull/5911,[],False,0,Closed without merge,,,,,True
+pallets/flask,5910,🤖 Automated code quality improvements (5 fixes),"## 🤖 Automated Code Quality Improvements
+
+This PR contains automated fixes for code quality issues detected in the repository.
+
+### 📊 Summary of Fixes
+
+| Category | Count |
+|----------|-------|
+| Syntax Errors/Bugs | 42 |
+| Security Vulnerabilities | 62 |
+| Code Style Violations | 1126 |
+| Performance Issues | 0 |
+| Unused Code | 164 |
+| Code Duplication | 1 |
+| Error Handling | 0 |
+| **Total** | **1395** |
+
+### 🔧 Fixes Applied
+
+1. 🐛 **BUG** `/tmp/code-fixer-20260206-135038/tests/test_basic.py:1365` - Using variable 'error' before assignment
+2. 🐛 **BUG** `/tmp/code-fixer-20260206-135038/tests/test_config.py:129` - Too many positional arguments for method call
+3. 🐛 **BUG** `/tmp/code-fixer-20260206-135038/tests/test_cli.py:54` - class already defined line 49
+4. 🐛 **BUG** `/tmp/code-fixer-20260206-135038/tests/test_cli.py:59` - class already defined line 49
+5. 🐛 **BUG** `/tmp/code-fixer-20260206-135038/tests/test_cli.py:64` - class already defined line 49
+
+### ✅ Verification
+
+All fixes have been automatically applied and tested. Please review the changes and merge if appropriate.
+
+---
+*Generated by GitHub Code Fixer*",closed,False,manav363,NONE,2026-02-06T08:23:46Z,2026-02-21T00:12:37Z,2026-02-06T08:40:10Z,,main,code-fixer-20260206-135111,https://github.com/pallets/flask/pull/5910,[],False,0,Closed without merge,,,,,True
+pallets/flask,5908,style: format response tuple unpacking (extract helper),"## Summary
+
+Refactors the response tuple unpacking logic in `make_response` into a small
+private helper method to improve readability and maintainability.
+
+No behavior changes are intended.
+
+##Fixes #5907 
+## Details
+
+The existing tuple-unpacking logic inside `make_response` was moved into a
+dedicated private helper method. This keeps the method shorter and easier to
+reason about, without changing any runtime behavior.
+
+## Testing
+
+- All existing tests pass.
+- No new tests were added, as this change does not affect behavior.
+
+## Notes
+
+This is an internal refactor only. No public API or documented behavior is
+changed.",closed,False,jnvw,NONE,2026-01-31T21:31:33Z,2026-02-15T00:13:19Z,2026-01-31T22:17:32Z,,main,refactor-response-tuple,https://github.com/pallets/flask/pull/5908,[],False,0,Closed without merge,,,,,True
+pallets/flask,5906,Added a return type annotation to an internal utility function in the Requests library to improve code readability and static analysis without affecting behavior.,"Improved Flask documentation by clarifying JSON request requirements,
+helping new users avoid common request-handling issues.",closed,False,Anusha0710,NONE,2026-01-31T12:07:16Z,2026-02-15T00:13:20Z,2026-01-31T16:09:40Z,,main,docs-clarify-json-requests,https://github.com/pallets/flask/pull/5906,[],False,0,Closed without merge,,,,,True
+pallets/flask,5904,Clarify data correctness explanation in quickstart,Improved sentence clarity in the logging documentation without changing its meaning.,closed,False,ANU5565,NONE,2026-01-27T13:46:08Z,2026-02-11T00:17:34Z,2026-01-27T14:51:51Z,,main,patch-2,https://github.com/pallets/flask/pull/5904,[],False,0,Closed without merge,,,,,True
+pallets/flask,5903,Abort if the instance folder cannot be created,"According to the comment, the instance folder should exist in any case. But a PermissionError was ignored silently.
+
+Since Python 3.9 is the minimum required version, it is safe to use ""exist_ok"" added in Python 3.2 and avoid exception handling.",closed,False,marcows,CONTRIBUTOR,2026-01-27T08:24:02Z,2026-02-12T00:12:40Z,2026-01-28T15:43:01Z,2026-01-28T15:43:01Z,stable,instance-folder,https://github.com/pallets/flask/pull/5903,['docs'],True,1,Merged,,,,,True
+pallets/flask,5900,document using gevent for async,"closes #5881 
+
+Adds a separate page about gevent. Shows examples of using asyncio and libuv. Removes mentions of eventlet, since the maintainers have indicated it is no longer recommended.",closed,False,davidism,MEMBER,2026-01-25T18:34:37Z,2026-02-09T00:13:50Z,2026-01-25T18:35:13Z,2026-01-25T18:35:12Z,stable,gevent,https://github.com/pallets/flask/pull/5900,['docs'],True,1,Merged,,,,,True
+pallets/flask,5899,deprecate `should_ignore_error`,closes #5816,closed,False,davidism,MEMBER,2026-01-25T03:51:26Z,2026-02-09T00:13:51Z,2026-01-25T03:53:12Z,2026-01-25T03:53:12Z,main,should_ignore_error,https://github.com/pallets/flask/pull/5899,[],True,1,Merged,,,,,True
+pallets/flask,5898,redirect defaults to 303,closes #5895,closed,False,davidism,MEMBER,2026-01-25T00:51:47Z,2026-02-09T00:13:57Z,2026-01-25T01:18:36Z,2026-01-25T01:18:35Z,main,redirect,https://github.com/pallets/flask/pull/5898,[],True,1,Merged,,,,,True
+pallets/flask,5896,Cache compiled templates in render_template_string,"### Summary
+`render_template_string` and `stream_template_string` now cache compiled templates, avoiding repeated compilation when the same source string is rendered multiple times.
+
+The cache is stored per-app on the `Environment` instance with LRU eviction:
+- `string_template_cache_size`: max 100 cached templates (configurable via class attribute)
+- `string_template_cache_max_len`: templates longer than 100,000 characters are not cached
+
+### Benchmark
+
+The following script runs a server and computes how many requests can be received within 5 seconds.
+
+```py
+from threading import Thread
+import requests, time, random
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), ""src""))) # run this script within Flask's directory
+from flask import Flask, request, render_template_string
+
+app = Flask(__name__)
+
+@app.route('/template')
+def t():
+    return render_template_string('Hello, {{name}}',  name=request.args.get('q', ''))
+
+def bench():
+    time.sleep(1)  # wait for server
+    n, end = 0, time.time() + 5
+    s = requests.Session()
+    while time.time() < end:
+        s.get(f'http://127.0.0.1:6000/template?q={random.randint(0,10**6)}')
+        n += 1
+    print(f'\n{n} requests in 5s ({n/5:.0f} req/s)')
+    import os; os._exit(0)
+
+Thread(target=bench).start()
+app.run(port=6000, threaded=True)
+```
+
+Without cache:
+`5373 requests in 5s (1075 req/s)`
+
+With cache:
+`8603 requests in 5s (1721 req/s)`
+
+8603/5373 = ~60% speed improvement
+
+### Attribution
+This optimization was initially generated using Optifiner AI, then cleaned up and validated manually by a human.",closed,False,OptifinerAI,NONE,2026-01-24T08:39:08Z,2026-01-25T05:21:09Z,2026-01-24T15:17:57Z,,main,main,https://github.com/pallets/flask/pull/5896,[],False,0,Closed without merge,,,,,True
+pallets/flask,5892,docs: improve wording in appdispatch,"- Clarify wording in Application Dispatching docs (docs/patterns/appdispatch.rst).
+- No functional changes.",closed,False,raushan-oss,NONE,2026-01-20T13:52:35Z,2026-02-04T00:11:03Z,2026-01-20T14:45:39Z,,main,raushan-oss-patch-2,https://github.com/pallets/flask/pull/5892,[],False,0,Closed without merge,,,,,True
+pallets/flask,5890,Improve templating documentation for clarity and readability,"This PR updates the templating documentation to improve clarity for new
+readers while maintaining technical accuracy.
+
+Changes include:
+- Rephrased sections describing autoescaping behavior
+- Added structured explanation of template streaming
+- Reformatted code examples for consistency
+- Added contextual notes for template utility functions
+- Improved explanation of `url_for` with example usage
+
+These revisions aim to make the documentation more beginner-friendly and
+easier to follow without reducing detail.
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,RellikSai,NONE,2026-01-18T18:15:10Z,2026-02-03T00:13:38Z,2026-01-18T18:42:08Z,,main,main,https://github.com/pallets/flask/pull/5890,[],False,0,Closed without merge,,,,,True
+pallets/flask,5889,Revise Jinja templating documentation for clarity and readability,"This PR updates the templating documentation to improve clarity for new
+readers while maintaining technical accuracy.
+
+Changes include:
+- Rephrased sections describing autoescaping behavior
+- Added structured explanation of template streaming
+- Reformatted code examples for consistency
+- Added contextual notes for template utility functions
+- Improved explanation of `url_for` with example usage
+
+These revisions aim to make the documentation more beginner-friendly and
+easier to follow without reducing detail.
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,RellikSai,NONE,2026-01-17T17:10:56Z,2026-02-01T00:13:56Z,2026-01-17T17:13:12Z,,main,patch-1,https://github.com/pallets/flask/pull/5889,[],False,0,Closed without merge,,,,,True
+pallets/flask,5888,Docs: add context to Incoming Request Data section,":wq
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,Silence91169,NONE,2026-01-15T21:33:13Z,2026-01-30T00:11:54Z,2026-01-15T21:41:08Z,,main,first-contribution,https://github.com/pallets/flask/pull/5888,[],False,0,Closed without merge,,,,,True
+pallets/flask,5885,clarify async view incompatibility with gevent monkey patching,"@davidism Please Check 
+
+ Closes #5881 
+
+
+This PR adds documentation clarifying the limitations and unsupported nature of using Flask async views together with gevent monkey patching.
+
+While simple async views may appear to work for individual requests, concurrent requests can fail due to conflicts between asyncio’s event loop assumptions and gevent’s greenlet-based threading model. The documentation explains why this behavior occurs, highlights failure modes that typically only appear under concurrency, and outlines recommended alternatives and advanced override considerations.
+
+This change is documentation-only and is based on the investigation and conclusions discussed in the linked issue.",closed,False,vizahat36,NONE,2026-01-10T20:02:42Z,2026-01-25T00:11:17Z,2026-01-10T21:58:48Z,,main,docs-async-gevent,https://github.com/pallets/flask/pull/5885,[],False,0,Closed without merge,,,,,True
+pallets/flask,5879,Add GitHub Actions CI workflow,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,vedika-zangoh,NONE,2026-01-05T09:51:59Z,2026-01-20T00:09:46Z,2026-01-05T10:44:17Z,,main,patch-1,https://github.com/pallets/flask/pull/5879,[],False,0,Closed without merge,,,,,True
+pallets/flask,5878,Add hello.py for testing,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,vedika-zangoh,NONE,2026-01-05T09:45:16Z,2026-01-20T00:09:47Z,2026-01-05T10:43:55Z,,main,feature-test,https://github.com/pallets/flask/pull/5878,[],False,0,Closed without merge,,,,,True
+pallets/flask,5877,Minor documentation,This PR  practicing open source contribution workflow.,closed,False,harshitasurana,NONE,2026-01-03T16:43:37Z,2026-01-18T00:11:01Z,2026-01-03T18:30:25Z,,main,practice-pr,https://github.com/pallets/flask/pull/5877,[],False,0,Closed without merge,,,,,True
+pallets/flask,5876,docs: Upgrade HTTP links to HTTPS,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+This PR upgrades several HTTP links to HTTPS in the documentation to ensure best security practices and avoid redirection.
+- `docs/patterns/mongoengine.rst`: Upgraded `mongoengine.org` link.
+- `docs/web-security.rst`: Upgraded example URL in security context.
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+fixes #<issue number>
+-->
+N/A (Documentation fix)
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,Aman071106,NONE,2026-01-01T15:37:55Z,2026-01-16T00:09:58Z,2026-01-01T16:35:18Z,,main,docs/fix-https-links,https://github.com/pallets/flask/pull/5876,[],False,0,Closed without merge,,,,,True
+pallets/flask,5875,docs: clarify 415 error when receiving JSON requests,"This PR adds a short clarification to the ""APIs with JSON"" section in the
+Flask quickstart documentation explaining when a 415 Unsupported Media Type
+error can occur while receiving JSON requests.
+
+The change explains that the error may be raised when the Content-Type
+header is missing or incorrect, or when invalid JSON is sent, and provides
+guidance on how to avoid it.",closed,False,AnupojuRohit,NONE,2026-01-01T10:24:01Z,2026-01-16T00:09:58Z,2026-01-01T13:21:12Z,,main,docs-415-json-explanation,https://github.com/pallets/flask/pull/5875,[],False,0,Closed without merge,,,,,True
+pallets/flask,5874,Clarify 415 Unsupported Media in JSON docs,"Update the “Receiving JSON in Views” documentation to clarify that Flask returns
+a 415 Unsupported Media Type error when the Content-Type is not application/json,
+and a 400 Bad Request error for invalid JSON, as discussed in #5825.",closed,False,Soham-1616,NONE,2025-12-29T05:02:44Z,2026-01-13T00:08:13Z,2025-12-29T05:06:00Z,,main,docs-clarify-415-json,https://github.com/pallets/flask/pull/5874,[],False,0,Closed without merge,,,,,True
+pallets/flask,5873,Clarify 415 Unsupported Media Type in JSON docs,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,Soham-1616,NONE,2025-12-29T05:01:29Z,2026-01-13T00:08:14Z,2025-12-29T05:01:39Z,,main,docs-clarify-415-json,https://github.com/pallets/flask/pull/5873,[],False,0,Closed without merge,,,,,True
+pallets/flask,5872,Fixed error code documentation for request.json,"Fix error code documentation for request.json
+
+Clarify that a 415 error is raised when Content-Type is incorrect,
+while a 400 error is raised when the body is not valid JSON.
+
+This aligns the patterns documentation with the API reference at
+https://flask.palletsprojects.com/en/stable/api/#flask.Request.json
+
+Changes Made
+Updated `docs/patterns/javascript.rst` in the ""Receiving JSON in Views""
+section to correctly distinguish between:
+
+400 Bad Request: Raised when the request body is not valid JSON
+415 Unsupported Media Type: Raised when Content-Type header is not
+set to application/json
+
+Previously, the documentation incorrectly stated that both scenarios
+would raise a 400 error.
+
+fixes #5825",closed,False,JasonBalayev,NONE,2025-12-27T17:16:48Z,2025-12-27T21:24:37Z,2025-12-27T17:36:44Z,,main,main,https://github.com/pallets/flask/pull/5872,[],False,0,Closed without merge,,,,,True
+pallets/flask,5871,init,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,Nitish-555,NONE,2025-12-25T02:16:34Z,2026-01-09T00:09:43Z,2025-12-25T02:18:52Z,,main,first,https://github.com/pallets/flask/pull/5871,[],False,0,Closed without merge,,,,,True
+pallets/flask,5869,Document 415 Unsupported Media Type for JSON requests,"This adds a short note to the Incoming Request Data documentation explaining
+when Flask may return a 415 Unsupported Media Type error if JSON requests are
+missing or have an incorrect Content-Type header.",closed,False,sunilkushwahaisgreat-jpg,NONE,2025-12-23T08:10:39Z,2026-01-07T00:08:44Z,2025-12-23T14:48:27Z,,main,main,https://github.com/pallets/flask/pull/5869,[],False,0,Closed without merge,,,,,True
+pallets/flask,5868,Improve exception handler in wsgi_app method,"This change replaces the bare except clause with an explicit BaseException 
+handler for better code clarity and to avoid potential issues with 
+sys.exc_info().
+
+The previous code used a bare except: clause with sys.exc_info()[1] which 
+is discouraged in Python. This change makes the exception handling more 
+explicit by catching BaseException directly, which includes KeyboardInterrupt 
+and SystemExit that should not be handled by the normal exception handler.
+
+All existing tests pass successfully.",closed,False,latifbaihaki,NONE,2025-12-22T00:34:42Z,2026-01-06T00:10:07Z,2025-12-22T01:30:40Z,,main,fix/improve-exception-handler,https://github.com/pallets/flask/pull/5868,[],False,0,Closed without merge,,,,,True
+pallets/flask,5867,Deprecate should_ignore_error method,"The `should_ignore_error()` method was added in f191809 to support context preservation for debugging, but it no longer serves its original purpose and adds unnecessary overhead.
+
+Issues with the current implementation:
+- Always returns False by default
+- Called on every single request with no benefit
+- The original intention for error ignoring during debugging is not how context preservation works anymore
+- No documentation beyond API reference
+- No tests for the functionality
+- No evidence of real-world usage
+
+Changes:
+- Add deprecation warning to App.should_ignore_error() that will be removed in Flask 4.0
+- Optimize call site to only invoke the method if it's been overridden by a subclass, eliminating the function call overhead for 99.9% of requests
+- Add comprehensive tests for the deprecation behavior
+- Update CHANGES.rst with deprecation notice
+
+Teardown handlers should manage their own error handling instead of relying on this method.
+
+Fixes #5816
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,ayushpatil0810,NONE,2025-12-18T12:19:47Z,2026-01-02T00:09:51Z,2025-12-18T12:30:25Z,,main,main,https://github.com/pallets/flask/pull/5867,[],False,0,Closed without merge,,,,,True
+pallets/flask,5866,Clarify JSON request errors: 400 vs 415,"This updates the ""Receiving JSON in Views"" section to correctly distinguish between:
+- 400 Bad Request: raised when the body is not valid JSON
+- 415 Unsupported Media Type: raised when the Content-Type header is not application/json
+
+This aligns the documentation with Flask's actual behavior and makes it clearer for users.",closed,False,ShakibCodes,NONE,2025-12-18T07:04:01Z,2026-01-02T00:09:50Z,2025-12-18T15:21:39Z,,main,fix-json-doc-errors,https://github.com/pallets/flask/pull/5866,[],False,0,Closed without merge,,,,,True
+pallets/flask,5865,Increase required flit_core version to 3.11,"Needed since Flask 3.1.1 after having set the ""license"" keyword to an SPDX license expression. Avoids this possible build error:
+
+  flit_core.config.ConfigError: license field should be <class 'dict'>, not <class 'str'>
+
+Fixes: 0109e496f (""use uv"").
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,marcows,CONTRIBUTOR,2025-12-17T15:22:57Z,2026-02-11T00:17:35Z,2026-01-25T03:04:07Z,2026-01-25T03:04:07Z,stable,flit-minimum,https://github.com/pallets/flask/pull/5865,[],True,1,Merged,,,,,True
+pallets/flask,5864,Add built-in CSRF protection using Sec-Fetch-Site header,"Implements Option 2 from #5863.
+
+Adds built-in CSRF protection using the Sec-Fetch-Site header that modern browsers send
+ automatically, with an Origin header fallback for older browsers.
+
+**Changes**
+
+- Add CSRF_PROTECTION, CSRF_TRUSTED_ORIGINS, and CSRF_PROTECTED_METHODS config options
+- Add csrf_protection parameter to @app.route() and add_url_rule()
+- Add csrf_protection attribute support for class-based views
+- Check CSRF in full_dispatch_request() before preprocess_request()
+
+**Algorithm**
+
+1. Allow safe methods (GET, HEAD, OPTIONS)
+2. Allow if origin is in CSRF_TRUSTED_ORIGINS
+3. If Sec-Fetch-Site header present: allow same-origin/none, reject
+same-site/cross-site
+4. If no browser headers present: allow (non-browser clients)
+5. If Origin present: allow if it matches Host, otherwise reject
+
+**Usage**
+
+```python
+# Enable globally
+app.config['CSRF_PROTECTION'] = True
+
+# Enable per-route
+@app.route('/api', methods=['POST'], csrf_protection=True)
+def api():
+    ...
+
+# Exempt a route when enabled globally
+@app.route('/webhook', methods=['POST'], csrf_protection=False)
+def webhook():
+    ...
+```
+
+fixes #5863",closed,False,sharoonthomas,NONE,2025-12-17T02:52:56Z,2025-12-17T15:34:24Z,2025-12-17T15:07:43Z,,main,csrf-protection,https://github.com/pallets/flask/pull/5864,[],False,0,Closed without merge,,,,,True
+pallets/flask,5860,Fix documentation for JSON error codes,"## Description
+
+This PR fixes the documentation for JSON error handling in the ""Receiving JSON in Views"" section to correctly distinguish between different HTTP error codes.
+
+## Changes
+
+- Updated `docs/patterns/javascript.rst`
+- Changed documentation to show:
+  - `400 Bad Request` for invalid JSON content
+  - `415 Unsupported Media Type` for wrong Content-Type header
+
+## Before
+`If the body is not valid JSON, or the Content-Type header is not set to application/json, a 400 Bad Request error will be raised.`
+
+## After
+`If the body is not valid JSON, a 400 Bad Request error will be raised. If the Content-Type header is not set to application/json, a 415 Unsupported Media Type error will be raised.`
+
+## Fixes 
+#5825
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,cotneok,NONE,2025-12-10T22:26:28Z,2025-12-25T00:09:40Z,2025-12-10T22:41:48Z,,main,fix-docs-json-error-codes,https://github.com/pallets/flask/pull/5860,[],False,0,Closed without merge,,,,,True
+pallets/flask,5859,Create test,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,bayraa16,NONE,2025-12-10T09:30:23Z,2025-12-25T00:09:41Z,2025-12-10T10:12:44Z,,main,patch-2,https://github.com/pallets/flask/pull/5859,[],False,0,Closed without merge,,,,,True
+pallets/flask,5858,"Refactor __init__.py module to improve organization, readability and public API structure","### Description:
+
+This Pull Request introduces a structured refactoring of the src/flask/__init__.py file, aiming to improve internal organization and clarify the definition of the framework’s public API.
+The modifications do not change runtime behavior but make the module more consistent, cleaner and aligned with architecture and style best practices.
+
+### Changes implemented:
+
+- Fully reorganized imports, grouping them by source (standard library, third-party, internal modules).
+- Removed redundant or unused imports.
+- Improved __all__ export structure to clearly define the public API.
+- Added comments explaining the module’s responsibility as a high-level interface aggregator.
+- Reduced visual noise and increased cohesion.
+- Formatting and style adjustments aligned with tools like Flake8 and Pylint.
+
+### Motivation:
+
+The __init__.py file acts as the main entry point for the Flask package, exposing the symbols developers interact with.
+Before refactoring, the file contained inconsistencies in import ordering, export grouping and general structure.
+
+### These improvements:
+
+- increase the clarity of the public API;
+- make the codebase easier to navigate and maintain;
+- reduce style violations (E401, F401, E302, etc.);
+- decrease cognitive coupling and prepare the ground for deeper refactoring in critical modules such as app.py.
+- Expected impact on metrics:
+- Readability: improved through organized imports and structural cleanup.
+- Cohesion: increased by keeping the module focused on API aggregation.
+- Cognitive coupling: reduced due to clearer responsibilities.
+- Flake8 violations: expected reduction in F401 (unused imports) and E501 (line length issues).",closed,False,ilmoruuu,NONE,2025-12-08T01:10:05Z,2025-12-23T00:09:44Z,2025-12-08T01:11:46Z,,main,refactor/init.py-structure,https://github.com/pallets/flask/pull/5858,[],False,0,Closed without merge,,,,,True
+pallets/flask,5857,Add documentation and fix type safety bugs,"# Bug report
+
+**Describe the bug**
+
+The recent refactor introduced a missing type safety and potential runtime error:
+- `remove_ctx` and `add_ctx` lacked documentation, making their purpose unclear.
+- `get_send_file_max_age` returned a value without proper type casting, triggering `type: ignore` comments.
+- The static file route used a lambda referencing a weakref; if the app was garbage‑collected it could raise an obscure error.
+- `raise_routing_exception` raised `request.routing_exception` without guaranteeing it was not `None`, leading to a possible `TypeError`.
+
+These issues manifested as type‑checking failures and potential crashes when serving static files or handling routing exceptions.
+
+**Steps to reproduce**
+
+1. Run the test suite (`pytest`).
+2. Observe `type: ignore` warnings and potential failures in `test_regression.py` when static files are accessed.
+3. Manually trigger a routing exception (e.g., abort with a redirect) and notice that `raise_routing_exception` may raise `None`.
+4. Access a static file after the app has been garbage‑collected (unlikely in normal use but possible in long‑running processes).
+
+**Expected behavior**
+
+- Functions should have clear docstrings.
+- `get_send_file_max_age` should return an `int` or `None` with proper type casting.
+- The static file view should raise a clear `RuntimeError` if the app is unavailable.
+- `raise_routing_exception` should assert the exception exists before raising.
+
+**Environment**
+
+- Python version: 3.12
+- Flask version: 3.2.0.dev",closed,False,paolotercerosdev,NONE,2025-11-30T06:53:11Z,2025-12-15T00:10:09Z,2025-11-30T15:37:42Z,,main,docs/improve-documentation,https://github.com/pallets/flask/pull/5857,[],False,0,Closed without merge,,,,,True
+pallets/flask,5856,Refactor Blueprint.register to reduce cyclomatic complexity,"Refactored Blueprint.register method in src/flask/sansio/blueprints.py.
+
+- Extracted helper methods:
+  _ensure_unique_name,
+  _register_static,
+  _merge_blueprint_funcs_if_needed,
+  _run_deferred_functions,
+  _register_cli,
+  _register_nested_blueprints,
+  _compute_nested_blueprint_options.
+
+- Reduced cyclomatic complexity from D (23) to A (2).
+- All tests pass: 485 passed, 5 skipped.",closed,False,VaksHSE,NONE,2025-11-29T08:21:05Z,2025-12-14T00:10:22Z,2025-11-29T14:18:40Z,,main,feature/refactor-blueprint-register,https://github.com/pallets/flask/pull/5856,[],False,0,Closed without merge,,,,,True
+pallets/flask,5855,kimi-v1,"在当前项目中增加 flask/scheduler 扩展：含调度器、任务装饰器(interval/delay/cron)、cron 解析、状态存储、指标与管理蓝图(/_internal/metrics, POST /_internal/tasks//run, /reload)，任务状态字段与异常记录，配置项 SCHEDULER_ENABLED/AUTOSTART/TICK_INTERVAL，示例 3 个任务，每 10 秒、延迟 5 秒、cron */2 * *。",closed,False,stonelv,NONE,2025-11-29T07:44:54Z,2025-12-14T00:10:23Z,2025-11-29T07:45:23Z,,main,kimi1129,https://github.com/pallets/flask/pull/5855,[],False,0,Closed without merge,,,,,True
+pallets/flask,5854,Deprecate should_ignore_error method and add unit tests,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->
+This pull request deprecates the Flask.should_ignore_error method according to the current context preservation design. 
+It now always returns False and is no longer meaningful. Unit tests have been added to verify its behavior, including:
+- parameterized test for multiple exception types
+- return value always False
+- repeated calls trigger DeprecationWarning",closed,False,akarshsinghal,NONE,2025-11-29T04:46:08Z,2025-12-14T00:10:24Z,2025-11-29T05:15:08Z,,main,deprecate-should-ignore-error,https://github.com/pallets/flask/pull/5854,[],False,0,Closed without merge,,,,,True
+pallets/flask,5853,Added rate limiting functionality to Flask app,"- Introduced MemoryRateLimiter for managing request limits.
+- Added configuration options for enabling rate limiting and setting request limits and time windows.
+- Implemented methods to enforce rate limits and build rate limit keys based on request context.
+- Integrated rate limiting checks into the request handling process.",closed,False,txjas99,NONE,2025-11-25T16:43:59Z,2025-12-11T00:09:50Z,2025-11-25T16:46:14Z,,main,tejas_git_project_rate_limiter_flask,https://github.com/pallets/flask/pull/5853,[],False,0,Closed without merge,,,,,True
+pallets/flask,5852,Docs: Add WSGI documentation note to README,Added a helpful documentation note to the README explaining what WSGI stands for (Web Server Gateway Interface) and its purpose. This clarifies the acronym for newcomers to the Flask framework.,closed,False,manojalluri,NONE,2025-11-25T16:36:10Z,2025-12-10T00:09:38Z,2025-11-25T16:40:06Z,,main,patch-1,https://github.com/pallets/flask/pull/5852,[],False,0,Closed without merge,,,,,True
+pallets/flask,5850,Add copy-to-clipboard button for code blocks in Flask documentation.,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+This pull request adds a **“copy to clipboard” button** for all code blocks in the Flask documentation.  
+This feature improves usability by allowing users to quickly copy code snippets with a single click, enhancing the overall documentation experience.
+
+The implementation includes:
+- A copy button added to each code block.
+- JavaScript logic to handle clipboard copying.
+- Styling to ensure visibility while matching the existing documentation theme.
+
+Below are screenshots demonstrating the new UI changes:
+
+<img width=""972"" height=""278"" alt=""Copy Button Preview"" src=""https://github.com/user-attachments/assets/4cbd52d2-bf76-4961-9d8c-c3cee960b450"" />
+
+<img width=""990"" height=""309"" alt=""Copy Button Functionality"" src=""https://github.com/user-attachments/assets/ea744dd5-5a1f-4385-a01e-db430531407d"" />
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+fixes **#5848**
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->
+
+I have followed all the steps in `CONTRIBUTING.rst`:
+
+- Added/updated relevant documentation in the `docs` folder.  
+- Added an entry in `CHANGES.rst` summarizing the change and linking to the issue.  
+- Included `.. versionchanged::` entries in appropriate documentation code strings.  
+- (Tests are not required for this documentation UI feature.)",closed,False,MOHITKOURAV01,NONE,2025-11-19T10:45:00Z,2025-12-04T00:09:29Z,2025-11-19T14:30:39Z,,main,main,https://github.com/pallets/flask/pull/5850,[],False,0,Closed without merge,,,,,True
+pallets/flask,5849,Add copy-to-clipboard button for code blocks in Flask documentation.,,closed,False,MOHITKOURAV01,NONE,2025-11-19T09:37:58Z,2025-12-04T00:09:30Z,2025-11-19T09:51:46Z,,main,main,https://github.com/pallets/flask/pull/5849,[],False,0,Closed without merge,,,,,True
+pallets/flask,5847,docs: Improve Quickstart example clarity for beginners,"## Description
+   This PR improves the Quickstart documentation to help beginners understand:
+   - Where to save their first Flask application
+   - How to structure the basic example
+   - Common patterns like `if __name__ == '__main__'`
+   
+   ## Changes Made
+   - Added explicit file naming instructions
+   - Enhanced code comments
+   - Included complete working example
+   - Clarified common beginner confusion points
+   
+   ## Testing
+   - Built documentation locally and verified changes render correctly
+   - Tested example code to ensure it works
+   
+   ## Related Issues
+   Addresses common beginner confusion mentioned in #[issue-number if applicable]",closed,False,waweruvincent146-afk,NONE,2025-11-12T05:57:44Z,2025-11-27T00:09:01Z,2025-11-12T06:52:19Z,,main,improve-quickstart-docs,https://github.com/pallets/flask/pull/5847,[],False,0,Closed without merge,,,,,True
+pallets/flask,5846,Fix _validate_key to handle click 8.3.1 Sentinel values,"Fixes #5836
+
+Updates the condition in _validate_key to properly check for click._utils.UNSET sentinel value, which is now present in ctx.params during callbacks in click 8.3.1.
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,pramod5403,NONE,2025-11-10T16:17:52Z,2025-11-25T00:08:08Z,2025-11-10T19:17:34Z,,main,fix/click-8.3.1-sentinel,https://github.com/pallets/flask/pull/5846,[],False,0,Closed without merge,,,,,True
+pallets/flask,5845,docs: Add explanation of reloader types and terminal output,"## Summary
+
+This PR adds documentation explaining the different reloader types that Flask uses and the terminal output users see when running in debug mode.
+
+## Problem
+
+When running Flask with debug mode enabled, users see messages like:
+- `* Restarting with stat`
+- `* Restarting with watchdog (windowsapi)`
+- `* Restarting with inotify`
+
+These messages are never explained in the documentation, which can confuse users (especially beginners) who don't understand what they mean or why they appear.
+
+## Changes
+
+### `docs/server.rst`
+- Added new ""Understanding the Reloader"" section explaining:
+  - The two reloader backends (watchdog vs stat)
+  - Why Flask chooses different backends automatically
+  - What the platform-specific names mean (windowsapi, inotify, kqueue)
+  - How to install watchdog for better performance
+  - How to manually specify a reloader type if needed
+
+### `docs/quickstart.rst`
+- Added a note in the Debug Mode section that references the new server.rst section
+- Helps users immediately understand the reloader output they see in the quickstart example
+
+## Testing
+
+- Verified reStructuredText syntax is correct
+- Checked that internal documentation links work properly
+- Confirmed the new content fits naturally with existing documentation structure
+
+## Related
+
+The installation docs already mention watchdog as an optional dependency, but don't explain what it does or when it's used. This PR bridges that gap.",closed,False,commitWithTisha,NONE,2025-11-09T06:28:20Z,2026-02-09T00:13:56Z,2026-01-25T01:22:44Z,,main,document-reloader-types,https://github.com/pallets/flask/pull/5845,[],False,0,Closed without merge,,,,,True
+pallets/flask,5844,pre-commit: Add codespell,"* #5833 on the `stable` branch.
+
+The `stable` branch contains no codespell discoverable typos, but the default branch contains:
+```
+./docs/appcontext.rst:122: requet ==> request
+./docs/quickstart.rst:465: interanlly ==> internally
+./docs/templating.rst:186: avaialble ==> available
+```
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,cclauss,CONTRIBUTOR,2025-11-05T17:14:08Z,2026-02-09T00:13:52Z,2026-01-25T03:00:24Z,2026-01-25T03:00:24Z,stable,codespell,https://github.com/pallets/flask/pull/5844,[],True,1,Merged,,,,,True
+pallets/flask,5840,docs: enhance README with comprehensive examples and troubleshooting,"This PR significantly improves the Flask README by:
+
+- Adding comprehensive quick start guide with step-by-step instructions
+- Including multiple practical examples covering common use cases
+- Adding advanced features section with blueprints and database integration
+- Creating detailed troubleshooting section for common beginner issues
+- Providing project structure guidance and installation options
+- Enhancing organization with clear sections and better formatting
+
+These enhancements make the README much more beginner-friendly and practical for real-world Flask development.",closed,False,ARUSHIGULBHILE,NONE,2025-10-31T14:08:37Z,2025-11-15T00:08:21Z,2025-10-31T14:59:13Z,,main,docs/improve-readme-examples,https://github.com/pallets/flask/pull/5840,[],False,0,Closed without merge,,,,,True
+pallets/flask,5838,Update app.py,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,bodduNaidu,NONE,2025-10-29T20:59:42Z,2025-11-13T00:09:16Z,2025-10-29T21:01:24Z,,main,patch-1,https://github.com/pallets/flask/pull/5838,['Invalid'],False,0,Closed without merge,,,,,True
+pallets/flask,5837,Create jenkinsfile,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,bodduNaidu,NONE,2025-10-29T20:53:12Z,2025-11-13T00:09:17Z,2025-10-29T20:54:19Z,,main,main,https://github.com/pallets/flask/pull/5837,['Invalid'],False,0,Closed without merge,,,,,True
+pallets/flask,5835,Add Seenode deployment instructions to documentation,"Hey. Just wanted to add seenode to the listed providers, as we have [first class support for flask](https://seenode.com/docs/frameworks/python/flask/). Thanks!
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,GeoSegun,NONE,2025-10-23T10:30:06Z,2026-02-09T00:13:55Z,2026-01-25T01:35:18Z,,main,docs/seenode,https://github.com/pallets/flask/pull/5835,[],False,0,Closed without merge,,,,,True
+pallets/flask,5834,`pre-commit autoupdate --freeze` 2025-10-23,"% `pre-commit autoupdate --freeze`
+```
+[https://github.com/astral-sh/ruff-pre-commit] updating v0.12.9 -> v0.14.1 (frozen)
+[https://github.com/astral-sh/uv-pre-commit] updating 0.8.12 -> 0.9.5 (frozen)
+```
+% `pre-commit run --all-files`
+```
+```
+* https://github.com/astral-sh/ruff/releases
+* https://github.com/astral-sh/uv/releases -- Fixes [CVE-2025-62518](https://github.com/advisories/GHSA-j5gw-2vrg-8fgx) a high-severity vulnerability.
+
+It is unclear to me how modifying `.pre-commit-config.yaml` would break `Tests / Development Versions`.",closed,False,cclauss,CONTRIBUTOR,2025-10-22T08:30:20Z,2025-11-20T00:09:12Z,2025-11-05T16:17:32Z,,main,pre-commit-autoupgrade-2025-10-23,https://github.com/pallets/flask/pull/5834,[],False,0,Closed without merge,,,,,True
+pallets/flask,5833,fix typos discovered by  codespell,"Fix typos discovered by codespell - https://pypi.org/project/codespell
+
+% `codespell --ignore-words-list=te`
+```
+./docs/appcontext.rst:122: requet ==> request
+./docs/quickstart.rst:465: interanlly ==> internally
+./docs/templating.rst:186: avaialble ==> available
+```
+% `codespell -ignore-words-list=te --write-changes`",closed,False,cclauss,CONTRIBUTOR,2025-10-22T08:19:47Z,2025-11-21T00:09:09Z,2025-11-05T16:10:41Z,,stable,codespell,https://github.com/pallets/flask/pull/5833,[],False,0,Closed without merge,,,,,True
+pallets/flask,5832,GitHub Actions: Add Python 3.14 and 3.14t to the testing,"On branch ___stable___.
+
+https://www.python.org/downloads/release/python-3140/
+
+https://py-free-threading.github.io/porting",closed,False,cclauss,CONTRIBUTOR,2025-10-22T05:58:58Z,2025-11-20T00:09:11Z,2025-11-05T16:17:49Z,,stable,patch-2,https://github.com/pallets/flask/pull/5832,[],False,0,Closed without merge,,,,,True
+pallets/flask,5831,Update installation instructions for Windows PowerShell,Added instructions for enabling PowerShell script execution on Windows.,closed,False,MeowyCat1,NONE,2025-10-19T10:08:40Z,2025-12-03T00:09:21Z,2025-11-17T00:52:20Z,,main,patch-2,https://github.com/pallets/flask/pull/5831,[],False,0,Closed without merge,,,,,True
+pallets/flask,5829,Docs typo/markup fixes,Just two typos I've run into.,closed,False,hynek,CONTRIBUTOR,2025-10-14T07:43:09Z,2025-10-30T00:08:51Z,2025-10-14T20:26:26Z,2025-10-14T20:26:26Z,main,patch-1,https://github.com/pallets/flask/pull/5829,[],True,1,Merged,,,,,True
+pallets/flask,5828,docs: fix missing quote in flashing example,"### Change
+
+Fix missing quotation mark in “Flashing with categories” example.
+
+### Description
+
+* Add missing quotation mark in `<ul class=flashes>` -> `<ul class=""flashes"">`.",closed,False,sachintha180,NONE,2025-10-13T15:33:59Z,2025-10-28T00:08:13Z,2025-10-13T15:50:14Z,,main,main,https://github.com/pallets/flask/pull/5828,[],False,0,Closed without merge,,,,,True
+pallets/flask,5827,clarify 415 vs 400 errors for request.json,"## Description
+Clarifies the distinction between 415 and 400 error codes when using `request.json`, aligning the JavaScript patterns documentation with the API reference.
+
+## Changes
+- Updated ""Receiving JSON in Views"" section to specify:
+  - 400 Bad Request: for invalid JSON body
+  - 415 Unsupported Media Type: for missing/incorrect Content-Type header
+- Updated ""Making a Request with fetch"" section for consistency
+
+## Fixes
+Fixes #5825
+
+## Checklist
+- [x] Documentation updated
+- [x] Changes align with existing API documentation",closed,False,adityasah104,CONTRIBUTOR,2025-10-09T07:06:09Z,2026-02-09T00:13:53Z,2026-01-25T02:46:57Z,2026-01-25T02:46:57Z,stable,docs-clarify-json-415-error,https://github.com/pallets/flask/pull/5827,['docs'],True,1,Merged,,,,,True
+pallets/flask,5826,docs: clarify JSON parsing error conditions in Flask views,"## Update Documentation: JSON Parsing Behavior
+
+Update the documentation to specify that JSON parsing fails for any reason, including a missing or incorrect `Content-Type` header, not just invalid JSON or an unset header. This improves accuracy and clarity for developers.
+
+issue #5825",closed,False,Samarthegde,NONE,2025-10-08T13:14:31Z,2025-10-24T00:07:25Z,2025-10-08T18:23:11Z,,main,doc-415-receiving-json-5825,https://github.com/pallets/flask/pull/5826,[],False,0,Closed without merge,,,,,True
+pallets/flask,5824,Clarify asyncio and gevent incompatibility in docs (#5817),"Updated the _async_await.rst documentation to clarify that Flask's asynchronous support
+(using asgiref) is **not compatible with gevent or eventlet**. 
+
+Added a recommendation to use ASGI servers like `uvicorn` or `hypercorn` 
+for proper async support, giving users a clear alternative until issue #5817 
+is addressed.",closed,False,relu101,NONE,2025-09-29T17:11:11Z,2026-01-20T00:09:45Z,2026-01-05T18:19:35Z,,main,fix-docs-typo-5817,https://github.com/pallets/flask/pull/5824,[],False,0,Closed without merge,,,,,True
+pallets/flask,5821,Add type hints to tutorial and Javascript examples,"- Add return type annotations and parameter types
+ - Import necessary typing modules (Optional, Union, Flask, Response)
+ - Improve code readability and IDE support for examples
+ - All existing tests continue to pass
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,SebaCry,NONE,2025-09-26T16:13:37Z,2025-10-14T00:07:52Z,2025-09-28T23:00:05Z,,main,add-type-hints-examples,https://github.com/pallets/flask/pull/5821,[],False,0,Closed without merge,,,,,True
+pallets/flask,5818,pass context through dispatch methods,"The current `AppContext` object is passed through the various request dispatch methods, rather than each method accessing the proxies. closes #5815 
+
+@pgjones first proposed this in #5229 as a way to speed up dispatch especially for Quart and async views. This PR applies to more methods, and also implements compatibility during a deprecation period.
+
+Dispatch methods now take `ctx: AppContext` as the first parameter. The following `Flask` methods were changed:
+
+- `update_template_context`
+- `handle_http_exception`
+- `handle_user_exception`
+- `handle_exception`
+- `log_exception`
+- `dispatch_request`
+- `full_dispatch_request`
+- `finalize_request`
+- `make_default_options_response`
+- `preprocess_request`
+- `process_response`
+- `do_teardown_request`
+- `do_teardown_appcontext`
+
+`url_for` and `make_response` were not changed, as it's much more likely that these are called from user code that only has access to the proxy.
+
+An `__init_subclass__` class method is added to detect old signatures on subclasses of `Flask`. The second parameter is inspected (first is self). If it is not annotated, it must be named `ctx`. If it is annotated, it must either be the string or class `AppContext`. If an old signature is detected, the method is wrapped to remove the argument when other `Flask` methods call it during dispatch. The base method is also wrapped to inject the argument so that `super().base_method` from the overridden method will continue to work.
+
+I did not apply the compat wrapper to every base `Flask` method, only the ones that a subclass overrides. Therefore, if user code is directly calling these internal dispatch methods, they will get a `TypeError`. This is only likely (and unlikely at that) to happen during testing. I did this over concern that the wrapper would be unnecessary and a performance hit for most applications. If we get bug reports we can consider adding the wrapper.",closed,False,davidism,MEMBER,2025-09-20T00:47:44Z,2025-12-02T00:09:33Z,2025-11-17T16:49:53Z,2025-11-17T16:49:53Z,main,pass-context,https://github.com/pallets/flask/pull/5818,[],True,1,Merged,,,,,True
+pallets/flask,5814,this is issue here,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,afzaal-ai-infra-engineer,NONE,2025-09-13T07:03:30Z,2025-09-28T00:09:29Z,2025-09-13T07:22:15Z,,main,main,https://github.com/pallets/flask/pull/5814,[],False,0,Closed without merge,,,,,True
+pallets/flask,5813,Create codeql-analysis.yml,"add this request on teacher
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,afzaal-ai-infra-engineer,NONE,2025-09-13T06:39:12Z,2025-09-28T00:09:28Z,2025-09-13T06:40:24Z,,main,main,https://github.com/pallets/flask/pull/5813,[],False,0,Closed without merge,,,,,True
+pallets/flask,5812,merge app and request context,"Merges the `RequestContext` class into the `AppContext` class. closes #5639
+
+A lot of the size of this PR is rewriting or cleaning up docs related to the contexts. See `ctx.py` for the bulk of the work, and even there it's pretty much no new code, mostly deduplication. The ""request context"" still exists, but what data is available on the context object is what distinguishes it from an ""app context"" now.
+
+How the user works with the context is pretty much unchanged. For example, `teardown_request` and `teardown_appcontext` still both exist, `app.app_context` and `app.test_request_context`, etc. All the same global proxies, `current_app`, `g`, `request`, and `session` still exist and are still available. in the same situations they were before.
+
+The difference is that we no longer have to track whether an app context is already pushed when pushing a request context. This was already sort of an artificial behavior, it was not something that would ever happen under intended/documented request or testing scenarios. Now, every request always sets the app, and the request if request data is given. This greatly simplifies the internal data, as we simply need to record the previous value of the context var to restore on pop.
+
+Some code in app internals was changed to use the contextvar directly, which code was already doing. This probably gains some tiny bit of performance rather than going through the proxies. When we go ahead with #5229 and beyond, we'll be passing around the context objects directly and won't even need to use the contextvar.
+
+---
+
+There are a few implications for testing that may have used `with app.app_context()` around a test client request. I've already highly discouraged this practice in issues over the years because it was already causing other issues. None of these patterns were in our docs.
+
+With the old behavior, an app context was not pushed if one was already pushed when pushing a request context. Therefore,  `teardown_app` functions would only run once the `with` block exited rather than when the request exited. Along with using `with client` around everything, this was already the source of occasional bug reports and questions. The docs also say that no assumptions should be made about how many times a teardown function will be called or what data will be set for them.
+
+Also, `g` was part of the app context, not the request context. Data could be set on `g` ahead of the request, because a new app context wouldn't be pushed. This was never documented, I don't know where I saw it.
+
+```python
+# do not do this, for example only
+with app.app_context():
+    g.user = test_user
+    r = client.get(""/secret"")
+```
+
+It's not in Flask's docs or tests. The docs show making a request to login before making the request being tested, relying on the session to persist across requests. If you _really_ wanted to set up `g` beforehand, the signal docs show using the `appcontext_pushed` signal to modify the current context's `g` once it's created.
+
+A project may run into some failed tests when upgrading, if they were relying on this. However, the failure would indicate patterns that were already unsound and should be fixed, so I don't see this as a blocker.
+
+Interestingly, `copy_current_request_context` was already not copying `g`. I thought about changing this, but concluded that it was a good thing, because `g` is often used to store connections/caches that are not concurrent safe, such as Flask-SQLAlchemy's `db.session`.",closed,False,davidism,MEMBER,2025-09-12T22:45:00Z,2026-05-02T03:37:13Z,2025-09-19T23:45:27Z,2025-09-19T23:45:27Z,main,merge-contexts,https://github.com/pallets/flask/pull/5812,[],True,1,Merged,,,,,True
+pallets/flask,5811,Add various bugs for BugBot demo,"- Fix missing None check in get_debug_flag() that could cause AttributeError
+- Fix assertion logic in MethodView.dispatch_request() for HEAD requests
+- Fix missing return statement in get_send_file_max_age() method
+- Fix typo in Config.__init__() - root_paths instead of root_path
+- Fix incorrect test assertion in test_options_work()
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,rutmananna,NONE,2025-09-11T05:25:34Z,2025-09-26T00:07:58Z,2025-09-11T05:27:05Z,,main,buggy-code-demo,https://github.com/pallets/flask/pull/5811,[],False,0,Closed without merge,,,,,True
+pallets/flask,5810,Add various bugs for BugBot demo,"- Fix missing None check in get_debug_flag() that could cause AttributeError
+- Fix assertion logic in MethodView.dispatch_request() for HEAD requests
+- Fix missing return statement in get_send_file_max_age() method
+- Fix typo in Config.__init__() - root_paths instead of root_path
+- Fix incorrect test assertion in test_options_work()
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,rutmananna,NONE,2025-09-11T05:20:42Z,2025-09-26T00:07:59Z,2025-09-11T05:21:36Z,,main,buggy-code-demo,https://github.com/pallets/flask/pull/5810,[],False,0,Closed without merge,,,,,True
+pallets/flask,5809,Added a line for first contributionme,This is my first PR to practice open source contribution,closed,False,Ujjwal0110,NONE,2025-09-10T13:20:16Z,2025-09-25T00:08:10Z,2025-09-10T13:26:56Z,,main,fix-readme,https://github.com/pallets/flask/pull/5809,[],False,0,Closed without merge,,,,,True
+pallets/flask,5808,fix annotation for select_jinja_autoescape,"Inside the code of the method the filename is checked against a None value and returns True, but the static annotated type is a str. I have changed the static annotation type to `str` to `str | None`.",closed,False,subhajitsaha01,CONTRIBUTOR,2025-09-06T16:33:44Z,2026-02-09T00:13:54Z,2026-01-25T02:25:31Z,2026-01-25T02:25:31Z,stable,type_mismatch_branch1,https://github.com/pallets/flask/pull/5808,[],True,1,Merged,,,,,True
+pallets/flask,5807,Changed the static annotated type of select_jinja_autoescape method in src/flask/sansio/app.py,"Inside the code of the method the filename is checked against a None value and returns True, but the static annotated type is a str. I have changed the static annotation type to `str` to `str | None`.",closed,False,subhajitsaha01,CONTRIBUTOR,2025-09-06T16:14:19Z,2025-09-21T00:09:20Z,2025-09-06T16:18:28Z,,stable,type_mismatch_branch,https://github.com/pallets/flask/pull/5807,[],False,0,Closed without merge,,,,,True
+pallets/flask,5806,Changed the static annotated type of select_jinja_autoescape method in src/flask/sansio/app.py,"Inside the code of the method the filename is checked against a None value and returns True, but the static annotated type is a str. I have changed the static annotation type to `str` to `str | None`.",closed,False,subhajitsaha01,CONTRIBUTOR,2025-09-06T15:30:59Z,2025-09-21T00:09:19Z,2025-09-06T16:34:50Z,,main,type_mismatch_branch,https://github.com/pallets/flask/pull/5806,[],False,0,Closed without merge,,,,,True
+pallets/flask,5805,feat(example/blog): Add flash messages for user feedback,"### Description
+This PR adds flash messages (`created`, `updated`, `deleted`) to the blog example application in order to provide better user feedback after a post is modified. This improves the overall user experience.
+
+### How This Was Tested
+1. Ran the blog example application locally.
+2. Created, updated, and deleted a post.
+3. Verified that the appropriate success message was displayed at the top of the page after each action.",closed,False,ShubhamCodeWiz,NONE,2025-09-03T13:36:12Z,2025-09-18T00:07:53Z,2025-09-03T13:53:13Z,,main,feat/add-blog-flash-messages,https://github.com/pallets/flask/pull/5805,[],False,0,Closed without merge,,,,,True
+pallets/flask,5802,Add CodeQL scan workflow,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,umarmir,NONE,2025-08-27T15:56:11Z,2025-09-11T00:08:14Z,2025-08-27T16:03:49Z,,main,add-codeql,https://github.com/pallets/flask/pull/5802,[],False,0,Closed without merge,,,,,True
+pallets/flask,5801,Add DEVOPS_NOTES.txt for practice,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,MOSAUD22,NONE,2025-08-26T11:46:57Z,2025-09-10T00:08:00Z,2025-08-26T11:49:49Z,,main,my-devops-branch,https://github.com/pallets/flask/pull/5801,[],False,0,Closed without merge,,,,,True
+pallets/flask,5800,release version 3.1.2,,closed,False,davidism,MEMBER,2025-08-19T20:42:29Z,2025-09-03T00:08:09Z,2025-08-19T21:03:43Z,2025-08-19T21:03:43Z,stable,release-3.1.2,https://github.com/pallets/flask/pull/5800,[],True,1,Merged,,,,,True
+pallets/flask,5799,refactor stream_with_context for async views,"Store the app context as well as the request context when creating the generator. This prevents the request context from automatically creating and pushing a different app context. Then push the app context first, and push them only when iteration starts, not during setup. This prevents the request context from automatically popping the app context, and avoids associating the internal ContextVar with the temporary event loop in async views.
+
+fixes #5774",closed,False,davidism,MEMBER,2025-08-19T15:22:33Z,2025-09-03T00:08:13Z,2025-08-19T15:23:51Z,2025-08-19T15:23:51Z,stable,stream-context,https://github.com/pallets/flask/pull/5799,['async'],True,1,Merged,,,,,True
+pallets/flask,5798,security docs for TRUSTED_HOSTS,closes #5718,closed,False,davidism,MEMBER,2025-08-18T18:44:00Z,2025-09-02T00:08:43Z,2025-08-18T18:44:57Z,2025-08-18T18:44:57Z,stable,docs-host-header,https://github.com/pallets/flask/pull/5798,['docs'],True,1,Merged,,,,,True
+pallets/flask,5797,push preserved contexts in correct order,"The test client asks the app to append contexts to a stack, in order to re-push them when using `with client`. However, they were being pushed in reverse order, resulting in the oldest context being seen as current. This PR pushes them in the correct order, meaning `session` will be in the correct state of the last response.
+
+fixes #5786",closed,False,davidism,MEMBER,2025-08-18T16:48:05Z,2025-09-02T00:08:47Z,2025-08-18T16:56:39Z,2025-08-18T16:56:39Z,stable,test-redirect-session,https://github.com/pallets/flask/pull/5797,[],True,1,Merged,,,,,True
+pallets/flask,5796,Fix typos and improve CLI documentation,"This pull request improves the CLI documentation in `docs/cli.rst` by:
+- Fixing minor typos
+- Improving clarity and consistency
+These changes make the docs easier to follow for new users.",closed,False,Vinayakakc-2004,NONE,2025-08-10T19:11:24Z,2025-08-25T00:09:11Z,2025-08-10T21:29:27Z,,main,Vinay,https://github.com/pallets/flask/pull/5796,[],False,0,Closed without merge,,,,,True
+pallets/flask,5795,Update GitHub Actions workflow for artifact handling,"## Use `artifact-id` instead of (default assumed) `name` with Actions Artifacts 🔒 
+
+This pull updates the **publish** workflow to use `artifact-id` instead of the default assumed `name` (in this case the literal word `artifact`) when downloading artifacts that have been previously published in prior workflow steps. This is important because artifacts produced by GitHub Actions can be completely overwritten by other workflow runs if they use the same `name` under very unique circumstances (like passing the `run-id` value to the download-artifact action to point to an entirely different workflow run - don't do that). To avoid potential TOCTOU issues/vulnerabilities where an artifact might be replaced between upload and download, the new `artifact-ids` input allows you to download artifacts by their specific ID rather than by name. This is safer but also helps lead to more deterministic workflow builds by referencing the artifact you wish to download by its _exact id_.
+
+This PR also hardens the workflow a bit by adding `persist-credentials: false` to the checkout step.
+
+---
+
+I recently did some work to land these exact changes in the [urllib3/urllib3](https://github.com/urllib3/urllib3/pulls?q=is%3Apr+is%3Aclosed+author%3AGrantBirki) and wanted to contribute those same changes here as well! Also recently made updates to Python's [requests](https://github.com/psf/requests/pull/7005) library to do the same.",closed,False,GrantBirki,CONTRIBUTOR,2025-08-07T04:47:00Z,2025-09-03T00:08:10Z,2025-08-19T20:56:49Z,2025-08-19T20:56:49Z,stable,grantbirki/publish-workflow,https://github.com/pallets/flask/pull/5795,[],True,1,Merged,,,,,True
+pallets/flask,5794,Loosen send_file type annotation to include typing.IO[bytes],"Loosen send_file's path_or_file annotation to accept typing.IO[bytes] alongside str and BinaryIO. This aligns Flask's annotation with Werkzeug and resolves type checker errors.
+
+Fixes #5776.",closed,False,Pouria-yvr,NONE,2025-08-06T00:51:50Z,2025-08-21T00:07:17Z,2025-08-06T00:59:24Z,,main,fix-send-file-typing,https://github.com/pallets/flask/pull/5794,[],False,0,Closed without merge,,,,,True
+pallets/flask,5793,Create python-package.yml,"Kjj
+
+<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,rzhasan2000-oss,NONE,2025-08-03T14:25:04Z,2025-08-18T00:10:21Z,2025-08-03T14:33:16Z,,main,rzhasan2000-oss-patch-1,https://github.com/pallets/flask/pull/5793,[],False,0,Closed without merge,,,,,True
+pallets/flask,5790,docs: Fix grammar and article usage in documentation,"- Fix verb agreement in lifecycle.rst: 'creates and send'
+   -> 'creates and sends'
+  - Fix article usage: 'a HTTP' -> 'an HTTP' in quickstart.rst and errorhandling.rst",closed,False,geekalaa,NONE,2025-08-01T21:46:31Z,2025-08-16T00:08:56Z,2025-08-01T23:38:26Z,,main,fix-docs-grammar,https://github.com/pallets/flask/pull/5790,[],False,0,Closed without merge,,,,,True
+pallets/flask,5789,Scroll to top doc UI,"**Pull Request Description**
+This pull request adds a scroll-to-top button to documentation pages using dynamically injected JavaScript and CSS. The button appears after scrolling down 300px and smoothly scrolls the page to the top when clicked.
+
+No changes were made to HTML templates—this feature is fully implemented via scrolltop.js and scrolltop.css, added to docs/_static/. The configuration in conf.py ensures these assets are loaded automatically.
+
+fixes #5784
+
+**Checklist**
+Feature is scoped to documentation only
+
+Scroll-to-top button is injected via JavaScript and styled with CSS
+
+No changes made to HTML templates
+
+Static assets (scrolltop.js and scrolltop.css) added to docs/_static/
+
+conf.py updated to include new static files
+
+No tests required for this non-code enhancement
+
+No changelog entry needed for documentation-only changes
+
+Linked to relevant issue using fixes #5784",closed,False,DaleStack,NONE,2025-07-31T19:24:14Z,2025-08-15T00:09:40Z,2025-07-31T20:16:32Z,,main,scroll-top-doc-ui,https://github.com/pallets/flask/pull/5789,[],False,0,Closed without merge,,,,,True
+pallets/flask,5788,docs: added scroll-to-top button with JS and CSS,"**Pull Request Description**
+This pull request adds a scroll-to-top button to documentation pages using dynamically injected JavaScript and CSS. The button appears after scrolling down 300px and smoothly scrolls the page to the top when clicked.
+
+No changes were made to HTML templates—this feature is fully implemented via scrolltop.js and scrolltop.css, added to docs/_static/. The configuration in conf.py ensures these assets are loaded automatically.
+
+fixes #5784 
+
+ **Checklist**
+Feature is scoped to documentation only
+
+Scroll-to-top button is injected via JavaScript and styled with CSS
+
+No changes made to HTML templates
+
+Static assets (scrolltop.js and scrolltop.css) added to docs/_static/
+
+conf.py updated to include new static files
+
+No tests required for this non-code enhancement
+
+No changelog entry needed for documentation-only changes
+
+Linked to relevant issue using fixes #5784",closed,True,DaleStack,NONE,2025-07-31T18:46:12Z,2025-08-15T00:09:41Z,2025-07-31T18:47:07Z,,main,scroll-top-doc-ui,https://github.com/pallets/flask/pull/5788,[],False,0,Closed without merge,,,,,True
+pallets/flask,5783,Respect autocorrect_location_header in make_response,"The `make_response` function currently does not respect `Response.autocorrect_location_header = False` when creating a response from a tuple containing headers. It always autocorrects a relative `Location` header to an absolute URL.
+
+This change modifies the `Flask.make_response` method to handle the `Location` header specially. It now sets the location via the `response.location` property, which correctly respects the `autocorrect_location_header` flag.
+
+Tests are added to ensure that the location is *not* autocorrected when the flag is `False` and that the default autocorrection behavior remains unchanged.
+
+fixes #5774",closed,False,agape1225,NONE,2025-07-26T13:51:01Z,2025-08-10T00:10:47Z,2025-07-26T14:34:27Z,,stable,stable,https://github.com/pallets/flask/pull/5783,[],False,0,Closed without merge,,,,,True
+pallets/flask,5782,BLockchain based E-voting example,"📌 Description
+This pull request adds a new example to the examples/ directory titled Blockchain-Based E-voting.
+It demonstrates how to build a secure and interactive e-voting system using:
+
+🧠 OpenCV for live face detection and voter verification
+
+🔐 Blockchain (custom Python implementation) for immutable vote recording
+
+🌐 Flask for the web interface and routing
+
+🗃️ SQLite to store registered voter data
+
+This project is intended for educational use and highlights how Flask can be extended for real-world applications involving security, identity verification, and data integrity.
+
+🛠 How it Works
+Users are authenticated via webcam using OpenCV.
+
+Upon verification, they are presented with a voting interface.
+
+Votes are recorded into a blockchain ledger (each block stores vote details).
+
+Results are displayed by traversing the blockchain to count votes.
+
+
+🌱 Additional Info
+If you'd like to explore the complete version or contribute to improvements, feel free to fork my original repository:
+https://github.com/DEVANSH-GAJJAR/Blockchain_Based_E_Voting
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,DEVANSH-GAJJAR,NONE,2025-07-24T13:31:28Z,2025-08-09T00:09:15Z,2025-07-24T13:35:20Z,,main,main,https://github.com/pallets/flask/pull/5782,[],False,0,Closed without merge,,,,,True
+pallets/flask,5781,Widen send_file type hint to IO[bytes],"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->
+
+The type hint for the path_or_file argument in send_file is t.BinaryIO, which is too strict. This causes mypy errors when passing valid file-like objects that are typed as the more general t.IO[bytes], such as the return value of tempfile.NamedTemporaryFile.
+
+This change widens the type hint to t.IO[bytes]. This aligns Flask's type hint with the underlying Werkzeug implementation, which has supported this since version 2.0.2, and improves the developer experience by preventing unnecessary type checking errors.
+
+An accompanying test case is added to verify the fix and prevent future regressions.
+
+fixes #5776",closed,False,agape1225,NONE,2025-07-23T11:24:07Z,2025-08-07T00:10:12Z,2025-07-23T13:08:33Z,,stable,stable,https://github.com/pallets/flask/pull/5781,[],False,0,Closed without merge,,,,,True
+pallets/flask,5780,Widen send_file type hint to IO[bytes],"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->
+
+The type hint for the path_or_file argument in send_file is t.BinaryIO, which is too strict. This causes mypy errors when passing valid file-like objects that are typed as the more general t.IO[bytes], such as the return value of tempfile.NamedTemporaryFile.
+
+This change widens the type hint to t.IO[bytes]. This aligns Flask's type hint with the underlying Werkzeug implementation, which has supported this since version 2.0.2, and improves the developer experience by preventing unnecessary type checking errors.
+
+An accompanying test case is added to verify the fix and prevent future regressions.
+
+fixes #5776",closed,False,agape1225,NONE,2025-07-23T11:13:32Z,2025-08-10T00:10:48Z,2025-07-23T11:21:21Z,,stable,stable,https://github.com/pallets/flask/pull/5780,[],False,0,Closed without merge,,,,,True
+pallets/flask,5779,Add devcontainer with Python 3.13 and uv support,"This PR adds a development container setup under `.devcontainer/` using Microsoft's Python 3.13 image, with uv support for dependency management.
+
+Changes include:
+- Custom Dockerfile using `mcr.microsoft.com/devcontainers/python:3.13`
+- Switching to uv for editable installs and dev dependencies
+- Config updates in `devcontainer.json` and `on-create-command.sh`",closed,False,hola-kundan,NONE,2025-07-23T03:12:58Z,2025-08-07T00:10:13Z,2025-07-23T03:24:05Z,,main,dev-dockerfile,https://github.com/pallets/flask/pull/5779,[],False,0,Closed without merge,,,,,True
+pallets/flask,5777,use IO[bytes] instead of BinaryIO for wider compatibility,"`flask.helpers.send_file` was the only place where `t.BinaryIO` was used. I changed it to be more loose type `t.IO[bytes]`.
+
+fixes #5776",closed,False,tvuotila,CONTRIBUTOR,2025-07-16T10:07:40Z,2025-09-02T00:08:44Z,2025-08-18T17:26:13Z,2025-08-18T17:26:12Z,stable,no-binary-io,https://github.com/pallets/flask/pull/5777,[],True,1,Merged,,,,,True
+pallets/flask,5775,Fix: Raise RuntimeError when stream_with_context is used on async view,"This PR adds a test that verifies `stream_with_context` raises a `RuntimeError` when applied to an async route, which is currently unsupported in Flask.
+
+- Added test: `test_stream_with_context_fails_with_async_route`
+- Asserts the correct error message: `""Install Flask with the 'async' extra""`
+- Handles coroutine cleanup properly with `gc.collect()`
+
+Closes #5774",closed,False,Vigneshv3,NONE,2025-07-16T07:57:14Z,2025-07-31T00:09:55Z,2025-07-16T13:42:47Z,,main,main,https://github.com/pallets/flask/pull/5775,[],False,0,Closed without merge,,,,,True
+pallets/flask,5772,newStaging,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->",closed,False,jay7848,NONE,2025-07-12T08:38:30Z,2025-07-27T00:11:00Z,2025-07-12T08:40:43Z,,main,staging,https://github.com/pallets/flask/pull/5772,[],False,0,Closed without merge,,,,,True

@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-07-30 20:28:22.718614+00:00",
+  "stage": "Stage 4C",
+  "chart_directory": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_charts",
+  "chart_collection": {
+    "chart_count": 8,
+    "chart_names": [
+      "commit_count_boxplot",
+      "file_category_merge_rate",
+      "lifecycle_merge_rate",
+      "outcome_distribution",
+      "outcome_effect_sizes",
+      "quarterly_volume",
+      "size_band_merge_rate",
+      "total_changes_boxplot"
+    ],
+    "all_figures_valid": true,
+    "trace_counts": {
+      "outcome_distribution": 1,
+      "quarterly_volume": 2,
+      "size_band_merge_rate": 1,
+      "lifecycle_merge_rate": 1,
+      "file_category_merge_rate": 2,
+      "outcome_effect_sizes": 1,
+      "total_changes_boxplot": 1,
+      "commit_count_boxplot": 1
+    }
+  },
+  "generated_files": {
+    "outcome_distribution": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_charts\\outcome_distribution.html",
+    "quarterly_volume": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_charts\\quarterly_volume.html",
+    "size_band_merge_rate": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_charts\\size_band_merge_rate.html",
+    "lifecycle_merge_rate": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_charts\\lifecycle_merge_rate.html",
+    "file_category_merge_rate": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_charts\\file_category_merge_rate.html",
+    "outcome_effect_sizes": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_charts\\outcome_effect_sizes.html",
+    "total_changes_boxplot": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_charts\\total_changes_boxplot.html",
+    "commit_count_boxplot": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_charts\\commit_count_boxplot.html"
+  },
+  "validation_checks": {
+    "dataset_contains_600_prs": true,
+    "expected_chart_count_created": true,
+    "all_figures_valid": true,
+    "all_chart_files_exist": true,
+    "all_chart_files_non_empty": true,
+    "all_charts_have_traces": true
+  },
+  "overall_verification_passed": true
+}

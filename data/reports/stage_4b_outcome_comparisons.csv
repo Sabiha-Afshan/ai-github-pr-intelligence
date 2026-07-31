@@ -1,0 +1,15 @@
+metric,merged_valid_count,unmerged_valid_count,merged_mean,unmerged_mean,mean_difference,merged_median,unmerged_median,median_difference,merged_winsorized_mean,unmerged_winsorized_mean,standardized_mean_difference,absolute_effect_size,effect_size_label
+label_count,300,300,0.5367,0.2067,0.33,0.0,0.0,0.0,0.5367,0.1592,0.5767,0.5767,Moderate
+deletions,300,300,61.4867,468.9733,-407.4866,2.0,2.0,0.0,17.9858,8.3983,-0.17,0.17,Negligible
+security_sensitive_files_changed,300,300,0.0867,0.2833,-0.1966,0.0,0.0,0.0,0.0025,0.0633,-0.1659,0.1659,Negligible
+changed_files,300,300,3.7867,11.9233,-8.1366,2.0,1.0,1.0,2.7258,2.16,-0.1647,0.1647,Negligible
+commit_count,300,300,1.33,29.63,-28.3,1.0,1.0,0.0,1.2033,2.0858,-0.158,0.158,Negligible
+documentation_files_changed,300,300,1.4067,3.16,-1.7533,1.0,1.0,0.0,1.0067,0.7,-0.149,0.149,Negligible
+test_files_changed,300,300,0.54,1.4333,-0.8933,0.0,0.0,0.0,0.2733,0.1792,-0.1434,0.1434,Negligible
+total_changes,300,300,129.6833,2026.3767,-1896.6934,8.0,10.0,-2.0,49.2975,32.6258,-0.1376,0.1376,Negligible
+additions,300,300,68.1967,1557.4033,-1489.2066,4.0,6.0,-2.0,25.5392,21.8258,-0.1112,0.1112,Negligible
+lifecycle_days,300,300,15.4585,11.7147,3.7438,0.1444,0.0399,0.1045,11.7374,6.4977,0.0779,0.0779,Negligible
+configuration_files_changed,300,300,0.45,0.59,-0.14,0.0,0.0,0.0,0.3233,0.2525,-0.0738,0.0738,Negligible
+title_length,300,300,38.3967,37.1967,1.2,37.0,37.0,0.0,38.2342,36.7833,0.0733,0.0733,Negligible
+body_length,300,300,1653.6533,1472.26,181.3933,234.0,547.5,-313.5,1293.9267,800.3592,0.0398,0.0398,Negligible
+requested_reviewer_count,300,300,0.01,0.01,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Negligible

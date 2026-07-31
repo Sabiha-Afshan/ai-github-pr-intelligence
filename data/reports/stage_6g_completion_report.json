@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-07-31 01:18:04.736065+00:00",
+  "stage": "Stage 6G",
+  "model": "Model 2 — Merge-delay prediction",
+  "model_name": "logistic_candidate_07",
+  "model_family": "logistic_regression",
+  "feature_count": 58,
+  "test_rows": 38,
+  "error_count": 3,
+  "high_confidence_error_count": 2,
+  "top_combined_features": [
+    "iqr_outlier_feature_count",
+    "additions_iqr_outlier",
+    "deletions_iqr_outlier",
+    "documentation_files_changed_iqr_outlier",
+    "changed_files_iqr_outlier",
+    "log1p_body_length",
+    "total_changes_iqr_outlier",
+    "files_removed_iqr_outlier",
+    "additions",
+    "log1p_deletions"
+  ],
+  "strongest_positive_features": [
+    {
+      "feature": "iqr_outlier_feature_count",
+      "coefficient": 7.331112160524516,
+      "odds_ratio": 1527.079185105151
+    },
+    {
+      "feature": "log1p_body_length",
+      "coefficient": 1.8200252359938878,
+      "odds_ratio": 6.172014204830978
+    },
+    {
+      "feature": "additions",
+      "coefficient": 1.7661025397536942,
+      "odds_ratio": 5.848016475629965
+    },
+    {
+      "feature": "has_any_iqr_outlier",
+      "coefficient": 1.7218879245484449,
+      "odds_ratio": 5.595081591274505
+    },
+    {
+      "feature": "has_detailed_description",
+      "coefficient": 1.2698548258360167,
+      "odds_ratio": 3.5603356560833386
+    },
+    {
+      "feature": "documentation_files_changed",
+      "coefficient": 0.7099363389105319,
+      "odds_ratio": 2.033861776668782
+    },
+    {
+      "feature": "log1p_total_changes",
+      "coefficient": 0.6913169080199277,
+      "odds_ratio": 1.9963428027747285
+    },
+    {
+      "feature": "commit_count",
+      "coefficient": 0.6559803637534439,
+      "odds_ratio": 1.9270307827628468
+    },
+    {
+      "feature": "log1p_additions",
+      "coefficient": 0.6178348893041752,
+      "odds_ratio": 1.8549076107698839
+    },
+    {
+      "feature": "deletion_ratio",
+      "coefficient": 0.5964342088319403,
+      "odds_ratio": 1.815633075507267
+    }
+  ],
+  "strongest_negative_features": [
+    {
+      "feature": "documentation_files_changed_iqr_outlier",
+      "coefficient": -4.81610934373044,
+      "odds_ratio": 0.008098233368625264
+    },
+    {
+      "feature": "additions_iqr_outlier",
+      "coefficient": -4.190881436862923,
+      "odds_ratio": 0.015132940261303894
+    },
+    {
+      "feature": "changed_files_iqr_outlier",
+      "coefficient": -3.4977264471765612,
+      "odds_ratio": 0.030266116873617736
+    },
+    {
+      "feature": "deletions_iqr_outlier",
+      "coefficient": -2.961802812178733,
+      "odds_ratio": 0.05172558155633047
+    },
+    {
+      "feature": "files_removed_iqr_outlier",
+      "coefficient": -2.940230451209701,
+      "odds_ratio": 0.052853547170893286
+    },
+    {
+      "feature": "total_changes_iqr_outlier",
+      "coefficient": -2.3529709210777865,
+      "odds_ratio": 0.09508624842671366
+    },
+    {
+      "feature": "deletions",
+      "coefficient": -2.1379564425924915,
+      "odds_ratio": 0.1178955232859747
+    },
+    {
+      "feature": "title_length_iqr_outlier",
+      "coefficient": -2.099304351643023,
+      "odds_ratio": 0.12254164450293294
+    },
+    {
+      "feature": "body_length_iqr_outlier",
+      "coefficient": -1.7921581062548813,
+      "odds_ratio": 0.1666002404030594
+    },
+    {
+      "feature": "body_word_count_iqr_outlier",
+      "coefficient": -1.7921581062548813,
+      "odds_ratio": 0.1666002404030594
+    }
+  ],
+  "output_validation": {
+    "expected_feature_count": 58,
+    "coefficient_feature_count": 58,
+    "permutation_feature_count": 58,
+    "combined_feature_count": 58,
+    "coefficient_count_valid": true,
+    "permutation_count_valid": true,
+    "combined_count_valid": true,
+    "expected_local_contribution_rows": 380,
+    "actual_local_contribution_rows": 380,
+    "local_count_valid": true,
+    "contribution_values_valid": true,
+    "error_count": 3,
+    "errors_valid": true,
+    "probability_band_total_valid": true,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "coefficient_report_exists": true,
+    "permutation_report_exists": true,
+    "combined_report_exists": true,
+    "local_contribution_report_exists": true,
+    "error_report_exists": true,
+    "error_feature_report_exists": true,
+    "probability_band_report_exists": true,
+    "model_retrained": false,
+    "model_reselected": false,
+    "threshold_changed": false,
+    "features_changed": false,
+    "validation_passed": true
+  },
+  "interpretation_policy": {
+    "coefficient_meaning": "Effect on log odds for a one-standard-deviation change in a continuous feature or a zero-to-one change in a binary feature.",
+    "causal_claims_allowed": false,
+    "permutation_importance_use": "Post-hoc interpretation only",
+    "test_used_for_retraining": false,
+    "test_used_for_reselection": false,
+    "threshold_changed": false
+  },
+  "overall_verification_passed": true
+}

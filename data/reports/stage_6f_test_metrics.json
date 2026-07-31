@@ -1,0 +1,19 @@
+{
+  "threshold": 0.75,
+  "accuracy": 0.9210526315789473,
+  "balanced_accuracy": 0.9115942028985508,
+  "precision": 0.9285714285714286,
+  "recall": 0.8666666666666667,
+  "f1": 0.896551724137931,
+  "roc_auc": 0.9333333333333333,
+  "average_precision": 0.9417291354322839,
+  "log_loss": 0.2899436217203326,
+  "brier_score": 0.0881942058712988,
+  "true_negative": 22,
+  "false_positive": 1,
+  "false_negative": 2,
+  "true_positive": 13,
+  "predicted_positive_count": 14,
+  "predicted_negative_count": 24,
+  "model_name": "logistic_candidate_07"
+}

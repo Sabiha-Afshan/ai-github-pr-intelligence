@@ -1,0 +1,69 @@
+feature,approved,decision,feature_group,reason
+draft,True,approved,PR structure,Approved pre-outcome feature
+resolution_hours,False,excluded,Excluded,Available only after PR resolution
+merge_hours,False,excluded,Excluded,Direct post-outcome leakage
+additions,True,approved,Code change,Approved pre-outcome feature
+deletions,True,approved,Code change,Approved pre-outcome feature
+total_changes,True,approved,Code change,Approved pre-outcome feature
+changed_files,True,approved,Code change,Approved pre-outcome feature
+commit_count,True,approved,Commit activity,Approved pre-outcome feature
+title_length,True,approved,PR structure,Approved pre-outcome feature
+body_length,True,approved,PR structure,Approved pre-outcome feature
+body_word_count,True,approved,PR structure,Approved pre-outcome feature
+label_count,True,approved,PR structure,Approved pre-outcome feature
+requested_reviewer_count,True,approved,PR structure,Approved pre-outcome feature
+file_records_returned,True,approved,File composition,Approved pre-outcome feature
+test_files_changed,True,approved,File composition,Approved pre-outcome feature
+documentation_files_changed,True,approved,File composition,Approved pre-outcome feature
+configuration_files_changed,True,approved,File composition,Approved pre-outcome feature
+security_sensitive_files_changed,True,approved,File composition,Approved pre-outcome feature
+files_added,True,approved,File composition,Approved pre-outcome feature
+files_modified,True,approved,File composition,Approved pre-outcome feature
+files_removed,True,approved,File composition,Approved pre-outcome feature
+files_renamed,True,approved,File composition,Approved pre-outcome feature
+has_test_changes,True,approved,File composition,Approved pre-outcome feature
+has_documentation_changes,True,approved,File composition,Approved pre-outcome feature
+has_configuration_changes,True,approved,File composition,Approved pre-outcome feature
+has_security_sensitive_changes,True,approved,File composition,Approved pre-outcome feature
+commit_count_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+resolution_hours_iqr_outlier,False,excluded,Excluded,Manually blocked because the feature contains or derives from leakage
+configuration_files_changed_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+test_files_changed_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+deletions_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+files_modified_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+additions_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+total_changes_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+body_length_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+body_word_count_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+files_added_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+changed_files_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+documentation_files_changed_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+security_sensitive_files_changed_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+files_removed_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+files_renamed_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+title_length_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+requested_reviewer_count_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+iqr_outlier_feature_count,True,approved,Outlier indicators,Approved pre-outcome feature
+has_any_iqr_outlier,True,approved,Outlier indicators,Approved pre-outcome feature
+merge_target,False,excluded,Excluded,Target or target-derived feature
+log1p_body_length,True,approved,Log transformations,Approved pre-outcome feature
+log1p_body_word_count,True,approved,Log transformations,Approved pre-outcome feature
+log1p_additions,True,approved,Log transformations,Approved pre-outcome feature
+log1p_deletions,True,approved,Log transformations,Approved pre-outcome feature
+log1p_total_changes,True,approved,Log transformations,Approved pre-outcome feature
+log1p_changed_files,True,approved,Log transformations,Approved pre-outcome feature
+log1p_commit_count,True,approved,Log transformations,Approved pre-outcome feature
+has_description,True,approved,PR structure,Approved pre-outcome feature
+has_detailed_description,True,approved,PR structure,Approved pre-outcome feature
+short_title,True,approved,PR structure,Approved pre-outcome feature
+very_long_description,True,approved,PR structure,Approved pre-outcome feature
+change_density_per_file,True,approved,Code change,Approved pre-outcome feature
+deletion_ratio,True,approved,Code change,Approved pre-outcome feature
+has_zero_code_change,True,approved,Code change,Approved pre-outcome feature
+has_multiple_commits,True,approved,Commit activity,Approved pre-outcome feature
+created_year,False,excluded,Excluded,Manually blocked because the feature contains or derives from leakage
+created_month,False,excluded,Excluded,Manually blocked because the feature contains or derives from leakage
+created_quarter,False,excluded,Excluded,Manually blocked because the feature contains or derives from leakage
+created_day_of_week,True,approved,Submission timing,Approved pre-outcome feature
+created_hour_utc,True,approved,Submission timing,Approved pre-outcome feature
+created_on_weekend,True,approved,Submission timing,Approved pre-outcome feature

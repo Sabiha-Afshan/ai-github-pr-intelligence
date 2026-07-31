@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-07-30 20:20:08.307102+00:00",
+  "stage": "Stage 4B",
+  "row_count": 600,
+  "validation_checks": {
+    "dataset_contains_600_prs": true,
+    "outcome_comparisons_created": true,
+    "outlier_summary_created": true,
+    "file_category_metrics_created": true,
+    "lifecycle_total_is_600": true,
+    "complexity_summary_created": true
+  },
+  "strongest_outcome_effects": [
+    {
+      "metric": "label_count",
+      "standardized_mean_difference": 0.5767,
+      "effect_size_label": "Moderate",
+      "merged_median": 0.0,
+      "unmerged_median": 0.0
+    },
+    {
+      "metric": "deletions",
+      "standardized_mean_difference": -0.17,
+      "effect_size_label": "Negligible",
+      "merged_median": 2.0,
+      "unmerged_median": 2.0
+    },
+    {
+      "metric": "security_sensitive_files_changed",
+      "standardized_mean_difference": -0.1659,
+      "effect_size_label": "Negligible",
+      "merged_median": 0.0,
+      "unmerged_median": 0.0
+    },
+    {
+      "metric": "changed_files",
+      "standardized_mean_difference": -0.1647,
+      "effect_size_label": "Negligible",
+      "merged_median": 2.0,
+      "unmerged_median": 1.0
+    },
+    {
+      "metric": "commit_count",
+      "standardized_mean_difference": -0.158,
+      "effect_size_label": "Negligible",
+      "merged_median": 1.0,
+      "unmerged_median": 1.0
+    }
+  ],
+  "generated_reports": {
+    "outcome_comparisons": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_outcome_comparisons.csv",
+    "outlier_summary": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_outlier_summary.csv",
+    "file_category_metrics": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_file_category_metrics.csv",
+    "lifecycle_bands": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_lifecycle_bands.csv",
+    "complexity_summary": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_complexity_summary.csv"
+  },
+  "overall_verification_passed": true
+}

@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-07-30 23:25:33.744467+00:00",
+  "stage": "Stage 5G",
+  "model_name": "contributor_neutral_random_forest_tuned",
+  "analysis_type": "Post-hoc explainability and final held-out error analysis",
+  "model_retrained": false,
+  "model_reselected": false,
+  "threshold_changed": false,
+  "test_rows": 76,
+  "feature_count": 61,
+  "explainability_summary": {
+    "row_count": 76,
+    "accuracy": 0.881578947368421,
+    "precision": 0.8536585365853658,
+    "recall": 0.9210526315789473,
+    "roc_auc": 0.9162049861495846,
+    "brier_score": 0.13424002964471604,
+    "incorrect_prediction_count": 9,
+    "high_confidence_error_count": 2,
+    "top_combined_features": [
+      "label_count",
+      "title_length",
+      "deletion_ratio",
+      "log1p_commit_count",
+      "files_modified",
+      "commit_count",
+      "body_length",
+      "file_records_returned",
+      "changed_files",
+      "log1p_body_length"
+    ]
+  },
+  "result_validation": {
+    "expected_feature_count": 61,
+    "actual_feature_count": 61,
+    "feature_count_valid": true,
+    "expected_row_count": 76,
+    "actual_row_count": 76,
+    "row_count_valid": true,
+    "importance_values_valid": true,
+    "calibration_validation": {
+      "prediction_count_total": 76,
+      "matches_expected_rows": true
+    },
+    "confidence_validation": {
+      "prediction_count_total": 76,
+      "matches_expected_rows": true
+    },
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "impurity_importance_exists": true,
+    "permutation_importance_exists": true,
+    "combined_importance_exists": true,
+    "calibration_report_exists": true,
+    "confidence_report_exists": true,
+    "error_analysis_exists": true,
+    "error_summary_exists": true,
+    "error_profile_exists": true,
+    "model_retrained": false,
+    "model_reselected": false,
+    "threshold_changed": false,
+    "validation_passed": true
+  },
+  "interpretation_warning": "Feature importance identifies predictive association, not causal impact. Correlated features may share or distort importance.",
+  "overall_verification_passed": true
+}

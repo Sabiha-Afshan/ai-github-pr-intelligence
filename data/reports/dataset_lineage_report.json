@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-07-30 16:19:20.178580+00:00",
+  "lineage": [
+    {
+      "order": 1,
+      "dataset_name": "Time-matched PR population",
+      "stage": "Population selection",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\raw\\pallets_flask_time_matched_600_pr_population.csv",
+      "authoritative_for": "Population membership and sampling design",
+      "description": "Selected PR identities and quarterly time-matched sampling metadata."
+    },
+    {
+      "order": 2,
+      "dataset_name": "Detailed 600-PR extraction",
+      "stage": "Raw detailed extraction",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_time_matched_600_detailed.csv",
+      "authoritative_for": "Raw detailed PR attributes and target outcome",
+      "description": "Complete PR metadata, outcomes, lifecycle information and changed-file indicators."
+    },
+    {
+      "order": 3,
+      "dataset_name": "Validated 600-PR dataset",
+      "stage": "Data validation",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_validated.csv",
+      "authoritative_for": "Data-quality analysis and validated values",
+      "description": "Quality-checked and standardized analytical dataset."
+    },
+    {
+      "order": 4,
+      "dataset_name": "Outlier-flagged 600-PR dataset",
+      "stage": "Outlier analysis",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_outlier_flagged.csv",
+      "authoritative_for": "Outlier analysis and robust transformations",
+      "description": "Validated dataset with outlier indicators and treatment metadata."
+    },
+    {
+      "order": 5,
+      "dataset_name": "Feature-engineered 600-PR dataset",
+      "stage": "Feature engineering",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_feature_engineered.csv",
+      "authoritative_for": "Model training and inference feature schema",
+      "description": "Modelling-ready features with timing and leakage controls."
+    },
+    {
+      "order": 6,
+      "dataset_name": "Model 1 time-based split assignments",
+      "stage": "Chronological splitting",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\evaluation\\corrected_model1_time_based_split_assignments.csv",
+      "authoritative_for": "Model 1 train-validation-test membership",
+      "description": "Chronological train, validation and test assignment for every selected PR."
+    }
+  ]
+}

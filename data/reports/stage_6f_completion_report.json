@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-07-31 01:09:39.635598+00:00",
+  "stage": "Stage 6F",
+  "model": "Model 2 — Merge-delay prediction",
+  "model_name": "logistic_candidate_07",
+  "model_family": "logistic_regression",
+  "target": "merge_delay_target",
+  "threshold": 0.75,
+  "test_rows": 38,
+  "feature_count": 58,
+  "test_metrics": {
+    "threshold": 0.75,
+    "accuracy": 0.9210526315789473,
+    "balanced_accuracy": 0.9115942028985508,
+    "precision": 0.9285714285714286,
+    "recall": 0.8666666666666667,
+    "f1": 0.896551724137931,
+    "roc_auc": 0.9333333333333333,
+    "average_precision": 0.9417291354322839,
+    "log_loss": 0.2899436217203326,
+    "brier_score": 0.0881942058712988,
+    "true_negative": 22,
+    "false_positive": 1,
+    "false_negative": 2,
+    "true_positive": 13,
+    "predicted_positive_count": 14,
+    "predicted_negative_count": 24,
+    "model_name": "logistic_candidate_07"
+  },
+  "validation_test_comparison": [
+    {
+      "metric": "accuracy",
+      "validation_value": 0.9047619047619048,
+      "test_value": 0.9210526315789473,
+      "test_minus_validation": 0.016290726817042578,
+      "absolute_difference": 0.016290726817042578
+    },
+    {
+      "metric": "balanced_accuracy",
+      "validation_value": 0.8814814814814815,
+      "test_value": 0.9115942028985508,
+      "test_minus_validation": 0.03011272141706922,
+      "absolute_difference": 0.03011272141706922
+    },
+    {
+      "metric": "precision",
+      "validation_value": 0.9230769230769231,
+      "test_value": 0.9285714285714286,
+      "test_minus_validation": 0.005494505494505475,
+      "absolute_difference": 0.005494505494505475
+    },
+    {
+      "metric": "recall",
+      "validation_value": 0.8,
+      "test_value": 0.8666666666666667,
+      "test_minus_validation": 0.06666666666666665,
+      "absolute_difference": 0.06666666666666665
+    },
+    {
+      "metric": "f1",
+      "validation_value": 0.8571428571428571,
+      "test_value": 0.896551724137931,
+      "test_minus_validation": 0.039408866995073955,
+      "absolute_difference": 0.039408866995073955
+    },
+    {
+      "metric": "roc_auc",
+      "validation_value": 0.8691358024691358,
+      "test_value": 0.9333333333333333,
+      "test_minus_validation": 0.06419753086419755,
+      "absolute_difference": 0.06419753086419755
+    },
+    {
+      "metric": "average_precision",
+      "validation_value": 0.7575139588080765,
+      "test_value": 0.9417291354322839,
+      "test_minus_validation": 0.1842151766242074,
+      "absolute_difference": 0.1842151766242074
+    },
+    {
+      "metric": "log_loss",
+      "validation_value": 0.5618041223543189,
+      "test_value": 0.2899436217203326,
+      "test_minus_validation": -0.27186050063398626,
+      "absolute_difference": 0.27186050063398626
+    },
+    {
+      "metric": "brier_score",
+      "validation_value": 0.14093061413118516,
+      "test_value": 0.0881942058712988,
+      "test_minus_validation": -0.05273640825988636,
+      "absolute_difference": 0.05273640825988636
+    }
+  ],
+  "error_count": 3,
+  "high_confidence_error_count": 2,
+  "configuration_validation": {
+    "missing_fields": [],
+    "threshold": 0.75,
+    "threshold_valid": true,
+    "feature_count": 58,
+    "actual_feature_count": 58,
+    "features_valid": true,
+    "test_used_for_selection": false,
+    "validation_passed": true
+  },
+  "output_validation": {
+    "missing_metrics": [],
+    "prediction_count": 38,
+    "expected_prediction_count": 38,
+    "prediction_count_valid": true,
+    "threshold_values": [
+      0.75
+    ],
+    "expected_threshold": 0.75,
+    "threshold_unchanged": true,
+    "confusion_total": 38,
+    "confusion_total_valid": true,
+    "correct_prediction_count": 35,
+    "error_count": 3,
+    "prediction_partition_valid": true,
+    "probabilities_valid": true,
+    "classification_report_valid": true,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "final_model_exists": true,
+    "test_predictions_exist": true,
+    "test_metrics_exist": true,
+    "classification_report_exists": true,
+    "error_report_exists": true,
+    "high_confidence_error_report_exists": true,
+    "validation_test_comparison_exists": true,
+    "locked_model_unchanged": true,
+    "threshold_changed": false,
+    "features_changed": false,
+    "model_retrained": false,
+    "validation_passed": true
+  },
+  "final_model_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\models\\merge_delay\\final_merge_delay_model.joblib",
+  "final_evaluation_policy": {
+    "model_retrained": false,
+    "features_changed": false,
+    "threshold_changed": false,
+    "test_used_for_model_selection": false,
+    "test_used_for_threshold_selection": false,
+    "test_used_for_final_evaluation": true,
+    "future_changes_require_new_holdout_data": true
+  },
+  "interpretation_warning": "The test split contains only 38 chronological records. Report exact metrics but do not imply universal performance across repositories or future time periods.",
+  "overall_verification_passed": true
+}

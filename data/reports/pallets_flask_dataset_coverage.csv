@@ -1,0 +1,3 @@
+dataset,population_count,dataset_unique_pr_count,covered_population_count,missing_population_count,outside_population_count,coverage_rate
+PR summaries,600,200,45,555,155,0.075
+Detailed PR records,600,600,600,0,0,1.0

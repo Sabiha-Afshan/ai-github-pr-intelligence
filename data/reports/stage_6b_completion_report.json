@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-07-31 00:18:22.642163+00:00",
+  "stage": "Stage 6B",
+  "model": "Model 2 — Merge-delay prediction",
+  "source_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model2_merge_delay_population.csv",
+  "output_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model2_merge_delay_approved_features.csv",
+  "target": "merge_delay_target",
+  "source_validation": {
+    "row_count": 300,
+    "column_count": 101,
+    "missing_required_columns": [],
+    "duplicate_pr_count": 0,
+    "validation_passed": true
+  },
+  "approved_feature_count": 58,
+  "approved_features": [
+    "additions",
+    "additions_iqr_outlier",
+    "body_length",
+    "body_length_iqr_outlier",
+    "body_word_count",
+    "body_word_count_iqr_outlier",
+    "change_density_per_file",
+    "changed_files",
+    "changed_files_iqr_outlier",
+    "commit_count",
+    "commit_count_iqr_outlier",
+    "configuration_files_changed",
+    "configuration_files_changed_iqr_outlier",
+    "created_day_of_week",
+    "created_hour_utc",
+    "created_on_weekend",
+    "deletion_ratio",
+    "deletions",
+    "deletions_iqr_outlier",
+    "documentation_files_changed",
+    "documentation_files_changed_iqr_outlier",
+    "files_added",
+    "files_added_iqr_outlier",
+    "files_modified",
+    "files_modified_iqr_outlier",
+    "files_removed",
+    "files_removed_iqr_outlier",
+    "files_renamed",
+    "files_renamed_iqr_outlier",
+    "has_any_iqr_outlier",
+    "has_configuration_changes",
+    "has_description",
+    "has_detailed_description",
+    "has_documentation_changes",
+    "has_multiple_commits",
+    "has_security_sensitive_changes",
+    "has_test_changes",
+    "iqr_outlier_feature_count",
+    "label_count",
+    "log1p_additions",
+    "log1p_body_length",
+    "log1p_body_word_count",
+    "log1p_changed_files",
+    "log1p_commit_count",
+    "log1p_deletions",
+    "log1p_total_changes",
+    "requested_reviewer_count",
+    "requested_reviewer_count_iqr_outlier",
+    "security_sensitive_files_changed",
+    "security_sensitive_files_changed_iqr_outlier",
+    "short_title",
+    "test_files_changed",
+    "test_files_changed_iqr_outlier",
+    "title_length",
+    "title_length_iqr_outlier",
+    "total_changes",
+    "total_changes_iqr_outlier",
+    "very_long_description"
+  ],
+  "split_target_summary": [
+    {
+      "split": "test",
+      "row_count": 38,
+      "delayed_count": 15,
+      "non_delayed_count": 23,
+      "delayed_rate": 0.39473684210526316
+    },
+    {
+      "split": "train",
+      "row_count": 220,
+      "delayed_count": 63,
+      "non_delayed_count": 157,
+      "delayed_rate": 0.2863636363636364
+    },
+    {
+      "split": "validation",
+      "row_count": 42,
+      "delayed_count": 15,
+      "non_delayed_count": 27,
+      "delayed_rate": 0.35714285714285715
+    }
+  ],
+  "dataset_validation": {
+    "row_count": 300,
+    "column_count": 61,
+    "approved_feature_count": 58,
+    "numeric_feature_count": 58,
+    "missing_required_columns": [],
+    "unexpected_columns": [],
+    "duplicate_pr_count": 0,
+    "target_values": [
+      0,
+      1
+    ],
+    "split_values": [
+      "test",
+      "train",
+      "validation"
+    ],
+    "blocked_columns_present": [],
+    "non_numeric_features": [],
+    "infinite_value_count": 0,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "approved_dataset_exists": true,
+    "feature_review_exists": true,
+    "feature_group_report_exists": true,
+    "validation_passed": true
+  },
+  "prediction_design": {
+    "population": "Merged pull requests only",
+    "target": "Merge duration greater than 48 hours",
+    "feature_policy": "Contributor-neutral numeric snapshot features only",
+    "blocked_information": [
+      "merge duration",
+      "outcome timestamps",
+      "target-derived columns",
+      "author association",
+      "raw identity fields",
+      "chronological period shortcuts",
+      "extraction-quality metadata"
+    ]
+  },
+  "overall_verification_passed": true
+}

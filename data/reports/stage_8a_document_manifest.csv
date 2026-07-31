@@ -1,0 +1,601 @@
+document_id,repository,pr_number,title,document_character_count,document_word_count,chunk_count,review_priority,review_priority_score,policy_risk_band,policy_risk_score,manual_review_required,merge_probability,delay_score_available,delay_probability,triggered_rule_count
+prdoc_771bb76adc7750ca0ebc,pallets/flask,5844,pre-commit: Add codespell,3673,526,7,Critical,94.1748,Critical,100.0,True,0.2608143609772189,True,0.9594029364299322,7
+prdoc_70dcfe694d641b6da04a,pallets/flask,4397,Remove X-XSS-Protection suggestion,2894,394,6,Critical,85.3982,Critical,98.0,True,0.662804556416862,True,0.9969549040124652,5
+prdoc_1908e0b55ad11421c346,pallets/flask,4139,Avoid race condition in example app,2828,417,6,Critical,84.7626,Critical,98.0,True,0.6840918341313483,True,0.9829596066285672,5
+prdoc_d838c75e7379dbb6f883,pallets/flask,5798,security docs for TRUSTED_HOSTS,2346,331,6,Critical,82.8668,Critical,96.0,True,0.5718918594916389,True,0.7936433330545047,5
+prdoc_69e9ee304279e3c60fe0,pallets/flask,5017,Add files via upload.,3563,543,7,Critical,81.1747,Critical,100.0,True,0.1912635337922163,False,,7
+prdoc_3c8e2ba1646df3130162,pallets/flask,4415,Fixed Typos and Grammatical Errors,3516,542,7,Critical,80.6951,Critical,98.0,True,0.1502444307432603,False,,5
+prdoc_f2f91946be86f82f5f5d,pallets/flask,5457,update project files,2639,366,6,Critical,80.4788,Critical,86.0,True,0.5174980083985552,True,0.9952481732942012,7
+prdoc_c1b926c76a39e24f30d8,pallets/flask,5765,Fix session cookie path resolution,2948,420,6,Critical,80.4253,Critical,98.0,True,0.1637353947600335,False,,5
+prdoc_2a821b9cecaaa89bbfaa,pallets/flask,5460,support FIPS builds without SHA-1,2589,381,6,Critical,79.5971,Critical,88.0,True,0.437112013398262,True,0.7426229376482432,4
+prdoc_551fc8566d45fc88bf1a,pallets/flask,4936,Code Refactor,3799,538,7,Critical,77.6703,Critical,100.0,True,0.3664842037835412,False,,6
+prdoc_d3c64c45fa73fe9556e5,pallets/flask,5713,try 3,3381,500,6,Critical,77.3873,Critical,100.0,True,0.3806336132417549,False,,7
+prdoc_2cdcb2eda4624dac8174,pallets/flask,3733,Disable required attributes overriding error output,2758,389,6,Critical,77.0206,Critical,100.0,True,0.3989684641473853,False,,6
+prdoc_d6300fe17906f83c0a7e,pallets/flask,5795,Update GitHub Actions workflow for artifact handling,3819,537,7,Critical,76.5557,Critical,70.0,True,0.138783489048591,True,0.9220933181336824,5
+prdoc_65c370e5d5b0473a2b71,pallets/flask,5695,Remove HTTP Public Key Pinning from docs,2635,376,6,Critical,76.4694,Critical,88.0,True,0.66808052758993,True,0.8420679841526947,4
+prdoc_24c4580b01e459d3aa4d,pallets/flask,3876,Increase the point in the comment.,2728,383,6,Critical,75.7806,Critical,96.0,True,0.3309686436000031,False,,7
+prdoc_8af2e53a908b4619aa28,pallets/flask,5377,[pre-commit.ci] pre-commit autoupdate,2662,349,6,Critical,75.1838,Critical,78.0,True,0.4248633708733975,True,0.8654011903676954,6
+prdoc_5ad6c8bb7ed4995adac2,pallets/flask,5727,use uv,3207,490,6,Critical,74.6486,Critical,92.0,True,0.4812525792309955,True,0.2982460872811567,6
+prdoc_57fe185a86bde8fec56b,pallets/flask,5865,Increase required flit_core version to 3.11,3436,504,7,Critical,74.6178,Critical,70.0,True,0.2240847543744287,True,0.9066326703014124,5
+prdoc_6f766227dcbf0e9e163e,pallets/flask,5449,Number of characters in lines,2808,396,6,Critical,74.5757,Critical,96.0,True,0.3912135581452383,False,,7
+prdoc_1e5a4e3009ce383f389d,pallets/flask,4173,Update... eliminated binaries of CPython 3.10.0 Beta 3.,2762,389,6,Critical,74.3668,Critical,100.0,True,0.5316619855321042,False,,8
+prdoc_05204bf6ef5a0fea869f,pallets/flask,5423,Use per-release URLs in GH env UI when publishing to the PyPI,2654,382,6,Critical,74.0432,Critical,78.0,True,0.4529842207635838,True,0.8268573960570009,6
+prdoc_cc8ef61c677618f75e7b,pallets/flask,5750,Add section on host header injection and _external=True in url_for (#…,2948,420,6,Critical,73.5985,Critical,88.0,True,0.1800745943759512,False,,4
+prdoc_c3a32848bab7e6b17db3,pallets/flask,4833,[pre-commit.ci] pre-commit autoupdate,2788,353,6,Critical,72.4514,Critical,78.0,True,0.5968609393400178,True,0.9125731071800656,6
+prdoc_ef0c730d0df57e10c7cf,pallets/flask,3737,provided possibility to configure digest method with different hashin…,2765,396,6,Critical,72.1739,Critical,88.0,True,0.2513026651326828,False,,4
+prdoc_207d1edd1e836be34626,pallets/flask,3524,Remove deprecated `license_file` option,3322,449,6,Critical,71.8574,Critical,70.0,True,0.3913102173278763,True,0.9455704297888016,5
+prdoc_316cf9ed8849c6892a0f,pallets/flask,2676,rewrite tutorial docs and example,3947,593,7,Critical,71.8174,Critical,80.0,True,0.7522309276748866,True,0.990802000620399,5
+prdoc_6d8e56c2d8a28ec78362,pallets/flask,3785,Add python 3.9 to CI.,2568,361,6,Critical,71.7356,Critical,78.0,True,0.4922992421592331,True,0.7254381030943419,6
+prdoc_04fc67667308080af911,pallets/flask,4272,docs/debugging.rst typo fix,3007,438,6,Critical,71.721,Critical,88.0,True,0.2739524071469808,False,,6
+prdoc_da535d7432cb8775bdc4,pallets/flask,5068,Documentation for Flask,3242,474,6,Critical,71.4379,Critical,88.0,True,0.2881033504718046,False,,6
+prdoc_9eb01be2297d670214e1,pallets/flask,3670,revising/consolidating error docs,3101,442,6,Critical,71.0967,Critical,88.0,True,0.3051669502432287,False,,6
+prdoc_3ddd4e7badcdcccf372a,pallets/flask,3183,Pre-commit: Black,2615,354,6,Critical,71.095,Critical,98.0,True,0.634973033126887,True,0.0062958695168265,7
+prdoc_ac1ee77075fdfdefc5a7,pallets/flask,5767,Collapsable posts,3302,486,6,Critical,71.0674,Critical,88.0,True,0.3066305190494906,False,,6
+prdoc_2cdb2f5daac6d36b4a80,pallets/flask,5602,Sept 6th demo,3294,488,6,Critical,70.5081,Critical,88.0,True,0.3345972274943751,False,,6
+prdoc_808f9cbafcbf69dea721,pallets/flask,5127,Split the App and Blueprint into Sansio and IO parts,3076,475,6,Critical,69.2402,Critical,72.0,True,0.6089470818551215,True,0.9746098546861076,4
+prdoc_8745622425869b88e990,pallets/flask,5706,Add PR trigger to workflow,3305,490,6,Critical,68.6758,Critical,78.0,True,0.1012078219872587,False,,6
+prdoc_0ea2057bf5048e45d25d,pallets/flask,3616,add readthedocs config,2456,343,6,Critical,67.6501,Critical,88.0,True,0.5922094129865796,True,0.152954579963068,6
+prdoc_4c9547a20c2ffd0817e5,pallets/flask,3184,Upload test results for Azure Pipelines,2679,366,6,Critical,66.3071,Critical,78.0,True,0.2196441455873162,False,,6
+prdoc_9061fcb9a8fb3588cf2c,pallets/flask,5772,newStaging,3186,471,6,Critical,65.9559,Critical,80.0,True,0.3022027740657465,False,,5
+prdoc_2dcf3205af1375512957,pallets/flask,3554,Drop Python 2,2619,364,6,Critical,65.2313,Critical,88.0,True,0.598532574693811,True,0.0001305942886013,6
+prdoc_f198f66fbfe4face5dc4,pallets/flask,5346,d,3306,506,7,Critical,64.1131,Critical,70.0,True,0.0693470511081779,False,,5
+prdoc_42c9cffeb2864959fbf4,pallets/flask,4274,docs/debugging.rst typo fix,2540,354,6,Critical,63.9641,Critical,76.0,True,0.2717961746914749,False,,6
+prdoc_f0289b1223a4dfa6cbde,pallets/flask,4678,Ghas test,3320,508,7,Critical,63.6871,Critical,70.0,True,0.0906453516259797,False,,5
+prdoc_7be7aeaecb25af4d80ed,pallets/flask,5945,add zizmor to scan workflows,2722,384,6,Critical,63.6553,Critical,78.0,True,0.58205580524665,True,0.3064252610011098,6
+prdoc_a01f7c8127cefcb333fb,pallets/flask,5125,Add basic Dockerfile for development,3377,512,7,Critical,63.6173,Critical,70.0,True,0.0941338035986362,False,,5
+prdoc_775d35f0c693c67d656e,pallets/flask,5433,Fixed broken docstring for jinja_loader in scaffold.py,2582,362,6,Critical,63.5889,Critical,86.0,True,0.6155561631140247,False,,6
+prdoc_3a2084ed70a3dfd2a760,pallets/flask,5793,Create python-package.yml,3212,472,6,Critical,63.1598,Critical,70.0,True,0.1170117902746245,False,,5
+prdoc_715b98d5e5c9c2b7c759,pallets/flask,5685,Improve invalid response error messages,4235,620,7,Critical,63.1348,Critical,70.0,True,0.118259018841427,False,,5
+prdoc_ef3db1ee765af86cd480,pallets/flask,4326,update requirements,2452,341,6,Critical,61.2742,Critical,88.0,True,0.8232031361293024,True,0.035883631103953,6
+prdoc_29fea61c64a8b2a71d3f,pallets/flask,5754,remove slsa provenance,2484,345,6,Critical,60.8186,Critical,78.0,True,0.6466624871880045,True,0.2034561831361174,6
+prdoc_11e95a4becd14f7a6cff,pallets/flask,4405,[pre-commit.ci] pre-commit autoupdate,2824,362,6,Critical,59.6121,Critical,78.0,True,0.5543973200858349,False,,6
+prdoc_e06f0abed7ce7c9d1d89,pallets/flask,5643,Use SPDX license identifier,2945,422,6,Critical,58.1192,Critical,70.0,True,0.3690417364983902,False,,5
+prdoc_417236b9afccab6a7ac2,pallets/flask,3230,Enable stylecheck tox run on Azure pipelines (fixes #3228),2408,340,6,Critical,57.5482,Critical,78.0,True,0.7067599781373758,True,0.0655598003890293,5
+prdoc_dd286180a1c82ccffbdb,pallets/flask,4943,update tested python versions,2480,348,6,Critical,56.0891,Critical,78.0,True,0.7495278981896094,True,0.025311538292744,6
+prdoc_a94e8a6a2944804ed335,pallets/flask,2699,add javascript ajax example,2663,371,6,Critical,55.8824,Critical,78.0,True,0.7593021498785573,True,0.0245650103666974,6
+prdoc_4677991be00cbe1a9629,pallets/flask,3922,various cleanup for consistency between projects,2406,336,6,Critical,55.5749,Critical,78.0,True,0.7896236396078832,True,0.0444901837438763,5
+prdoc_be25c2c5d04918c1c800,pallets/flask,4958,Bump actions/setup-python from 4.4.0 to 4.5.0,6240,680,8,Critical,54.9027,Critical,70.0,True,0.7183692947063277,True,0.2513410061388572,5
+prdoc_1c34298d8b082e63fbf2,pallets/flask,5481,test with python 3.13,2333,330,6,Critical,54.399,Critical,78.0,True,0.8337819816691555,True,0.0249777055421649,5
+prdoc_6b6166d956401a92cbac,pallets/flask,3854,[pre-commit.ci] pre-commit autoupdate,2375,328,6,Critical,53.1602,Critical,78.0,True,0.9067410349257616,True,0.0396706206546631,5
+prdoc_e62004b65150c8b1deda,pallets/flask,5812,merge app and request context,5694,888,9,Critical,53.0593,Critical,70.0,True,0.7599850647998041,True,0.1839346733400021,4
+prdoc_ea5097809d9325ec2d52,pallets/flask,3952,[pre-commit.ci] pre-commit autoupdate,2375,328,6,Critical,52.8996,Critical,78.0,True,0.9195914620807226,True,0.0394263681144249,5
+prdoc_44764b78987c3010344f,pallets/flask,3943,[pre-commit.ci] pre-commit autoupdate,2375,328,6,Critical,52.8996,Critical,78.0,True,0.9195914620807226,True,0.0394263681144249,5
+prdoc_6cf9a3b83c020e0402db,pallets/flask,5248,Bump pypa/gh-action-pypi-publish from 1.8.8 to 1.8.10,8736,786,8,Critical,52.7554,Critical,70.0,True,0.8718954583985012,True,0.3128854394373022,5
+prdoc_9ae4a227b48c25163f67,pallets/flask,3709,Common API Between Flask + Blueprint,2336,333,6,Critical,52.4688,Critical,70.0,True,0.854041624736285,True,0.2699750541571138,5
+prdoc_14aebb50c5f59fe29202,pallets/flask,4933,Bump dessant/lock-threads from 3 to 4,8652,798,9,Critical,51.9465,Critical,70.0,True,0.9098056270370132,True,0.3095047645635072,5
+prdoc_7b3b7728df73bc5c9c2e,pallets/flask,5212,Bump actions/setup-python from 4.6.1 to 4.7.0,8039,756,8,Critical,51.6799,Critical,70.0,True,0.7583403417325499,True,0.0897813203762613,5
+prdoc_7ad19a865ca14fb634f4,pallets/flask,5150,Bump actions/setup-python from 4.6.0 to 4.6.1,8639,772,8,Critical,51.3733,Critical,70.0,True,0.7920729104691905,True,0.1143157748146395,5
+prdoc_b3bd396abdd43b5cde3e,pallets/flask,5316,Bump actions/setup-python from 4.7.0 to 4.7.1,6089,685,8,Critical,51.1663,Critical,70.0,True,0.7166848882043156,False,,5
+prdoc_1e2194bc343dea95d373,pallets/flask,5184,Bump dessant/lock-threads from 4.0.0 to 4.0.1,8807,810,9,Critical,50.6878,Critical,70.0,True,0.9087299628308418,True,0.224160981376575,5
+prdoc_e497748f9178a88bc3c3,pallets/flask,5470,Bump the github-actions group across 1 directory with 4 updates,26153,1672,14,Critical,50.5688,Critical,70.0,True,0.7465608993859036,True,9.053691642481858e-07,5
+prdoc_8f4138b75830fec3b6ba,pallets/flask,5493,Bump actions/checkout from 4.1.4 to 4.1.6 in the github-actions group,14453,1165,11,Critical,50.5143,Critical,70.0,True,0.7505329638156125,True,0.0016638257317479,5
+prdoc_1a7e35f6ce7d6c68f3fc,pallets/flask,5451,Bump the github-actions group with 5 updates,36121,2462,19,Critical,50.3846,Critical,70.0,True,0.7557699223647407,False,,5
+prdoc_d5a2dee40b5a1ec88bba,pallets/flask,5352,Bump the github-actions group with 2 updates,14241,1155,11,Critical,50.1686,Critical,70.0,True,0.7687591663419503,True,0.0029202923846348,5
+prdoc_3214555a5862c6490f20,pallets/flask,5273,Bump actions/upload-artifact from 3.1.2 to 3.1.3,6672,699,8,Critical,50.1568,Critical,70.0,True,0.7671590644687095,False,,5
+prdoc_c8ab8086cf363f44a4db,pallets/flask,5516,Bump the github-actions group with 2 updates,19613,1485,13,Critical,49.9981,Critical,70.0,True,0.7751121116217917,True,2.474633007934836e-05,5
+prdoc_d401e4418d41671e5bc3,pallets/flask,5376,Bump the github-actions group with 3 updates,18628,1324,12,Critical,49.9897,Critical,70.0,True,0.7755156633533951,False,,5
+prdoc_13681b2e3a0d852e81dd,pallets/flask,5330,Bump the github-actions group with 4 updates,26755,1895,16,Critical,49.8568,Critical,70.0,True,0.7821608843645432,True,4.387959053535182e-07,5
+prdoc_63c4ba885ccb38fab1f7,pallets/flask,5539,Bump the github-actions group with 3 updates,10973,952,10,Critical,49.2116,Critical,70.0,True,0.830214936864384,True,0.0210590880591165,5
+prdoc_dfd123bd36cb93619c91,pallets/flask,5467,Bump the github-actions group with 2 updates,12009,1033,10,Critical,49.1126,Critical,70.0,True,0.8193681384551978,False,,5
+prdoc_34f38af4974778f3278a,pallets/flask,5038,Bump pypa/gh-action-pypi-publish from 1.6.4 to 1.8.4,11301,989,10,Critical,48.3123,Critical,70.0,True,0.8912984261958593,True,0.0425536635624588,5
+prdoc_a183c54dcf25c120136d,pallets/flask,5271,Bump actions/cache from 3.3.1 to 3.3.2,12386,1146,11,Critical,48.0579,Critical,70.0,True,0.8721049600367898,False,,5
+prdoc_ade668009fb80f9ee0e5,pallets/flask,4515,Bump actions/checkout from 2 to 3,11021,983,10,Critical,47.7201,Critical,70.0,True,0.9119057151216168,True,0.0305463275026402,5
+prdoc_83a01f7f0d71d5bb63dc,pallets/flask,5005,Bump slsa-framework/slsa-github-generator from 1.4.0 to 1.5.0,11849,985,10,Critical,47.5662,Critical,70.0,True,0.9172560309787156,True,0.0274235865766333,5
+prdoc_73a4ad59c5b509f67460,pallets/flask,4665,Bump actions/setup-python from 3 to 4,11151,993,10,Critical,47.5563,Critical,70.0,True,0.9173732576862752,True,0.0269145644010219,5
+prdoc_fb75e72356358295f5ca,pallets/flask,3401,Declare support for Python 3.8,2675,364,6,High,63.5842,High,68.0,True,0.7159142555678204,True,0.9135007673974482,5
+prdoc_d3176538892452afe497,pallets/flask,2609,allow nightly to fail on travis,2416,343,6,High,60.2387,High,68.0,True,0.6048965989324757,True,0.5424403277002824,5
+prdoc_31f892bbdce60e8d8848,pallets/flask,5000,Test2,3285,505,7,High,59.9767,High,68.0,True,0.2111673278600742,False,,5
+prdoc_dbf33bd9ec5133c00ed4,pallets/flask,4013,Fix typo in the example of nesting bp docs,2493,360,6,High,59.7074,High,68.0,True,0.2246295736493614,False,,5
+prdoc_a555c39d5e028e5bb77f,pallets/flask,4999,Ted spinks patch 2,3311,511,7,High,59.5244,High,68.0,True,0.2337778851972587,False,,5
+prdoc_689806f9ad3efd194b10,pallets/flask,4513,Defined constants to reduce duplication,2520,354,6,High,58.7588,High,68.0,True,0.2720612420870238,False,,5
+prdoc_9b502aeb6bfc1b1aac92,pallets/flask,5499,add SESSION_COOKIE_PARTITIONED config,3032,423,6,High,58.3851,High,48.0,True,0.3861745176366359,True,0.9939062618814134,3
+prdoc_36cef9d6267e77a5ed03,pallets/flask,4721,[pre-commit.ci] pre-commit autoupdate,2877,346,6,High,58.2471,High,68.0,True,0.548382858044685,True,0.3343187333502909,5
+prdoc_9cec559303717cf2ae2f,pallets/flask,3669,Error Docs Revision/Consolidation,2780,405,6,High,58.0812,High,62.0,True,0.8084784823029747,True,0.9300512106495804,4
+prdoc_2c694cdeeb3d58364020,pallets/flask,5517,[pre-commit.ci] pre-commit autoupdate,2515,331,6,High,56.9006,High,68.0,True,0.6912785365812794,True,0.4350800849300967,5
+prdoc_df81038cb1fc39e5c72c,pallets/flask,5187,[pre-commit.ci] pre-commit autoupdate,2501,331,6,High,56.5621,High,68.0,True,0.6915529090064574,True,0.4128802519620319,5
+prdoc_87d7c7713415b5dca149,pallets/flask,4899,[pre-commit.ci] pre-commit autoupdate,2501,331,6,High,56.5137,High,68.0,True,0.7010139025246954,True,0.4222633284427153,5
+prdoc_9f84499f1e7e6341ae34,pallets/flask,3488,Forces specific version of Werkzeug to prevent breaking Flask,2714,393,6,High,56.4088,High,68.0,True,0.3895608069153802,False,,5
+prdoc_4953c3ceab14b15d079c,pallets/flask,5541,[pre-commit.ci] pre-commit autoupdate,2515,331,6,High,55.9373,High,68.0,True,0.6661553256912064,True,0.3373620555836567,5
+prdoc_63872ee3fca98508e951,pallets/flask,4862,[pre-commit.ci] pre-commit autoupdate,2521,331,6,High,55.848,High,68.0,True,0.6741745546574689,True,0.3421003117727756,5
+prdoc_0204dcc7e11b6d2f3bf3,pallets/flask,3748,Update setup.py,2745,404,6,High,55.8042,High,60.0,True,0.1597900225637845,False,,4
+prdoc_c38207c32fb941772736,pallets/flask,5552,git add tox.ini requirements/typing.txt,3191,473,6,High,55.5962,High,60.0,True,0.1701921289924207,False,,4
+prdoc_a20acd8d822672ebf169,pallets/flask,5678,Enable PDF and ePub offline documentation downloads,3551,498,7,High,55.5933,High,60.0,True,0.170332752841753,False,,4
+prdoc_81706bfa0d9d79d314a3,pallets/flask,3487,Pins Werkzeug to 0.16.1 due to breaking change,2449,353,6,High,54.9115,High,68.0,True,0.4644254728951013,False,,5
+prdoc_426bba3fa4d09446db2c,pallets/flask,5615,use python 3.9 to test dev versions,2491,359,6,High,54.6085,High,68.0,True,0.6045175892313874,True,0.1665887717334268,5
+prdoc_11216ae7b8a8a3da41ee,pallets/flask,3156,update Jinja2 requirement to >=2.10.1 (re CVE-2019-10906),2588,359,6,High,54.5523,High,68.0,True,0.4823839128111366,False,,5
+prdoc_681bd3ec9978499fc90f,pallets/flask,2929,experimental readthedocs build,2781,407,6,High,54.3134,High,60.0,True,0.234330269899728,False,,4
+prdoc_1df599deff76c73816f0,pallets/flask,3836,Fix ci environment command syntax,2559,373,6,High,54.2719,High,60.0,True,0.5833345529332221,True,0.4625730437900553,4
+prdoc_a47cb66aa8e109b6e2a8,pallets/flask,3567,Fix flake8 repo url in .pre-commit-config.yaml,3069,423,6,High,53.8886,High,60.0,True,0.2555689265283934,False,,4
+prdoc_39075a6bc76dfa7acdc1,pallets/flask,4657,(GitHub workflows CI) Bump tests CI versions,2938,442,6,High,53.7898,High,60.0,True,0.2605101477977923,False,,4
+prdoc_fc1085beb8e6fd448619,pallets/flask,2600,add models,2274,329,6,High,53.3769,High,60.0,True,0.2811555578088652,False,,4
+prdoc_935f08fd792493973437,pallets/flask,3812,Add separate and more detailed issue templates,3099,458,6,High,53.1651,High,60.0,True,0.2917456045888832,False,,4
+prdoc_52a6c50fe1748215167e,pallets/flask,5289,refactor: Group development dependencies in a 'dev' section,3053,452,6,High,52.9167,High,60.0,True,0.3041671891160272,False,,4
+prdoc_bfd8cb0c8422508205a0,pallets/flask,3369,get_cookie_name in SessionInterface for easier overriding in SecureCookieSessionInterface,3928,544,7,High,52.66,High,48.0,True,0.624002502871132,True,0.9293399508095336,3
+prdoc_dd97ba29b59ed9f0897b,pallets/flask,5101,update werkzeug to >=2.3.3,2614,366,6,High,52.5295,High,68.0,True,0.6362375150642848,True,0.0702835874740546,5
+prdoc_f229e4e6686dbf27c7de,pallets/flask,2622,bump dependency versions,2320,325,6,High,51.4544,High,68.0,True,0.8917955778423303,True,0.3393560634145302,5
+prdoc_69db056c192aad974c0a,pallets/flask,5524,bumping werkzueg version to 3.0.3,2878,415,6,High,51.3646,High,60.0,True,0.3817716905895563,False,,4
+prdoc_fb2de90b6715a143a874,pallets/flask,3497,Pin Werkzeug < 1.0 for 0.12,2335,333,6,High,51.2632,High,68.0,True,0.8004647277381836,True,0.2048312366044509,5
+prdoc_8b2e3bb1cc380e755052,pallets/flask,5370,fix(sec): upgrade werkzeug to 3.0.1,2933,410,6,High,51.2102,High,60.0,True,0.3894923572774535,False,,4
+prdoc_2ddf0104e3a822cee7a9,pallets/flask,3489,Disallow werkzeug>=1.0,3402,456,6,High,50.0612,High,52.0,True,0.1869419980517431,False,,4
+prdoc_78ae30c75615ace081b0,pallets/flask,5807,Changed the static annotated type of select_jinja_autoescape method in src/flask/sansio/app.py,2817,398,6,High,49.7294,High,66.0,True,0.6585281449804807,False,,6
+prdoc_7dcf59a2b2a82e2a8dfa,pallets/flask,5036,Use latest patch of Werkzeug,2708,396,6,High,48.9445,High,60.0,True,0.5027736471254964,False,,4
+prdoc_a3c5d347de97d595d85c,pallets/flask,3376,update docs for new theme,2427,350,6,High,48.7311,High,68.0,True,0.8893543658519073,True,0.1545477646973671,5
+prdoc_b178287a85de2a1432b1,pallets/flask,5614,Drop Python 3.8 support,3633,540,7,High,48.1645,High,60.0,True,0.541777177268687,False,,4
+prdoc_34410bb6f8ab73196fb7,pallets/flask,5924,release version 3.1.3,2217,315,6,High,48.1163,High,68.0,True,0.8285092072075586,True,0.0324344046693287,4
+prdoc_0560782364290db74846,pallets/flask,3491,Handle breaking changes of Werkzeug v1.0.0,2886,424,6,High,48.0577,High,52.0,True,0.2871171324063203,False,,4
+prdoc_e10fabb4be6c2944c879,pallets/flask,5623,drop support for Python 3.8,2370,332,6,High,47.8628,High,68.0,True,0.8296926898774478,True,0.017107837853715,5
+prdoc_538db2e2b80a2b5f5f74,pallets/flask,3823,update requirements,2342,326,6,High,47.4715,High,66.0,True,0.8098280364475648,True,0.0512010250178532,5
+prdoc_9230395591a724d63ff2,pallets/flask,5730,release version 3.1.1,2217,315,6,High,47.442,High,68.0,True,0.8513958101035225,True,0.0179965723230199,4
+prdoc_db9f4f61a9a0667b4fc6,pallets/flask,5403,release version 3.0.2,2217,315,6,High,47.3212,High,68.0,True,0.87746852222385,True,0.0447033776336748,4
+prdoc_4dbbdcb07f8ed6a68e27,pallets/flask,4847,Fixed inconsistent double spacing in docs/api.rst,2275,328,6,High,47.232,High,40.0,True,0.6488061200312294,True,0.9472094606549784,3
+prdoc_f3d341c2bd3fe7f69027,pallets/flask,5736,support call template_filter without parens,4025,586,7,High,47.1223,High,40.0,True,0.6608298298196918,True,0.9559281541903136,3
+prdoc_29bf658bece02a821eb9,pallets/flask,5800,release version 3.1.2,2218,315,6,High,47.1145,High,68.0,True,0.8672333902747084,True,0.0172768322594852,4
+prdoc_8c9a39573ff534108b4d,pallets/flask,5386,release version 3.0.1,2217,315,6,High,47.0634,High,68.0,True,0.8923766096978513,True,0.0473925264780525,4
+prdoc_dbd3d6939792ffb4c15c,pallets/flask,3971,Move get_root_path back to flask.helpers,2403,328,6,High,45.723,High,50.0,True,0.6975125692561471,True,0.4782148091549148,4
+prdoc_68344bb96af4160a43f5,pallets/flask,4855,Fix subdomain inheritance for nested blueprints.,3027,451,6,High,45.5677,High,46.0,True,0.2166161620926933,False,,4
+prdoc_a54201bba52625b85b88,pallets/flask,2579,implement session.new for the default session,2518,365,6,High,45.5518,High,56.0,True,0.5424118964285671,False,,4
+prdoc_d30d5cd7e68727c9f53c,pallets/flask,2685,rework context docs,2866,427,6,High,45.0058,High,62.0,True,0.817884388652609,True,0.070896969302753,4
+prdoc_361b72ed8e34c973fb1a,pallets/flask,3386,Support loading configuration from toml files,2791,397,6,High,44.2537,High,48.0,True,0.3473162409658912,False,,4
+prdoc_1e51f673eea6e763b0bb,pallets/flask,5075,Update index.rst,2179,316,6,High,44.0218,High,50.0,True,0.4239079517274285,False,,3
+prdoc_762c492c36a796926106,pallets/flask,4645,Use timezone aware datetime object on session,3500,533,7,High,43.8534,High,48.0,True,0.6344427457922089,True,0.3561499078294161,3
+prdoc_ed8a613bcbd6414c16aa,pallets/flask,4412,Adding Fish commands to docs,2220,313,6,High,43.7608,High,40.0,True,0.7359738608807495,True,0.8320186506714254,3
+prdoc_33bca21fe0bcce6f237e,pallets/flask,5617,Update CHANGES.rst,2453,345,6,High,43.6964,High,54.0,True,0.5701809955460294,False,,5
+prdoc_be66fdd7557aa354ebab,pallets/flask,4748,refactor or remove old docs,2611,389,6,High,43.5883,High,62.0,True,0.8614203704297329,True,0.0344452922873089,4
+prdoc_435b549efb18281a9425,pallets/flask,2877,Add prefix for all commands in documentation,2336,341,6,High,42.8973,High,40.0,True,0.8116320433656046,True,0.8753322985417812,3
+prdoc_b6c6f6c7e74e8651f56d,pallets/flask,4859,Modify comment syntax error,2314,330,6,High,42.7335,High,56.0,True,0.6833259736264577,False,,4
+prdoc_0a6adf1f184529c34445,pallets/flask,4047,set maximum versions for 1.1.x to avoid new major versions,2733,403,6,High,42.7133,High,50.0,True,0.6529576578596537,True,0.2181602390638583,3
+prdoc_d6dec9c9b569e130c853,pallets/flask,5242,deprecate `__version__` attribute,2217,310,6,High,42.5825,High,58.0,True,0.8389680412191872,True,0.1107935551723536,4
+prdoc_a762d15b520d286393dd,pallets/flask,5217,Update dispatch by path example,2126,306,6,High,41.2659,High,40.0,True,0.702255585803714,True,0.6207330356985072,3
+prdoc_371eb135093aad8d6f29,pallets/flask,4623,MySQL Docs,2408,349,6,High,41.1544,High,40.0,True,0.2422814638333659,False,,3
+prdoc_77462328d38efe8b1606,pallets/flask,5858,"Refactor __init__.py module to improve organization, readability and public API structure",3971,568,7,High,41.0161,High,42.0,True,0.3141935478618125,False,,3
+prdoc_ff590e598922e18d9353,pallets/flask,2775,"Hi, I just translate readme.rst to Korean",2723,411,6,High,40.7387,High,40.0,True,0.2630635029790975,False,,3
+prdoc_f3dc7bec294ed2a770c3,pallets/flask,4624,add `View.init_every_request` attribute,2540,354,6,High,38.9279,High,48.0,True,0.8179805127575304,True,0.2724995931344341,4
+prdoc_d86bac0fac4bcb82a03e,pallets/flask,4283,use exception chaining,2117,302,6,High,36.803,High,40.0,True,0.8297071353016957,True,0.4931400219275919,3
+prdoc_98460b07b319ddb2c297,pallets/flask,4368,Update requirements,2325,334,6,High,36.4709,High,40.0,True,0.4764534800882353,False,,3
+prdoc_09042918824334e20a1e,pallets/flask,5757,svg logo,2096,305,6,High,35.8663,High,40.0,True,0.5129405848563101,True,0.0083390121514584,3
+prdoc_707294be248f0c59ad20,pallets/flask,4335,drop Python 3.6,2579,357,6,High,35.2104,High,46.0,True,0.7494039018443565,True,0.019899697828743,4
+prdoc_c29dcc23603847f80abc,pallets/flask,3507,Remove outdated Pycharm instructions,2569,359,6,High,35.1063,High,40.0,True,0.5446841310819857,False,,3
+prdoc_216e4dc4a2de39194106,pallets/flask,2969,Use https for external links wherever possible,2298,332,6,High,34.0363,High,40.0,True,0.7187847888299546,True,0.1607994667887816,3
+prdoc_b86358796d67962a38f0,pallets/flask,5900,document using gevent for async,2299,332,6,High,33.9914,High,40.0,True,0.8715896634104938,True,0.3615488194686789,3
+prdoc_d12459c07e84ceb71db2,pallets/flask,5550,Pyright types fixes,2193,317,6,High,33.9882,High,40.0,True,0.6005887340321897,False,,3
+prdoc_fea5399ac6bd034fd1ae,pallets/flask,4934,Rename `id` variable and mentions to `id_`,2401,334,6,High,33.6884,High,40.0,True,0.6155820970642248,False,,3
+prdoc_6bf5951141286b4c318f,pallets/flask,5731,drop end of life python versions,2455,343,6,High,32.571,High,46.0,True,0.8678538735161029,True,0.0018688947976171,4
+prdoc_0c50ebc76c39dc86f628,pallets/flask,4591,Docs omit becomingbigrst,2188,312,6,High,32.5302,High,40.0,True,0.8445496390227081,True,0.2280779057423442,3
+prdoc_ddd7bbd3a8d1d27daaba,pallets/flask,3199,Fix various small spelling errors.,2420,349,6,High,32.1607,High,40.0,True,0.8032084468322039,True,0.1483249673959935,3
+prdoc_06a951f265cd22710504,pallets/flask,4343,"document ""Adddress already in use"" error",2336,339,6,High,32.0781,High,40.0,True,0.8435526140751958,True,0.196609652421321,3
+prdoc_17401a1477fa6c077e82,pallets/flask,3828,move send_file and send_from_directory to Werkzeug,2920,397,6,High,29.2386,High,40.0,True,0.8412507118042593,True,0.00424296787517,3
+prdoc_8e7487e9b016f6892d86,pallets/flask,4995,remove previously deprecated code,2773,375,6,High,28.6647,High,40.0,True,0.8668988414780828,True,0.0001793625741637,3
+prdoc_aac6332faec284e42b17,pallets/flask,3412,Add `async` support,3356,506,7,Moderate,44.5889,Moderate,38.0,False,0.7295755554337384,True,0.9653605918756092,3
+prdoc_dd4df9918bca0d627fa7,pallets/flask,4610,find instance_path for namespace package,2888,423,6,Moderate,44.3445,Moderate,38.0,False,0.7256178254161992,True,0.9437931146499284,3
+prdoc_96e1a20289c807c33e28,pallets/flask,5270,Don't set the cli attribute in the sansio scaffold,2581,393,6,Moderate,43.6885,Moderate,32.0,False,0.5417298437942164,True,0.9148755205233426,2
+prdoc_ee3d5bb8cbc30c7918d2,pallets/flask,3643,simplify and modernize some stuff for the tutorial project,2769,406,6,Moderate,40.3243,Moderate,38.0,False,0.2187850066319537,False,,3
+prdoc_ad69f8d8028e3ba297ec,pallets/flask,5178,Create INFERENCE CALCULATOR.py,3038,474,7,Moderate,39.6838,Moderate,32.0,False,0.0558094036619549,False,,2
+prdoc_1685ca9d8116ad8c6f22,pallets/flask,5599,update helpers.send_from_directory docstring,2405,317,6,Moderate,38.7245,Low,18.0,False,0.3628663320217087,True,0.9521250557684344,2
+prdoc_80d9e700227ef01c39bb,pallets/flask,4401,Bump types-dataclasses from 0.6.1 to 0.6.2 in /requirements,4194,572,7,Moderate,37.9018,Moderate,32.0,False,0.144911483417545,False,,2
+prdoc_3b2637460cff1bed50c7,pallets/flask,4435,Bump types-contextvars from 2.4.1 to 2.4.2 in /requirements,4194,572,7,Moderate,37.8677,Moderate,32.0,False,0.146614186891831,False,,2
+prdoc_429cf06851fd098cc442,pallets/flask,4437,Bump types-setuptools from 57.4.7 to 57.4.8 in /requirements,4198,572,7,Moderate,37.8042,Moderate,32.0,False,0.1497903579010644,False,,2
+prdoc_f713cb537c841e317e6c,pallets/flask,5205,refactor: sphinx template docs to mkdocs material,3078,482,7,Moderate,37.4369,Moderate,32.0,False,0.1681570815277574,False,,2
+prdoc_9c8f4ff4fbdff99879c7,pallets/flask,3159,Improved CONTRIBUTING.rst,2071,292,6,Moderate,37.1996,Moderate,28.0,False,0.6791983831760673,True,0.8389067423628609,2
+prdoc_aecdd0cd542f7daccdd0,pallets/flask,5845,docs: Add explanation of reloader types and terminal output,3559,529,7,Moderate,37.1258,Moderate,32.0,False,0.1837084330212118,False,,2
+prdoc_e33d132ff53f9c393ae4,pallets/flask,4399,Bump types-setuptools from 57.4.4 to 57.4.5 in /requirements,4468,616,7,Moderate,36.3562,Moderate,32.0,False,0.2221913522029055,False,,2
+prdoc_d7717d16545ef5eb8855,pallets/flask,2781,route app.run through the cli whenever possible,3549,534,7,Moderate,36.3455,Moderate,32.0,False,0.222724867642522,False,,2
+prdoc_b9235aba0bf4b52a2928,pallets/flask,3587,Add support for IPython shell when using `flask shell`,3068,477,7,Moderate,36.2121,Moderate,32.0,False,0.2293962552526595,False,,2
+prdoc_53c379a033fe12687ffb,pallets/flask,2986,Do not handle RoutingExceptions with app error handlers,2129,299,6,Moderate,35.0325,Low,18.0,False,0.548978406730685,True,0.954135312926163,2
+prdoc_4b44c4b1a488024e7671,pallets/flask,3657,Update app.py,2089,312,6,Moderate,34.306,Moderate,30.0,False,0.2597001573517448,False,,2
+prdoc_508d55a14d97888e6157,pallets/flask,3177,docs/quickstart.rst - Adding URL Building details and moving it,2949,449,6,Moderate,34.1663,Moderate,32.0,False,0.3316848347733248,False,,2
+prdoc_fa413a3c948815e08fbc,pallets/flask,5196,Replace `run --debug` with `--debug run` in docs.,3153,497,7,Moderate,32.7398,Moderate,32.0,False,0.4030083991655877,False,,2
+prdoc_b4acc8e482caa2ce0a8c,pallets/flask,4439,Bump asgiref from 3.4.1 to 3.5.0 in /requirements,6642,717,8,Moderate,32.6849,Moderate,32.0,False,0.4057539875648262,False,,2
+prdoc_dc5876fc830a7d31c566,pallets/flask,5464,`SESSION_COOKIE_DOMAIN` caveat documentation,2109,298,6,Moderate,32.3946,Low,8.0,False,0.2869104065328454,True,0.8621855269632208,1
+prdoc_be7fe653f410c9e6d127,pallets/flask,3456,Fix a bug that the static endpoint will unexpectedly catch all,2537,381,6,Moderate,32.2388,Low,10.0,False,0.4382714499105981,True,0.966949075290206,1
+prdoc_b2a82cd21085ec17515d,pallets/flask,4190,Improve code example of api & jQuery docs,2247,319,6,Moderate,31.7824,Low,18.0,False,0.7182638004429108,True,0.9631756472882432,2
+prdoc_e562f0183b33a472faa7,pallets/flask,3290,Comment out helpful tips in ISSUE_TEMPLATE so they're visible only when editing,2243,327,6,Moderate,31.5682,Low,18.0,False,0.4923547636413277,True,0.6476877562817481,2
+prdoc_b27598e985a35fbbe1b5,pallets/flask,3652,Use valid HTML in base template,2106,309,6,Moderate,31.0689,Moderate,30.0,False,0.4215530504539176,False,,2
+prdoc_4bcb754083cae7cd6a5b,pallets/flask,2765,Add option to not overwrite debug flag in cli,2333,347,6,Moderate,31.0128,Low,18.0,False,0.7382781408034665,True,0.9385603452087588,2
+prdoc_d14ee36526e5077e4a1e,pallets/flask,3104,moving match_request to RequestContext.push to enable ModelConverter,2246,311,6,Moderate,31.0121,Low,18.0,False,0.7761433059560798,True,0.9889975560205748,2
+prdoc_88679f8187abeb1549e9,pallets/flask,5827,clarify 415 vs 400 errors for request.json,2473,361,6,Moderate,30.8691,Low,10.0,False,0.5245982949271746,True,0.9907407282947718,1
+prdoc_5a4b089a2094ec8f610c,pallets/flask,2672,Add nested blueprints,2254,321,6,Moderate,30.7468,Moderate,28.0,False,0.3726600198328832,False,,3
+prdoc_76ecc4960eacee7d9f19,pallets/flask,3434,lazy load app on reload only,2311,347,6,Moderate,30.6107,Moderate,32.0,False,0.8957011770487311,True,0.5149846441184465,2
+prdoc_c06f51ac2200192f3442,pallets/flask,3907,Add syntatic sugar for route registration,3040,470,7,Moderate,30.5714,Low,10.0,False,0.5011021508963471,True,0.939564424597142,1
+prdoc_deb37969ac7643569e9f,pallets/flask,5053,update test cookie handling for Werkzeug 2.3,2198,315,6,Moderate,30.4143,Moderate,38.0,False,0.8538734537548917,True,0.1861206349576947,3
+prdoc_8ee48391b4b7320178a1,pallets/flask,2993,Update documentation for users to use flask-caching instead of Werkzeug cache,2345,330,6,Moderate,30.0516,Moderate,30.0,False,0.723879881814607,True,0.3352827178877678,2
+prdoc_c1c8882e6c1719c099f7,pallets/flask,5885,clarify async view incompatibility with gevent monkey patching,2711,389,6,Moderate,29.4901,Moderate,22.0,False,0.240497102721175,False,,1
+prdoc_d9e943f3b6f3dcc08ecb,pallets/flask,2862,fix #2824 output more versions related flask,2370,350,6,Moderate,28.9908,Low,18.0,False,0.1354589652591179,False,,2
+prdoc_7025ebafb28b9d4e3451,pallets/flask,5808,fix annotation for select_jinja_autoescape,2142,312,6,Moderate,28.9812,Low,8.0,False,0.4908948488971886,True,0.9066049574957216,1
+prdoc_f8b9e6d1214d18edc492,pallets/flask,3137,Update CONTRIBUTING.rst discord link + style info,2474,367,6,Moderate,28.977,Low,10.0,False,0.6154667196128004,True,0.9857567692606536,1
+prdoc_f642208cf1243d1444a3,pallets/flask,2928,Fix #2926 `Default port overrides requesting a system assigned port`,2317,335,6,Moderate,28.8338,Low,18.0,False,0.7616536651547674,True,0.8244603400266939,2
+prdoc_e54f4ccdf7715dcd5483,pallets/flask,3421,Update documentation to reflect change in Gunicorn 20,2366,338,6,Moderate,28.6572,Low,18.0,False,0.1521389935881889,False,,2
+prdoc_392a7df64559c2450314,pallets/flask,2898,Fix #2897 - Add `extra_files` option to `flask run` CLI,2604,372,6,Moderate,28.5646,Low,10.0,False,0.6403986895129262,True,0.9915051154605792,1
+prdoc_e822e7f0aeaa5f12bc3d,pallets/flask,4534,Adapted input parameters type restriction for json.loads function - fixes #4519,2634,393,6,Moderate,28.5331,Low,10.0,False,0.5965874547635031,True,0.9309887651201648,1
+prdoc_eb98e192cac5a977b321,pallets/flask,4889,Updates to documentation,2278,331,6,Moderate,28.532,Low,16.0,False,0.0933977656685207,False,,2
+prdoc_18164c780615f977a7aa,pallets/flask,5609,Fix typo in the changelog,2129,299,6,Moderate,28.2861,Low,8.0,False,0.5668545003576161,True,0.9615454265538632,1
+prdoc_8050b3c9be33f931b52c,pallets/flask,5393,fix super call in list comprehension,3324,511,7,Moderate,28.1268,Low,10.0,False,0.573276864826187,True,0.8728219546781851,1
+prdoc_a3c4c625c44909c0afbb,pallets/flask,3437,Updated Issue Template,2019,298,6,Moderate,28.1155,Low,8.0,False,0.5669597457304308,True,0.9503119391989032,1
+prdoc_ee4f0ca338b4cc677c97,pallets/flask,3579,Officially support using pathlib.Path for static_folder.,2786,405,6,Moderate,28.0909,Low,10.0,False,0.6213697733356922,True,0.934551900352386,1
+prdoc_e6246762e5264971d5b4,pallets/flask,5962,remove unicode host test,2283,329,6,Moderate,27.9261,Low,18.0,False,0.4272234907630554,True,0.3180412692095465,2
+prdoc_7f46c05f6eab6aa6b2d1,pallets/flask,2783,2778 processes inappropriate exceptions,2206,317,6,Moderate,27.8847,Low,18.0,False,0.1907644346859093,False,,2
+prdoc_2adbc60b3ac1f812bd16,pallets/flask,5476,Bump the python-requirements group across 1 directory with 6 updates,27608,2152,17,Moderate,27.5332,Moderate,32.0,False,0.6633399230762748,True,1.1510140426859145e-07,2
+prdoc_473b7c9622c2fc47ed49,pallets/flask,4445,overriding FlaskClient.open works with redirects,2553,391,6,Moderate,27.4743,Moderate,22.0,False,0.5543513824481754,True,0.2840873733740688,1
+prdoc_96a3a54dbfb1c0a0abd7,pallets/flask,4298,fix errorhandler type check,4402,610,8,Moderate,27.4248,Low,10.0,False,0.5897017789369994,True,0.8479249577692638,1
+prdoc_24258a533aa6446a2159,pallets/flask,3728,Discover app factory deterministically,2292,323,6,Moderate,27.3159,Low,8.0,False,0.5903278054450307,True,0.9281657237084452,1
+prdoc_5eac9a1409c84367401b,pallets/flask,5389,Fix jinja_loader typehint,2841,430,6,Moderate,27.3075,Low,0.0,False,0.2554907582822477,True,0.8278187428958794,0
+prdoc_e62ba7cb637b3bad32ab,pallets/flask,3052,Getter and setter right way for App Config,2343,351,6,Moderate,27.2091,Low,18.0,False,0.2245432869033186,False,,2
+prdoc_498b1d01bf612f620025,pallets/flask,3690,Prevent duplicate Content-Type header,2262,325,6,Moderate,27.0964,Low,18.0,False,0.2301800969686369,False,,2
+prdoc_d3ea44af55e7d192b80d,pallets/flask,2809,test_url_generation_with_parameter added,2165,309,6,Moderate,26.9179,Low,18.0,False,0.2391055759331268,False,,2
+prdoc_643c69aa05954b40fae9,pallets/flask,2983,Don't pass unexpected exception types to error handlers,2301,319,6,Moderate,26.609,Low,18.0,False,0.2545501922638784,False,,2
+prdoc_6712f239aa917298cac9,pallets/flask,5896,Cache compiled templates in render_template_string,3698,493,7,Moderate,26.1344,Moderate,20.0,False,0.3432783164716944,False,,2
+prdoc_9150941e7a891d55ea34,pallets/flask,4912,Create app.py,2903,457,7,Moderate,26.0352,Low,10.0,False,0.0232399814099916,False,,1
+prdoc_f0912296a3d7439349e0,pallets/flask,4479,Allow loading of environment variables into the config,2770,422,6,Moderate,26.0334,Low,10.0,False,0.7483558849770889,True,0.9667043202869392,1
+prdoc_abb336b67baf5f70eef1,pallets/flask,2861,[docs] Fix broken Sphinx cross-references; use :doc: tags where necessary,3568,550,7,Moderate,25.8762,Low,10.0,False,0.6678881573562487,True,0.84892867262843,1
+prdoc_da9d5eddb77d28309f64,pallets/flask,3049,"Corrected a typo in a docstring: ""Help object"" --> ""Helper object""",2025,295,6,Moderate,25.8746,Low,18.0,False,0.9096561610464076,True,0.8245150098605212,1
+prdoc_b9a7084d3ea9193acfde,pallets/flask,4382,Fix the command for checking port on macOS in server docs,2079,308,6,Moderate,25.766,Low,8.0,False,0.7011264991748162,True,0.9725711647325636,1
+prdoc_5cb6d1d90e72ec693492,pallets/flask,3260,adds api error handling example to documentation,2670,405,6,Moderate,25.7657,Low,0.0,False,0.3916838454093833,True,0.9066250835886426,0
+prdoc_6afb40558ccd79506c25,pallets/flask,5357,Create new,2895,457,7,Moderate,25.6637,Low,10.0,False,0.0418139586239934,False,,1
+prdoc_45ceec4617d7212d86f0,pallets/flask,5120,Next of kin,2974,456,7,Moderate,25.6585,Low,10.0,False,0.0420741287505742,False,,1
+prdoc_ad2cd32d44c768f9c4a8,pallets/flask,3473,Add missing import for escape in doc,2116,299,6,Moderate,25.5617,Low,8.0,False,0.7106188128379798,True,0.9716075069750768,1
+prdoc_455dd4ab35df49ba0559,pallets/flask,4522,Test,2877,455,7,Moderate,25.419,Low,10.0,False,0.0540499055235154,False,,1
+prdoc_26460176065919e3671a,pallets/flask,3537,Update deprecated for config.from_json,1970,281,6,Moderate,25.4027,Low,18.0,False,0.9268812445952828,True,0.8160194101776505,1
+prdoc_a061aaee252fe21ba518,pallets/flask,2934,Fix issue #2933: Make sure the attachment filename is text type.,2640,368,6,Moderate,25.3521,Low,10.0,False,0.7573673192318187,True,0.9332939984958256,1
+prdoc_7dfec95ae1359589485d,pallets/flask,4432,Match typing declaration with implementation.,2517,380,6,Moderate,25.2167,Low,0.0,False,0.4552280425167433,True,0.9547525676198269,0
+prdoc_3e1045f0e6218509b974,pallets/flask,3059,Add support for PathLike objects in static file helpers,2274,326,6,Moderate,25.1639,Low,18.0,False,0.6883297395369058,True,0.4820350163212167,2
+prdoc_cada0197b1022e9404f7,pallets/flask,4631,Some documentation,2078,299,6,Moderate,25.0614,Low,18.0,False,0.3319292221681047,False,,2
+prdoc_3d4b077d7fd06d00500a,pallets/flask,4263,Extending FlaskClient can override follow_redirects,2970,459,7,Routine,24.9611,Low,10.0,False,0.0769451073100237,False,,1
+prdoc_5402fb1bde5248e3819d,pallets/flask,5818,pass context through dispatch methods,3835,563,7,Routine,24.895,Low,10.0,False,0.7112737076299867,True,0.84136336573785,1
+prdoc_ca2520b543ff253aa0c7,pallets/flask,5659,Async Iterable Response,2254,325,6,Routine,24.8548,Low,0.0,False,0.4773144846198315,True,0.960074709929382,0
+prdoc_2f6257d925244b6581df,pallets/flask,5671,Update app factory docs,2103,304,6,Routine,24.8503,Low,8.0,False,0.7464979599813686,True,0.972015813192148,1
+prdoc_70c9a1f756e854217eff,pallets/flask,3426,Fix: update a URL to the newest version,2156,316,6,Routine,24.7853,Low,18.0,False,0.3457361311422563,False,,2
+prdoc_9035f7ea551ce6b33444,pallets/flask,2917,Docs: fix some errors in errorhandling.rst,2169,318,6,Routine,24.6702,Low,8.0,False,0.7592464227979401,True,0.9770076002360116,1
+prdoc_bea79748c87025208975,pallets/flask,3011,Use imperative tense for CLI help text,1948,284,6,Routine,24.5968,Low,8.0,False,0.7292834746109518,True,0.932167081337592,1
+prdoc_fe1c565e35aee272deef,pallets/flask,5777,use IO[bytes] instead of BinaryIO for wider compatibility,2099,302,6,Routine,24.5598,Low,8.0,False,0.6283181548113227,True,0.7950778409208278,1
+prdoc_48c26f8cd8befda0c376,pallets/flask,2849,Refactor __init__.py imports,2899,426,6,Routine,24.5039,Low,10.0,False,0.099805438511047,False,,1
+prdoc_7889e4495db8fc1aecfb,pallets/flask,3031,Fix typos found while completing the Flask tutorial,2000,289,6,Routine,24.3202,Low,8.0,False,0.7275723290614863,True,0.9114451400633344,1
+prdoc_e0aacaed4c76341173a1,pallets/flask,5607,repo_path,1962,286,6,Routine,24.2033,Low,18.0,False,0.3748345497300647,False,,1
+prdoc_d1e780b22111b48fff64,pallets/flask,5723,Update macOS UI reference to “System Settings”,2679,395,6,Routine,24.1837,Low,0.0,False,0.5284349830141235,True,0.983495505933155,0
+prdoc_cf241ff202e1ad28640b,pallets/flask,5355,Update docs to address redesigned macOS settings app,2182,307,6,Routine,24.1294,Low,8.0,False,0.7705804212689605,True,0.9560691184907648,1
+prdoc_dd58f33e4f1b05197eb2,pallets/flask,5610,helpers.py,2934,448,7,Routine,23.9317,Low,10.0,False,0.128412931702131,False,,1
+prdoc_a675b16134dffbe01b7a,pallets/flask,5227,Update test_helpers.py,2916,457,7,Routine,23.8276,Low,10.0,False,0.1336176636752518,False,,1
+prdoc_38e858092bd95d54f90f,pallets/flask,3530,docs: testing.rst function def missing colon,1982,284,6,Routine,23.8198,Low,8.0,False,0.7992383782928634,True,0.9736357036454651,1
+prdoc_0ab0d1907173a7af4b84,pallets/flask,5674,Handle help arg by itself the same as no args,2520,390,6,Routine,23.7363,Low,0.0,False,0.5363228045404225,True,0.964181798108816,0
+prdoc_9cac86f6243bf7e1c1b6,pallets/flask,4577,update setupmethod behavior,3097,488,7,Routine,23.6557,Low,10.0,False,0.7239884382680601,True,0.7756954009933129,1
+prdoc_c86ed504d5b07cc87c26,pallets/flask,2854,Update docs to be more clear about from config instantiation,2595,386,6,Routine,23.6503,Low,0.0,False,0.5635226098170723,True,0.9947148356478268,0
+prdoc_58c2d1cabda46ea23be0,pallets/flask,5732,Dev0,2730,418,6,Routine,23.5994,Low,10.0,False,0.1450317650624156,False,,1
+prdoc_04287ee8ee2800f1a6f6,pallets/flask,3563,deprecate passing script_info to factory,2051,293,6,Routine,23.5237,Low,18.0,False,0.9108440088960912,True,0.6693701617350116,2
+prdoc_7c757c4f86b30b85ac93,pallets/flask,2913,Install CONTRIBUTING.rst with MANIFEST.in,2136,297,6,Routine,23.5223,Low,8.0,False,0.8214086374829547,True,0.9833641058786768,1
+prdoc_9d8e7ea7aadf8cb117c1,pallets/flask,5742,Docs: Fix escaping in HTML escaping example,2403,349,6,Routine,23.4529,Low,0.0,False,0.5666641779802466,True,0.9857484629563252,0
+prdoc_e877bba91fe964be2c4a,pallets/flask,5244,Ali,2885,455,7,Routine,23.3814,Low,10.0,False,0.155928929131883,False,,1
+prdoc_9646edb56fcbd384a31e,pallets/flask,3129,Fix some HTML injection paths in examples,2037,299,6,Routine,23.2951,Low,8.0,False,0.8180965124154733,True,0.9637995107183902,1
+prdoc_167d0a86667bf6e36c5f,pallets/flask,3344,Fix the contibution docs,2377,362,6,Routine,23.1957,Low,0.0,False,0.5741434036360525,True,0.978571799434659,0
+prdoc_c78a751c29d3d4b2c6e1,pallets/flask,5788,docs: added scroll-to-top button with JS and CSS,2891,420,6,Routine,23.0405,Low,10.0,False,0.1729744446401685,False,,1
+prdoc_2f411b50437c5f318492,pallets/flask,3622,add function REGEXP,2346,329,6,Routine,23.0332,Low,8.0,False,0.1083397174951872,False,,1
+prdoc_9f582dcd72062bc01e02,pallets/flask,4374,Update CONTRIBUTING.rst,2101,307,6,Routine,22.9449,Low,8.0,False,0.1127566350088243,False,,1
+prdoc_2a2fb7ed0d0e46eb7efc,pallets/flask,3360,"Add feature flask.cli.with_testrequestcontext,",2337,340,6,Routine,22.8354,Low,18.0,False,0.4432321616682212,False,,2
+prdoc_c37da5aee0e3e1d30aca,pallets/flask,3397,update readme.md,2005,291,6,Routine,22.8017,Low,8.0,False,0.119914996712662,False,,1
+prdoc_f9d5889376f67d5e63d8,pallets/flask,4071,Improve decorator factory typing,2814,425,6,Routine,22.7737,Low,10.0,False,0.6439695143347186,True,0.6102075844575184,1
+prdoc_dc3bf99026c0d528b4e0,pallets/flask,4200,Add coverage intro,2030,300,6,Routine,22.7708,Low,8.0,False,0.1214616208430008,False,,1
+prdoc_2531ec6c8df24737e051,pallets/flask,2641,Refactor test codes to PEP8 recommendation,2374,345,6,Routine,22.6521,Low,18.0,False,0.4523949612614834,False,,2
+prdoc_c4d1ab268019f43344ba,pallets/flask,2588,Remove the imported app module from sys.modules on SyntaxError,3139,469,7,Routine,22.6492,Low,10.0,False,0.1925388919308437,False,,1
+prdoc_163ee24a06cd523efab2,pallets/flask,5044,"added subdomain to the ""flask routes"" command",2150,316,6,Routine,22.6428,Low,8.0,False,0.1278592742833832,False,,1
+prdoc_c42e6ada3caf4e0a1500,pallets/flask,5702,remove tests about deprecated pkgutil.get_loader,2234,324,6,Routine,22.5535,Low,18.0,False,0.6231234483703354,True,0.2210638486051034,2
+prdoc_cdb9aa5d0a0634f9af6a,pallets/flask,4070,blueprints: fix nested blueprint url_prefix,3049,473,7,Routine,22.4704,Low,10.0,False,0.201481266911026,False,,1
+prdoc_e7c58ce9d8fc14c96d6e,pallets/flask,3136,changed / import to ( ),1986,296,6,Routine,22.4587,Low,18.0,False,0.4620639913619234,False,,1
+prdoc_979da865c3800a4fc9b2,pallets/flask,3069,Allow customizing url map class,2308,341,6,Routine,22.4374,Low,0.0,False,0.5718941998637556,True,0.9250198520637376,0
+prdoc_e8dbe60101bb01b20fad,pallets/flask,4809,add a `reset_blueprint` method,2586,391,6,Routine,22.4063,Low,10.0,False,0.2046870123717242,False,,1
+prdoc_bd40eb6d040495c33dba,pallets/flask,5313,Update link to hypercorn,2432,348,6,Routine,22.3768,Low,0.0,False,0.437813238481776,True,0.7422012243699977,0
+prdoc_acd56b09a974f6699e21,pallets/flask,5824,Clarify asyncio and gevent incompatibility in docs (#5817),2332,337,6,Routine,22.2627,Low,8.0,False,0.146867113846438,False,,1
+prdoc_21ea0078f311bcdd886b,pallets/flask,3382,Add hyperlink of contributing-testsuite in CONTRIBUTING,2037,289,6,Routine,22.2353,Low,8.0,False,0.52601541278815,True,0.5037078504071771,1
+prdoc_034da56e26852ac054f9,pallets/flask,2614,2613 avoid code repetition,2183,326,6,Routine,22.1724,Low,8.0,False,0.1513804027016466,False,,1
+prdoc_2a13f472362997213822,pallets/flask,4648,Modified bluprints.py and debughelpers.py to adhere more to PEP8 stan…,4452,698,8,Routine,22.1703,Low,10.0,False,0.2164865469417374,False,,1
+prdoc_c3f32b99f4205b143ceb,pallets/flask,3236,Do not register empty CLI groups from Blueprint,2035,300,6,Routine,22.1556,Low,8.0,False,0.6641703754631071,True,0.6826011592505363,1
+prdoc_c5914e0143efd490e5a3,pallets/flask,5780,Widen send_file type hint to IO[bytes],3412,519,7,Routine,22.0634,Low,10.0,False,0.2218295668836324,False,,1
+prdoc_35e0b7a1e1c9611b606a,pallets/flask,5344,fix missing quote in `--key` error message,2436,371,6,Routine,22.0403,Low,0.0,False,0.6261598319173425,True,0.970900542860304,0
+prdoc_aeb42fc41ddd88ed2912,pallets/flask,3910,Fix CLI for latest Werkzeug (2.0.0rc1),2835,434,6,Routine,22.0257,Low,10.0,False,0.2237144711128697,False,,1
+prdoc_e1139b238007457c4173,pallets/flask,3951,feat: support secret key has callable,2512,383,6,Routine,22.0213,Low,10.0,False,0.2239360785076983,False,,1
+prdoc_86eb8d19930323be7faa,pallets/flask,2940,Fixed typo in app.py,2422,362,6,Routine,21.9931,Low,0.0,False,0.3853678223710733,True,0.6466989047592094,0
+prdoc_067efbb1965b4b2b6716,pallets/flask,4223,Add support for a `FLASK_RUN_EXTRA_FILES` config variable.,3658,560,7,Routine,21.985,Low,10.0,False,0.2257524023317858,False,,1
+prdoc_0fb8036ed11348d33f24,pallets/flask,4133,HTTP method validation,2606,404,6,Routine,21.9842,Low,10.0,False,0.225791293064503,False,,1
+prdoc_b4e978164377c7c39106,pallets/flask,4698,Support calling with_appcontext decorator with parenthesis,3098,461,7,Routine,21.9823,Low,10.0,False,0.225882788910771,False,,1
+prdoc_c89d7e617e1d32ab64ca,pallets/flask,2859,"update README.rst / ""docs/tutorial/index.rst""",2190,312,6,Routine,21.5943,Low,8.0,False,0.1802855926188528,False,,1
+prdoc_d6e85d078356140d003f,pallets/flask,2650,Docs: Add example for 'any' route converter,2016,298,6,Routine,21.5106,Low,18.0,False,0.5094717385239322,False,,1
+prdoc_818d5e49cd33b2bd9706,pallets/flask,3405,Add support for decorating MethodViews with @Blueprint.route(),2929,444,6,Routine,21.4854,Low,10.0,False,0.2507284405980168,False,,1
+prdoc_5c631d4987073592c093,pallets/flask,3192,Update __init__.py,2041,299,6,Routine,21.472,Low,8.0,False,0.1863988024250282,False,,1
+prdoc_025b845dc7d8e74455b5,pallets/flask,3128,Fix grammar in docs,1968,292,6,Routine,21.3013,Low,18.0,False,0.5199339179576089,False,,1
+prdoc_db659f02ed1311a815c1,pallets/flask,5629,give priority to '-e/--env-file' option over default files (#5628),3093,474,7,Routine,21.2956,Low,10.0,False,0.260221627293411,False,,1
+prdoc_54aada8a868910747e60,pallets/flask,3897,Added multi-line imports to app.py file,2081,307,6,Routine,21.2885,Low,8.0,False,0.1955760576093105,False,,1
+prdoc_a73332471d70187f9cba,pallets/flask,4506,Update Testing Docs,2187,302,6,Routine,21.1438,Low,8.0,False,0.2028097138533121,False,,1
+prdoc_a4ea7014ac1ace8f5d0a,pallets/flask,5511,Dev test jannes,2123,312,6,Routine,21.1435,Low,18.0,False,0.527826872294151,False,,2
+prdoc_fecdb8f0c8e863418a72,pallets/flask,5735,fix #5729: raise TypeError when @app.template_filter is used without parenthesis,3086,431,6,Routine,20.9728,Low,10.0,False,0.2763623478734107,False,,1
+prdoc_4106327c50415e5094ac,pallets/flask,2855,use ipython when `flask shell`,2024,298,6,Routine,20.5214,Low,8.0,False,0.2339291583979391,False,,1
+prdoc_715734a94b9c0ec9d84c,pallets/flask,3280,Fixes #3277,2036,291,6,Routine,20.4662,Low,8.0,False,0.236689164756556,False,,1
+prdoc_cc00102cdcdd5e87ec12,pallets/flask,3296,"fixed example code in ""uploading files"" documentation",2291,331,6,Routine,20.4004,Low,8.0,False,0.2399810933591384,False,,1
+prdoc_bd93402271b93edd815d,pallets/flask,4560,Fix old behavior in `register_error_handler()`,2068,294,6,Routine,20.0978,Low,18.0,False,0.8914230593407168,True,0.415083697691089,2
+prdoc_2f31646f6a2b0122b794,pallets/flask,4927,Update debugger flag,2148,319,6,Routine,20.0915,Low,8.0,False,0.2554226467934123,False,,1
+prdoc_bf4d8011d5d70507db6b,pallets/flask,3989,Async improvements,2303,348,6,Routine,20.0822,Low,10.0,False,0.8218396971306171,True,0.667933344922895,1
+prdoc_3d6c96ab51649dfde95e,pallets/flask,5482,Fixing missing closing </li> statements in the base layout of the flaskr tutorial,2419,361,6,Routine,20.025,Low,10.0,False,0.3237482416289216,False,,1
+prdoc_8d12cf78e5983749b08e,pallets/flask,2910,fix issue: no theme named 'flask' found,2640,385,6,Routine,20.0179,Low,0.0,False,0.4035215217133699,True,0.5392221052284601,0
+prdoc_6a1f2abda9dffdb4fa7f,pallets/flask,3149,use redirect for uwsgi,2276,326,6,Routine,19.9161,Low,8.0,False,0.264197473377915,False,,1
+prdoc_ce1a1d107d9e5102e4c9,pallets/flask,5526,Add encoding parameter to open resource,2215,321,6,Routine,19.8956,Low,18.0,False,0.8122919688280443,True,0.2960965360898937,2
+prdoc_bbff03a89af932814bbe,pallets/flask,3030,[Docs] Add simple analogy to app factories doc,2117,312,6,Routine,19.7851,Low,8.0,False,0.2707442077022521,False,,1
+prdoc_a366fd08e4488b5371f7,pallets/flask,3460,static_folder and static_url_path can be different,2440,357,6,Routine,19.769,Low,0.0,False,0.754240062134383,True,0.9902551665291964,0
+prdoc_797cbb63fce249bb8f28,pallets/flask,3432,Document lazy loading and eager loading (fixes #3430),2053,295,6,Routine,19.6707,Low,8.0,False,0.2764669790623554,False,,1
+prdoc_d7aca7a1a0690d6bd8aa,pallets/flask,3703,Fixes #1902,2012,296,6,Routine,19.5744,Low,8.0,False,0.2812796475258222,False,,1
+prdoc_429712bdc971d2a75ed9,pallets/flask,5898,redirect defaults to 303,1898,276,6,Routine,19.5383,Low,8.0,False,0.7193300329379628,True,0.581660299102048,1
+prdoc_a11d783cecf1fba0fa9a,pallets/flask,5829,Docs typo/markup fixes,1907,278,6,Routine,19.4353,Low,8.0,False,0.4699194141835157,True,0.2422435507601308,1
+prdoc_a5f11235470fc8375829,pallets/flask,4184,Bump sphinx-tabs from 3.0.0 to 3.1.0,6216,651,8,Routine,19.3839,Low,10.0,False,0.526734465885637,True,0.2279028354430829,1
+prdoc_d9c78764bba659217350,pallets/flask,5402,"Fixed the Readme, app.run()",2175,315,6,Routine,19.3779,Low,8.0,False,0.2911050122248679,False,,1
+prdoc_7dc31c679cb6d797820a,pallets/flask,5634,setting `SERVER_NAME` does not restrict routing for both `subdomain_matching` and `host_matching`,2547,366,6,Routine,19.2515,Low,10.0,False,0.774145866651653,True,0.5489583596551735,1
+prdoc_d30f11f2460c38abfa2c,pallets/flask,2871,update description for database.rst become more understandable,2072,297,6,Routine,19.2049,Low,8.0,False,0.299755070820966,False,,1
+prdoc_28b6c19e6559fdfd9073,pallets/flask,4673,Update database.rst,1970,288,6,Routine,19.1831,Low,18.0,False,0.6258425075519152,False,,1
+prdoc_e9ce0ef5c372ee48aa83,pallets/flask,3274,Fix typo,1896,277,6,Routine,19.1322,Low,18.0,False,0.6504711604583897,True,0.0294407084084053,1
+prdoc_4beb9f91973e403e7744,pallets/flask,5141,lololo,2874,454,7,Routine,19.1223,Low,0.0,False,0.0438850605798301,False,,0
+prdoc_de64db89a6e56417b4b0,pallets/flask,5194,Update wrappers.py,2913,459,7,Routine,19.0673,Low,0.0,False,0.046634856732675,False,,0
+prdoc_829ebcae4692a4fe499e,pallets/flask,4685,Change _cv_req -> _cv_request,2057,297,6,Routine,19.0226,Low,18.0,False,0.7887661654670433,True,0.2065258037886702,2
+prdoc_a4447a84339ac847f433,pallets/flask,5522,Update waitress.rst,2713,412,6,Routine,18.9166,Low,0.0,False,0.1432870341309491,True,0.1188195437634584,0
+prdoc_998145687991f4e17868,pallets/flask,5797,push preserved contexts in correct order,2263,340,6,Routine,18.908,Low,10.0,False,0.5516288613269525,True,0.2293742347064819,1
+prdoc_b188fb9b4c45768ee08f,pallets/flask,5024,remove broken link,1912,279,6,Routine,18.8818,Low,18.0,False,0.7373122585321964,True,0.1285381963971577,1
+prdoc_cce28b78c8df3b56d298,pallets/flask,3975,Support using the route decorator on view classes,3006,435,6,Routine,18.849,Low,10.0,False,0.3825510160153863,False,,1
+prdoc_61fe62e4a7e1c362818c,pallets/flask,3042,my bad,1927,283,6,Routine,18.835,Low,8.0,False,0.3182519820596772,False,,1
+prdoc_aee0c22edcfa05c30d3c,pallets/flask,5911,Fix request resource leak when teardown handlers raise,2368,339,6,Routine,18.8307,Low,8.0,False,0.3184637824862704,False,,1
+prdoc_6947ed1576697b19b35a,pallets/flask,4781,fix a misspell,2890,452,7,Routine,18.8253,Low,0.0,False,0.0587332307095564,False,,0
+prdoc_619555feb26f9db61cd1,pallets/flask,3109,Added closing li tags,2027,303,6,Routine,18.7511,Low,8.0,False,0.3224445124346641,False,,1
+prdoc_0aac91ef09e5d9086c30,pallets/flask,3309,Add a minimal Flask application,2482,373,6,Routine,18.726,Low,0.0,False,0.0636999473663674,False,,0
+prdoc_0c24acd67c0507fe332f,pallets/flask,3802,[Minor changes] Update documentation by removing outdated information,2181,318,6,Routine,18.7244,Low,8.0,False,0.72263834372626,True,0.5318132341091427,1
+prdoc_53aaf019f9b7ce4e2fba,pallets/flask,4598,Some type errors and commenting of code,2948,460,7,Routine,18.7004,Low,0.0,False,0.064981976715689,False,,0
+prdoc_9574717eddb7f6bf29cf,pallets/flask,3407,add send_from_filepath,2253,329,6,Routine,18.6789,Low,8.0,False,0.3260525400214951,False,,1
+prdoc_24365e03109b2263fed3,pallets/flask,2652,Add documentation link in README,1937,283,6,Routine,18.6765,Low,18.0,False,0.6538876852978115,True,0.0036159502951153,1
+prdoc_a25e35677bc18302b061,pallets/flask,3419,Issue 3358 fix,1948,285,6,Routine,18.6726,Low,8.0,False,0.3263699358411592,False,,1
+prdoc_3a5809fb83638a3db417,pallets/flask,2582,cleanup werkzeug import,1975,288,6,Routine,18.6254,Low,8.0,False,0.6791366591230973,True,0.4672111366383131,1
+prdoc_5241af4fc040a8508ae8,pallets/flask,3807,Clarify it is talking about HTML tags,2081,308,6,Routine,18.614,Low,8.0,False,0.3293021442551466,False,,1
+prdoc_88f0424d1cf72b432aff,pallets/flask,3001,1.0 maintenance,2403,340,6,Routine,18.6027,Low,10.0,False,0.3948631791486121,False,,1
+prdoc_b88f88a2ea38279d9411,pallets/flask,2753,1.0 release codename,2039,301,6,Routine,18.5378,Low,8.0,False,0.333109926484755,False,,1
+prdoc_cd14e2a02e86d20ccbb6,pallets/flask,5409,Rename quickstart.rst to quickt.rst,2938,460,7,Routine,18.5322,Low,0.0,False,0.0733876856258891,False,,0
+prdoc_069b3f58bc82e23320eb,pallets/flask,5225,Update on-create-command.sh,2918,456,7,Routine,18.5223,Low,0.0,False,0.0738866911566049,False,,0
+prdoc_75fbda6863c49c1cfb76,pallets/flask,3458,Fix app.run() when port is not specified and `SERVER_NAME` contains only host name,2585,388,6,Routine,18.5089,Low,10.0,False,0.3995536034514502,False,,1
+prdoc_7f832ff4619396b7594c,pallets/flask,3337,add a note about named params for execute(),2813,440,6,Routine,18.4534,Low,0.0,False,0.0773312470793,False,,0
+prdoc_acfe3a3fce6970620294,pallets/flask,5801,Add DEVOPS_NOTES.txt for practice,2780,423,6,Routine,18.422,Low,0.0,False,0.0789023465397998,False,,0
+prdoc_126db7771d0c258dedd2,pallets/flask,3940,Fixture url updated,2044,291,6,Routine,18.4103,Low,8.0,False,0.33948503573913,False,,1
+prdoc_57d908fded6ec4f9f3ad,pallets/flask,3982,mini update,1946,284,6,Routine,18.3981,Low,8.0,False,0.3400941741674496,False,,1
+prdoc_077f22e9023a0ebc4a37,pallets/flask,3778,Check the static URL in advance,3465,482,7,Routine,18.3653,Low,0.0,False,0.0817334415245154,False,,0
+prdoc_46f3c3391c2fd14358e9,pallets/flask,5188,Update on-create-command.sh,2950,462,7,Routine,18.3325,Low,0.0,False,0.0833730016249379,False,,0
+prdoc_3d7a50e26865919347fc,pallets/flask,4970,Simplify if-return,2920,452,7,Routine,18.2945,Low,0.0,False,0.0852748142866712,False,,0
+prdoc_ef3c5839984745c75de8,pallets/flask,3276,Add closing tags to example's nav bar,2105,314,6,Routine,18.2886,Low,8.0,False,0.3455699597435619,False,,1
+prdoc_16014d9d38408e38434a,pallets/flask,5826,docs: clarify JSON parsing error conditions in Flask views,2303,337,6,Routine,18.2498,Low,8.0,False,0.3475110203032077,False,,1
+prdoc_0cc00a9f609a0b9f2c87,pallets/flask,3015,Lighttpd configuration: deploy script link,2658,398,6,Routine,18.215,Low,0.0,False,0.0892500707677758,False,,0
+prdoc_ca9052a55705ab05029f,pallets/flask,5630,update env file precedence,2487,360,6,Routine,18.1916,Low,10.0,False,0.78559169036251,True,0.4935591276340173,1
+prdoc_9d3bbbdd52b5d223a632,pallets/flask,4196,Remove assumption that only us generate warnings.,2254,328,6,Routine,18.167,Low,8.0,False,0.3516478020305782,False,,1
+prdoc_a213cc595f3107a26de2,pallets/flask,2904,add badges to README,2343,353,6,Routine,18.1544,Low,0.0,False,0.0922819140015868,False,,0
+prdoc_61336ee6db60749f5a69,pallets/flask,2835,Fix pep8 no blank line issue,2007,297,6,Routine,18.0923,Low,8.0,False,0.3553843354678273,False,,1
+prdoc_794d5a28cb4c1758fa7c,pallets/flask,5384,Update mongoengine.rst,2183,304,6,Routine,18.0643,Low,8.0,False,0.3567861991687343,False,,1
+prdoc_1a5d42fcd29f68a468c3,pallets/flask,5008,Edited readme installation of flask to Windows and Mac OS's,2983,472,7,Routine,18.0471,Low,0.0,False,0.0976428957274403,False,,0
+prdoc_9bf1352ca55431675ff2,pallets/flask,4768,fix one typo and two pycodestyle suggestions,2144,317,6,Routine,18.0343,Low,8.0,False,0.3582864340905666,False,,1
+prdoc_c4ab67099ca148eaed7b,pallets/flask,5708,Update README.md,2747,419,6,Routine,18.0278,Low,0.0,False,0.0986105065288484,False,,0
+prdoc_8f2c8d10cdfba634882d,pallets/flask,5811,Add various bugs for BugBot demo,3124,473,7,Routine,18.0049,Low,10.0,False,0.4247571822206283,False,,1
+prdoc_420e1ccce2bfef9efd16,pallets/flask,3699,remove unnecessary docstrings from tests,2031,295,6,Routine,17.9772,Low,8.0,False,0.7922026215999511,True,0.5747531791614737,1
+prdoc_2d8e3a8887cfae958b81,pallets/flask,4033,Fix link to Fork flask,2026,290,6,Routine,17.9563,Low,8.0,False,0.3621838796405356,False,,1
+prdoc_30c368ea18b4d2b0ce50,pallets/flask,4237,fix issue 3396,2899,456,7,Routine,17.9545,Low,0.0,False,0.1022743183723395,False,,0
+prdoc_28ba1851c4c9289e3ceb,pallets/flask,3605,add support to override commands,2087,308,6,Routine,17.9483,Low,8.0,False,0.362583541141845,False,,1
+prdoc_85cf3d5cd6eb98051be7,pallets/flask,4843,misleading code correction,3209,496,7,Routine,17.9267,Low,0.0,False,0.1036647525326864,False,,0
+prdoc_e84711e13f0ceb9ad93f,pallets/flask,2592,reset standard os env after each test,2175,328,6,Routine,17.7862,Low,8.0,False,0.6770398463629556,True,0.408469108146235,1
+prdoc_9a9eeb92a00e895e3f29,pallets/flask,3324,cli: optionally silence flask startup messages when using werkzeug,3491,534,7,Routine,17.74,Low,0.0,False,0.1129995141177269,False,,0
+prdoc_da6efa49cd984a9084d6,pallets/flask,3784,test boom,2435,367,6,Routine,17.7133,Low,0.0,False,0.1143327047491732,False,,0
+prdoc_b616755edc08b86dc781,pallets/flask,3333,Add tip for startup of development server,2263,344,6,Routine,17.7132,Low,0.0,False,0.1143395078390037,False,,0
+prdoc_3f4fc6cf942cf935d07c,pallets/flask,3824,adding an assertion to catch a mistake I made,2891,438,6,Routine,17.7121,Low,0.0,False,0.1143952850867128,False,,0
+prdoc_234f0428522cb78d7501,pallets/flask,5875,docs: clarify 415 error when receiving JSON requests,2380,356,6,Routine,17.5606,Low,0.0,False,0.1219715341630308,False,,0
+prdoc_b9ae987739977b8c95ab,pallets/flask,2575,docs: add Hasura as hosted deployment option,2810,411,6,Routine,17.5174,Low,0.0,False,0.1241322378963521,False,,0
+prdoc_1e2ad10f00f3cc9c280a,pallets/flask,3793,Add signed int and float to docs,2952,397,6,Routine,17.4969,Low,0.0,False,0.1251542202354501,False,,0
+prdoc_ea05b077847d199c3796,pallets/flask,4897,Matching data types of Static_folder & template_folder,3142,490,7,Routine,17.4632,Low,0.0,False,0.1268407940591786,False,,0
+prdoc_6e307724d3c34c8b1b38,pallets/flask,4640,Update README.rst,2236,333,6,Routine,17.4545,Low,0.0,False,0.1272730194771266,False,,0
+prdoc_c20ffbd397d4dae8a61f,pallets/flask,5982,Security: Path traversal risk in Blueprint.open_resource,2777,388,6,Routine,17.4276,Low,0.0,False,0.1286222634505493,False,,0
+prdoc_8f8bb30648544dfbde60,pallets/flask,2797,Update cli.py,1965,286,6,Routine,17.4119,Low,8.0,False,0.3894074998933822,False,,1
+prdoc_6a943e5898f6dba3252a,pallets/flask,2682,Merge pull request #1 from pallets/master,2513,376,6,Routine,17.3735,Low,0.0,False,0.1313260612481213,False,,0
+prdoc_e6514df29476b1a8b51a,pallets/flask,3467,Merge pull request #1 from pallets/master,2515,377,6,Routine,17.3624,Low,0.0,False,0.1318776216053556,False,,0
+prdoc_5127bc2c3ee89313c612,pallets/flask,3850,Add link to reference docs in README,2648,406,6,Routine,17.3502,Low,0.0,False,0.1324922486958981,False,,0
+prdoc_cd8f50d17e48e112ee32,pallets/flask,2619,[update] license year,2000,292,6,Routine,17.3392,Low,8.0,False,0.3930403309951553,False,,1
+prdoc_1da48e0c02917c488921,pallets/flask,3073,Add link to Render deployment,2195,318,6,Routine,17.3261,Low,8.0,False,0.3936968644679576,False,,1
+prdoc_dddd6442ccfed267f357,pallets/flask,2740,Adding Windows PowerShell specfic docs,2070,301,6,Routine,17.3203,Low,8.0,False,0.3939829460166661,False,,1
+prdoc_8449f57f5f8473ff7bfd,pallets/flask,2944,Docs: add warning about custom commands with Click v7.x turning underscores to dashes,2451,360,6,Routine,17.2764,Low,0.0,False,0.1361798215076466,False,,0
+prdoc_1d2f995b504942bb4502,pallets/flask,3461,Merge pull request #1 from pallets/master,2515,377,6,Routine,17.2551,Low,0.0,False,0.1372451282074492,False,,0
+prdoc_cb068e5e7e9b4f8c9ba7,pallets/flask,4540,update #loads param's type annotation,2672,394,6,Routine,17.1865,Low,0.0,False,0.1406773181536451,False,,0
+prdoc_8d972b35a79408d7a65c,pallets/flask,5874,Clarify 415 Unsupported Media in JSON docs,2218,328,6,Routine,17.1801,Low,8.0,False,0.4009929561026433,False,,1
+prdoc_f955d031cd988ee5e4b0,pallets/flask,4111,Clarification added to the tutorial,2253,338,6,Routine,17.18,Low,0.0,False,0.1409988237320969,False,,0
+prdoc_0a0c36427acbebd4446b,pallets/flask,3278,Fixes for PEP451 import loaders and pytest 5.x,2256,330,6,Routine,17.1441,Low,18.0,False,0.8015521518080451,True,0.0983412164512612,2
+prdoc_f435b6e74ca1140be1a9,pallets/flask,5202,Update README.rst,2898,456,7,Routine,17.1246,Low,0.0,False,0.1437689176517842,False,,0
+prdoc_dbf0a55d4fe3b5a7964d,pallets/flask,5216,changed dispatched by path example,1986,290,6,Routine,17.1035,Low,8.0,False,0.4048269469836423,False,,1
+prdoc_b78c5436cbccbdad1224,pallets/flask,4921,Allow pathlib.Path for template_folder,2952,455,7,Routine,17.1027,Low,0.0,False,0.6597086042121587,True,0.6864571057157972,0
+prdoc_de5a7a05b5b7687f7313,pallets/flask,3205,Add keyword argument support to app factory function signature,2540,381,6,Routine,17.0896,Low,0.0,False,0.1455213523101458,False,,0
+prdoc_e7e9f572c1eec1087dea,pallets/flask,4463,:bug: fix CONTRIBUTING.rst `tabs` rendering,2623,398,6,Routine,17.0542,Low,0.0,False,0.1472909569845163,False,,0
+prdoc_90cb5e7849a5d4272a9d,pallets/flask,3378,Added escape,2616,398,6,Routine,17.01,Low,0.0,False,0.1495017378367553,False,,0
+prdoc_98c699e684dbd10ddd4c,pallets/flask,3581,Another missing import and instantiation,2562,382,6,Routine,16.9847,Low,0.0,False,0.1507627206924895,False,,0
+prdoc_c046b19f05e5aeb3be8c,pallets/flask,5300,Update factory.rst,2049,286,6,Routine,16.9656,Low,8.0,False,0.4117175768232344,False,,1
+prdoc_14e5f2fcac01924d8164,pallets/flask,5717,Improve README.md structure and clarity for better onboarding,3202,468,7,Routine,16.9522,Low,0.0,False,0.1523889227820408,False,,0
+prdoc_345a2710a1d593b72b53,pallets/flask,5163,Update quickstart.rst,3035,478,7,Routine,16.9507,Low,0.0,False,0.1524637167732524,False,,0
+prdoc_56e5f196ac815ec722b3,pallets/flask,4797,"Suggested fixes by iCR, OpenRefactory, Inc.",2887,407,6,Routine,16.9441,Low,0.0,False,0.1527972240111393,False,,0
+prdoc_d295a1801753fc0c103b,pallets/flask,3483,Update on line 203,2214,336,6,Routine,16.9363,Low,0.0,False,0.1531851153478051,False,,0
+prdoc_31308a87fe45c2cb248c,pallets/flask,3683,Fixing small html issues in flashing patterns docs,2435,353,6,Routine,16.933,Low,0.0,False,0.1533480337640344,False,,0
+prdoc_79e9d235adff12f1f5b8,pallets/flask,5799,refactor stream_with_context for async views,2389,349,6,Routine,16.931,Low,10.0,False,0.7364443964106188,True,0.3439918013030884,1
+prdoc_2a341db4fe0291432858,pallets/flask,5463,added changes,2739,419,6,Routine,16.9265,Low,0.0,False,0.1536725340358048,False,,0
+prdoc_d830953d34315ccb7a6b,pallets/flask,3079,1.0 maintenance,2444,367,6,Routine,16.8849,Low,0.0,False,0.1557564459024437,False,,0
+prdoc_4e9336e444d4cdcd624b,pallets/flask,3121,Update README.rst for beginners,2460,360,6,Routine,16.8749,Low,0.0,False,0.1562565954076359,False,,0
+prdoc_c45a2a29da21779bb7fe,pallets/flask,3601,Fix function name in example,2739,407,6,Routine,16.8439,Low,0.0,False,0.1578069872539279,False,,0
+prdoc_c3af639393f86e007011,pallets/flask,4186,extending FlaskClient can override follow_redirects,2962,459,7,Routine,16.7964,Low,0.0,False,0.1601810187090071,False,,0
+prdoc_fb7f2054ce240c346dc0,pallets/flask,5928,all teardown callbacks are called despite errors,2570,384,6,Routine,16.7951,Low,10.0,False,0.769505133557648,True,0.3790137973495568,1
+prdoc_fa8c682b7d2eb520daf6,pallets/flask,3063,clear KeyError in production for Werkzeug 0.15,2203,320,6,Routine,16.7894,Low,8.0,False,0.6153212100594584,True,0.2597207359831734,1
+prdoc_7c15479ef696bbfb56ad,pallets/flask,3920,Small typo correction,2092,309,6,Routine,16.7296,Low,8.0,False,0.4235219788176055,False,,1
+prdoc_f57a4b690ef12d57e980,pallets/flask,4764,Update streaming.rst,2467,378,6,Routine,16.7057,Low,0.0,False,0.1647150722911299,False,,0
+prdoc_8f79a3be44479e67bbf2,pallets/flask,5647,fix type hint for `cli_runner.invoke`,2190,314,6,Routine,16.6813,Low,8.0,False,0.4632613294713851,True,0.0497692988485873,1
+prdoc_a6948d3f255f7e653e78,pallets/flask,5444,avoiding potential type's mismatch,2963,457,7,Routine,16.6774,Low,0.0,False,0.1661316300669299,False,,0
+prdoc_cc20100a82bff8beb051,pallets/flask,3082,_compat.py: Use feature detection instead of version detection,3388,474,7,Routine,16.6156,Low,0.0,False,0.2767836374789548,True,0.143420837759196,0
+prdoc_0beb5a35bb9ca57a4eb9,pallets/flask,2921,Fix issue #2900: not use app_context context manager while accessing configuration,2370,351,6,Routine,16.6111,Low,0.0,False,0.1694445261081424,False,,0
+prdoc_691e6fd3a288e3a8949b,pallets/flask,3896,Add Qovery option to deploy Flask,2564,388,6,Routine,16.6005,Low,0.0,False,0.1699752326377237,False,,0
+prdoc_28cf129f80885535f0bb,pallets/flask,3338,Add deploying on Render link,2015,294,6,Routine,16.5622,Low,8.0,False,0.4318890393863738,False,,1
+prdoc_09a0ad3d89c60a6ffbdb,pallets/flask,2955,add 3 dot,2431,369,6,Routine,16.5381,Low,0.0,False,0.173094752879802,False,,0
+prdoc_a5bad9c75172ae7db4a8,pallets/flask,4752,#378 explictly set charset for jsonify(),2791,425,6,Routine,16.426,Low,0.0,False,0.1787002733239018,False,,0
+prdoc_afd45396c67330593712,pallets/flask,5693,add fixture to mock importlib.util.find_spec for custom loaders in tests,2809,398,6,Routine,16.3115,Low,0.0,False,0.1844267433571541,False,,0
+prdoc_e25ac151508c382b058e,pallets/flask,5487,Edited variable names in quickstart guide,2111,307,6,Routine,16.2439,Low,8.0,False,0.4964527201547777,True,0.0648641411375604,1
+prdoc_689ca066a09b89bb9a0f,pallets/flask,4871,Code Optimized,2895,456,7,Routine,16.1194,Low,0.0,False,0.1940279299673676,False,,0
+prdoc_9f12a824b6f5af318313,pallets/flask,5478,Quebrando o teste,2746,421,6,Routine,16.1143,Low,0.0,False,0.1942853292254832,False,,0
+prdoc_6dc75d230c7c7a7d3ef4,pallets/flask,3173,Add link to official Discord chat server,1996,294,6,Routine,16.0874,Low,8.0,False,0.4704272310472624,True,0.019728315635489,1
+prdoc_99b950e5b7b5a15cb61a,pallets/flask,4829,Update app.py,2922,459,7,Routine,16.0646,Low,0.0,False,0.1967690287200026,False,,0
+prdoc_900507070ce7d774581a,pallets/flask,5950,Added a comprehensive real world example to the 'HTML Escaping',2159,319,6,Routine,16.0636,Low,8.0,False,0.4568177346419689,False,,1
+prdoc_a93d5a8bc9d9506ff040,pallets/flask,4966,Fix command-line formatting,1957,280,6,Routine,16.0383,Low,8.0,False,0.5249876641081312,True,0.0892034994061338,1
+prdoc_3e26a91ce97ba0632b5b,pallets/flask,2874,fix little grammar detail in flaskr/db.py,2158,322,6,Routine,16.0275,Low,8.0,False,0.4586231821118756,False,,1
+prdoc_1af8d06104acbafa6413,pallets/flask,3101,Fix formatting issue in quickstart guide,2046,299,6,Routine,16.0148,Low,8.0,False,0.5474244124960402,True,0.1175556510877251,1
+prdoc_3a740164f785440889e4,pallets/flask,3200,Remove unused url_join of blueprints.py - 1.0 maintenance,2119,303,6,Routine,16.0,Low,8.0,False,0.4599979478119937,False,,1
+prdoc_db3386523daaa2ab28eb,pallets/flask,2730,Fix registering partials as view functions,1962,285,6,Routine,15.9392,Low,18.0,False,0.8714437722056534,True,0.1112063700294096,1
+prdoc_baa18bd7185018d0a3e5,pallets/flask,5966,✨ Quality: Celery task result endpoint crashes on task failure,3768,534,7,Routine,15.8279,Low,0.0,False,0.2086064857028995,False,,0
+prdoc_90ef80d1af8957b003e3,pallets/flask,3321,Fix github link generator for docs,1985,290,6,Routine,15.7185,Low,8.0,False,0.5522886648226514,True,0.1042831955741126,1
+prdoc_45b51a73f89612958ccc,pallets/flask,2963,Fix #2961：ignore colon followed by slash when split app_import_path,2428,360,6,Routine,15.6837,Low,0.0,False,0.5319896760036378,True,0.4215681836890961,0
+prdoc_b29ba39d35501902d468,pallets/flask,2630,Fix docs for test_request_context,2143,311,6,Routine,15.679,Low,8.0,False,0.5130859656654961,True,0.0493809153389848,1
+prdoc_5b9290102f6fb0e07ef3,pallets/flask,5420,Security upgrade cryptography from 42.0.2 to 42.0.4,2859,380,6,Routine,15.6562,Low,0.0,False,0.2171885211524051,False,,0
+prdoc_572a079ffa5241abba29,pallets/flask,5303,docs/testing.rst: fix follow_redirects sample code,1973,283,6,Routine,15.5965,Low,18.0,False,0.8238373236633201,True,0.0248802635017601,1
+prdoc_2377e6f82f244733bf67,pallets/flask,3868,Update views.rst: fix the routes sample code,2050,301,6,Routine,15.5896,Low,8.0,False,0.4805182006468602,False,,1
+prdoc_28f26e4567f40f2cb5d0,pallets/flask,3060,Fix DeprecationWarning: invlid escape sequence in make-release.py,2225,316,6,Routine,15.5598,Low,8.0,False,0.4820093735984805,False,,1
+prdoc_2792d03c2605a1477e7f,pallets/flask,2603,Update cli help for FLASK_ENV,1978,290,6,Routine,15.5211,Low,8.0,False,0.5299483568350415,True,0.0613359652721035,1
+prdoc_9d1af03bb65689cb1ae0,pallets/flask,5743,Fix template decorators to work without parentheses,3004,425,6,Routine,15.4825,Low,10.0,False,0.5508750538441411,False,,1
+prdoc_cfe36103491758d0d2d1,pallets/flask,3924,One more attribute required in form file input field,3373,535,7,Routine,15.4208,Low,0.0,False,0.2289596960190047,False,,0
+prdoc_199346d285a28ea83a0f,pallets/flask,3238,Removed unused Class import.,1998,291,6,Routine,15.3385,Low,8.0,False,0.4930759037770775,False,,1
+prdoc_165b3d11f092a4865c28,pallets/flask,4363,Bump pallets-sphinx-themes from 2.0.1 to 2.0.2,8099,727,8,Routine,15.2915,Low,10.0,False,0.5604239222965061,False,,1
+prdoc_19e2ef15d2df5d69c19c,pallets/flask,4281,Bump types-setuptools from 57.0.2 to 57.4.0,4049,552,7,Routine,15.2773,Low,0.0,False,0.2361364131348158,False,,0
+prdoc_b2d64c3bebd258eaeeea,pallets/flask,3058,[Docs] Mention how to skip subsets of exceptions in errorpages.rst,2382,355,6,Routine,15.257,Low,0.0,False,0.2371490380588332,False,,0
+prdoc_17db9e4f5bf23e4a5546,pallets/flask,5048,Fixed grammatically incorrect sentence in README,2175,310,6,Routine,15.2072,Low,8.0,False,0.4996417109435229,False,,1
+prdoc_c7ef3b76d4a4498eea40,pallets/flask,3510,Change in return part,2457,371,6,Routine,15.1798,Low,0.0,False,0.2410112369294114,False,,0
+prdoc_b42703478081ddc63d75,pallets/flask,4324,Bump types-dataclasses from 0.1.7 to 0.6.1,4045,552,7,Routine,15.1715,Low,0.0,False,0.2414262193397378,False,,0
+prdoc_f4c69b5d8ed323b7465e,pallets/flask,5917,fix provide_automatic_options override,2253,326,6,Routine,15.1338,Low,10.0,False,0.8399413893322968,True,0.3621768544583706,1
+prdoc_1ad10960babdd9aaeb0c,pallets/flask,5761,fix: template_filter function ( function parameter was overridden by 'name'),2430,359,6,Routine,15.0494,Low,0.0,False,0.2475308129972442,False,,0
+prdoc_601e02ba52b2a5eed889,pallets/flask,3075,Updated CLI documentation to mention the issue with underscores and click 7,2601,367,6,Routine,14.9577,Low,0.0,False,0.2521133414759811,False,,0
+prdoc_94a559fe8bf79d409575,pallets/flask,4287,release version 2.0.2,1917,279,6,Routine,14.9515,Low,18.0,False,0.8413965016884136,True,0.0052943870509534,1
+prdoc_9233c9a1e4c99472b624,pallets/flask,5497,Update README.md - Add badges,2311,346,6,Routine,14.946,Low,0.0,False,0.2527019341399355,False,,0
+prdoc_a7d5d5ce8d58656aa632,pallets/flask,4662,re-add flag to skip unguarded app.run from CLI,1966,287,6,Routine,14.9252,Low,8.0,False,0.826530663522496,True,0.4170517916459862,1
+prdoc_93d5568afed502041c18,pallets/flask,5182,Update install.rst with required description,2539,377,6,Routine,14.9116,Low,0.0,False,0.3167365351683814,True,0.0830888310779447,0
+prdoc_87a40e8b139bb8acb06c,pallets/flask,2850,Fix grammatical error: incorrect verb conjugation,2031,293,6,Routine,14.8908,Low,8.0,False,0.6154036188996329,True,0.1332596192027027,1
+prdoc_cfe06dbaeeba3c19c704,pallets/flask,2719,Fix typo in docs,1900,277,6,Routine,14.8623,Low,8.0,False,0.6060490870587475,True,0.1188821597377168,1
+prdoc_f4d8bfc8ef7119a64b0a,pallets/flask,3698,Add repl.it to list of deployment hosting options,2610,391,6,Routine,14.83,Low,0.0,False,0.2584980768937007,False,,0
+prdoc_8124029bcda311aa6cbf,pallets/flask,4234,Remove the mention of Flask-Uploads in the uploading docs,2004,294,6,Routine,14.8074,Low,8.0,False,0.717563337719055,True,0.2639084336989196,1
+prdoc_6ecfc28dfd30b13b296b,pallets/flask,3804,fix html in example 404/500 templates,2486,375,6,Routine,14.7974,Low,0.0,False,0.2601309140228079,False,,0
+prdoc_bb63ba3cae62737a1d51,pallets/flask,5264,Allow self as an argument to url_for,2514,385,6,Routine,14.7876,Low,0.0,False,0.6243821117579623,True,0.4850165652642313,0
+prdoc_9c9114e017f143611464,pallets/flask,4783,fix: remove obsolete `zip_safe`,2182,298,6,Routine,14.7022,Low,8.0,False,0.7925592070250312,True,0.3568919383144949,1
+prdoc_bb7ef87cde315736eb55,pallets/flask,5700,better type checking during deprecation,2050,295,6,Routine,14.7011,Low,8.0,False,0.6951999739420075,True,0.2270048076048474,1
+prdoc_4a48bf31b13493cacd62,pallets/flask,3113,doc: Improve description for valid view func return value,2018,295,6,Routine,14.6871,Low,8.0,False,0.5938898294586269,True,0.0909917364973595,1
+prdoc_fed6ed49b864667c86d6,pallets/flask,3895,use Jinja's tojson filter,2411,345,6,Routine,14.6461,Low,10.0,False,0.8534729956393132,True,0.3477054052271813,1
+prdoc_7cc873a4d012943e1845,pallets/flask,5180,fix typo in errorhandling doc,1934,283,6,Routine,14.6386,Low,18.0,False,0.9081836763490244,True,0.0734861285325621,1
+prdoc_d58b81b130d36984726a,pallets/flask,4394,fix example redirect url routing closes #4393,2120,305,6,Routine,14.6246,Low,8.0,False,0.5287698097603306,False,,1
+prdoc_16918ba39413629e00b4,pallets/flask,5382,untag without `object_hook`,1983,285,6,Routine,14.5703,Low,8.0,False,0.5661851821770253,True,0.0462643328458643,1
+prdoc_943fbeae0c4078b780c5,pallets/flask,2915,fix @click.command example by adding parens,2121,301,6,Routine,14.542,Low,8.0,False,0.6089709858043876,True,0.101428382780082,1
+prdoc_92afb1331a6b975beff2,pallets/flask,4175,Fix typo in views docs,2052,296,6,Routine,14.5368,Low,8.0,False,0.755026885524299,True,0.2958210559141233,1
+prdoc_98a83870f2dcfffef295,pallets/flask,2834,Remove unnecessary period in documentation,2124,302,6,Routine,14.5163,Low,8.0,False,0.649317873773218,True,0.153510696250828,1
+prdoc_4e4c04ff4f7ccaeeaff1,pallets/flask,5938,fix: replace 1 bare except clauses with except Exception,2089,306,6,Routine,14.4776,Low,8.0,False,0.5361217388149562,False,,1
+prdoc_0415e5aa887ebefae752,pallets/flask,2808,fix typos in appcontext.rst,1930,281,6,Routine,14.4237,Low,18.0,False,0.8737231838681356,True,0.0132095982146137,1
+prdoc_832ab32fdf8ab2a6c75f,pallets/flask,3390,no hize nada,2438,369,6,Routine,14.3359,Low,0.0,False,0.2832062756580847,False,,0
+prdoc_34d3a95d540c449e2502,pallets/flask,5232,release version 2.3.3,1917,279,6,Routine,14.2847,Low,18.0,False,0.8746605274060576,True,0.0051937568835243,1
+prdoc_6222e3a869a63c52bbeb,pallets/flask,5955,Fix Config.from_file silent error handling to include ENOTDIR,3009,424,6,Routine,14.2719,Low,0.0,False,0.286402668956802,False,,0
+prdoc_292e7714916af172882f,pallets/flask,4694,release version 2.1.3,1917,279,6,Routine,14.268,Low,18.0,False,0.8780796561224662,True,0.0086428562363953,1
+prdoc_30616ce6a1774806c96a,pallets/flask,4461,lazy loading preserves click context,2290,336,6,Routine,14.1716,Low,0.0,False,0.5620060135371858,True,0.360783822674077,0
+prdoc_6b3db6215f4354f097f8,pallets/flask,5737,Fix global CONTRIBUTING link,2131,306,6,Routine,14.0483,Low,8.0,False,0.7811040033886499,True,0.2980280343558615,1
+prdoc_e4bf2727aff5a264644c,pallets/flask,2858,Remove check against deprecated property is_xhr,2660,378,6,Routine,14.0372,Low,0.0,False,0.2981411398259485,False,,0
+prdoc_0a1c9d88f835d1723ec5,pallets/flask,4319,Bump jinja2 from 3.0.1 to 3.0.2,7356,739,8,Routine,13.9894,Low,10.0,False,0.6255294862144336,False,,1
+prdoc_cd8e8c27fde757ad7e4c,pallets/flask,4835,fix typo in quickstart,1980,290,6,Routine,13.7695,Low,8.0,False,0.6502568344990497,True,0.1049742088448263,1
+prdoc_884c1f861c95e37de498,pallets/flask,3056,Fix syntax warning in docstring,2317,329,6,Routine,13.7658,Low,0.0,False,0.5656008719037929,True,0.3385206087287268,0
+prdoc_6965c9e7a41b5a643cd6,pallets/flask,6013,autoescape selection uses case-insensitive comparison,2029,288,6,Routine,13.694,Low,8.0,False,0.6156231715804097,True,0.0537616673259868,1
+prdoc_843eeb7526a8d400fe63,pallets/flask,3065,"use ""-m virtualenv"" in installation doc",2126,309,6,Routine,13.6257,Low,8.0,False,0.7832278887618563,True,0.2726820079070612,1
+prdoc_cde68adbf308d939239f,pallets/flask,4100,Fix typo in docs/tutorial/index.rst,1943,281,6,Routine,13.589,Low,18.0,False,0.9237671528187648,True,0.0242892708345112,1
+prdoc_a9f8af4432e419b84541,pallets/flask,5077,Remove double period in signals documentation page,2092,286,6,Routine,13.5392,Low,8.0,False,0.6743203223710836,True,0.1217064067094251,1
+prdoc_b25f886b65b97e46320a,pallets/flask,3774,Bump pytest from 6.0.2 to 6.1.0,11481,1180,11,Routine,13.5081,Low,10.0,False,0.6495932262062752,False,,1
+prdoc_3b57777155803c657192,pallets/flask,5613,Address a mypy failure in CI,2319,338,6,Routine,13.4871,Low,8.0,False,0.5856433384525509,False,,1
+prdoc_cb9ff244b7692e845f92,pallets/flask,3517,typo fix,2375,356,6,Routine,13.4832,Low,0.0,False,0.410255112951001,True,0.1125531197443325,0
+prdoc_b4fd722a10259d4e29eb,pallets/flask,4497,Add missing docstring for Blueprint cli_group,1951,282,6,Routine,13.4806,Low,8.0,False,0.6323359786787048,True,0.0618191915284641,1
+prdoc_cfb6ea29c87acd796d3a,pallets/flask,3772,trying to add some more information :-),2502,377,6,Routine,13.4644,Low,0.0,False,0.3267778428694501,False,,0
+prdoc_a68bc8704753f00fd24c,pallets/flask,3308,"Add version '3.7' and a comma in ""Running the test"" of contributing guide.",2582,384,6,Routine,13.4525,Low,0.0,False,0.4917568168735176,True,0.2191767828529075,0
+prdoc_5b5726f1a9f33567ab42,pallets/flask,3816,Updating external_url_handler example to Python 3,2256,306,6,Routine,13.4465,Low,8.0,False,0.7999523719430387,True,0.2830351232278841,1
+prdoc_3f20ae2712f76ebb4322,pallets/flask,3946,Fixed testing docs example to set g,2028,303,6,Routine,13.4134,Low,8.0,False,0.5893292193195245,False,,1
+prdoc_9b24578b5b0a17d53c54,pallets/flask,3798,Fix: add closing dt tag in example,2046,305,6,Routine,13.3999,Low,8.0,False,0.5900063874686763,False,,1
+prdoc_8b627f924a88a627778d,pallets/flask,5066,document passthrough_errors,1903,272,6,Routine,13.2755,Low,8.0,False,0.7473831396156393,True,0.2015468993851845,1
+prdoc_de10a69087c4abcb33c9,pallets/flask,3732,Increased hand-holding for Windows users,2480,375,6,Routine,13.2721,Low,0.0,False,0.3363967036843734,False,,0
+prdoc_7c582a290db7fc91bb0c,pallets/flask,4266,fix: typo docs/debugging.rst:72,1961,278,6,Routine,13.2261,Low,8.0,False,0.6761303894253035,True,0.1032457705520867,1
+prdoc_482e4324f202d537ee98,pallets/flask,3757,DOC: Simplified loading of favicon,2005,294,6,Routine,13.211,Low,8.0,False,0.5994506755747598,False,,1
+prdoc_18039c2e072b03fc8bee,pallets/flask,2633,Fix the README to reflect locate_app() in flask/cli.py,2577,387,6,Routine,13.1804,Low,0.0,False,0.3409796593033153,False,,0
+prdoc_349fa93fe6a81a5feae1,pallets/flask,4358,Bump cryptography from 35.0.0 to 36.0.0,9750,963,10,Routine,13.1583,Low,10.0,False,0.6670835660819614,False,,1
+prdoc_d332827f3c8e71a0e50e,pallets/flask,3858,Bump pytest from 6.1.2 to 6.2.1,10412,1032,10,Routine,13.1358,Low,10.0,False,0.6682116859016217,False,,1
+prdoc_1a868b44620a02bf8ba8,pallets/flask,5611,Update README.md,2747,419,6,Routine,12.9995,Low,0.0,False,0.3500256370000864,False,,0
+prdoc_99fcfe6cbb532a515b8b,pallets/flask,3336,Fix typo in pop documentation,2369,356,6,Routine,12.849,Low,0.0,False,0.5916357027866412,True,0.3121162061693205,0
+prdoc_f99897b38ae51dad829b,pallets/flask,4304,Fix example `SECRET_KEY` generation code in documentation,2017,289,6,Routine,12.8063,Low,8.0,False,0.675039116385128,True,0.0738061154711152,1
+prdoc_b4f919e32254cc20bc6a,pallets/flask,2889,Improve the recommended way to use Celery,2655,360,6,Routine,12.7628,Low,0.0,False,0.3618583116705874,False,,0
+prdoc_dcfecc0a6a248a9b9003,pallets/flask,2793,Update gevent wsgi documentation,2011,290,6,Routine,12.7208,Low,8.0,False,0.6703942368035245,True,0.0619124540263656,1
+prdoc_cef4e303013571fe4aeb,pallets/flask,3659,[docs] streaming contents: use app.response_class,2075,297,6,Routine,12.7128,Low,8.0,False,0.8184426964004723,True,0.2587748552599853,1
+prdoc_95f0e59f40bfd0c8cb17,pallets/flask,5698,remove extra logic,2326,341,6,Routine,12.7035,Low,0.0,False,0.364823724972806,False,,0
+prdoc_9186cfb9dbff54c5e12f,pallets/flask,2973,"[Tutorial] Clarify where to run ""flask run"" command",2040,302,6,Routine,12.6964,Low,8.0,False,0.625177535660288,False,,1
+prdoc_236da0c34db048efffe4,pallets/flask,4469,Format code snippet in the testing docs properly,2073,308,6,Routine,12.6345,Low,8.0,False,0.8114650310302505,True,0.2442516517551254,1
+prdoc_944c5ed88f289a0bc863,pallets/flask,5287,examples/javascript: replace obsolete link,2007,288,6,Routine,12.63,Low,8.0,False,0.7964910290851236,True,0.2239893416243906,1
+prdoc_651defb3a544b9d98b94,pallets/flask,3855,Bump sphinx from 3.2.1 to 3.4.1,10702,999,10,Routine,12.5191,Low,10.0,False,0.7092798882980899,True,0.0136435125766754,1
+prdoc_ff11eea8cddb4a1fb936,pallets/flask,5452,Bump the python-requirements group in /requirements with 8 updates,57224,4076,30,Routine,12.514,Low,10.0,False,0.6992998113368804,False,,1
+prdoc_d7b091d82a03ea83af2e,pallets/flask,5401,Bump the python-requirements group in /requirements with 6 updates,32413,2453,20,Routine,12.476,Low,10.0,False,0.7011997412289124,True,8.097328770591751e-09,1
+prdoc_6b241e2bcf525807a2ff,pallets/flask,2746,allow empty prefix and no lead slash in bp route,2128,315,6,Routine,12.4673,Low,8.0,False,0.822725396971964,True,0.2481189663611674,1
+prdoc_7100cd39edfcb56c4bbc,pallets/flask,5474,Bump the python-requirements group in /requirements with 5 updates,25847,2018,17,Routine,12.4273,Low,10.0,False,0.703636578718271,False,,1
+prdoc_dc883e2bd2db603b0502,pallets/flask,2637,rewrite quickstart Unique URLs section,1927,278,6,Routine,12.4221,Low,8.0,False,0.7864915218914679,True,0.1967943801327842,1
+prdoc_0504fb78443f182ce866,pallets/flask,5538,Bump the python-requirements group in /requirements with 6 updates,33357,2431,19,Routine,12.4196,Low,10.0,False,0.7040214492227829,False,,1
+prdoc_bc43cfaded2ed3cda816,pallets/flask,3891,Bump greenlet from 0.4.17 to 1.0.0,10560,1171,11,Routine,12.3509,Low,10.0,False,0.7088066199874299,True,0.0018002552472174,1
+prdoc_40788f4805ca99206c68,pallets/flask,4882,Fix backtick not rendering.,2387,366,6,Routine,12.3407,Low,0.0,False,0.582768881171536,True,0.2664035216389657,0
+prdoc_54f55450110f7f37e124,pallets/flask,3408,Make the documentation build reproducibly,2397,339,6,Routine,12.3158,Low,0.0,False,0.4900434479575154,True,0.1411109334529381,0
+prdoc_f9310419769fdcfd1234,pallets/flask,5336,type hint fix for flask.send_file,2635,379,6,Routine,12.2613,Low,0.0,False,0.4700613101953126,True,0.1108356667357893,0
+prdoc_39482013b9a10445af5b,pallets/flask,5425,Bump the python-requirements group in /requirements with 6 updates,38872,2640,21,Routine,12.2462,Low,10.0,False,0.7126924793119861,False,,1
+prdoc_388f6977f4a7aff25541,pallets/flask,3790,Bump pytest from 6.0.2 to 6.1.1,11456,1171,11,Routine,12.0538,Low,10.0,False,0.7248658459044384,True,0.0034091770639583,1
+prdoc_ee610e4772cb3fd62670,pallets/flask,3267,Use a working example to generate secret_key,2336,343,6,Routine,12.0087,Low,0.0,False,0.3995672271810428,False,,0
+prdoc_42a0545b4b4aedfb83bb,pallets/flask,3492,CLI checks for cryptography library,2011,293,6,Routine,12.0058,Low,8.0,False,0.8391536839257542,True,0.2392556762820183,1
+prdoc_f722ff94e3f429d66591,pallets/flask,3548,Missing slash in app route,2520,383,6,Routine,11.9885,Low,0.0,False,0.4005731795321374,False,,0
+prdoc_66ad9698ddf91ffafcd9,pallets/flask,2930,Tutorial: Stop swallowing all OSErrors when creating the instance folder,2457,356,6,Routine,11.9798,Low,0.0,False,0.4010101071406871,False,,0
+prdoc_4375ea7c8ad7810ab896,pallets/flask,3773,Bump greenlet from 0.4.16 to 0.4.17,7402,813,9,Routine,11.9575,Low,10.0,False,0.7852315043428453,True,0.0774753962830191,1
+prdoc_aa1bdc07c306aaa47609,pallets/flask,4254,Bump tox from 3.24.1 to 3.24.3,7584,743,8,Routine,11.95,Low,10.0,False,0.8522881107029493,True,0.1663817720164979,1
+prdoc_627d39b8a7baa31b310b,pallets/flask,5701,add endpoint name in favicon example,1919,280,6,Routine,11.8962,Low,8.0,False,0.7910186909319855,True,0.1677708057800478,1
+prdoc_9604f425e126f85cba0d,pallets/flask,3544,Grammar and clarity fix,2396,360,6,Routine,11.861,Low,0.0,False,0.5562779555814101,True,0.1991050389766086,0
+prdoc_f63828b69473b968bf21,pallets/flask,3381,fix typo in request context docs,2374,356,6,Routine,11.8211,Low,0.0,False,0.7251196478098325,True,0.421563736418883,0
+prdoc_4a9348f6bec352708a6c,pallets/flask,4955,Add more detail to connection approach in sqlite3.rst,2463,355,6,Routine,11.7666,Low,0.0,False,0.4116712988351683,False,,0
+prdoc_18fe73d9d2e8c5229c98,pallets/flask,3425,Update `versionadded` for `Config.from_file`,2104,294,6,Routine,11.7589,Low,8.0,False,0.8272667592263795,True,0.206948361555017,1
+prdoc_e9073dfc4ef56ad0020e,pallets/flask,4675,Document serialization of Decimal in JSONEncoder,2067,299,6,Routine,11.7518,Low,8.0,False,0.7127879155416831,True,0.0538342279759922,1
+prdoc_8f6bbe3cf6676fc6ddf9,pallets/flask,5514,Bump the python-requirements group in /requirements with 5 updates,18591,1547,14,Routine,11.7499,Low,10.0,False,0.7375191077864806,True,1.7472228025960515e-05,1
+prdoc_f5f9a17529b4b1b25f8b,pallets/flask,3282,use app.name as app.logger name,2737,409,6,Routine,11.7291,Low,10.0,False,0.8337151958570403,True,0.1268935825709588,1
+prdoc_2c8049bbada27e7f0ccc,pallets/flask,3677,Bump sphinx from 3.1.1 to 3.1.2,9588,979,10,Routine,11.69,Low,10.0,False,0.7462125005976585,True,0.0076150929073345,1
+prdoc_0d1a68a93d9380c77192,pallets/flask,4913,Fix incorrect variable name in the views docs,1990,293,6,Routine,11.6514,Low,8.0,False,0.8166390082324508,True,0.1856122002798459,1
+prdoc_eea7ad0920b797994217,pallets/flask,4250,Deleted types in `__exit__` methods,2294,344,6,Routine,11.5883,Low,0.0,False,0.4205835875212139,False,,0
+prdoc_4cd3346b11ac2c353914,pallets/flask,5532,"Provide more clear flask -e, --env-file flag desription",2696,368,6,Routine,11.5619,Low,0.0,False,0.4219073940781866,False,,0
+prdoc_a51983c1ef3a7263bfdf,pallets/flask,3299,pass sys.argv to flask cli,1950,285,6,Routine,11.5037,Low,8.0,False,0.815612425997449,True,0.1743942078624501,1
+prdoc_6e18e5e1f36b777bbb4b,pallets/flask,5374,Bump the python-requirements group in /requirements with 3 updates,21581,1650,14,Routine,11.4674,Low,10.0,False,0.7516326962261196,True,3.455721529599969e-06,1
+prdoc_4f193bd1afb811383f52,pallets/flask,5903,Abort if the instance folder cannot be created,2172,322,6,Routine,11.447,Low,8.0,False,0.7501930989924027,True,0.083389542658495,1
+prdoc_5f7c4dd11aada5f28f0e,pallets/flask,5899,deprecate `should_ignore_error`,1911,272,6,Routine,11.4384,Low,8.0,False,0.7210183361333279,True,0.0439193676341777,1
+prdoc_01054d1b98a55842ab47,pallets/flask,3932,Set default encoding to UTF-8 for load_dotenv,2440,372,6,Routine,11.3585,Low,0.0,False,0.6549191719422589,True,0.2971283671242185,0
+prdoc_b0def0563855ca38b58a,pallets/flask,3819,Bump tox from 3.20.0 to 3.20.1,7502,836,9,Routine,11.3285,Low,10.0,False,0.8737530151848926,True,0.153569710289483,1
+prdoc_f6ac3ed16bfeb9f42543,pallets/flask,5546,Fixes Pyright type errors for `src/flask/blueprint.py`,2072,297,6,Routine,11.3118,Low,8.0,False,0.6944102964949782,False,,1
+prdoc_f34ea3a6bdce72662344,pallets/flask,2577,Use string concat in jsonify,2224,331,6,Routine,11.142,Low,0.0,False,0.6063836044566375,True,0.2179780611179871,0
+prdoc_547ca6e3b2363104a756,pallets/flask,5672,Fixes typo in `globals`,1967,290,6,Routine,11.0354,Low,8.0,False,0.7082316483944465,False,,1
+prdoc_9dfbcac74e3937c47199,pallets/flask,3244,Clarify documentation about how url_for uses configuration values (#2759),2056,296,6,Routine,11.0242,Low,8.0,False,0.8009141097269332,True,0.1228291364044565,1
+prdoc_bbdb2e8d03ac6d3e84be,pallets/flask,3636,Bump pytest from 5.4.2 to 5.4.3,9131,906,10,Routine,11.0184,Low,10.0,False,0.7909370182938671,True,0.0224748162019843,1
+prdoc_364ebc8cad76717e0ae1,pallets/flask,5338,Changed concatenation of strings to f-strings,2574,396,6,Routine,10.9743,Low,0.0,False,0.4512857767510704,False,,0
+prdoc_930ae4d47260e0fb007d,pallets/flask,5923,Fix ENOTDIR handling in Config.from_file() with silent=True,2605,378,6,Routine,10.9667,Low,0.0,False,0.4516631249921625,False,,0
+prdoc_c87ae31d38661cd35dfa,pallets/flask,4181,Bump pip-tools from 6.1.0 to 6.2.0,12548,921,10,Routine,10.9658,Low,10.0,False,0.7876394715893512,True,0.0145725056100883,1
+prdoc_aef365d21070adb0ab7b,pallets/flask,4276,Bump pip-tools from 6.2.0 to 6.3.0,9169,771,9,Routine,10.9345,Low,10.0,False,0.7782728654134426,False,,1
+prdoc_b325c3a9253f6b15bb81,pallets/flask,4221,docs in quickstart.rst in use wrong variable name.,2098,307,6,Routine,10.8806,Low,8.0,False,0.8831562991933976,True,0.2229142065105696,1
+prdoc_aa5bbdde5c8ec3593479,pallets/flask,4821,Fix docstring of test_request_context,1929,277,6,Routine,10.8321,Low,8.0,False,0.8157876819399833,True,0.1298563239808541,1
+prdoc_512b6fe2c4347f740958,pallets/flask,4926,python 2 style inheritance clean up from docs,1941,284,6,Routine,10.7923,Low,8.0,False,0.8814574199745397,True,0.2147662332952027,1
+prdoc_0733ce1c73a59a43234e,pallets/flask,4209,Bump sphinx from 4.0.2 to 4.1.2,9414,854,9,Routine,10.756,Low,10.0,False,0.8203580156744624,True,0.0442121517035036,1
+prdoc_23f55fd2d320355f2ada,pallets/flask,4972,fix test client arg for query string example,1935,284,6,Routine,10.7391,Low,8.0,False,0.8856046503610795,True,0.2167470257557431,1
+prdoc_ff918916c675ff9dfca0,pallets/flask,5037,Fix typo in appfactories.rst code block,1950,283,6,Routine,10.7013,Low,8.0,False,0.833267762778479,True,0.1444438573069258,1
+prdoc_e7110678c13381da5fb0,pallets/flask,3100,Little improve on installation doc,2276,345,6,Routine,10.6937,Low,0.0,False,0.465315486637795,False,,0
+prdoc_8d3d6a9baa9b2621c087,pallets/flask,3624,Bump sphinx from 3.0.3 to 3.0.4,8571,909,10,Routine,10.6185,Low,10.0,False,0.8135877833799068,True,0.0260184959156621,1
+prdoc_85f895c6ceb4667c5ed9,pallets/flask,4011,Install sphinx 4.1-dev from git,1961,284,6,Routine,10.6096,Low,8.0,False,0.7474358328145694,True,0.0238873221787408,1
+prdoc_0a2d8a9c45a5ce3d68bd,pallets/flask,4511,release version 2.1.1,1892,274,6,Routine,10.5827,Low,8.0,False,0.7971137043413749,True,0.0883295825020575,1
+prdoc_e6328109df5310398d16,pallets/flask,3756,Bump pytest from 6.0.1 to 6.0.2,8946,898,9,Routine,10.4489,Low,10.0,False,0.8136141767854621,True,0.014748073088862,1
+prdoc_226198e1081ee0991b0b,pallets/flask,3648,Bump pip-tools from 5.2.0 to 5.2.1,6746,809,9,Routine,10.3677,Low,10.0,False,0.9111257573612064,True,0.1393503077723277,1
+prdoc_9635425e563fe8c7765b,pallets/flask,5108,werkzeug 2.3.3 compatibility,1904,274,6,Routine,10.0059,Low,8.0,False,0.7843686516954115,True,0.0328875427275229,1
+prdoc_b6ef714f0fc95c2103f4,pallets/flask,3859,Bump packaging from 20.4 to 20.8,8991,1010,10,Routine,9.9315,Low,10.0,False,0.8389994946961812,True,0.0140996115093518,1
+prdoc_9f2eaf8dc21c67f9e68d,pallets/flask,3479,A better expression for the intended meaning,2345,349,6,Routine,9.8507,Low,0.0,False,0.825882298746073,True,0.4245587445133477,0
+prdoc_68cc6f949b939fa959c9,pallets/flask,3742,Bump pre-commit from 2.6.0 to 2.7.1,12773,1136,11,Routine,9.8337,Low,10.0,False,0.8349848901959591,True,0.0022236613879052,1
+prdoc_6fa215c689c002fb170f,pallets/flask,3771,aesthetic: add a space after a comma,1953,290,6,Routine,9.7952,Low,8.0,False,0.8457309975661712,True,0.1006579732221526,1
+prdoc_14598290304a63b113dd,pallets/flask,3671,Bump pre-commit from 2.5.1 to 2.6.0,9813,965,10,Routine,9.7806,Low,10.0,False,0.860919950479487,True,0.0332679714013594,1
+prdoc_6827c96273e8ad588395,pallets/flask,4271,DOC: Fix broken link to Flask-WTF,2023,299,6,Routine,9.7109,Low,8.0,False,0.8650611157460454,True,0.1208071250211024,1
+prdoc_03d02d35470183151ebd,pallets/flask,3686,Bump tox from 3.16.1 to 3.17.0,7205,848,9,Routine,9.6617,Low,10.0,False,0.9202184863106956,True,0.1044078793236964,1
+prdoc_d3d549f31f462070f446,pallets/flask,3112,fix an error in quickstart doc,2465,375,6,Routine,9.5124,Low,0.0,False,0.524380542817665,False,,0
+prdoc_5aa6119d8fd101a3a4a2,pallets/flask,2872,Fix grammatical error,1902,276,6,Routine,9.4654,Low,8.0,False,0.8442238849217868,True,0.0766585583648704,1
+prdoc_f6262fd41c9d92735627,pallets/flask,3395,Update reqcontext.rst,1901,274,6,Routine,9.4522,Low,8.0,False,0.8328208278119267,True,0.0605711822866786,1
+prdoc_c838480e36561ee80385,pallets/flask,4491,typo: Update errorhandling.rst,1925,279,6,Routine,9.3419,Low,8.0,False,0.8869754413951988,True,0.1254243328564511,1
+prdoc_20b07c04a48524234299,pallets/flask,3644,Bump tox from 3.15.1 to 3.15.2,6953,831,9,Routine,9.2516,Low,10.0,False,0.9186529670087148,True,0.0749780291270345,1
+prdoc_9b828f9593ee70aa2f8d,pallets/flask,3887,Bump packaging from 20.8 to 20.9,7647,849,9,Routine,9.178,Low,10.0,False,0.8788542369721033,True,0.0170056163345973,1
+prdoc_ea65135b48fc3905f5e0,pallets/flask,3716,Bump pip-tools from 5.3.0 to 5.3.1,7100,828,9,Routine,9.1536,Low,10.0,False,0.9208178737569428,True,0.0713301778653466,1
+prdoc_5261367512b31ef25605,pallets/flask,3067,clarify where to call flask run from in tutorial,1943,286,6,Routine,9.104,Low,8.0,False,0.9020719659717266,True,0.1296931824397368,1
+prdoc_274e526fb32652d5b140,pallets/flask,3880,Docs update: clarify json error handling,2306,348,6,Routine,8.9514,Low,0.0,False,0.8210207834753914,True,0.3581221867445552,0
+prdoc_181410b24fca8a2d7fb3,pallets/flask,4758,Fix typo in docs/patterns/javascript.rst,1923,277,6,Routine,8.4545,Low,8.0,False,0.8740191497977009,True,0.0489941841385653,1

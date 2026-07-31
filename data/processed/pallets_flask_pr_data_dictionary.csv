@@ -1,0 +1,65 @@
+feature_name,data_type,description,source,availability_timing,leakage_status,proposed_use,missing_values,unique_values
+repository,str,Full name of the GitHub repository containing the pull request.,GitHub repository configuration,Known at PR creation,No,Identifier or categorical feature in multi-repository models,0,1
+pr_number,int64,Unique pull-request number inside the repository.,GitHub Pull Request API,Known at PR creation,Usually excluded,Record identifier only,0,10
+title,str,Title written by the pull-request author describing the change.,GitHub Pull Request API,"Usually available at PR creation, but may later be edited",Low temporal risk,"LLM analysis, text features and reporting",0,9
+body,str,Detailed pull-request description written by the author.,GitHub Pull Request API,"Usually available at PR creation, but may later be edited",Low temporal risk,"LLM analysis, RAG checks and text feature engineering",1,8
+author_login,str,GitHub username of the person who created the pull request.,GitHub Pull Request API,Known at PR creation,"No, but requires careful treatment","Historical author features, not direct memorisation",0,6
+author_association,str,"Relationship of the author to the repository, such as OWNER, MEMBER, CONTRIBUTOR or NONE.",GitHub Pull Request API,Known at PR creation,No,Merge-outcome and delay models,0,2
+state,str,"Current GitHub state of the pull request, usually open or closed.",GitHub Pull Request API,Final state in historical extraction,Yes for outcome prediction,Filtering and reporting only,0,1
+draft,bool,Whether the pull request is marked as a draft.,GitHub Pull Request API,Available at the extraction time and may change later,Possible temporal contamination,Exploratory analysis; use carefully in historical models,0,1
+locked,bool,Whether conversation on the pull request has been locked.,GitHub Pull Request API,Usually a later lifecycle status,Likely,Reporting only,0,2
+base_branch,str,Target branch into which the pull request proposes to merge.,GitHub Pull Request API,Known at PR creation,No,Categorical modelling feature,0,2
+head_branch,str,Source branch containing the proposed changes.,GitHub Pull Request API,Known at PR creation,No,Identifier or derived branch-type feature,0,10
+head_sha,str,Commit identifier for the latest version of the pull request.,GitHub Pull Request API,Changes when new commits are added,Not useful as a model feature,API linkage and CI retrieval only,0,10
+created_at,"datetime64[us, UTC]",Date and time when the pull request was created.,GitHub Pull Request API,Known at PR creation,No,Temporal splitting and creation-time features,0,10
+updated_at,"datetime64[us, UTC]",Most recent time the pull request was updated.,GitHub Pull Request API,Available only after later activity,Yes for creation-time prediction,Lifecycle reporting only,0,10
+closed_at,"datetime64[us, UTC]",Date and time when the pull request was closed.,GitHub Pull Request API,Known only after the outcome,Direct target leakage,Target construction and duration calculation only,0,10
+merged_at,"datetime64[us, UTC]",Date and time when the pull request was merged.,GitHub Pull Request API,Known only after merging,Direct target leakage,Target construction only,5,5
+was_merged,bool,Target showing whether the pull request was merged or closed without merge.,Derived from merged_at,Known only after closure,Target variable,Merge-outcome model target,0,2
+mergeable_state,str,"GitHub-computed mergeability status, such as clean, blocked, unstable or unknown.",GitHub Pull Request API,Current or final state at extraction time,High temporal risk,"Review-stage intelligence, not creation-time model",0,3
+additions,int64,Number of lines added by the pull request.,GitHub Pull Request API,Final value in historical extraction,Possible temporal contamination,Risk scoring and benchmark models with limitation documented,0,7
+deletions,int64,Number of lines removed by the pull request.,GitHub Pull Request API,Final value in historical extraction,Possible temporal contamination,Risk scoring and benchmark models with limitation documented,0,7
+total_changes,int64,Total number of added and deleted lines.,Derived from additions and deletions,Depends on final extracted diff,Possible temporal contamination,Change-risk scoring and benchmark models,0,8
+changed_files,int64,Number of files changed by the pull request.,GitHub Pull Request API,Final value in historical extraction,Possible temporal contamination,Change-risk scoring and benchmark models,0,5
+commit_count,int64,Number of commits included in the pull request at extraction time.,GitHub Pull Request commits endpoint,Can increase throughout the PR lifecycle,Yes for creation-time prediction,Review-stage analysis only,0,1
+issue_comment_count,int64,Number of general discussion comments on the pull request.,GitHub issue comments endpoint,Created during the review lifecycle,Yes for creation-time prediction,Review-stage delay monitoring,0,3
+review_comment_count,int64,Number of inline comments attached to changed code.,GitHub review comments endpoint,Created after review begins,Yes for creation-time prediction,Review-effort and lifecycle analysis,0,1
+label_count,int64,Number of labels attached to the pull request.,GitHub Pull Request API,Labels may be added after PR creation,Possible temporal contamination,EDA or review-stage model,0,1
+labels,object,List of labels attached to the pull request.,GitHub Pull Request API,Labels may change during the lifecycle,Possible temporal contamination,"Work-type classification, LLM context and reporting",0,1
+requested_reviewer_count,int64,Number of reviewers currently requested on the pull request.,GitHub Pull Request API,May change during review,Possible temporal contamination,Review-stage intelligence,0,1
+requested_reviewers,object,GitHub usernames of currently requested reviewers.,GitHub Pull Request API,May change during review,Possible temporal contamination,Reviewer assignment analysis,0,1
+title_length,int64,Number of characters in the pull-request title.,Derived from title,Usually available at creation,Low temporal risk,Merge-outcome and delay benchmark models,0,9
+body_length,int64,Number of characters in the pull-request description.,Derived from body,Usually available at creation,Low temporal risk,Description-quality feature,0,9
+body_word_count,int64,Number of words in the pull-request description.,Derived from body,Usually available at creation,Low temporal risk,Description-quality feature,0,9
+html_url,str,Web link to the pull request.,GitHub Pull Request API,Known at creation,Not a modelling feature,Traceability and reporting,0,10
+file_records_returned,int64,Number of file-level records returned by the GitHub API.,Derived from files endpoint,Final extracted snapshot,Possible temporal contamination,Data-quality check,0,5
+test_files_changed,int64,Number of changed files identified as tests.,Derived from changed file paths,Final extracted snapshot,Possible temporal contamination,Test-gap detection and risk scoring,0,3
+documentation_files_changed,int64,Number of documentation files modified by the PR.,Derived from changed file paths,Final extracted snapshot,Possible temporal contamination,Change classification and reporting,0,3
+configuration_files_changed,int64,"Number of configuration, dependency or build-related files changed.",Derived from changed file paths,Final extracted snapshot,Possible temporal contamination,Change-risk scoring,0,3
+security_sensitive_files_changed,int64,Number of files whose paths contain security-sensitive terms.,Derived from changed file paths,Final extracted snapshot,Possible temporal contamination,Security-review requirement,0,1
+files_added,int64,Number of newly created files in the pull request.,Derived from files endpoint,Final extracted snapshot,Possible temporal contamination,Change-risk analysis,0,2
+files_modified,int64,Number of existing files modified by the pull request.,Derived from files endpoint,Final extracted snapshot,Possible temporal contamination,Change-risk analysis,0,5
+files_removed,int64,Number of files deleted by the pull request.,Derived from files endpoint,Final extracted snapshot,Possible temporal contamination,Change-risk analysis,0,1
+files_renamed,int64,Number of files renamed by the pull request.,Derived from files endpoint,Final extracted snapshot,Possible temporal contamination,Change-type analysis,0,1
+has_test_changes,bool,Boolean showing whether at least one test file was changed.,Derived from test_files_changed,Final extracted snapshot,Possible temporal contamination,Test-gap detection and risk scoring,0,2
+has_documentation_changes,bool,Boolean showing whether documentation files were changed.,Derived from documentation_files_changed,Final extracted snapshot,Possible temporal contamination,Change classification,0,2
+has_configuration_changes,bool,Boolean showing whether configuration or build files were changed.,Derived from configuration_files_changed,Final extracted snapshot,Possible temporal contamination,Change-risk scoring,0,2
+has_security_sensitive_changes,bool,Boolean showing whether security-sensitive files were changed.,Derived from security-sensitive filenames,Final extracted snapshot,Possible temporal contamination,Security-review requirement,0,1
+review_count,int64,Total number of formal GitHub review submissions.,GitHub reviews endpoint,Available after reviews occur,Yes for creation-time prediction,Review-stage intelligence,0,1
+unique_reviewer_count,int64,Number of distinct users who submitted formal reviews.,Derived from review records,Available after reviews occur,Yes for creation-time prediction,Review-effort analysis,0,1
+approved_review_count,int64,Number of formal reviews with APPROVED status.,Derived from review records,Available after approval,Severe leakage for outcome prediction,Review-stage reporting only,0,1
+changes_requested_count,int64,Number of formal reviews requesting changes.,Derived from review records,Available after review,Yes for creation-time prediction,Review-complexity analysis,0,1
+commented_review_count,int64,Number of formal review submissions recorded as comments.,Derived from review records,Available after review,Yes for creation-time prediction,Review-stage analysis,0,1
+dismissed_review_count,int64,Number of formal reviews whose decision was dismissed.,Derived from review records,Available later in the lifecycle,Yes,Governance reporting only,0,1
+first_review_at,object,Timestamp of the earliest formal review.,Derived from review records,Available only after the first review,Direct leakage for first-review prediction,Target construction or operational reporting,10,0
+first_review_hours,object,Hours between PR creation and the first formal review.,Derived from created_at and first_review_at,Known only after the first review,Target or post-event feature,Potential review-delay target,10,0
+ci_check_count,int64,Number of GitHub check runs associated with the latest PR commit.,GitHub check-runs endpoint,Available after CI starts,Yes for creation-time prediction,CI status analysis,0,4
+ci_success_count,int64,Number of CI checks with a successful conclusion.,Derived from check runs,Available after CI completes,Yes for early prediction,Release-readiness assessment,0,8
+ci_failure_count,int64,"Number of CI checks that failed, timed out or required action.",Derived from check runs,Available after CI completes,Yes for CI failure prediction,CI failure analysis and change-risk scoring,0,4
+ci_cancelled_count,int64,Number of CI checks that were cancelled.,Derived from check runs,Available after CI execution,Yes for early prediction,CI process reporting,0,1
+ci_neutral_count,int64,Number of CI checks with a neutral result.,Derived from check runs,Available after CI execution,Yes for early prediction,CI status analysis,0,1
+ci_skipped_count,int64,Number of CI checks that were skipped.,Derived from check runs,Available after CI execution,Yes for early prediction,CI process analysis,0,1
+ci_other_count,int64,Number of CI checks with an unclassified or missing conclusion.,Derived from check runs,Available after CI execution,Yes for early prediction,Data-quality and CI reporting,0,1
+ci_has_failure,bool,Boolean showing whether one or more CI checks failed.,Derived from CI conclusions,Known after CI results are available,Target leakage for CI failure prediction,CI analysis and review-stage risk scoring,0,2
+resolution_hours,float64,"Hours from PR creation until closure, regardless of merge outcome.",Derived from created_at and closed_at,Known only after closure,Outcome information,Lifecycle analysis only,0,10
+merge_hours,float64,Hours from PR creation until merge.,Derived from created_at and merged_at,Known only after merge,Direct target information,Merge-delay target construction,5,5

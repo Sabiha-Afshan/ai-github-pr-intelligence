@@ -1,0 +1,5 @@
+reference_dataset,comparison_dataset,reference_unique_pr_count,comparison_unique_pr_count,matched_pr_count,missing_from_comparison_count,additional_in_comparison_count,exact_alignment,validation_passed
+Detailed dataset,Validated dataset,600,600,600,0,0,True,True
+Detailed dataset,Outlier-flagged dataset,600,600,600,0,0,True,True
+Detailed dataset,Feature-engineered dataset,600,600,600,0,0,True,True
+Detailed dataset,Split assignments,600,600,600,0,0,True,True

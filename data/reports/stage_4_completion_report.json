@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-07-30 20:51:05.202543+00:00",
+  "stage": "Stage 4",
+  "stage_status": "complete",
+  "dataset_validation": {
+    "row_count": 600,
+    "unique_pr_count": 600,
+    "duplicate_row_count": 0,
+    "merged_pr_count": 300,
+    "unmerged_pr_count": 300,
+    "validation_passed": true
+  },
+  "completion_reports": [
+    {
+      "stage": "Stage 4A",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4a_completion_report.json",
+      "exists": true,
+      "overall_passed": true,
+      "validation_passed": true
+    },
+    {
+      "stage": "Stage 4B",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_completion_report.json",
+      "exists": true,
+      "overall_passed": true,
+      "validation_passed": true
+    },
+    {
+      "stage": "Stage 4C",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_completion_report.json",
+      "exists": true,
+      "overall_passed": true,
+      "validation_passed": true
+    }
+  ],
+  "csv_reports": [
+    {
+      "report_name": "Outcome metrics",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4a_outcome_metrics.csv",
+      "exists": true,
+      "row_count": 2,
+      "column_count": 11,
+      "validation_passed": true
+    },
+    {
+      "report_name": "Quarterly metrics",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4a_quarterly_metrics.csv",
+      "exists": true,
+      "row_count": 34,
+      "column_count": 5,
+      "validation_passed": true
+    },
+    {
+      "report_name": "Size-band metrics",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4a_size_band_metrics.csv",
+      "exists": true,
+      "row_count": 5,
+      "column_count": 6,
+      "validation_passed": true
+    },
+    {
+      "report_name": "Missing-value summary",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4a_missing_value_summary.csv",
+      "exists": true,
+      "row_count": 106,
+      "column_count": 3,
+      "validation_passed": true
+    },
+    {
+      "report_name": "Outcome comparisons",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_outcome_comparisons.csv",
+      "exists": true,
+      "row_count": 14,
+      "column_count": 14,
+      "validation_passed": true
+    },
+    {
+      "report_name": "Outlier summary",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_outlier_summary.csv",
+      "exists": true,
+      "row_count": 14,
+      "column_count": 13,
+      "validation_passed": true
+    },
+    {
+      "report_name": "File-category metrics",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_file_category_metrics.csv",
+      "exists": true,
+      "row_count": 4,
+      "column_count": 10,
+      "validation_passed": true
+    },
+    {
+      "report_name": "Lifecycle metrics",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_lifecycle_bands.csv",
+      "exists": true,
+      "row_count": 6,
+      "column_count": 7,
+      "validation_passed": true
+    },
+    {
+      "report_name": "Complexity summary",
+      "report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4b_complexity_summary.csv",
+      "exists": true,
+      "row_count": 4,
+      "column_count": 12,
+      "validation_passed": true
+    }
+  ],
+  "chart_validation": {
+    "chart_directory": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_4c_charts",
+    "exists": true,
+    "expected_chart_count": 8,
+    "actual_chart_count": 8,
+    "missing_charts": [],
+    "unexpected_charts": [],
+    "empty_charts": [],
+    "validation_passed": true
+  },
+  "python_file_validation": [
+    {
+      "file_name": "EDA loader",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\src\\data\\eda_loader.py",
+      "exists": true,
+      "line_count": 303,
+      "missing_required_text": [],
+      "validation_passed": true
+    },
+    {
+      "file_name": "EDA metrics",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\src\\analytics\\eda_metrics.py",
+      "exists": true,
+      "line_count": 361,
+      "missing_required_text": [],
+      "validation_passed": true
+    },
+    {
+      "file_name": "EDA comparisons",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\src\\analytics\\eda_comparisons.py",
+      "exists": true,
+      "line_count": 594,
+      "missing_required_text": [],
+      "validation_passed": true
+    },
+    {
+      "file_name": "EDA charts",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\src\\analytics\\eda_charts.py",
+      "exists": true,
+      "line_count": 602,
+      "missing_required_text": [],
+      "validation_passed": true
+    },
+    {
+      "file_name": "EDA Streamlit page",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\src\\ui\\eda_page.py",
+      "exists": true,
+      "line_count": 587,
+      "missing_required_text": [],
+      "validation_passed": true
+    },
+    {
+      "file_name": "EDA page entry point",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\pages\\1_Exploratory_Analysis.py",
+      "exists": true,
+      "line_count": 16,
+      "missing_required_text": [],
+      "validation_passed": true
+    }
+  ],
+  "overall_verification_passed": true
+}

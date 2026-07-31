@@ -1,0 +1,9 @@
+{
+  "run_timestamp_utc": "2026-07-29T15:58:53.088860+00:00",
+  "python_executable": "c:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\.venv\\Scripts\\python.exe",
+  "python_version": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+  "project_version": "1.0.0",
+  "random_seed": 42,
+  "repository": "pallets/flask",
+  "llm_model": "qwen2.5-coder:3b"
+}

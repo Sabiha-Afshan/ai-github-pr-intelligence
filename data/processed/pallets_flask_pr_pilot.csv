@@ -1,0 +1,87 @@
+repository,pr_number,title,body,author_login,author_association,state,draft,locked,base_branch,head_branch,head_sha,created_at,updated_at,closed_at,merged_at,was_merged,mergeable_state,additions,deletions,total_changes,changed_files,commit_count,issue_comment_count,review_comment_count,label_count,labels,requested_reviewer_count,requested_reviewers,title_length,body_length,body_word_count,html_url,file_records_returned,test_files_changed,documentation_files_changed,configuration_files_changed,security_sensitive_files_changed,files_added,files_modified,files_removed,files_renamed,has_test_changes,has_documentation_changes,has_configuration_changes,has_security_sensitive_changes,review_count,unique_reviewer_count,approved_review_count,changes_requested_count,commented_review_count,dismissed_review_count,first_review_at,first_review_hours,ci_check_count,ci_success_count,ci_failure_count,ci_cancelled_count,ci_neutral_count,ci_skipped_count,ci_other_count,ci_has_failure,resolution_hours,merge_hours
+pallets/flask,6013,autoescape selection uses case-insensitive comparison,Use case-insensitive comparison on file extension. Previously only lower case was used.,davidism,MEMBER,closed,False,True,main,autoescape-case,9368fb3f3c52d74534d14c1bef03c79c103356cd,2026-05-02 03:56:17+00:00,2026-05-17 00:27:57+00:00,2026-05-02 03:58:57+00:00,2026-05-02 03:58:57+00:00,True,unknown,6,1,7,2,1,0,0,0,[],0,[],53,87,12,https://github.com/pallets/flask/pull/6013,2,0,1,0,0,0,2,0,0,False,True,False,False,0,0,0,0,0,0,,,13,12,1,0,0,0,0,True,0.044444444444444446,0.044444444444444446
+pallets/flask,5962,remove unicode host test,"This test is invalid, the `Host` header cannot contain non-ASCII. It was added in https://github.com/pallets/flask/pull/2994. It appears there was some confusion over Python 2/3 handling of strings, rather than testing this because it was a valid `Host` header.
+
+closes #5961 ",davidism,MEMBER,closed,False,True,main,remove-unicode-test,91c6b3fecf36b1f04554e57cc4060ccb737a445d,2026-03-24 13:54:00+00:00,2026-04-08 00:18:11+00:00,2026-03-24 13:55:58+00:00,2026-03-24 13:55:57+00:00,True,unknown,0,21,21,1,1,2,0,0,[],0,[],24,277,40,https://github.com/pallets/flask/pull/5962,1,1,0,0,0,0,1,0,0,True,False,False,False,0,0,0,0,0,0,,,13,13,0,0,0,0,0,False,0.03277777777777778,0.0325
+pallets/flask,5945,add zizmor to scan workflows,"https://docs.zizmor.sh/
+
+Among the findings:
+
+- apply empty permissions with `permissions: {}`, although we have read only defaults set at the organization level
+- use concurrency group for each workflow
+- disable credentials for checkout
+- remove some template variables in favor of env vars",davidism,MEMBER,closed,False,True,stable,zizmor,560c119e3dc33b35b9c57172fae521d99c2a1421,2026-03-08 23:11:47+00:00,2026-03-29 00:16:24+00:00,2026-03-08 23:15:00+00:00,2026-03-08 23:15:00+00:00,True,unknown,51,9,60,5,1,0,0,0,[],0,[],28,299,44,https://github.com/pallets/flask/pull/5945,5,0,0,5,0,1,4,0,0,False,False,True,False,0,0,0,0,0,0,,,15,14,1,0,0,0,0,True,0.05361111111111111,0.05361111111111111
+pallets/flask,5928,all teardown callbacks are called despite errors,"Previously, Flask documented that teardown callbacks must not fail. Now, all callbacks will be called, and any errors are collected to be raised at the end. This applies to app and request teardown callbacks and signals. On Python >= 3.11, this will result in an `ExceptionGroup` each for app and request teardown, collected in an `ExceptionGroup` for overall teardown. On 3.10, the first collected error is raise, which basically matches what happens now.
+
+Also adjusts a bunch of tests to clean up any resources. None were failing with `ResourceWarning`, but this ensures they don't even if they fail for some other reason.",davidism,MEMBER,closed,False,True,main,teardown,fbb6f0bc4c60a0bada0e03c3480d0ccf30a3c1df,2026-02-20 03:51:07+00:00,2026-03-07 00:12:24+00:00,2026-02-20 04:00:34+00:00,2026-02-20 04:00:34+00:00,True,unknown,194,80,274,10,1,0,0,0,[],0,[],48,627,102,https://github.com/pallets/flask/pull/5928,10,5,2,0,0,0,10,0,0,True,True,False,False,0,0,0,0,0,0,,,13,13,0,0,0,0,0,False,0.1575,0.1575
+pallets/flask,5924,release version 3.1.3,,davidism,MEMBER,closed,False,True,stable,release-3.1.3,22d924701a6ae2e4cd01e9a15bbaf3946094af65,2026-02-19 03:42:42+00:00,2026-03-06 00:17:52+00:00,2026-02-19 05:01:53+00:00,2026-02-19 05:01:53+00:00,True,unknown,3,3,6,3,1,0,0,0,[],0,[],21,0,0,https://github.com/pallets/flask/pull/5924,3,0,1,1,0,0,3,0,0,False,True,True,False,0,0,0,0,0,0,,,17,16,1,0,0,0,0,True,1.3197222222222222,1.3197222222222222
+pallets/flask,6108,AI junk,"## Description
+This PR resolves issue #6093 by replacing `partition("":"")` with `rpartition("":"")` when parsing `SERVER_NAME` in `app.py` and request host cookies in `testing.py`.
+
+## Details
+- Properly handles IPv6 addresses containing multiple colons (e.g. `[::1]:8080` or `::1`).",amir-rezaei,NONE,closed,False,False,main,fix/ipv6-host-rpartition-parsing,c9890fe3415a1a42ef708f60ed0f74984f591930,2026-07-27 20:04:49+00:00,2026-07-27 20:16:05+00:00,2026-07-27 20:15:16+00:00,,False,unstable,4,2,6,2,1,1,0,0,[],0,[],7,280,37,https://github.com/pallets/flask/pull/6108,2,0,0,0,0,0,2,0,0,False,False,False,False,0,0,0,0,0,0,,,13,11,2,0,0,0,0,True,0.17416666666666666,
+pallets/flask,6106,AI junk,"<!-- Fixes #11 -->
+
+## Summary
+Fix typo in docs
+
+## Changes
+- Formatting update in README.md
+
+## Testing
+N/A",saitejabandaru-in,NONE,closed,False,False,main,fix-docs-1785077509,4b31bde7ffb2092e88a445168ce08ce0f927d630,2026-07-26 14:51:53+00:00,2026-07-26 14:56:41+00:00,2026-07-26 14:52:49+00:00,,False,unstable,1,0,1,1,1,0,0,0,[],0,[],7,108,20,https://github.com/pallets/flask/pull/6106,1,0,1,0,0,0,1,0,0,False,True,False,False,0,0,0,0,0,0,,,1,0,1,0,0,0,0,True,0.015555555555555555,
+pallets/flask,6105,modofied requirement,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->
+",sbisl,NONE,closed,False,False,main,jenkins-test,8b4d75213cc47836101509b131eec29278bd13a4,2026-07-25 14:43:47+00:00,2026-07-25 14:53:47+00:00,2026-07-25 14:53:47+00:00,,False,unstable,3,0,3,1,1,0,0,0,[],0,[],20,845,137,https://github.com/pallets/flask/pull/6105,1,0,0,1,0,0,1,0,0,False,False,True,False,0,0,0,0,0,0,,,13,10,3,0,0,0,0,True,0.16666666666666666,
+pallets/flask,6104,[Draft] hello,"<!--
+Before opening a PR, open a ticket describing the issue or feature the
+PR will address. An issue is not required for fixing typos in
+documentation, or other simple non-code changes.
+
+Replace this comment with a description of the change. Describe how it
+addresses the linked ticket.
+-->
+
+<!--
+Link to relevant issues or previous PRs, one per line. Use ""fixes"" to
+automatically close an issue.
+
+fixes #<issue number>
+-->
+
+<!--
+Ensure each step in CONTRIBUTING.rst is complete, especially the following:
+
+- Add tests that demonstrate the correct behavior of the change. Tests
+  should fail without the change.
+- Add or update relevant docs, in the docs folder and in code.
+- Add an entry in CHANGES.rst summarizing the change and linking to the issue.
+- Add `.. versionchanged::` entries in any relevant code docs.
+-->
+",Akankshaaaa-01,NONE,closed,False,False,main,patch-1,95e3175439a955afd3c9c9ad0a7a5864696122de,2026-07-24 10:30:05+00:00,2026-07-24 17:21:56+00:00,2026-07-24 10:31:18+00:00,,False,unstable,0,1,1,1,1,1,0,0,[],0,[],13,845,137,https://github.com/pallets/flask/pull/6104,1,0,0,0,0,0,1,0,0,False,False,False,False,0,0,0,0,0,0,,,13,10,3,0,0,0,0,True,0.020277777777777777,
+pallets/flask,6103,Fix grammar in quickstart documentation,"Fix a grammar issue in the quickstart documentation.
+
+Changed ""tell the Flask"" to ""tell Flask"" because Flask is a project name.",ARYANatGIT,NONE,closed,False,False,main,fix-doc-typo,664cb2c437402683137dd7f50a31ae70e477e974,2026-07-23 15:50:23+00:00,2026-07-23 16:06:41+00:00,2026-07-23 16:06:41+00:00,,False,clean,1,1,2,1,1,0,0,0,[],0,[],39,129,21,https://github.com/pallets/flask/pull/6103,1,0,1,0,0,0,1,0,0,False,True,False,False,0,0,0,0,0,0,,,1,1,0,0,0,0,0,False,0.27166666666666667,

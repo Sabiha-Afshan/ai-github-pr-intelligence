@@ -1,0 +1,3 @@
+merge_outcome,pr_count,percentage_of_dataset,median_total_changes,average_total_changes,median_changed_files,average_changed_files,median_commit_count,average_commit_count,median_lifecycle_days,average_lifecycle_days
+Merged,300,50.0,8.0,129.68,2.0,3.79,1.0,1.33,0.14,15.46
+Unmerged,300,50.0,10.0,2026.38,1.0,11.92,1.0,29.63,0.04,11.71

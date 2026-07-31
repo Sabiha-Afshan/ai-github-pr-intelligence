@@ -1,0 +1,102 @@
+column,decision,approved_as_feature,reason,source_dtype
+additions,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+additions_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+body_length,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+body_length_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+body_word_count,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+body_word_count_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+change_density_per_file,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,float64
+changed_files,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+changed_files_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+commit_count,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+commit_count_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+configuration_files_changed,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+configuration_files_changed_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+created_day_of_week,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+created_hour_utc,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+created_on_weekend,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+deletion_ratio,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,float64
+deletions,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+deletions_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+documentation_files_changed,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+documentation_files_changed_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+files_added,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+files_added_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+files_modified,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+files_modified_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+files_removed,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+files_removed_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+files_renamed,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+files_renamed_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+has_any_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+has_configuration_changes,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+has_description,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+has_detailed_description,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+has_documentation_changes,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+has_multiple_commits,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+has_security_sensitive_changes,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+has_test_changes,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+iqr_outlier_feature_count,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+label_count,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+log1p_additions,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,float64
+log1p_body_length,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,float64
+log1p_body_word_count,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,float64
+log1p_changed_files,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,float64
+log1p_commit_count,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,float64
+log1p_deletions,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,float64
+log1p_total_changes,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,float64
+requested_reviewer_count,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+requested_reviewer_count_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+security_sensitive_files_changed,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+security_sensitive_files_changed_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+short_title,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+test_files_changed,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+test_files_changed_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+title_length,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+title_length_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+total_changes,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,int64
+total_changes_iqr_outlier,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+very_long_description,approved,True,Contributor-neutral numeric snapshot feature with variation in the Model 2 population.,bool
+merge_delay_target,metadata,False,"Required identifier, split or target column.",int64
+pr_number,metadata,False,"Required identifier, split or target column.",int64
+split,metadata,False,"Required identifier, split or target column.",object
+actual_outcome,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+author_association,blocked,False,Contributor identity or relationship shortcut.,object
+author_login,blocked,False,Contributor identity or relationship shortcut.,object
+author_role_group,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+base_branch,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+body,blocked,False,Raw text or serialized content requires a separate controlled text pipeline.,object
+closed_at,blocked,False,"Direct or derived outcome, duration or target leakage.",object
+created_at,blocked,False,Chronological period shortcut or raw timestamp.,object
+created_day_name,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+created_month,blocked,False,Chronological period shortcut or raw timestamp.,int64
+created_quarter,blocked,False,Chronological period shortcut or raw timestamp.,int64
+created_year,blocked,False,Chronological period shortcut or raw timestamp.,int64
+delayed_over_168_hours,blocked,False,"Direct or derived outcome, duration or target leakage.",int64
+delayed_over_24_hours,blocked,False,"Direct or derived outcome, duration or target leakage.",int64
+delayed_over_72_hours,blocked,False,"Direct or derived outcome, duration or target leakage.",int64
+draft,blocked,False,Constant or near-empty feature within the merged-PR population.,bool
+expected_outcome,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+file_records_returned,blocked,False,Extraction-quality or API-response metadata.,int64
+has_zero_code_change,blocked,False,Constant or near-empty feature within the merged-PR population.,bool
+head_branch,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+html_url,blocked,False,"Repository, record or URL identifier.",object
+label_count_iqr_outlier,blocked,False,Constant or near-empty feature within the merged-PR population.,bool
+labels,blocked,False,Raw text or serialized content requires a separate controlled text pipeline.,object
+merge_hours,blocked,False,"Direct or derived outcome, duration or target leakage.",float64
+merge_target,blocked,False,"Direct or derived outcome, duration or target leakage.",int64
+merged_at,blocked,False,"Direct or derived outcome, duration or target leakage.",object
+outcome_label,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+outcome_matches_selection,blocked,False,Constant or near-empty feature within the merged-PR population.,bool
+period,blocked,False,Chronological period shortcut or raw timestamp.,object
+period_end_date,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+period_start_date,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+pr_size_band,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+repository,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+requested_reviewers,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+resolution_hours,blocked,False,"Direct or derived outcome, duration or target leakage.",float64
+resolution_hours_iqr_outlier,blocked,False,"Direct or derived outcome, duration or target leakage.",bool
+state,blocked,False,Non-numeric feature not supported by the current contributor-neutral tabular pipeline.,object
+title,blocked,False,Raw text or serialized content requires a separate controlled text pipeline.,object
+updated_at,blocked,False,Chronological period shortcut or raw timestamp.,object
+was_merged,blocked,False,"Direct or derived outcome, duration or target leakage.",int64

@@ -1,0 +1,13 @@
+rule_id,rule_name,category,severity,weight,description,recommendation
+PR001,Missing PR description,Documentation,High,18,The pull request does not provide a usable description.,"Add a clear description covering the purpose, scope, expected behaviour and validation performed."
+PR002,Weak PR description,Documentation,Moderate,8,The description exists but appears too short or insufficiently detailed.,"Expand the description with implementation context, testing evidence and reviewer guidance."
+PR003,Substantive change without tests,Testing,High,22,"A substantive code, configuration or security change has no detected test-file update.","Add or update automated tests, or document why additional tests are not required."
+PR004,Substantial change without documentation,Documentation,Moderate,10,A substantial or configuration-related change has no detected documentation update.,"Update user, developer or operational documentation where the change affects expected behaviour."
+PR005,Security-sensitive file change,Security,High,20,The PR changes one or more files classified as security-sensitive.,"Require focused security review and verify that secrets, authentication and permission impacts have been assessed."
+PR006,Security-sensitive change without tests,Security,Critical,28,Security-sensitive files changed without a detected test update.,Block approval until security-relevant tests or documented validation evidence are supplied.
+PR007,Configuration change,Operations,Moderate,10,The PR modifies configuration-related files.,"Confirm environment impact, deployment sequencing, rollback instructions and configuration validation."
+PR008,Large pull request,Complexity,Moderate,12,The PR contains at least 500 changed lines or 20 changed files.,Consider splitting the change or assign additional review capacity to reduce review risk.
+PR009,Very large pull request,Complexity,High,22,"The PR contains at least 1,500 changed lines or 50 changed files.",Split the PR where practical and require a structured review plan before approval.
+PR010,High commit complexity,Complexity,Moderate,8,The PR contains ten or more commits.,Review commit organisation and consider squashing or restructuring commits for easier review.
+PR011,Risk-bearing PR without reviewer,Governance,High,18,"A large, security-sensitive or configuration-related PR has no requested reviewer.",Assign an appropriate reviewer before the PR progresses toward approval.
+PR012,Multiple unusual PR characteristics,Complexity,Moderate,10,The PR has multiple features outside historical interquartile ranges.,Perform additional manual review because several PR characteristics are unusual for this repository.

@@ -1,0 +1,98 @@
+column,status,reason,source_dtype,missing_count,unique_count
+repository,excluded,"Identifier, target, timestamp, split or leakage column",object,0,1
+pr_number,excluded,"Identifier, target, timestamp, split or leakage column",Int64,0,600
+title,excluded,"Identifier, target, timestamp, split or leakage column",object,0,575
+body,excluded,"Identifier, target, timestamp, split or leakage column",object,35,519
+html_url,excluded,"Identifier, target, timestamp, split or leakage column",object,0,600
+author_login,excluded,"Identifier, target, timestamp, split or leakage column",object,0,369
+author_association,excluded,Not safely convertible to a numeric feature,object,0,3
+state,excluded,"Identifier, target, timestamp, split or leakage column",object,0,1
+draft,selected,Numeric model feature,bool,0,2
+base_branch,excluded,Not safely convertible to a numeric feature,object,0,13
+head_branch,excluded,Not safely convertible to a numeric feature,object,0,405
+created_at,excluded,"Identifier, target, timestamp, split or leakage column",object,0,600
+updated_at,excluded,"Identifier, target, timestamp, split or leakage column",object,0,533
+closed_at,excluded,"Identifier, target, timestamp, split or leakage column",object,0,598
+merged_at,excluded,"Identifier, target, timestamp, split or leakage column",object,300,300
+was_merged,excluded,"Identifier, target, timestamp, split or leakage column",bool,0,2
+resolution_hours,selected,Numeric model feature,float64,0,563
+merge_hours,selected,Numeric model feature,float64,300,287
+additions,selected,Numeric model feature,int64,0,116
+deletions,selected,Numeric model feature,int64,0,90
+total_changes,selected,Numeric model feature,int64,0,133
+changed_files,selected,Numeric model feature,int64,0,35
+commit_count,selected,Numeric model feature,int64,0,27
+title_length,selected,Numeric model feature,int64,0,82
+body_length,selected,Numeric model feature,int64,0,408
+body_word_count,selected,Numeric model feature,int64,0,229
+labels,excluded,Not safely convertible to a numeric feature,object,0,19
+label_count,selected,Numeric model feature,int64,0,3
+requested_reviewers,excluded,Not safely convertible to a numeric feature,object,0,3
+requested_reviewer_count,selected,Numeric model feature,int64,0,2
+file_records_returned,selected,Numeric model feature,int64,0,35
+test_files_changed,selected,Numeric model feature,int64,0,13
+documentation_files_changed,selected,Numeric model feature,int64,0,22
+configuration_files_changed,selected,Numeric model feature,int64,0,14
+security_sensitive_files_changed,selected,Numeric model feature,int64,0,7
+files_added,selected,Numeric model feature,int64,0,16
+files_modified,selected,Numeric model feature,int64,0,26
+files_removed,selected,Numeric model feature,int64,0,15
+files_renamed,selected,Numeric model feature,int64,0,7
+has_test_changes,selected,Numeric model feature,bool,0,2
+has_documentation_changes,selected,Numeric model feature,bool,0,2
+has_configuration_changes,selected,Numeric model feature,bool,0,2
+has_security_sensitive_changes,selected,Numeric model feature,bool,0,2
+expected_outcome,excluded,"Identifier, target, timestamp, split or leakage column",object,0,2
+period,excluded,"Identifier, target, timestamp, split or leakage column",object,0,34
+period_start_date,excluded,Not safely convertible to a numeric feature,object,0,34
+period_end_date,excluded,Not safely convertible to a numeric feature,object,0,34
+actual_outcome,excluded,"Identifier, target, timestamp, split or leakage column",object,0,2
+outcome_matches_selection,excluded,Constant or empty feature,bool,0,1
+commit_count_iqr_outlier,selected,Numeric model feature,bool,0,2
+resolution_hours_iqr_outlier,selected,Numeric model feature,bool,0,2
+configuration_files_changed_iqr_outlier,selected,Numeric model feature,bool,0,2
+test_files_changed_iqr_outlier,selected,Numeric model feature,bool,0,2
+deletions_iqr_outlier,selected,Numeric model feature,bool,0,2
+files_modified_iqr_outlier,selected,Numeric model feature,bool,0,2
+additions_iqr_outlier,selected,Numeric model feature,bool,0,2
+total_changes_iqr_outlier,selected,Numeric model feature,bool,0,2
+body_length_iqr_outlier,selected,Numeric model feature,bool,0,2
+body_word_count_iqr_outlier,selected,Numeric model feature,bool,0,2
+files_added_iqr_outlier,selected,Numeric model feature,bool,0,2
+changed_files_iqr_outlier,selected,Numeric model feature,bool,0,2
+documentation_files_changed_iqr_outlier,selected,Numeric model feature,bool,0,2
+security_sensitive_files_changed_iqr_outlier,selected,Numeric model feature,bool,0,2
+files_removed_iqr_outlier,selected,Numeric model feature,bool,0,2
+files_renamed_iqr_outlier,selected,Numeric model feature,bool,0,2
+title_length_iqr_outlier,selected,Numeric model feature,bool,0,2
+requested_reviewer_count_iqr_outlier,selected,Numeric model feature,bool,0,2
+label_count_iqr_outlier,excluded,Constant or empty feature,bool,0,1
+iqr_outlier_feature_count,selected,Numeric model feature,int64,0,14
+has_any_iqr_outlier,selected,Numeric model feature,bool,0,2
+merge_target,selected,Numeric model feature,int64,0,2
+outcome_label,excluded,Not safely convertible to a numeric feature,object,0,2
+log1p_body_length,selected,Numeric model feature,float64,0,408
+log1p_body_word_count,selected,Numeric model feature,float64,0,229
+log1p_additions,selected,Numeric model feature,float64,0,116
+log1p_deletions,selected,Numeric model feature,float64,0,90
+log1p_total_changes,selected,Numeric model feature,float64,0,133
+log1p_changed_files,selected,Numeric model feature,float64,0,35
+log1p_commit_count,selected,Numeric model feature,float64,0,27
+has_description,selected,Numeric model feature,bool,0,2
+has_detailed_description,selected,Numeric model feature,bool,0,2
+short_title,selected,Numeric model feature,bool,0,2
+very_long_description,selected,Numeric model feature,bool,0,2
+change_density_per_file,selected,Numeric model feature,float64,0,177
+deletion_ratio,selected,Numeric model feature,float64,0,187
+has_zero_code_change,selected,Numeric model feature,bool,0,2
+has_multiple_commits,selected,Numeric model feature,bool,0,2
+pr_size_band,excluded,Not safely convertible to a numeric feature,object,0,6
+created_year,selected,Numeric model feature,int64,0,9
+created_month,selected,Numeric model feature,int64,0,12
+created_quarter,selected,Numeric model feature,int64,0,4
+created_day_of_week,selected,Numeric model feature,int64,0,7
+created_hour_utc,selected,Numeric model feature,int64,0,24
+created_on_weekend,selected,Numeric model feature,bool,0,2
+created_day_name,excluded,Not safely convertible to a numeric feature,object,0,7
+author_role_group,excluded,Not safely convertible to a numeric feature,object,0,3
+split,excluded,"Identifier, target, timestamp, split or leakage column",string,0,3

@@ -1,0 +1,12 @@
+diagnostic_type,query,result_rank,result_count,pr_number,section_name,similarity_score,passed
+exact_pr_lookup,5844,1,7,5844,PR identity,,True
+semantic_search,security-sensitive changes without tests that require mandatory review,1,5,4173,Deterministic policy intelligence,0.5487359762191772,True
+semantic_search,security-sensitive changes without tests that require mandatory review,2,5,5017,Deterministic policy intelligence,0.5294305682182312,True
+semantic_search,security-sensitive changes without tests that require mandatory review,3,5,4936,Deterministic policy intelligence,0.5263301730155945,True
+semantic_search,security-sensitive changes without tests that require mandatory review,4,5,3733,Deterministic policy intelligence,0.4981710612773895,True
+semantic_search,security-sensitive changes without tests that require mandatory review,5,5,5844,Deterministic policy intelligence,0.49187856912612915,True
+semantic_search,pull requests with weak or missing descriptions,1,5,4835,PR description,0.5271117687225342,True
+semantic_search,pull requests with weak or missing descriptions,2,5,5911,PR description,0.5153239965438843,True
+semantic_search,pull requests with weak or missing descriptions,3,5,3461,PR description,0.5001752972602844,True
+semantic_search,pull requests with weak or missing descriptions,4,5,3467,PR description,0.5001752972602844,True
+semantic_search,pull requests with weak or missing descriptions,5,5,5287,PR description,0.4888705611228943,True

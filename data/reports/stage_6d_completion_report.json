@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-07-31 00:46:14.164669+00:00",
+  "stage": "Stage 6D",
+  "model": "Model 2 — Merge-delay prediction",
+  "training_rows": 220,
+  "validation_rows": 42,
+  "test_rows": 38,
+  "feature_count": 58,
+  "split_validation": {
+    "training_rows": 220,
+    "validation_rows": 42,
+    "feature_count": 58,
+    "feature_columns_match": true,
+    "validation_passed": true
+  },
+  "validation_comparison": [
+    {
+      "validation_rank": 1,
+      "threshold": 0.55,
+      "accuracy": 0.8333333333333334,
+      "balanced_accuracy": 0.825925925925926,
+      "precision": 0.75,
+      "recall": 0.8,
+      "f1": 0.7741935483870968,
+      "roc_auc": 0.8395061728395062,
+      "average_precision": 0.7846460366068209,
+      "log_loss": 0.5313685879058403,
+      "brier_score": 0.161435778193271,
+      "true_negative": 23,
+      "false_positive": 4,
+      "false_negative": 3,
+      "true_positive": 12,
+      "predicted_positive_count": 16,
+      "predicted_negative_count": 26,
+      "model_name": "merge_delay_logistic_regression",
+      "nominated_candidate": true
+    },
+    {
+      "validation_rank": 2,
+      "threshold": 0.525,
+      "accuracy": 0.8333333333333334,
+      "balanced_accuracy": 0.7962962962962963,
+      "precision": 0.8333333333333334,
+      "recall": 0.6666666666666666,
+      "f1": 0.7407407407407407,
+      "roc_auc": 0.817283950617284,
+      "average_precision": 0.7167283642283642,
+      "log_loss": 0.4997938434328194,
+      "brier_score": 0.1611009836154147,
+      "true_negative": 25,
+      "false_positive": 2,
+      "false_negative": 5,
+      "true_positive": 10,
+      "predicted_positive_count": 12,
+      "predicted_negative_count": 30,
+      "model_name": "merge_delay_random_forest",
+      "nominated_candidate": false
+    }
+  ],
+  "nominated_candidate": {
+    "validation_rank": 1,
+    "threshold": 0.55,
+    "accuracy": 0.8333333333333334,
+    "balanced_accuracy": 0.825925925925926,
+    "precision": 0.75,
+    "recall": 0.8,
+    "f1": 0.7741935483870968,
+    "roc_auc": 0.8395061728395062,
+    "average_precision": 0.7846460366068209,
+    "log_loss": 0.5313685879058403,
+    "brier_score": 0.161435778193271,
+    "true_negative": 23,
+    "false_positive": 4,
+    "false_negative": 3,
+    "true_positive": 12,
+    "predicted_positive_count": 16,
+    "predicted_negative_count": 26,
+    "model_name": "merge_delay_logistic_regression",
+    "nominated_candidate": true
+  },
+  "overfitting_summary": {
+    "merge_delay_logistic_regression": {
+      "training_roc_auc": 0.9272065514103731,
+      "validation_roc_auc": 0.8395061728395062,
+      "roc_auc_gap": 0.08770037857086688
+    },
+    "merge_delay_random_forest": {
+      "training_roc_auc": 0.9789707815185522,
+      "validation_roc_auc": 0.817283950617284,
+      "roc_auc_gap": 0.16168683090126823
+    }
+  },
+  "artifact_validation": {
+    "logistic_model_exists": true,
+    "random_forest_model_exists": true,
+    "comparison_exists": true,
+    "training_metrics_exists": true,
+    "validation_predictions_exist": true,
+    "logistic_thresholds_exist": true,
+    "random_forest_thresholds_exist": true,
+    "test_split_untouched": true,
+    "validation_passed": true
+  },
+  "test_policy": {
+    "test_dataset_loaded": false,
+    "test_predictions_generated": false,
+    "test_metrics_calculated": false,
+    "test_split_untouched": true
+  },
+  "selection_status": "Validation nominee only. No model is locked at Stage 6D.",
+  "overall_verification_passed": true
+}

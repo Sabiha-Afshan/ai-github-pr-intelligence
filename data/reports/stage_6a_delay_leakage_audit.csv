@@ -1,0 +1,12 @@
+column,exists_in_delay_dataset,allowed_as_model_feature,reason
+closed_at,True,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."
+delayed_merge,False,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."
+delayed_over_168_hours,True,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."
+delayed_over_24_hours,True,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."
+delayed_over_72_hours,True,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."
+merge_delay_target,True,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."
+merge_hours,True,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."
+merge_target,True,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."
+merged_at,True,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."
+resolution_hours,True,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."
+was_merged,True,False,"Outcome, duration or target-derived information unavailable for unbiased merge-delay prediction."

@@ -1,0 +1,3 @@
+model_name,split,pr_number,actual_target,predicted_target,delay_probability,prediction_confidence,selected_threshold,prediction_correct,prediction_outcome,high_confidence_error
+logistic_candidate_07,test,5812,1,0,0.18393467334000219,0.8160653266599978,0.75,False,false_negative,True
+logistic_candidate_07,test,5798,0,1,0.7936433330545046,0.7936433330545046,0.75,False,false_positive,True

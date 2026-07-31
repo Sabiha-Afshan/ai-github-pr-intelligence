@@ -1,0 +1,12 @@
+{
+  "source_row_count": 600,
+  "validated_row_count": 600,
+  "source_unique_pr_count": 600,
+  "validated_unique_pr_count": 600,
+  "matched_pr_count": 600,
+  "missing_after_validation_count": 0,
+  "introduced_after_validation_count": 0,
+  "missing_after_validation": [],
+  "introduced_after_validation": [],
+  "exact_population_alignment": true
+}

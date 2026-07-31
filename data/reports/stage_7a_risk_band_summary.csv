@@ -1,0 +1,5 @@
+policy_risk_band,pr_count,average_risk_score,minimum_risk_score,maximum_risk_score,manual_review_count
+Low,407,7.081081081081081,0,18,0
+Moderate,27,31.185185185185187,20,38,0
+High,83,55.71084337349398,40,68,83
+Critical,83,80.02409638554217,70,100,83

@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-07-31 00:34:26.755725+00:00",
+  "stage": "Stage 6C",
+  "model": "Model 2 — Merge-delay prediction",
+  "source_dataset": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\model2_merge_delay_approved_features.csv",
+  "target": "merge_delay_target",
+  "training_rows": 220,
+  "validation_rows": 42,
+  "test_rows": 38,
+  "feature_count": 58,
+  "binary_feature_count": 30,
+  "continuous_feature_count": 28,
+  "binary_features": [
+    "additions_iqr_outlier",
+    "body_length_iqr_outlier",
+    "body_word_count_iqr_outlier",
+    "changed_files_iqr_outlier",
+    "commit_count_iqr_outlier",
+    "configuration_files_changed_iqr_outlier",
+    "created_on_weekend",
+    "deletions_iqr_outlier",
+    "documentation_files_changed_iqr_outlier",
+    "files_added_iqr_outlier",
+    "files_modified_iqr_outlier",
+    "files_removed_iqr_outlier",
+    "files_renamed",
+    "files_renamed_iqr_outlier",
+    "has_any_iqr_outlier",
+    "has_configuration_changes",
+    "has_description",
+    "has_detailed_description",
+    "has_documentation_changes",
+    "has_multiple_commits",
+    "has_security_sensitive_changes",
+    "has_test_changes",
+    "requested_reviewer_count",
+    "requested_reviewer_count_iqr_outlier",
+    "security_sensitive_files_changed_iqr_outlier",
+    "short_title",
+    "test_files_changed_iqr_outlier",
+    "title_length_iqr_outlier",
+    "total_changes_iqr_outlier",
+    "very_long_description"
+  ],
+  "continuous_features": [
+    "additions",
+    "body_length",
+    "body_word_count",
+    "change_density_per_file",
+    "changed_files",
+    "commit_count",
+    "configuration_files_changed",
+    "created_day_of_week",
+    "created_hour_utc",
+    "deletion_ratio",
+    "deletions",
+    "documentation_files_changed",
+    "files_added",
+    "files_modified",
+    "files_removed",
+    "iqr_outlier_feature_count",
+    "label_count",
+    "log1p_additions",
+    "log1p_body_length",
+    "log1p_body_word_count",
+    "log1p_changed_files",
+    "log1p_commit_count",
+    "log1p_deletions",
+    "log1p_total_changes",
+    "security_sensitive_files_changed",
+    "test_files_changed",
+    "title_length",
+    "total_changes"
+  ],
+  "source_validation": {
+    "row_count": 300,
+    "column_count": 61,
+    "feature_count": 58,
+    "missing_required_columns": [],
+    "duplicate_pr_count": 0,
+    "non_numeric_features": [],
+    "infinite_value_count": 0,
+    "validation_passed": true
+  },
+  "transformed_validation": {
+    "split_results": {
+      "train": {
+        "row_count": 220,
+        "expected_row_count": 220,
+        "feature_count": 58,
+        "expected_feature_count": 58,
+        "missing_required_columns": [],
+        "split_values": [
+          "train"
+        ],
+        "target_values": [
+          0,
+          1
+        ],
+        "missing_value_count": 0,
+        "infinite_value_count": 0,
+        "validation_passed": true
+      },
+      "validation": {
+        "row_count": 42,
+        "expected_row_count": 42,
+        "feature_count": 58,
+        "expected_feature_count": 58,
+        "missing_required_columns": [],
+        "split_values": [
+          "validation"
+        ],
+        "target_values": [
+          0,
+          1
+        ],
+        "missing_value_count": 0,
+        "infinite_value_count": 0,
+        "validation_passed": true
+      },
+      "test": {
+        "row_count": 38,
+        "expected_row_count": 38,
+        "feature_count": 58,
+        "expected_feature_count": 58,
+        "missing_required_columns": [],
+        "split_values": [
+          "test"
+        ],
+        "target_values": [
+          0,
+          1
+        ],
+        "missing_value_count": 0,
+        "infinite_value_count": 0,
+        "validation_passed": true
+      }
+    },
+    "feature_columns_consistent": true,
+    "targets_valid": true,
+    "both_classes_present": true,
+    "validation_passed": true
+  },
+  "artifact_validation": {
+    "preprocessor_exists": true,
+    "preprocessor_size_bytes": 7869,
+    "train_output_exists": true,
+    "validation_output_exists": true,
+    "test_output_exists": true,
+    "feature_manifest_exists": true,
+    "validation_passed": true
+  },
+  "preprocessing_policy": {
+    "fit_split": "Training only",
+    "binary_imputation": "Most frequent",
+    "continuous_imputation": "Median",
+    "continuous_scaling": "StandardScaler fitted on training only",
+    "validation_used_for_fit": false,
+    "test_used_for_fit": false
+  },
+  "preprocessor_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\models\\merge_delay\\model2_preprocessor.joblib",
+  "overall_verification_passed": true
+}

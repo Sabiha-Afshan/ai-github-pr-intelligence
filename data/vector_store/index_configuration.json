@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-07-31 16:43:45.865894+00:00",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_device": "cpu",
+  "embedding_batch_size": 64,
+  "embedding_dimension": 384,
+  "vector_count": 3986,
+  "faiss_index_type": "IndexFlatIP",
+  "similarity_metric": "cosine_similarity",
+  "document_vectors_normalized": true,
+  "query_vectors_normalized": true,
+  "exact_search": true,
+  "ollama_called": false
+}

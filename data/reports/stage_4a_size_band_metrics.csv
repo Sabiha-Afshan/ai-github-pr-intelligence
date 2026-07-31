@@ -1,0 +1,6 @@
+change_size_band,total_prs,merged_prs,unmerged_prs,median_total_changes,merge_rate_percent
+Very small,404,205,199,4.0,50.74
+Small,132,58,74,41.5,43.94
+Medium,37,22,15,182.0,59.46
+Large,12,10,2,914.5,83.33
+Very large,15,5,10,9548.0,33.33

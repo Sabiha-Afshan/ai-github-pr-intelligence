@@ -1,0 +1,256 @@
+{
+  "generated_at": "2026-07-30 16:19:20.163816+00:00",
+  "project_stage": "Stage 2F",
+  "dataset_statuses": [
+    {
+      "dataset_name": "Time-matched PR population",
+      "stage": "Population selection",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\raw\\pallets_flask_time_matched_600_pr_population.csv",
+      "exists": true,
+      "status": "verified",
+      "expected_rows": 600,
+      "actual_rows": 600,
+      "expected_pr_coverage": 600,
+      "actual_pr_coverage": 600,
+      "duplicate_pr_count": 0,
+      "column_count": 8,
+      "target_column": null,
+      "target_distribution": {},
+      "authoritative_for": "Population membership and sampling design",
+      "description": "Selected PR identities and quarterly time-matched sampling metadata.",
+      "validation_passed": true
+    },
+    {
+      "dataset_name": "Detailed 600-PR extraction",
+      "stage": "Raw detailed extraction",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_time_matched_600_detailed.csv",
+      "exists": true,
+      "status": "verified",
+      "expected_rows": 600,
+      "actual_rows": 600,
+      "expected_pr_coverage": 600,
+      "actual_pr_coverage": 600,
+      "duplicate_pr_count": 0,
+      "column_count": 49,
+      "target_column": "was_merged",
+      "target_distribution": {
+        "0": 300,
+        "1": 300
+      },
+      "authoritative_for": "Raw detailed PR attributes and target outcome",
+      "description": "Complete PR metadata, outcomes, lifecycle information and changed-file indicators.",
+      "validation_passed": true
+    },
+    {
+      "dataset_name": "Validated 600-PR dataset",
+      "stage": "Data validation",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_validated.csv",
+      "exists": true,
+      "status": "verified",
+      "expected_rows": 600,
+      "actual_rows": 600,
+      "expected_pr_coverage": 600,
+      "actual_pr_coverage": 600,
+      "duplicate_pr_count": 0,
+      "column_count": 49,
+      "target_column": "was_merged",
+      "target_distribution": {
+        "0": 300,
+        "1": 300
+      },
+      "authoritative_for": "Data-quality analysis and validated values",
+      "description": "Quality-checked and standardized analytical dataset.",
+      "validation_passed": true
+    },
+    {
+      "dataset_name": "Outlier-flagged 600-PR dataset",
+      "stage": "Outlier analysis",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_outlier_flagged.csv",
+      "exists": true,
+      "status": "verified",
+      "expected_rows": 600,
+      "actual_rows": 600,
+      "expected_pr_coverage": 600,
+      "actual_pr_coverage": 600,
+      "duplicate_pr_count": 0,
+      "column_count": 70,
+      "target_column": "was_merged",
+      "target_distribution": {
+        "0": 300,
+        "1": 300
+      },
+      "authoritative_for": "Outlier analysis and robust transformations",
+      "description": "Validated dataset with outlier indicators and treatment metadata.",
+      "validation_passed": true
+    },
+    {
+      "dataset_name": "Feature-engineered 600-PR dataset",
+      "stage": "Feature engineering",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_feature_engineered.csv",
+      "exists": true,
+      "status": "verified",
+      "expected_rows": 600,
+      "actual_rows": 600,
+      "expected_pr_coverage": 600,
+      "actual_pr_coverage": 600,
+      "duplicate_pr_count": 0,
+      "column_count": 96,
+      "target_column": "was_merged",
+      "target_distribution": {
+        "0": 300,
+        "1": 300
+      },
+      "authoritative_for": "Model training and inference feature schema",
+      "description": "Modelling-ready features with timing and leakage controls.",
+      "validation_passed": true
+    },
+    {
+      "dataset_name": "Model 1 time-based split assignments",
+      "stage": "Chronological splitting",
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\evaluation\\corrected_model1_time_based_split_assignments.csv",
+      "exists": true,
+      "status": "verified",
+      "expected_rows": 600,
+      "actual_rows": 600,
+      "expected_pr_coverage": 600,
+      "actual_pr_coverage": 600,
+      "duplicate_pr_count": 0,
+      "column_count": 6,
+      "target_column": "merge_target",
+      "target_distribution": {
+        "0": 300,
+        "1": 300
+      },
+      "authoritative_for": "Model 1 train-validation-test membership",
+      "description": "Chronological train, validation and test assignment for every selected PR.",
+      "validation_passed": true
+    }
+  ],
+  "coverage_results": [
+    {
+      "dataset_name": "Detailed 600-PR extraction",
+      "reference_file": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\raw\\pallets_flask_time_matched_600_pr_population.csv",
+      "comparison_file": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_time_matched_600_detailed.csv",
+      "reference_unique_pr_count": 600,
+      "comparison_unique_pr_count": 600,
+      "matched_pr_count": 600,
+      "missing_pr_count": 0,
+      "outside_reference_count": 0,
+      "coverage_rate": 1.0,
+      "missing_pr_numbers": [],
+      "outside_reference_pr_numbers": [],
+      "exact_pr_alignment": true
+    },
+    {
+      "dataset_name": "Validated 600-PR dataset",
+      "reference_file": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\raw\\pallets_flask_time_matched_600_pr_population.csv",
+      "comparison_file": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_validated.csv",
+      "reference_unique_pr_count": 600,
+      "comparison_unique_pr_count": 600,
+      "matched_pr_count": 600,
+      "missing_pr_count": 0,
+      "outside_reference_count": 0,
+      "coverage_rate": 1.0,
+      "missing_pr_numbers": [],
+      "outside_reference_pr_numbers": [],
+      "exact_pr_alignment": true
+    },
+    {
+      "dataset_name": "Outlier-flagged 600-PR dataset",
+      "reference_file": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\raw\\pallets_flask_time_matched_600_pr_population.csv",
+      "comparison_file": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_outlier_flagged.csv",
+      "reference_unique_pr_count": 600,
+      "comparison_unique_pr_count": 600,
+      "matched_pr_count": 600,
+      "missing_pr_count": 0,
+      "outside_reference_count": 0,
+      "coverage_rate": 1.0,
+      "missing_pr_numbers": [],
+      "outside_reference_pr_numbers": [],
+      "exact_pr_alignment": true
+    },
+    {
+      "dataset_name": "Feature-engineered 600-PR dataset",
+      "reference_file": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\raw\\pallets_flask_time_matched_600_pr_population.csv",
+      "comparison_file": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_feature_engineered.csv",
+      "reference_unique_pr_count": 600,
+      "comparison_unique_pr_count": 600,
+      "matched_pr_count": 600,
+      "missing_pr_count": 0,
+      "outside_reference_count": 0,
+      "coverage_rate": 1.0,
+      "missing_pr_numbers": [],
+      "outside_reference_pr_numbers": [],
+      "exact_pr_alignment": true
+    },
+    {
+      "dataset_name": "Model 1 time-based split assignments",
+      "reference_file": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\raw\\pallets_flask_time_matched_600_pr_population.csv",
+      "comparison_file": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\evaluation\\corrected_model1_time_based_split_assignments.csv",
+      "reference_unique_pr_count": 600,
+      "comparison_unique_pr_count": 600,
+      "matched_pr_count": 600,
+      "missing_pr_count": 0,
+      "outside_reference_count": 0,
+      "coverage_rate": 1.0,
+      "missing_pr_numbers": [],
+      "outside_reference_pr_numbers": [],
+      "exact_pr_alignment": true
+    }
+  ],
+  "failure_reports": [
+    {
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\evaluation\\time_matched_600_extraction_failures.csv",
+      "exists": false,
+      "failure_count": null,
+      "status": "missing"
+    },
+    {
+      "file_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\evaluation\\pallets_flask_pr_pilot_failures.csv",
+      "exists": false,
+      "failure_count": null,
+      "status": "missing"
+    }
+  ],
+  "split_validation": {
+    "split_column": "split",
+    "row_count": 600,
+    "unique_pr_count": 600,
+    "expected_pr_count": 600,
+    "duplicate_pr_count": 0,
+    "invalid_split_count": 0,
+    "split_distribution": {
+      "train": 440,
+      "validation": 84,
+      "test": 76
+    },
+    "train_validation_overlap_count": 0,
+    "train_test_overlap_count": 0,
+    "validation_test_overlap_count": 0,
+    "total_overlap_count": 0,
+    "required_splits_present": true,
+    "validation_passed": true
+  },
+  "detailed_target_validation": {
+    "target_column": "was_merged",
+    "expected_distribution": {
+      "0": 300,
+      "1": 300
+    },
+    "actual_distribution": {
+      "0": 300,
+      "1": 300
+    },
+    "validation_passed": true
+  },
+  "source_of_truth": {
+    "population_membership": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\raw\\pallets_flask_time_matched_600_pr_population.csv",
+    "raw_detailed_attributes": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_time_matched_600_detailed.csv",
+    "validated_analysis": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_validated.csv",
+    "outlier_analysis": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_outlier_flagged.csv",
+    "model_features": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\processed\\pallets_flask_corrected_600_feature_engineered.csv",
+    "split_assignments": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\evaluation\\corrected_model1_time_based_split_assignments.csv"
+  },
+  "recollection_required": false,
+  "overall_verification_passed": true
+}
