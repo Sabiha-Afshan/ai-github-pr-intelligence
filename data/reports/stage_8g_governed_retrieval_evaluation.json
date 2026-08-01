@@ -1,0 +1,2988 @@
+{
+  "stage": "8G",
+  "stage_name": "Governed Retrieval Before-and-After Evaluation",
+  "status": "passed",
+  "positive_case_count": 21,
+  "negative_case_count": 4,
+  "current_metrics": {
+    "positive_hit_rate_at_5": 1.0,
+    "positive_precision_at_5": 0.952381,
+    "positive_mean_reciprocal_rank": 1.0,
+    "negative_abstention_rate": 1.0,
+    "positive_mean_latency_ms": 335.41
+  },
+  "category_summaries": {
+    "noisy_identifier": {
+      "category": "noisy_identifier",
+      "case_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "mean_reciprocal_rank": 1.0,
+      "mean_latency_ms": 70.377
+    },
+    "paraphrased_section": {
+      "category": "paraphrased_section",
+      "case_count": 10,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.92,
+      "mean_reciprocal_rank": 1.0,
+      "mean_latency_ms": 425.397
+    },
+    "metadata_condition": {
+      "category": "metadata_condition",
+      "case_count": 6,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.966667,
+      "mean_reciprocal_rank": 1.0,
+      "mean_latency_ms": 406.291
+    }
+  },
+  "baseline_comparisons": {
+    "positive_hit_rate_at_5": {
+      "baseline": 0.619048,
+      "current": 1.0,
+      "absolute_change": 0.380952,
+      "relative_change_percent": 61.54
+    },
+    "positive_precision_at_5": {
+      "baseline": 0.542857,
+      "current": 0.952381,
+      "absolute_change": 0.409524,
+      "relative_change_percent": 75.44
+    },
+    "positive_mean_reciprocal_rank": {
+      "baseline": 0.527778,
+      "current": 1.0,
+      "absolute_change": 0.472222,
+      "relative_change_percent": 89.47
+    },
+    "negative_abstention_rate": {
+      "baseline": 0.0,
+      "current": 1.0,
+      "absolute_change": 1.0,
+      "relative_change_percent": 100.0
+    }
+  },
+  "category_comparisons": {
+    "noisy_identifier": {
+      "hit_rate_at_5": {
+        "baseline": 0.8,
+        "current": 1.0,
+        "absolute_change": 0.2,
+        "relative_change_percent": 25.0
+      },
+      "precision_at_5": {
+        "baseline": 0.8,
+        "current": 1.0,
+        "absolute_change": 0.2,
+        "relative_change_percent": 25.0
+      },
+      "mean_reciprocal_rank": {
+        "baseline": 0.8,
+        "current": 1.0,
+        "absolute_change": 0.2,
+        "relative_change_percent": 25.0
+      }
+    },
+    "paraphrased_section": {
+      "hit_rate_at_5": {
+        "baseline": 0.4,
+        "current": 1.0,
+        "absolute_change": 0.6,
+        "relative_change_percent": 150.0
+      },
+      "precision_at_5": {
+        "baseline": 0.34,
+        "current": 0.92,
+        "absolute_change": 0.58,
+        "relative_change_percent": 170.59
+      },
+      "mean_reciprocal_rank": {
+        "baseline": 0.333333,
+        "current": 1.0,
+        "absolute_change": 0.666667,
+        "relative_change_percent": 200.0
+      }
+    },
+    "metadata_condition": {
+      "hit_rate_at_5": {
+        "baseline": 0.833333,
+        "current": 1.0,
+        "absolute_change": 0.166667,
+        "relative_change_percent": 20.0
+      },
+      "precision_at_5": {
+        "baseline": 0.666667,
+        "current": 0.966667,
+        "absolute_change": 0.3,
+        "relative_change_percent": 45.0
+      },
+      "mean_reciprocal_rank": {
+        "baseline": 0.625,
+        "current": 1.0,
+        "absolute_change": 0.375,
+        "relative_change_percent": 60.0
+      }
+    }
+  },
+  "thresholds": {
+    "minimum_positive_hit_rate_at_5": 0.8,
+    "minimum_positive_precision_at_5": 0.7,
+    "minimum_positive_mrr": 0.75,
+    "minimum_negative_abstention_rate": 1.0,
+    "minimum_noisy_identifier_hit_rate": 1.0,
+    "minimum_paraphrased_section_hit_rate": 0.7,
+    "minimum_metadata_condition_hit_rate": 0.8
+  },
+  "threshold_checks": {
+    "positive_hit_rate_passed": true,
+    "positive_precision_passed": true,
+    "positive_mrr_passed": true,
+    "negative_abstention_passed": true,
+    "noisy_identifier_passed": true,
+    "paraphrased_section_passed": true,
+    "metadata_condition_passed": true
+  },
+  "positive_results": [
+    {
+      "case_id": "noisy_identifier_2575",
+      "category": "noisy_identifier",
+      "query": "Can you show me what happened with pull request 2575?",
+      "relevance_description": "Any result belonging to PR #2575",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 235.417,
+      "query_understanding": {
+        "original_query": "Can you show me what happened with pull request 2575?",
+        "normalised_query": "can you show me what happened with pull request 2575?",
+        "expanded_query": "can you show me what happened with pull request 2575?",
+        "pr_number": 2575,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.73,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "pull request"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Can you show me what happened with pull request 2575?",
+        "expanded_query": "can you show me what happened with pull request 2575?",
+        "retrieval_query": "PR #2575",
+        "pr_number": 2575,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.73,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 6,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 2575,
+          "section": "PR identity",
+          "base_hybrid_score": 0.4,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.75,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_e20ee705a751383bac54",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 2575 - Title: docs: add Hasura as hosted deployment option - Author: shahidhk - State: closed - Created at: 2018-01-03 10:46:23+00:00 - Merged at: Not merged or unavai"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 2575,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.342289,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.692289,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_d3feca59bd32e5d2c5e8",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 17.52/100 - Recommended next action: Address likely merge blockers and strengthen the PR description, tests or reviewer readiness. - Governance "
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 2575,
+          "section": "PR description",
+          "base_hybrid_score": 0.300233,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.650233,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_1c21033dcbf4b6065b86",
+          "text_preview": "PR description - Title: docs: add Hasura as hosted deployment option - Description present: True - Detailed description detected: True - Description word count: 119 - Description text: Hasura is Kubernetes based microser"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 2575,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.15,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.5,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_97f989e63562a0d00ff6",
+          "text_preview": "Change evidence - Total changed lines: 1 - Additions: 1 - Deletions: 0 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 0 - Test ch"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 2575,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.15,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.5,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_562f834bd08520e80352",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 12.41% - Merge prediction confidence: 87.59% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        }
+      ]
+    },
+    {
+      "case_id": "noisy_identifier_3412",
+      "category": "noisy_identifier",
+      "query": "Find the review information for PR#3412, please.",
+      "relevance_description": "Any result belonging to PR #3412",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 28.725,
+      "query_understanding": {
+        "original_query": "Find the review information for PR#3412, please.",
+        "normalised_query": "find the review information for pr#3412, please.",
+        "expanded_query": "find the review information for pr#3412, please.",
+        "pr_number": 3412,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.81,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "pr",
+          "review"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Find the review information for PR#3412, please.",
+        "expanded_query": "find the review information for pr#3412, please.",
+        "retrieval_query": "PR #3412",
+        "pr_number": 3412,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.81,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 7,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 3412,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.97323,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 1.32323,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_154815ec986f279a2303",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 38/100 - Policy risk band: Moderate - Triggered rule count: 3 - Triggered rules: PR007, PR011, PR012 - Triggered categories: Complexity, Governance, Operations - Man"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 3412,
+          "section": "PR identity",
+          "base_hybrid_score": 0.4,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.75,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_2b53051d65fa0c59db8e",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 3412 - Title: Add `async` support - Author: pgjones - State: closed - Created at: 2019-11-01 11:02:20+00:00 - Merged at: 2021-04-07 12:32:20+00:00 - Source URL: https:"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 3412,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.341002,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.691002,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_b0118185b9d142abb792",
+          "text_preview": "Unified review priority - Review priority: Moderate - Review priority score: 44.59/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance no"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 3412,
+          "section": "PR description",
+          "base_hybrid_score": 0.244465,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.594465,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_4f0ef12e69618101e216",
+          "text_preview": "PR description - Title: Add `async` support - Description present: True - Detailed description detected: True - Description word count: 208 - Description text: This will require Python 2 support to be dropped, which as I"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 3412,
+          "section": "PR description",
+          "base_hybrid_score": 0.15,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.5,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_52f76f991cc28dfbd83a",
+          "text_preview": "change is good overall, in that users would be able to add some async usage to their existing codebases. I would also like to note that they can switch to Quart if their usage becomes mostly async. This allows for async "
+        }
+      ]
+    },
+    {
+      "case_id": "noisy_identifier_4298",
+      "category": "noisy_identifier",
+      "query": "I need the risk and prediction details for pr 4298.",
+      "relevance_description": "Any result belonging to PR #4298",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 26.852,
+      "query_understanding": {
+        "original_query": "I need the risk and prediction details for pr 4298.",
+        "normalised_query": "i need the risk and prediction details for pr 4298.",
+        "expanded_query": "i need the risk and prediction details for pr 4298.",
+        "pr_number": 4298,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.81,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "pr",
+          "risk"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "I need the risk and prediction details for pr 4298.",
+        "expanded_query": "i need the risk and prediction details for pr 4298.",
+        "retrieval_query": "PR #4298",
+        "pr_number": 4298,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.81,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 8,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 4298,
+          "section": "PR identity",
+          "base_hybrid_score": 0.4,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.75,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_1209d696302792b07b74",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 4298 - Title: fix errorhandler type check - Author: delicb - State: closed - Created at: 2021-10-07 13:34:39+00:00 - Merged at: 2021-11-15 21:37:42+00:00 - Source URL:"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 4298,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.341883,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.691883,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_57750518c6795b8fb046",
+          "text_preview": "Unified review priority - Review priority: Moderate - Review priority score: 27.42/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance no"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 4298,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.335351,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.685351,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_64bc04e26a76a8f7f1fd",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 10/100 - Policy risk band: Low - Triggered rule count: 1 - Triggered rules: PR012 - Triggered categories: Complexity - Manual review required: False - Rule recommend"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 4298,
+          "section": "PR description",
+          "base_hybrid_score": 0.242641,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.592641,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_07fef6136896e4666832",
+          "text_preview": "PR description - Title: fix errorhandler type check - Description present: True - Detailed description detected: True - Description word count: 334 - Description text: - fixes #4295 Not really sure what was wrong with th"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 4298,
+          "section": "PR description",
+          "base_hybrid_score": 0.15,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.5,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_dde3079be258855ad771",
+          "text_preview": "handle_my_http_exception(e: HTTPException) -> ResponseReturnValue: return \"error\", e.code # FAIL - since handler is accepting broader exception than declared in errorhandler parameter @app.errorhandler(Exception) def han"
+        }
+      ]
+    },
+    {
+      "case_id": "noisy_identifier_5336",
+      "category": "noisy_identifier",
+      "query": "Open the evidence associated with pull request number 5336.",
+      "relevance_description": "Any result belonging to PR #5336",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 32.288,
+      "query_understanding": {
+        "original_query": "Open the evidence associated with pull request number 5336.",
+        "normalised_query": "open the evidence associated with pull request number 5336.",
+        "expanded_query": "open the evidence associated with pull request number 5336.",
+        "pr_number": 5336,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.73,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "pull request"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Open the evidence associated with pull request number 5336.",
+        "expanded_query": "open the evidence associated with pull request number 5336.",
+        "retrieval_query": "PR #5336",
+        "pr_number": 5336,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.73,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 6,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 5336,
+          "section": "PR identity",
+          "base_hybrid_score": 0.4,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.75,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_377e8e7f50c11134dfab",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 5336 - Title: type hint fix for flask.send_file - Author: dannyi96 - State: closed - Created at: 2023-11-13 11:34:27+00:00 - Merged at: 2023-11-15 20:55:44+00:00 - Sou"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5336,
+          "section": "PR description",
+          "base_hybrid_score": 0.263542,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.613542,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_719fc6133a92fa98e5f1",
+          "text_preview": "PR description - Title: type hint fix for flask.send_file - Description present: True - Detailed description detected: True - Description word count: 102 - Description text: - fixes #5320 **Before** ![image](https://gith"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5336,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.15,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.5,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_51d2388e271c08540c4d",
+          "text_preview": "Change evidence - Total changed lines: 4 - Additions: 3 - Deletions: 1 - Changed files: 2 - Files added: 0 - Files modified: 2 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Test ch"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5336,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.15,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.5,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_e5f98b38c61eb823f1fa",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 47.01% - Merge prediction confidence: 47.01% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5336,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.15,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.5,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_d681f77e81333c947b40",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 0/100 - Policy risk band: Low - Triggered rule count: 0 - Triggered rules: No deterministic policy rules triggered - Triggered categories: No triggered categories - "
+        }
+      ]
+    },
+    {
+      "case_id": "noisy_identifier_6013",
+      "category": "noisy_identifier",
+      "query": "What do we know about #6013 in the Flask repository?",
+      "relevance_description": "Any result belonging to PR #6013",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 28.604,
+      "query_understanding": {
+        "original_query": "What do we know about #6013 in the Flask repository?",
+        "normalised_query": "what do we know about #6013 in the flask repository?",
+        "expanded_query": "what do we know about #6013 in the flask repository? author title created at repository",
+        "pr_number": 6013,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 1.0,
+        "detected_sections": [
+          "PR identity"
+        ],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "flask",
+          "repo",
+          "repository"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "What do we know about #6013 in the Flask repository?",
+        "expanded_query": "what do we know about #6013 in the flask repository? author title created at repository",
+        "retrieval_query": "PR #6013",
+        "pr_number": 6013,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 1.0,
+        "detected_sections": [
+          "PR identity"
+        ],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 6,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 6013,
+          "section": "PR identity",
+          "base_hybrid_score": 0.4,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 0.97,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_44366d2e27fd4a048ad0",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 6013 - Title: autoescape selection uses case-insensitive comparison - Author: davidism - State: closed - Created at: 2026-05-02 03:56:17+00:00 - Merged at: 2026-05-02 "
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 6013,
+          "section": "PR description",
+          "base_hybrid_score": 0.349805,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.699805,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_d1b59c6b03d4c7862b25",
+          "text_preview": "PR description - Title: autoescape selection uses case-insensitive comparison - Description present: True - Detailed description detected: False - Description word count: 12 - Description text: Use case-insensitive compa"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 6013,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.15,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.5,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_6b28a1756d5fd347a4c5",
+          "text_preview": "Change evidence - Total changed lines: 7 - Additions: 6 - Deletions: 1 - Changed files: 2 - Files added: 0 - Files modified: 2 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 0 - Test ch"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 6013,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.15,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.5,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_d209d60a06fcf67fd1a6",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 61.56% - Merge prediction confidence: 61.56% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 6013,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.15,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.5,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_73a1145024e6e7d939bf",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 8/100 - Policy risk band: Low - Triggered rule count: 1 - Triggered rules: PR002 - Triggered categories: Documentation - Manual review required: False - Rule recomme"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_change_evidence_1",
+      "category": "paraphrased_section",
+      "query": "Which contributions look unusually large and could be difficult for a reviewer to inspect?",
+      "relevance_description": "Section equals 'Change evidence'",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 366.995,
+      "query_understanding": {
+        "original_query": "Which contributions look unusually large and could be difficult for a reviewer to inspect?",
+        "normalised_query": "which contributions look unusually large and could be difficult for a reviewer to inspect?",
+        "expanded_query": "which contributions look unusually large and could be difficult for a reviewer to inspect?",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.16,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "review",
+          "reviewer"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Which contributions look unusually large and could be difficult for a reviewer to inspect?",
+        "expanded_query": "which contributions look unusually large and could be difficult for a reviewer to inspect?",
+        "retrieval_query": "which contributions look unusually large and could be difficult for a reviewer to inspect?",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.16,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 2600,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.609266,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.609266,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_e267f410e6849629271d",
+          "text_preview": "Change evidence - Total changed lines: 182 - Additions: 180 - Deletions: 2 - Changed files: 5 - Files added: 2 - Files modified: 3 - Files removed: 0 - Commit count: 6 - Requested reviewer count: 0 - Label count: 0 - Tes"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5896,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.601713,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.601713,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_f455878ee37fdccaa227",
+          "text_preview": "Change evidence - Total changed lines: 149 - Additions: 147 - Deletions: 2 - Changed files: 2 - Files added: 0 - Files modified: 2 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 0 - Tes"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5630,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.598555,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.598555,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_84375544b7c857afc4e2",
+          "text_preview": "Change evidence - Total changed lines: 137 - Additions: 90 - Deletions: 47 - Changed files: 3 - Files added: 0 - Files modified: 3 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Tes"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 4399,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.59781,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.59781,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_bcb3fefca27825f81bb1",
+          "text_preview": "Change evidence - Total changed lines: 50 - Additions: 25 - Deletions: 25 - Changed files: 2 - Files added: 0 - Files modified: 2 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 4401,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.596464,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.596464,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_f3778bd5104ba57a7e95",
+          "text_preview": "Change evidence - Total changed lines: 50 - Additions: 25 - Deletions: 25 - Changed files: 2 - Files added: 0 - Files modified: 2 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_change_evidence_2",
+      "category": "paraphrased_section",
+      "query": "Find code submissions touching lots of files or containing a heavy volume of edits.",
+      "relevance_description": "Section equals 'Change evidence'",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 437.504,
+      "query_understanding": {
+        "original_query": "Find code submissions touching lots of files or containing a heavy volume of edits.",
+        "normalised_query": "find code submissions touching lots of files or containing a heavy volume of edits.",
+        "expanded_query": "find code submissions touching lots of files or containing a heavy volume of edits. changed files total changed lines additions deletions",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.24,
+        "detected_sections": [
+          "Change evidence"
+        ],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "submissions"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Find code submissions touching lots of files or containing a heavy volume of edits.",
+        "expanded_query": "find code submissions touching lots of files or containing a heavy volume of edits. changed files total changed lines additions deletions",
+        "retrieval_query": "find code submissions touching lots of files or containing a heavy volume of edits. changed files total changed lines additions deletions",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.24,
+        "detected_sections": [
+          "Change evidence"
+        ],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 4173,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.837375,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.057375,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_67c5547938330269bcfb",
+          "text_preview": "Change evidence - Total changed lines: 4,864 - Additions: 2,814 - Deletions: 2,050 - Changed files: 23 - Files added: 3 - Files modified: 19 - Files removed: 1 - Commit count: 4 - Requested reviewer count: 0 - Label coun"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 3183,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.8358,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.0558,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_895012051ead821b0016",
+          "text_preview": "Change evidence - Total changed lines: 7,261 - Additions: 3,798 - Deletions: 3,463 - Changed files: 65 - Files added: 1 - Files modified: 64 - Files removed: 0 - Commit count: 2 - Requested reviewer count: 0 - Label coun"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5713,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.835091,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.055091,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_6199423820f9e5a38495",
+          "text_preview": "Change evidence - Total changed lines: 48,534 - Additions: 48,432 - Deletions: 102 - Changed files: 192 - Files added: 184 - Files modified: 1 - Files removed: 1 - Commit count: 4 - Requested reviewer count: 0 - Label co"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5000,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.834652,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.054652,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_146987031e2238eb1b2e",
+          "text_preview": "Change evidence - Total changed lines: 233 - Additions: 78 - Deletions: 155 - Changed files: 6 - Files added: 2 - Files modified: 1 - Files removed: 3 - Commit count: 40 - Requested reviewer count: 0 - Label count: 0 - T"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5068,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.834344,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.054344,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_a1c92d32319271666341",
+          "text_preview": "Change evidence - Total changed lines: 47,125 - Additions: 26,696 - Deletions: 20,429 - Changed files: 334 - Files added: 146 - Files modified: 78 - Files removed: 107 - Commit count: 2,325 - Requested reviewer count: 0 "
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_policy_1",
+      "category": "paraphrased_section",
+      "query": "Which changes should be escalated for a human governance check?",
+      "relevance_description": "Section equals 'Deterministic policy intelligence'",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 415.185,
+      "query_understanding": {
+        "original_query": "Which changes should be escalated for a human governance check?",
+        "normalised_query": "which changes should be escalated for a human governance check?",
+        "expanded_query": "which changes should be escalated for a human governance check? manual review required policy risk governance rules triggered rules",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.44,
+        "detected_sections": [
+          "Deterministic policy intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "manual_review_required",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "matched_repository_terms": [
+          "changes",
+          "governance"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Which changes should be escalated for a human governance check?",
+        "expanded_query": "which changes should be escalated for a human governance check? manual review required policy risk governance rules triggered rules",
+        "retrieval_query": "which changes should be escalated for a human governance check? manual review required policy risk governance rules triggered rules",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.44,
+        "detected_sections": [
+          "Deterministic policy intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "manual_review_required",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "strict_metadata_filter_applied": true,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 5736,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.839248,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.359248,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_c6195dc8a549ff6d9f6e",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 40/100 - Policy risk band: High - Triggered rule count: 3 - Triggered rules: PR008, PR011, PR012 - Triggered categories: Complexity, Governance - Manual review requi"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 3828,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.839248,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.359248,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_1412b23147e12507b029",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 40/100 - Policy risk band: High - Triggered rule count: 3 - Triggered rules: PR008, PR011, PR012 - Triggered categories: Complexity, Governance - Manual review requi"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 4995,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.839248,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.359248,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_13b4b0994fe0bea66cb9",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 40/100 - Policy risk band: High - Triggered rule count: 3 - Triggered rules: PR008, PR011, PR012 - Triggered categories: Complexity, Governance - Manual review requi"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 4624,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.834391,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.354391,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_e68365b8f9c844692382",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 48/100 - Policy risk band: High - Triggered rule count: 4 - Triggered rules: PR002, PR008, PR011, PR012 - Triggered categories: Complexity, Documentation, Governance"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 3669,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.792264,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.312264,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_04ef85b393e02301c6c1",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 62/100 - Policy risk band: High - Triggered rule count: 4 - Triggered rules: PR003, PR008, PR011, PR012 - Triggered categories: Complexity, Governance, Testing - Man"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_policy_2",
+      "category": "paraphrased_section",
+      "query": "Show changes that violated several repository controls or review policies.",
+      "relevance_description": "Section equals 'Deterministic policy intelligence'",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 460.283,
+      "query_understanding": {
+        "original_query": "Show changes that violated several repository controls or review policies.",
+        "normalised_query": "show changes that violated several repository controls or review policies.",
+        "expanded_query": "show changes that violated several repository controls or review policies. policy rules triggered rules governance policy risk manual review required author title created at repository",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.64,
+        "detected_sections": [
+          "Deterministic policy intelligence",
+          "PR identity"
+        ],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "changes",
+          "policies",
+          "repo",
+          "repository",
+          "review"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Show changes that violated several repository controls or review policies.",
+        "expanded_query": "show changes that violated several repository controls or review policies. policy rules triggered rules governance policy risk manual review required author title created at repository",
+        "retrieval_query": "show changes that violated several repository controls or review policies. policy rules triggered rules governance policy risk manual review required author title created at repository",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.64,
+        "detected_sections": [
+          "Deterministic policy intelligence",
+          "PR identity"
+        ],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 2699,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.823511,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.043511,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_211314fc1a4ca76cd195",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 78/100 - Policy risk band: Critical - Triggered rule count: 6 - Triggered rules: PR002, PR005, PR007, PR008, PR011, PR012 - Triggered categories: Complexity, Documen"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5807,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.816984,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.036984,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_402b5ee3fc7b1b716783",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 66/100 - Policy risk band: High - Triggered rule count: 6 - Triggered rules: PR002, PR007, PR008, PR010, PR011, PR012 - Triggered categories: Complexity, Documentati"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 4936,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.812705,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.032705,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_0dbba4cd56f23a7d2c6a",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 6 - Triggered rules: PR003, PR004, PR005, PR006, PR011, PR012 - Triggered categories: Complexity, Docume"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5457,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.812678,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.032678,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_5c0017d56f7cafc1a6ad",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 86/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR002, PR005, PR007, PR008, PR010, PR011, PR012 - Triggered categories: Complexity, "
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 4272,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.811066,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.031066,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_13f06f70ff142f28d7c2",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 88/100 - Policy risk band: Critical - Triggered rule count: 6 - Triggered rules: PR005, PR007, PR009, PR010, PR011, PR012 - Triggered categories: Complexity, Governa"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_prediction_1",
+      "category": "paraphrased_section",
+      "query": "Which submissions appear unlikely to get accepted?",
+      "relevance_description": "Section equals 'Predictive intelligence'",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 457.033,
+      "query_understanding": {
+        "original_query": "Which submissions appear unlikely to get accepted?",
+        "normalised_query": "which submissions appear unlikely to get accepted?",
+        "expanded_query": "which submissions appear unlikely to get accepted? predicted not to merge low merge probability merge outcome merge probability merge prediction delay prediction",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.44,
+        "detected_sections": [
+          "Predictive intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "merge_probability",
+            "operator": "lt",
+            "value": 0.4
+          }
+        ],
+        "matched_repository_terms": [
+          "accepted",
+          "submissions"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Which submissions appear unlikely to get accepted?",
+        "expanded_query": "which submissions appear unlikely to get accepted? predicted not to merge low merge probability merge outcome merge probability merge prediction delay prediction",
+        "retrieval_query": "which submissions appear unlikely to get accepted? predicted not to merge low merge probability merge outcome merge probability merge prediction delay prediction",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.44,
+        "detected_sections": [
+          "Predictive intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "merge_probability",
+            "operator": "lt",
+            "value": 0.4
+          }
+        ],
+        "strict_metadata_filter_applied": true,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 3082,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.85,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.37,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_15ac0be9699427c96cbd",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 27.68% - Merge prediction confidence: 72.32% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Dela"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 2940,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.849706,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.369706,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_80ffa515f84804ac1fef",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 38.54% - Merge prediction confidence: 61.46% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Dela"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5182,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.848776,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.368776,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_370af782f123bc749dbf",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 31.67% - Merge prediction confidence: 68.33% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Dela"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5522,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.847101,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.367101,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_8f1caf1b0469c6d26589",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 14.33% - Merge prediction confidence: 85.67% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Dela"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5464,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.846588,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.366588,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_29c08ce7c4dad86b138d",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 28.69% - Merge prediction confidence: 71.31% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge delay greater than 48 "
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_prediction_2",
+      "category": "paraphrased_section",
+      "query": "Find work items that may remain open for a long time before being integrated.",
+      "relevance_description": "Section equals 'Predictive intelligence'",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 425.902,
+      "query_understanding": {
+        "original_query": "Find work items that may remain open for a long time before being integrated.",
+        "normalised_query": "find work items that may remain open for a long time before being integrated.",
+        "expanded_query": "find work items that may remain open for a long time before being integrated. merge delay delay prediction long merge duration merge probability merge prediction",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.28,
+        "detected_sections": [
+          "Predictive intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "delay_prediction",
+            "operator": "eq",
+            "value": 1
+          }
+        ],
+        "matched_repository_terms": [],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Find work items that may remain open for a long time before being integrated.",
+        "expanded_query": "find work items that may remain open for a long time before being integrated. merge delay delay prediction long merge duration merge probability merge prediction",
+        "retrieval_query": "find work items that may remain open for a long time before being integrated. merge delay delay prediction long merge duration merge probability merge prediction",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.28,
+        "detected_sections": [
+          "Predictive intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "delay_prediction",
+            "operator": "eq",
+            "value": 1
+          }
+        ],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 3296,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.841769,
+          "section_boost": 0.22,
+          "metadata_boost": -0.2,
+          "governed_score": 0.861769,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_8df2f34f99965541261d",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 24.00% - Merge prediction confidence: 76.00% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 3548,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.837809,
+          "section_boost": 0.22,
+          "metadata_boost": -0.2,
+          "governed_score": 0.857809,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_84662e8426d6c1d22f82",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 40.06% - Merge prediction confidence: 59.94% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5885,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.837319,
+          "section_boost": 0.22,
+          "metadata_boost": -0.2,
+          "governed_score": 0.857319,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_91b56e0b5bad9312ad18",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 24.05% - Merge prediction confidence: 75.95% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5611,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.836743,
+          "section_boost": 0.22,
+          "metadata_boost": -0.2,
+          "governed_score": 0.856743,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_3d1609f3057eb126ec04",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 35.00% - Merge prediction confidence: 65.00% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 4363,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.836648,
+          "section_boost": 0.22,
+          "metadata_boost": -0.2,
+          "governed_score": 0.856648,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_318cd2e4e81cee803404",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 56.04% - Merge prediction confidence: 56.04% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model is "
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_priority_1",
+      "category": "paraphrased_section",
+      "query": "What should the maintainers look at first?",
+      "relevance_description": "Section equals 'Unified review priority'",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 427.191,
+      "query_understanding": {
+        "original_query": "What should the maintainers look at first?",
+        "normalised_query": "what should the maintainers look at first?",
+        "expanded_query": "what should the maintainers look at first? review priority recommended next action review urgency review priority score",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.32,
+        "detected_sections": [
+          "Unified review priority"
+        ],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "maintainer",
+          "maintainers"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "What should the maintainers look at first?",
+        "expanded_query": "what should the maintainers look at first? review priority recommended next action review urgency review priority score",
+        "retrieval_query": "what should the maintainers look at first? review priority recommended next action review urgency review priority score",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.32,
+        "detected_sections": [
+          "Unified review priority"
+        ],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 5777,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.845788,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.065788,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_4822ff6f625b7c962e02",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.56/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 3011,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.845695,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.065695,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_9844e6bb3a30ec7ca84b",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.60/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 3069,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.845569,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.065569,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_b4c67ca44f0199b91068",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 22.44/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 3031,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.845013,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.065013,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_789fb6742690cd33a61e",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.32/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5723,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.844956,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.064956,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_695ef898785ec86e5dce",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.18/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_priority_2",
+      "category": "paraphrased_section",
+      "query": "Show the recommended reviewer action and urgency.",
+      "relevance_description": "Section equals 'Unified review priority'",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 414.819,
+      "query_understanding": {
+        "original_query": "Show the recommended reviewer action and urgency.",
+        "normalised_query": "show the recommended reviewer action and urgency.",
+        "expanded_query": "show the recommended reviewer action and urgency. review priority review priority score recommended next action",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.32,
+        "detected_sections": [
+          "Unified review priority"
+        ],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "review",
+          "reviewer"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Show the recommended reviewer action and urgency.",
+        "expanded_query": "show the recommended reviewer action and urgency. review priority review priority score recommended next action",
+        "retrieval_query": "show the recommended reviewer action and urgency. review priority review priority score recommended next action",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.32,
+        "detected_sections": [
+          "Unified review priority"
+        ],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 5659,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.85,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.07,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_06334acb771d4ad625b1",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.85/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5671,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.85,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.07,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_da2518def3cc3d3af0fc",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.85/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5808,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.849948,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.069948,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_11d132c3873d8329adfc",
+          "text_preview": "Unified review priority - Review priority: Moderate - Review priority score: 28.98/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance no"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 3137,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.849948,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.069948,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_3ba7c8f880f3fbbff517",
+          "text_preview": "Unified review priority - Review priority: Moderate - Review priority score: 28.98/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance no"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5723,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.849939,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.069939,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_695ef898785ec86e5dce",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.18/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_description_1",
+      "category": "paraphrased_section",
+      "query": "Find submissions where the author gave a useful explanation of the proposed change.",
+      "relevance_description": "Section equals 'PR description'",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 434.921,
+      "query_understanding": {
+        "original_query": "Find submissions where the author gave a useful explanation of the proposed change.",
+        "normalised_query": "find submissions where the author gave a useful explanation of the proposed change.",
+        "expanded_query": "find submissions where the author gave a useful explanation of the proposed change. detailed description description word count description quality description author title created at repository",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.56,
+        "detected_sections": [
+          "PR description",
+          "PR identity"
+        ],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "author",
+          "pr",
+          "submissions"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Find submissions where the author gave a useful explanation of the proposed change.",
+        "expanded_query": "find submissions where the author gave a useful explanation of the proposed change. detailed description description word count description quality description author title created at repository",
+        "retrieval_query": "find submissions where the author gave a useful explanation of the proposed change. detailed description description word count description quality description author title created at repository",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.56,
+        "detected_sections": [
+          "PR description",
+          "PR identity"
+        ],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 5357,
+          "section": "PR description",
+          "base_hybrid_score": 0.805159,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.025159,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_0c8e9cb918c1de9d1fcc",
+          "text_preview": "PR description - Title: Create new - Description present: True - Detailed description detected: True - Description word count: 174 - Description text: <!-- Before opening a PR, open a ticket describing the issue or featu"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 4871,
+          "section": "PR description",
+          "base_hybrid_score": 0.797444,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.017444,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_7b20bc34e78c93142dca",
+          "text_preview": "PR description - Title: Code Optimized - Description present: True - Detailed description detected: True - Description word count: 174 - Description text: <!-- Before opening a PR, open a ticket describing the issue or f"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5244,
+          "section": "PR description",
+          "base_hybrid_score": 0.793177,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.013177,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_32cf4a3764b4f065b057",
+          "text_preview": "PR description - Title: Ali - Description present: True - Detailed description detected: True - Description word count: 174 - Description text: <!-- Before opening a PR, open a ticket describing the issue or feature the "
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5346,
+          "section": "PR description",
+          "base_hybrid_score": 0.781248,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 1.001248,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_6c78cccc20e8319d5995",
+          "text_preview": "PR description - Title: d - Description present: True - Detailed description detected: True - Description word count: 174 - Description text: <!-- Before opening a PR, open a ticket describing the issue or feature the PR"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 3850,
+          "section": "PR description",
+          "base_hybrid_score": 0.776548,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 0.996548,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_aab895a9b64233d4abfe",
+          "text_preview": "PR description - Title: Add link to reference docs in README - Description present: True - Detailed description detected: True - Description word count: 114 - Description text: Hi there! My name is Leo, a CS student at B"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_identity_1",
+      "category": "paraphrased_section",
+      "query": "Who opened the change, when was it opened, and what was its title?",
+      "relevance_description": "Section equals 'PR identity'",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 414.138,
+      "query_understanding": {
+        "original_query": "Who opened the change, when was it opened, and what was its title?",
+        "normalised_query": "who opened the change, when was it opened, and what was its title?",
+        "expanded_query": "who opened the change, when was it opened, and what was its title? author created at pull request title title repository",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.32,
+        "detected_sections": [
+          "PR identity"
+        ],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "opened",
+          "title"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Who opened the change, when was it opened, and what was its title?",
+        "expanded_query": "who opened the change, when was it opened, and what was its title? author created at pull request title title repository",
+        "retrieval_query": "who opened the change, when was it opened, and what was its title? author created at pull request title title repository",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.32,
+        "detected_sections": [
+          "PR identity"
+        ],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 3807,
+          "section": "PR identity",
+          "base_hybrid_score": 0.669828,
+          "section_boost": 0.22,
+          "metadata_boost": 0.0,
+          "governed_score": 0.889828,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_68460c8cab65c4296f16",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 3807 - Title: Clarify it is talking about HTML tags - Author: hvnsweeting - State: closed - Created at: 2020-10-25 11:12:14+00:00 - Merged at: Not merged or unavailabl"
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 3802,
+          "section": "PR description",
+          "base_hybrid_score": 0.634823,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.634823,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_db9237baa4ee8880e1ae",
+          "text_preview": "PR description - Title: [Minor changes] Update documentation by removing outdated information - Description present: True - Detailed description detected: False - Description word count: 36 - Description text: I noticed "
+        },
+        {
+          "rank": 3,
+          "relevant": false,
+          "pr_number": 4748,
+          "section": "PR description",
+          "base_hybrid_score": 0.623971,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.623971,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_3e4d9b27f1a2049a1224",
+          "text_preview": "PR description - Title: refactor or remove old docs - Description present: True - Detailed description detected: True - Description word count: 73 - Description text: * HTML FAQ was pretty outdated, and not particularly "
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 2619,
+          "section": "PR description",
+          "base_hybrid_score": 0.601481,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.601481,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_108519b85cb468260bfb",
+          "text_preview": "PR description - Title: [update] license year - Description present: True - Detailed description detected: False - Description word count: 9 - Description text: This pull request updates the license year to 2018."
+        },
+        {
+          "rank": 5,
+          "relevant": false,
+          "pr_number": 4835,
+          "section": "PR description",
+          "base_hybrid_score": 0.598182,
+          "section_boost": 0.0,
+          "metadata_boost": 0.0,
+          "governed_score": 0.598182,
+          "metadata_condition_matches": 0,
+          "metadata_condition_total": 0,
+          "chunk_id": "prchunk_081651b501f39569e68c",
+          "text_preview": "PR description - Title: fix typo in quickstart - Description present: True - Detailed description detected: False - Description word count: 16 - Description text: I yoinked the default pull request template because this "
+        }
+      ]
+    },
+    {
+      "case_id": "condition_critical_manual_review",
+      "category": "metadata_condition",
+      "query": "Show critical pull requests that must be reviewed manually.",
+      "relevance_description": "Critical policy risk and manual review required",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 396.549,
+      "query_understanding": {
+        "original_query": "Show critical pull requests that must be reviewed manually.",
+        "normalised_query": "show critical pull requests that must be reviewed manually.",
+        "expanded_query": "show critical pull requests that must be reviewed manually.",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.48,
+        "detected_sections": [],
+        "metadata_conditions": [
+          {
+            "field": "manual_review_required",
+            "operator": "eq",
+            "value": true
+          },
+          {
+            "field": "policy_risk_band",
+            "operator": "eq",
+            "value": "Critical"
+          }
+        ],
+        "matched_repository_terms": [
+          "pull request",
+          "pull requests",
+          "review"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Show critical pull requests that must be reviewed manually.",
+        "expanded_query": "show critical pull requests that must be reviewed manually.",
+        "retrieval_query": "show critical pull requests that must be reviewed manually.",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.48,
+        "detected_sections": [],
+        "metadata_conditions": [
+          {
+            "field": "manual_review_required",
+            "operator": "eq",
+            "value": true
+          },
+          {
+            "field": "policy_risk_band",
+            "operator": "eq",
+            "value": "Critical"
+          }
+        ],
+        "strict_metadata_filter_applied": true,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 4173,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.674621,
+          "section_boost": 0.0,
+          "metadata_boost": 0.3,
+          "governed_score": 0.974621,
+          "metadata_condition_matches": 2,
+          "metadata_condition_total": 2,
+          "chunk_id": "prchunk_bf2c6112b5f456d55b95",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 8 - Triggered rules: PR002, PR003, PR004, PR005, PR006, PR009, PR011, PR012 - Triggered categories: Comp"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5017,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.669115,
+          "section_boost": 0.0,
+          "metadata_boost": 0.3,
+          "governed_score": 0.969115,
+          "metadata_condition_matches": 2,
+          "metadata_condition_total": 2,
+          "chunk_id": "prchunk_608427704b4094107c96",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR003, PR004, PR005, PR006, PR008, PR011, PR012 - Triggered categories: Complexity,"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 4936,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.653616,
+          "section_boost": 0.0,
+          "metadata_boost": 0.3,
+          "governed_score": 0.953616,
+          "metadata_condition_matches": 2,
+          "metadata_condition_total": 2,
+          "chunk_id": "prchunk_0dbba4cd56f23a7d2c6a",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 6 - Triggered rules: PR003, PR004, PR005, PR006, PR011, PR012 - Triggered categories: Complexity, Docume"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5713,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.648453,
+          "section_boost": 0.0,
+          "metadata_boost": 0.3,
+          "governed_score": 0.948453,
+          "metadata_condition_matches": 2,
+          "metadata_condition_total": 2,
+          "chunk_id": "prchunk_c7c05f84816c66381682",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR003, PR005, PR006, PR007, PR009, PR011, PR012 - Triggered categories: Complexity,"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5844,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.643845,
+          "section_boost": 0.0,
+          "metadata_boost": 0.3,
+          "governed_score": 0.943845,
+          "metadata_condition_matches": 2,
+          "metadata_condition_total": 2,
+          "chunk_id": "prchunk_985b970ba8efeae270b3",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR003, PR004, PR005, PR006, PR007, PR011, PR012 - Triggered categories: Complexity,"
+        }
+      ]
+    },
+    {
+      "case_id": "condition_high_review_priority",
+      "category": "metadata_condition",
+      "query": "Find changes with high or critical review urgency.",
+      "relevance_description": "Review priority is High or Critical",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 397.744,
+      "query_understanding": {
+        "original_query": "Find changes with high or critical review urgency.",
+        "normalised_query": "find changes with high or critical review urgency.",
+        "expanded_query": "find changes with high or critical review urgency. review priority review priority score recommended next action",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.44,
+        "detected_sections": [
+          "Unified review priority"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "review_priority",
+            "operator": "eq",
+            "value": [
+              "Critical",
+              "High"
+            ]
+          }
+        ],
+        "matched_repository_terms": [
+          "changes",
+          "review"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Find changes with high or critical review urgency.",
+        "expanded_query": "find changes with high or critical review urgency. review priority review priority score recommended next action",
+        "retrieval_query": "find changes with high or critical review urgency. review priority review priority score recommended next action",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.44,
+        "detected_sections": [
+          "Unified review priority"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "review_priority",
+            "operator": "eq",
+            "value": [
+              "Critical",
+              "High"
+            ]
+          }
+        ],
+        "strict_metadata_filter_applied": true,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 5376,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.840549,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.360549,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_b77db81b7ae2416810d3",
+          "text_preview": "Unified review priority - Review priority: Critical - Review priority score: 49.99/100 - Recommended next action: Escalate for mandatory policy, security or senior maintainer review before approval. - Governance note: hu"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5330,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.839548,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.359548,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_9ed9e1341778b278c628",
+          "text_preview": "Unified review priority - Review priority: Critical - Review priority score: 49.86/100 - Recommended next action: Escalate for mandatory policy, security or senior maintainer review before approval. - Governance note: hu"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5248,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.837443,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.357443,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_43c8b5565fd9d21a1c8a",
+          "text_preview": "Unified review priority - Review priority: Critical - Review priority score: 52.76/100 - Recommended next action: Escalate for mandatory policy, security or senior maintainer review before approval. - Governance note: hu"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 3524,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.836989,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.356989,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_2f995525371e9ded2be2",
+          "text_preview": "Unified review priority - Review priority: Critical - Review priority score: 71.86/100 - Recommended next action: Escalate for mandatory policy, security or senior maintainer review before approval. - Governance note: hu"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5539,
+          "section": "Unified review priority",
+          "base_hybrid_score": 0.836574,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.356574,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_a0280bbf794f70b23e3f",
+          "text_preview": "Unified review priority - Review priority: Critical - Review priority score: 49.21/100 - Recommended next action: Escalate for mandatory policy, security or senior maintainer review before approval. - Governance note: hu"
+        }
+      ]
+    },
+    {
+      "case_id": "condition_low_merge_probability",
+      "category": "metadata_condition",
+      "query": "Which pull requests have a low chance of being merged?",
+      "relevance_description": "Merge probability is below 40 percent",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 387.681,
+      "query_understanding": {
+        "original_query": "Which pull requests have a low chance of being merged?",
+        "normalised_query": "which pull requests have a low chance of being merged?",
+        "expanded_query": "which pull requests have a low chance of being merged? merge probability merge prediction delay prediction",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.6,
+        "detected_sections": [
+          "Predictive intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "merge_probability",
+            "operator": "lt",
+            "value": 0.4
+          }
+        ],
+        "matched_repository_terms": [
+          "merge",
+          "merged",
+          "pull request",
+          "pull requests"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Which pull requests have a low chance of being merged?",
+        "expanded_query": "which pull requests have a low chance of being merged? merge probability merge prediction delay prediction",
+        "retrieval_query": "which pull requests have a low chance of being merged? merge probability merge prediction delay prediction",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.6,
+        "detected_sections": [
+          "Predictive intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "merge_probability",
+            "operator": "lt",
+            "value": 0.4
+          }
+        ],
+        "strict_metadata_filter_applied": true,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 4897,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.849119,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.369119,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_8db4606f9824937a43a9",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 12.68% - Merge prediction confidence: 87.32% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5955,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.849057,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.369057,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_9457359bac4c89af4609",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 28.64% - Merge prediction confidence: 71.36% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5384,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.848817,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.368817,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_66d6e807f10290038ea3",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 35.68% - Merge prediction confidence: 64.32% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 3419,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.848191,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.368191,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_e968742c65628de39e43",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 32.64% - Merge prediction confidence: 67.36% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5982,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.84802,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.36802,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_6a873cf2c29d29a140a7",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 12.86% - Merge prediction confidence: 87.14% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        }
+      ]
+    },
+    {
+      "case_id": "condition_delay_risk",
+      "category": "metadata_condition",
+      "query": "Find merged changes expected to take longer than normal to complete.",
+      "relevance_description": "Delay score exists and delay prediction equals 1",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 4,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.8,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 418.087,
+      "query_understanding": {
+        "original_query": "Find merged changes expected to take longer than normal to complete.",
+        "normalised_query": "find merged changes expected to take longer than normal to complete.",
+        "expanded_query": "find merged changes expected to take longer than normal to complete. merge delay delay prediction delayed merge merge probability merge prediction",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.52,
+        "detected_sections": [
+          "Predictive intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "delay_prediction",
+            "operator": "eq",
+            "value": 1
+          }
+        ],
+        "matched_repository_terms": [
+          "changes",
+          "merge",
+          "merged"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Find merged changes expected to take longer than normal to complete.",
+        "expanded_query": "find merged changes expected to take longer than normal to complete. merge delay delay prediction delayed merge merge probability merge prediction",
+        "retrieval_query": "find merged changes expected to take longer than normal to complete. merge delay delay prediction delayed merge merge probability merge prediction",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.52,
+        "detected_sections": [
+          "Predictive intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "delay_prediction",
+            "operator": "eq",
+            "value": 1
+          }
+        ],
+        "strict_metadata_filter_applied": true,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 4
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 5736,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.83655,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.35655,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_362f0ec98f1ebed7ba51",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 66.08% - Merge prediction confidence: 66.08% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge delay greater than 48 hour"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 2898,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.836546,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.356546,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_2f09d69f98cd48a9e98d",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 64.04% - Merge prediction confidence: 64.04% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge delay greater than 48 hour"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 3728,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.836154,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.356154,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_733cf7c2a726018a7cb0",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 59.03% - Merge prediction confidence: 59.03% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge delay greater than 48 hour"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5377,
+          "section": "Predictive intelligence",
+          "base_hybrid_score": 0.835508,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.355508,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_c7a416ccd15cd5a87404",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 42.49% - Merge prediction confidence: 57.51% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge delay greater than 48 "
+        }
+      ]
+    },
+    {
+      "case_id": "condition_multiple_rules",
+      "category": "metadata_condition",
+      "query": "Show changes that triggered several different repository rules.",
+      "relevance_description": "Triggered rule count is at least 3",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 428.582,
+      "query_understanding": {
+        "original_query": "Show changes that triggered several different repository rules.",
+        "normalised_query": "show changes that triggered several different repository rules.",
+        "expanded_query": "show changes that triggered several different repository rules. author title created at repository",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.6,
+        "detected_sections": [
+          "PR identity"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "triggered_rule_count",
+            "operator": "gte",
+            "value": 3
+          }
+        ],
+        "matched_repository_terms": [
+          "changes",
+          "repo",
+          "repository",
+          "rules"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Show changes that triggered several different repository rules.",
+        "expanded_query": "show changes that triggered several different repository rules. author title created at repository",
+        "retrieval_query": "show changes that triggered several different repository rules. author title created at repository",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.6,
+        "detected_sections": [
+          "PR identity"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "triggered_rule_count",
+            "operator": "gte",
+            "value": 3
+          }
+        ],
+        "strict_metadata_filter_applied": true,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 4515,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.608998,
+          "section_boost": 0.0,
+          "metadata_boost": 0.3,
+          "governed_score": 0.908998,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_71416863e74a9aa78baf",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Test ch"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 4665,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.608998,
+          "section_boost": 0.0,
+          "metadata_boost": 0.3,
+          "governed_score": 0.908998,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_358dc8c97302b4d8b003",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Test ch"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5273,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.608431,
+          "section_boost": 0.0,
+          "metadata_boost": 0.3,
+          "governed_score": 0.908431,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_6ebf16f6aabc20c4babd",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5271,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.608431,
+          "section_boost": 0.0,
+          "metadata_boost": 0.3,
+          "governed_score": 0.908431,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_3b0f9981582a17eb9d6c",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 4933,
+          "section": "Change evidence",
+          "base_hybrid_score": 0.607916,
+          "section_boost": 0.0,
+          "metadata_boost": 0.3,
+          "governed_score": 0.907916,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_49abab2e77d42d7a6d2f",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        }
+      ]
+    },
+    {
+      "case_id": "condition_security_governance",
+      "category": "metadata_condition",
+      "query": "Find changes associated with security or governance concerns.",
+      "relevance_description": "Triggered categories contain Security or Governance",
+      "action": "retrieve",
+      "retrieval_executed": true,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 409.1,
+      "query_understanding": {
+        "original_query": "Find changes associated with security or governance concerns.",
+        "normalised_query": "find changes associated with security or governance concerns.",
+        "expanded_query": "find changes associated with security or governance concerns. policy risk triggered rules manual review required",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.52,
+        "detected_sections": [
+          "Deterministic policy intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "triggered_categories",
+            "operator": "contains_any",
+            "value": [
+              "Governance",
+              "Security"
+            ]
+          }
+        ],
+        "matched_repository_terms": [
+          "changes",
+          "governance",
+          "security"
+        ],
+        "matched_out_of_domain_terms": []
+      },
+      "trace": {
+        "original_query": "Find changes associated with security or governance concerns.",
+        "expanded_query": "find changes associated with security or governance concerns. policy risk triggered rules manual review required",
+        "retrieval_query": "find changes associated with security or governance concerns. policy risk triggered rules manual review required",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.52,
+        "detected_sections": [
+          "Deterministic policy intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "triggered_categories",
+            "operator": "contains_any",
+            "value": [
+              "Governance",
+              "Security"
+            ]
+          }
+        ],
+        "strict_metadata_filter_applied": true,
+        "action": "retrieve",
+        "retrieval_executed": true,
+        "candidate_count": 200,
+        "returned_count": 5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 2579,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.828401,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.348401,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_8d7e113012dcfdff1611",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 56/100 - Policy risk band: High - Triggered rule count: 4 - Triggered rules: PR002, PR005, PR011, PR012 - Triggered categories: Complexity, Documentation, Governance"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 4859,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.828401,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.348401,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_6b69659f912e0c468827",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 56/100 - Policy risk band: High - Triggered rule count: 4 - Triggered rules: PR002, PR005, PR011, PR012 - Triggered categories: Complexity, Documentation, Governance"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5798,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.824372,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.344372,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_c47992b2a6a40e3241f6",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 96/100 - Policy risk band: Critical - Triggered rule count: 5 - Triggered rules: PR002, PR003, PR005, PR006, PR011 - Triggered categories: Documentation, Governance,"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5812,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.819843,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.339843,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_095c9d326f02615d2042",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 70/100 - Policy risk band: Critical - Triggered rule count: 4 - Triggered rules: PR005, PR009, PR011, PR012 - Triggered categories: Complexity, Governance, Security "
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5499,
+          "section": "Deterministic policy intelligence",
+          "base_hybrid_score": 0.819606,
+          "section_boost": 0.22,
+          "metadata_boost": 0.3,
+          "governed_score": 1.339606,
+          "metadata_condition_matches": 1,
+          "metadata_condition_total": 1,
+          "chunk_id": "prchunk_9d45ae53b38e6b5a47db",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 48/100 - Policy risk band: High - Triggered rule count: 3 - Triggered rules: PR005, PR011, PR012 - Triggered categories: Complexity, Governance, Security - Manual re"
+        }
+      ]
+    }
+  ],
+  "negative_results": [
+    {
+      "case_id": "negative_weather",
+      "category": "negative_out_of_domain",
+      "query": "What will the weather be in Dubai tomorrow?",
+      "action": "abstain_out_of_domain",
+      "message": "This question is outside the scope of the GitHub PR Intelligence system. Please ask about pull requests, merge outcomes, review priority, policy risk, repository activity or PR evidence.",
+      "retrieval_executed": false,
+      "result_count": 0,
+      "correctly_abstained": true,
+      "latency_ms": 0.287,
+      "query_understanding": {
+        "original_query": "What will the weather be in Dubai tomorrow?",
+        "normalised_query": "what will the weather be in dubai tomorrow?",
+        "expanded_query": "what will the weather be in dubai tomorrow?",
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [],
+        "matched_out_of_domain_terms": [
+          "weather"
+        ]
+      },
+      "trace": {
+        "original_query": "What will the weather be in Dubai tomorrow?",
+        "expanded_query": "what will the weather be in dubai tomorrow?",
+        "retrieval_query": null,
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "abstain_out_of_domain",
+        "retrieval_executed": false,
+        "candidate_count": 0,
+        "returned_count": 0
+      },
+      "results": []
+    },
+    {
+      "case_id": "negative_salary",
+      "category": "negative_out_of_domain",
+      "query": "Calculate the monthly salary after UAE tax.",
+      "action": "abstain_out_of_domain",
+      "message": "This question is outside the scope of the GitHub PR Intelligence system. Please ask about pull requests, merge outcomes, review priority, policy risk, repository activity or PR evidence.",
+      "retrieval_executed": false,
+      "result_count": 0,
+      "correctly_abstained": true,
+      "latency_ms": 0.151,
+      "query_understanding": {
+        "original_query": "Calculate the monthly salary after UAE tax.",
+        "normalised_query": "calculate the monthly salary after uae tax.",
+        "expanded_query": "calculate the monthly salary after uae tax.",
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [],
+        "matched_out_of_domain_terms": [
+          "salary",
+          "tax"
+        ]
+      },
+      "trace": {
+        "original_query": "Calculate the monthly salary after UAE tax.",
+        "expanded_query": "calculate the monthly salary after uae tax.",
+        "retrieval_query": null,
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "abstain_out_of_domain",
+        "retrieval_executed": false,
+        "candidate_count": 0,
+        "returned_count": 0
+      },
+      "results": []
+    },
+    {
+      "case_id": "negative_recipe",
+      "category": "negative_out_of_domain",
+      "query": "Give me a recipe for chocolate cake.",
+      "action": "abstain_out_of_domain",
+      "message": "This question is outside the scope of the GitHub PR Intelligence system. Please ask about pull requests, merge outcomes, review priority, policy risk, repository activity or PR evidence.",
+      "retrieval_executed": false,
+      "result_count": 0,
+      "correctly_abstained": true,
+      "latency_ms": 0.227,
+      "query_understanding": {
+        "original_query": "Give me a recipe for chocolate cake.",
+        "normalised_query": "give me a recipe for chocolate cake.",
+        "expanded_query": "give me a recipe for chocolate cake.",
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [],
+        "matched_out_of_domain_terms": [
+          "cake",
+          "recipe"
+        ]
+      },
+      "trace": {
+        "original_query": "Give me a recipe for chocolate cake.",
+        "expanded_query": "give me a recipe for chocolate cake.",
+        "retrieval_query": null,
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "abstain_out_of_domain",
+        "retrieval_executed": false,
+        "candidate_count": 0,
+        "returned_count": 0
+      },
+      "results": []
+    },
+    {
+      "case_id": "negative_flight",
+      "category": "negative_out_of_domain",
+      "query": "Find the cheapest flight from India to London.",
+      "action": "abstain_out_of_domain",
+      "message": "This question is outside the scope of the GitHub PR Intelligence system. Please ask about pull requests, merge outcomes, review priority, policy risk, repository activity or PR evidence.",
+      "retrieval_executed": false,
+      "result_count": 0,
+      "correctly_abstained": true,
+      "latency_ms": 0.346,
+      "query_understanding": {
+        "original_query": "Find the cheapest flight from India to London.",
+        "normalised_query": "find the cheapest flight from india to london.",
+        "expanded_query": "find the cheapest flight from india to london.",
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [],
+        "matched_out_of_domain_terms": [
+          "flight"
+        ]
+      },
+      "trace": {
+        "original_query": "Find the cheapest flight from India to London.",
+        "expanded_query": "find the cheapest flight from india to london.",
+        "retrieval_query": null,
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "strict_metadata_filter_applied": false,
+        "action": "abstain_out_of_domain",
+        "retrieval_executed": false,
+        "candidate_count": 0,
+        "returned_count": 0
+      },
+      "results": []
+    }
+  ]
+}

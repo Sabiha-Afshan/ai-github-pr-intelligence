@@ -1,0 +1,324 @@
+{
+  "stage": "8F",
+  "component": "Query understanding",
+  "status": "passed",
+  "test_case_count": 11,
+  "passed_count": 11,
+  "failed_count": 0,
+  "results": [
+    {
+      "query": "Open the evidence associated with pull request number 5336.",
+      "passed": true,
+      "checks": {
+        "pr_number": true,
+        "repository_query": true,
+        "out_of_domain": true
+      },
+      "understanding": {
+        "original_query": "Open the evidence associated with pull request number 5336.",
+        "normalised_query": "open the evidence associated with pull request number 5336.",
+        "expanded_query": "open the evidence associated with pull request number 5336.",
+        "pr_number": 5336,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.73,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "pull request"
+        ],
+        "matched_out_of_domain_terms": []
+      }
+    },
+    {
+      "query": "Which submissions appear unlikely to get accepted?",
+      "passed": true,
+      "checks": {
+        "section": true,
+        "repository_query": true,
+        "out_of_domain": true
+      },
+      "understanding": {
+        "original_query": "Which submissions appear unlikely to get accepted?",
+        "normalised_query": "which submissions appear unlikely to get accepted?",
+        "expanded_query": "which submissions appear unlikely to get accepted? predicted not to merge low merge probability merge outcome merge probability merge prediction delay prediction",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.44,
+        "detected_sections": [
+          "Predictive intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "merge_probability",
+            "operator": "lt",
+            "value": 0.4
+          }
+        ],
+        "matched_repository_terms": [
+          "accepted",
+          "submissions"
+        ],
+        "matched_out_of_domain_terms": []
+      }
+    },
+    {
+      "query": "Which changes should be escalated for a human governance check?",
+      "passed": true,
+      "checks": {
+        "section": true,
+        "repository_query": true,
+        "out_of_domain": true
+      },
+      "understanding": {
+        "original_query": "Which changes should be escalated for a human governance check?",
+        "normalised_query": "which changes should be escalated for a human governance check?",
+        "expanded_query": "which changes should be escalated for a human governance check? manual review required policy risk governance rules triggered rules",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.44,
+        "detected_sections": [
+          "Deterministic policy intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "manual_review_required",
+            "operator": "eq",
+            "value": true
+          }
+        ],
+        "matched_repository_terms": [
+          "changes",
+          "governance"
+        ],
+        "matched_out_of_domain_terms": []
+      }
+    },
+    {
+      "query": "What should the maintainers look at first?",
+      "passed": true,
+      "checks": {
+        "section": true,
+        "repository_query": true,
+        "out_of_domain": true
+      },
+      "understanding": {
+        "original_query": "What should the maintainers look at first?",
+        "normalised_query": "what should the maintainers look at first?",
+        "expanded_query": "what should the maintainers look at first? review priority recommended next action review urgency review priority score",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.32,
+        "detected_sections": [
+          "Unified review priority"
+        ],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "maintainer",
+          "maintainers"
+        ],
+        "matched_out_of_domain_terms": []
+      }
+    },
+    {
+      "query": "Who opened the change, when was it opened, and what was its title?",
+      "passed": true,
+      "checks": {
+        "section": true,
+        "repository_query": true,
+        "out_of_domain": true
+      },
+      "understanding": {
+        "original_query": "Who opened the change, when was it opened, and what was its title?",
+        "normalised_query": "who opened the change, when was it opened, and what was its title?",
+        "expanded_query": "who opened the change, when was it opened, and what was its title? author created at pull request title title repository",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.32,
+        "detected_sections": [
+          "PR identity"
+        ],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "opened",
+          "title"
+        ],
+        "matched_out_of_domain_terms": []
+      }
+    },
+    {
+      "query": "Find submissions where the author gave a useful explanation.",
+      "passed": true,
+      "checks": {
+        "section": true,
+        "repository_query": true,
+        "out_of_domain": true
+      },
+      "understanding": {
+        "original_query": "Find submissions where the author gave a useful explanation.",
+        "normalised_query": "find submissions where the author gave a useful explanation.",
+        "expanded_query": "find submissions where the author gave a useful explanation. detailed description description word count description quality description author title created at repository",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.48,
+        "detected_sections": [
+          "PR description",
+          "PR identity"
+        ],
+        "metadata_conditions": [],
+        "matched_repository_terms": [
+          "author",
+          "submissions"
+        ],
+        "matched_out_of_domain_terms": []
+      }
+    },
+    {
+      "query": "Show critical pull requests that must be reviewed manually.",
+      "passed": true,
+      "checks": {
+        "repository_query": true,
+        "out_of_domain": true,
+        "metadata_conditions": true
+      },
+      "understanding": {
+        "original_query": "Show critical pull requests that must be reviewed manually.",
+        "normalised_query": "show critical pull requests that must be reviewed manually.",
+        "expanded_query": "show critical pull requests that must be reviewed manually.",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.48,
+        "detected_sections": [],
+        "metadata_conditions": [
+          {
+            "field": "manual_review_required",
+            "operator": "eq",
+            "value": true
+          },
+          {
+            "field": "policy_risk_band",
+            "operator": "eq",
+            "value": "Critical"
+          }
+        ],
+        "matched_repository_terms": [
+          "pull request",
+          "pull requests",
+          "review"
+        ],
+        "matched_out_of_domain_terms": []
+      }
+    },
+    {
+      "query": "Find merged changes expected to take longer than normal to complete.",
+      "passed": true,
+      "checks": {
+        "section": true,
+        "repository_query": true,
+        "out_of_domain": true,
+        "metadata_conditions": true
+      },
+      "understanding": {
+        "original_query": "Find merged changes expected to take longer than normal to complete.",
+        "normalised_query": "find merged changes expected to take longer than normal to complete.",
+        "expanded_query": "find merged changes expected to take longer than normal to complete. merge delay delay prediction delayed merge merge probability merge prediction",
+        "pr_number": null,
+        "is_repository_query": true,
+        "is_out_of_domain": false,
+        "domain_confidence": 0.52,
+        "detected_sections": [
+          "Predictive intelligence"
+        ],
+        "metadata_conditions": [
+          {
+            "field": "delay_prediction",
+            "operator": "eq",
+            "value": 1
+          }
+        ],
+        "matched_repository_terms": [
+          "changes",
+          "merge",
+          "merged"
+        ],
+        "matched_out_of_domain_terms": []
+      }
+    },
+    {
+      "query": "What will the weather be in Dubai tomorrow?",
+      "passed": true,
+      "checks": {
+        "repository_query": true,
+        "out_of_domain": true
+      },
+      "understanding": {
+        "original_query": "What will the weather be in Dubai tomorrow?",
+        "normalised_query": "what will the weather be in dubai tomorrow?",
+        "expanded_query": "what will the weather be in dubai tomorrow?",
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [],
+        "matched_out_of_domain_terms": [
+          "weather"
+        ]
+      }
+    },
+    {
+      "query": "Give me a recipe for chocolate cake.",
+      "passed": true,
+      "checks": {
+        "repository_query": true,
+        "out_of_domain": true
+      },
+      "understanding": {
+        "original_query": "Give me a recipe for chocolate cake.",
+        "normalised_query": "give me a recipe for chocolate cake.",
+        "expanded_query": "give me a recipe for chocolate cake.",
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [],
+        "matched_out_of_domain_terms": [
+          "cake",
+          "recipe"
+        ]
+      }
+    },
+    {
+      "query": "Find the cheapest flight from India to London.",
+      "passed": true,
+      "checks": {
+        "repository_query": true,
+        "out_of_domain": true
+      },
+      "understanding": {
+        "original_query": "Find the cheapest flight from India to London.",
+        "normalised_query": "find the cheapest flight from india to london.",
+        "expanded_query": "find the cheapest flight from india to london.",
+        "pr_number": null,
+        "is_repository_query": false,
+        "is_out_of_domain": true,
+        "domain_confidence": 0.0,
+        "detected_sections": [],
+        "metadata_conditions": [],
+        "matched_repository_terms": [],
+        "matched_out_of_domain_terms": [
+          "flight"
+        ]
+      }
+    }
+  ]
+}

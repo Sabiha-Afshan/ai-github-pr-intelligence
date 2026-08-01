@@ -1,0 +1,74 @@
+{
+  "stage": "8G",
+  "stage_name": "Governed Retrieval Before-and-After Evaluation",
+  "status": "passed",
+  "positive_case_count": 21,
+  "negative_case_count": 4,
+  "positive_hit_rate_at_5": 1.0,
+  "positive_precision_at_5": 0.952381,
+  "positive_mean_reciprocal_rank": 1.0,
+  "negative_abstention_rate": 1.0,
+  "positive_mean_latency_ms": 335.41,
+  "category_summaries": {
+    "noisy_identifier": {
+      "category": "noisy_identifier",
+      "case_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "mean_reciprocal_rank": 1.0,
+      "mean_latency_ms": 70.377
+    },
+    "paraphrased_section": {
+      "category": "paraphrased_section",
+      "case_count": 10,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.92,
+      "mean_reciprocal_rank": 1.0,
+      "mean_latency_ms": 425.397
+    },
+    "metadata_condition": {
+      "category": "metadata_condition",
+      "case_count": 6,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.966667,
+      "mean_reciprocal_rank": 1.0,
+      "mean_latency_ms": 406.291
+    }
+  },
+  "baseline_comparisons": {
+    "positive_hit_rate_at_5": {
+      "baseline": 0.619048,
+      "current": 1.0,
+      "absolute_change": 0.380952,
+      "relative_change_percent": 61.54
+    },
+    "positive_precision_at_5": {
+      "baseline": 0.542857,
+      "current": 0.952381,
+      "absolute_change": 0.409524,
+      "relative_change_percent": 75.44
+    },
+    "positive_mean_reciprocal_rank": {
+      "baseline": 0.527778,
+      "current": 1.0,
+      "absolute_change": 0.472222,
+      "relative_change_percent": 89.47
+    },
+    "negative_abstention_rate": {
+      "baseline": 0.0,
+      "current": 1.0,
+      "absolute_change": 1.0,
+      "relative_change_percent": 100.0
+    }
+  },
+  "threshold_checks": {
+    "positive_hit_rate_passed": true,
+    "positive_precision_passed": true,
+    "positive_mrr_passed": true,
+    "negative_abstention_passed": true,
+    "noisy_identifier_passed": true,
+    "paraphrased_section_passed": true,
+    "metadata_condition_passed": true
+  },
+  "detailed_report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_8g_governed_retrieval_evaluation.json"
+}

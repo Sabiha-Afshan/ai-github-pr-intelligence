@@ -1,0 +1,291 @@
+{
+  "stage": "9B",
+  "stage_name": "Sentence-Level Citation Validation",
+  "status": "passed",
+  "case_count": 6,
+  "passed_count": 6,
+  "failed_count": 0,
+  "results": [
+    {
+      "case_id": "fully_cited_answer",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "coverage": true,
+        "uncited_count": true
+      },
+      "answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was merged on 2023-11-15 [E2].",
+      "validation": {
+        "sentence_count": 3,
+        "factual_sentence_count": 3,
+        "cited_factual_sentence_count": 3,
+        "uncited_factual_sentence_count": 0,
+        "citation_coverage": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "sentence_results": [
+          {
+            "sentence_index": 1,
+            "sentence": "PR #5336 was opened by dannyi96 [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_citation": true,
+            "citation_present": true,
+            "passed": true
+          },
+          {
+            "sentence_index": 2,
+            "sentence": "The PR title is 'type hint fix for flask.send_file' [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_citation": true,
+            "citation_present": true,
+            "passed": true
+          },
+          {
+            "sentence_index": 3,
+            "sentence": "It was merged on 2023-11-15 [E2].",
+            "citations": [
+              "E2"
+            ],
+            "valid_citations": [
+              "E2"
+            ],
+            "invalid_citations": [],
+            "requires_citation": true,
+            "citation_present": true,
+            "passed": true
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "one_uncited_sentence",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "coverage": true,
+        "uncited_count": true
+      },
+      "answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It has been closed and merged on 2023-11-15.",
+      "validation": {
+        "sentence_count": 3,
+        "factual_sentence_count": 3,
+        "cited_factual_sentence_count": 2,
+        "uncited_factual_sentence_count": 1,
+        "citation_coverage": 0.666667,
+        "invalid_citations": [],
+        "passed": false,
+        "sentence_results": [
+          {
+            "sentence_index": 1,
+            "sentence": "PR #5336 was opened by dannyi96 [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_citation": true,
+            "citation_present": true,
+            "passed": true
+          },
+          {
+            "sentence_index": 2,
+            "sentence": "The PR title is 'type hint fix for flask.send_file' [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_citation": true,
+            "citation_present": true,
+            "passed": true
+          },
+          {
+            "sentence_index": 3,
+            "sentence": "It has been closed and merged on 2023-11-15.",
+            "citations": [],
+            "valid_citations": [],
+            "invalid_citations": [],
+            "requires_citation": true,
+            "citation_present": false,
+            "passed": false
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "prediction_with_citation",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "coverage": true,
+        "uncited_count": true
+      },
+      "answer": "The predicted merge probability is 47.01% [E4]. This prediction is not a confirmed outcome [E4].",
+      "validation": {
+        "sentence_count": 2,
+        "factual_sentence_count": 2,
+        "cited_factual_sentence_count": 2,
+        "uncited_factual_sentence_count": 0,
+        "citation_coverage": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "sentence_results": [
+          {
+            "sentence_index": 1,
+            "sentence": "The predicted merge probability is 47.01% [E4].",
+            "citations": [
+              "E4"
+            ],
+            "valid_citations": [
+              "E4"
+            ],
+            "invalid_citations": [],
+            "requires_citation": true,
+            "citation_present": true,
+            "passed": true
+          },
+          {
+            "sentence_index": 2,
+            "sentence": "This prediction is not a confirmed outcome [E4].",
+            "citations": [
+              "E4"
+            ],
+            "valid_citations": [
+              "E4"
+            ],
+            "invalid_citations": [],
+            "requires_citation": true,
+            "citation_present": true,
+            "passed": true
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "invalid_citation",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "coverage": true,
+        "uncited_count": true,
+        "invalid_citation": true
+      },
+      "answer": "PR #5336 was opened by dannyi96 [E9].",
+      "validation": {
+        "sentence_count": 1,
+        "factual_sentence_count": 1,
+        "cited_factual_sentence_count": 0,
+        "uncited_factual_sentence_count": 1,
+        "citation_coverage": 0.0,
+        "invalid_citations": [
+          "E9"
+        ],
+        "passed": false,
+        "sentence_results": [
+          {
+            "sentence_index": 1,
+            "sentence": "PR #5336 was opened by dannyi96 [E9].",
+            "citations": [
+              "E9"
+            ],
+            "valid_citations": [],
+            "invalid_citations": [
+              "E9"
+            ],
+            "requires_citation": true,
+            "citation_present": false,
+            "passed": false
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "out_of_domain_abstention",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "coverage": true,
+        "uncited_count": true
+      },
+      "answer": "This question is outside the scope of the GitHub PR Intelligence system. Please ask about pull requests, merge outcomes, review priority, policy risk, repository activity or PR evidence.",
+      "validation": {
+        "sentence_count": 2,
+        "factual_sentence_count": 0,
+        "cited_factual_sentence_count": 0,
+        "uncited_factual_sentence_count": 0,
+        "citation_coverage": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "sentence_results": [
+          {
+            "sentence_index": 1,
+            "sentence": "This question is outside the scope of the GitHub PR Intelligence system.",
+            "citations": [],
+            "valid_citations": [],
+            "invalid_citations": [],
+            "requires_citation": false,
+            "citation_present": false,
+            "passed": true
+          },
+          {
+            "sentence_index": 2,
+            "sentence": "Please ask about pull requests, merge outcomes, review priority, policy risk, repository activity or PR evidence.",
+            "citations": [],
+            "valid_citations": [],
+            "invalid_citations": [],
+            "requires_citation": false,
+            "citation_present": false,
+            "passed": true
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "insufficient_evidence_answer",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "coverage": true,
+        "uncited_count": true
+      },
+      "answer": "The available evidence is insufficient to determine whether the PR will be approved.",
+      "validation": {
+        "sentence_count": 1,
+        "factual_sentence_count": 0,
+        "cited_factual_sentence_count": 0,
+        "uncited_factual_sentence_count": 0,
+        "citation_coverage": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "sentence_results": [
+          {
+            "sentence_index": 1,
+            "sentence": "The available evidence is insufficient to determine whether the PR will be approved.",
+            "citations": [],
+            "valid_citations": [],
+            "invalid_citations": [],
+            "requires_citation": false,
+            "citation_present": false,
+            "passed": true
+          }
+        ]
+      }
+    }
+  ]
+}

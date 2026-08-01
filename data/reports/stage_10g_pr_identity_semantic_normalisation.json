@@ -1,0 +1,805 @@
+{
+  "stage": "10G",
+  "stage_name": "PR Identity Semantic Normalisation",
+  "status": "passed",
+  "case_count": 7,
+  "passed_count": 7,
+  "failed_count": 0,
+  "results": [
+    {
+      "case_id": "opened_matches_created",
+      "passed": true,
+      "expected_validation_passed": true,
+      "actual_validation_passed": true,
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5336 was opened by dannyi96 [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 pull request identity pr #5336 was created by dannyi96. author dannyi96",
+            "claim_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "dannyi96"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "dannyi96"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5336"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [
+                  "5336"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": true,
+                "claim_values": [
+                  "dannyi96"
+                ],
+                "evidence_values": [
+                  "dannyi96"
+                ],
+                "matched_values": [
+                  "dannyi96"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "authored_matches_created",
+      "passed": true,
+      "expected_validation_passed": true,
+      "actual_validation_passed": true,
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5336 was authored by dannyi96 [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 pull request identity pr #5336 was created by dannyi96. author dannyi96",
+            "claim_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "dannyi96"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "dannyi96"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5336"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [
+                  "5336"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": true,
+                "claim_values": [
+                  "dannyi96"
+                ],
+                "evidence_values": [
+                  "dannyi96"
+                ],
+                "matched_values": [
+                  "dannyi96"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "submitted_matches_created",
+      "passed": true,
+      "expected_validation_passed": true,
+      "actual_validation_passed": true,
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5336 was submitted by dannyi96 [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 pull request identity pr #5336 was created by dannyi96. author dannyi96",
+            "claim_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "dannyi96"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "dannyi96"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5336"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [
+                  "5336"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": true,
+                "claim_values": [
+                  "dannyi96"
+                ],
+                "evidence_values": [
+                  "dannyi96"
+                ],
+                "matched_values": [
+                  "dannyi96"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "wrong_author_remains_blocked",
+      "passed": true,
+      "expected_validation_passed": false,
+      "actual_validation_passed": false,
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 1,
+        "groundedness_rate": 0.0,
+        "mean_support_score": 0.65,
+        "invalid_citations": [],
+        "passed": false,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5336 was opened by incorrect_user [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 pull request identity pr #5336 was created by dannyi96. author dannyi96",
+            "claim_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "incorrect_user"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5336",
+              "created"
+            ],
+            "unsupported_tokens": [
+              "incorrect_user"
+            ],
+            "token_coverage": 0.75,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5336"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [
+                  "5336"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": true,
+                "claim_values": [
+                  "incorrect_user"
+                ],
+                "evidence_values": [
+                  "dannyi96"
+                ],
+                "matched_values": [],
+                "unmatched_values": [
+                  "incorrect_user"
+                ],
+                "passed": false
+              }
+            },
+            "entity_coverage": 0.5,
+            "support_score": 0.65,
+            "passed": false,
+            "failure_reasons": [
+              "The cited evidence does not match claim entities: authors"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "wrong_pr_number_remains_blocked",
+      "passed": true,
+      "expected_validation_passed": false,
+      "actual_validation_passed": false,
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 1,
+        "groundedness_rate": 0.0,
+        "mean_support_score": 0.65,
+        "invalid_citations": [],
+        "passed": false,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #9999 was opened by dannyi96 [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 pull request identity pr #5336 was created by dannyi96. author dannyi96",
+            "claim_tokens": [
+              "pull_request",
+              "#9999",
+              "created",
+              "dannyi96"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "created",
+              "dannyi96"
+            ],
+            "unsupported_tokens": [
+              "#9999"
+            ],
+            "token_coverage": 0.75,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "9999"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [],
+                "unmatched_values": [
+                  "9999"
+                ],
+                "passed": false
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": true,
+                "claim_values": [
+                  "dannyi96"
+                ],
+                "evidence_values": [
+                  "dannyi96"
+                ],
+                "matched_values": [
+                  "dannyi96"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 0.5,
+            "support_score": 0.65,
+            "passed": false,
+            "failure_reasons": [
+              "The cited evidence does not match claim entities: pr_numbers"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "probability_alias_regression",
+      "passed": true,
+      "expected_validation_passed": true,
+      "actual_validation_passed": true,
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #4897 has a low chance of being merged with a predicted probability of 12.68% [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #4897 predictive intelligence pr #4897 has a low merge probability of 12.68%. merge_probability 12.68%",
+            "claim_tokens": [
+              "pull_request",
+              "#4897",
+              "low",
+              "probability",
+              "merged",
+              "prediction",
+              "12.68%"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#4897",
+              "low",
+              "probability",
+              "merged",
+              "prediction",
+              "12.68%"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "4897"
+                ],
+                "evidence_values": [
+                  "4897"
+                ],
+                "matched_values": [
+                  "4897"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": true,
+                "claim_values": [
+                  "12.68%"
+                ],
+                "evidence_values": [
+                  "12.68%"
+                ],
+                "matched_values": [
+                  "12.68%"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": true,
+                "claim_values": [
+                  ".68"
+                ],
+                "evidence_values": [
+                  ".68"
+                ],
+                "matched_values": [
+                  ".68"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "manual_review_alias_regression",
+      "passed": true,
+      "expected_validation_passed": true,
+      "actual_validation_passed": true,
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5736 requires a human governance review [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5736 policy intelligence pr #5736 has manual governance review required. manual_review_required true",
+            "claim_tokens": [
+              "pull_request",
+              "#5736",
+              "required",
+              "manual",
+              "governance",
+              "review"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5736",
+              "required",
+              "manual",
+              "governance",
+              "review"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5736"
+                ],
+                "evidence_values": [
+                  "5736"
+                ],
+                "matched_values": [
+                  "5736"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "true"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    }
+  ]
+}

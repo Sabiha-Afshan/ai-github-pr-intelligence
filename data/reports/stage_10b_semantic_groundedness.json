@@ -1,0 +1,825 @@
+{
+  "stage": "10B",
+  "stage_name": "Controlled Semantic Groundedness",
+  "status": "passed",
+  "case_count": 7,
+  "passed_count": 7,
+  "failed_count": 0,
+  "results": [
+    {
+      "case_id": "chance_equals_probability",
+      "answer": "PR #4897 has a low chance of being merged [E1].",
+      "passed": true,
+      "checks": {
+        "passed": true
+      },
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #4897 has a low chance of being merged [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #4897 predictive intelligence pr #4897 has a low predicted merge probability. the merge probability is 22.40%. merge_probability 0.224",
+            "claim_tokens": [
+              "pull_request",
+              "#4897",
+              "low",
+              "probability",
+              "merged"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#4897",
+              "low",
+              "probability",
+              "merged"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "4897"
+                ],
+                "evidence_values": [
+                  "4897"
+                ],
+                "matched_values": [
+                  "4897"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "22.40%"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  ".40",
+                  "0.224"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "accepted_equals_merged",
+      "answer": "PR #4897 is unlikely to be accepted [E1].",
+      "passed": true,
+      "checks": {
+        "passed": true
+      },
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #4897 is unlikely to be accepted [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #4897 predictive intelligence pr #4897 has a low predicted merge probability. the merge probability is 22.40%. merge_probability 0.224",
+            "claim_tokens": [
+              "pull_request",
+              "#4897",
+              "probability",
+              "merged"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#4897",
+              "probability",
+              "merged"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "4897"
+                ],
+                "evidence_values": [
+                  "4897"
+                ],
+                "matched_values": [
+                  "4897"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "22.40%"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  ".40",
+                  "0.224"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "human_review_equals_manual_review",
+      "answer": "PR #5736 requires a human governance review [E2].",
+      "passed": true,
+      "checks": {
+        "passed": true
+      },
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5736 requires a human governance review [E2].",
+            "citations": [
+              "E2"
+            ],
+            "valid_citations": [
+              "E2"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5736 deterministic policy intelligence pr #5736 requires manual governance review. the manual_review_required field is true. manual_review_required true",
+            "claim_tokens": [
+              "pull_request",
+              "#5736",
+              "required",
+              "manual",
+              "governance",
+              "review"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5736",
+              "required",
+              "manual",
+              "governance",
+              "review"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5736"
+                ],
+                "evidence_values": [
+                  "5736"
+                ],
+                "matched_values": [
+                  "5736"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "true"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "review_first_equals_priority",
+      "answer": "Maintainers should review PR #3073 first [E3].",
+      "passed": true,
+      "checks": {
+        "passed": true
+      },
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 0.76,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "Maintainers should review PR #3073 first [E3].",
+            "citations": [
+              "E3"
+            ],
+            "valid_citations": [
+              "E3"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #3073 unified review priority pr #3073 has high review priority. recommended action: review this pull request promptly. review_priority high",
+            "claim_tokens": [
+              "maintainers",
+              "review",
+              "pull_request",
+              "#3073",
+              "first"
+            ],
+            "supported_tokens": [
+              "review",
+              "pull_request",
+              "#3073"
+            ],
+            "unsupported_tokens": [
+              "maintainers",
+              "first"
+            ],
+            "token_coverage": 0.6,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "3073"
+                ],
+                "evidence_values": [
+                  "3073"
+                ],
+                "matched_values": [
+                  "3073"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 0.76,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "wrong_percentage_still_blocked",
+      "answer": "PR #4897 has a 78.50% chance of being merged [E1].",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "failed_entity_detected": true
+      },
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 1,
+        "groundedness_rate": 0.0,
+        "mean_support_score": 0.613333,
+        "invalid_citations": [],
+        "passed": false,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #4897 has a 78.50% chance of being merged [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #4897 predictive intelligence pr #4897 has a low predicted merge probability. the merge probability is 22.40%. merge_probability 0.224",
+            "claim_tokens": [
+              "pull_request",
+              "#4897",
+              "78.50%",
+              "probability",
+              "merged"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#4897",
+              "probability",
+              "merged"
+            ],
+            "unsupported_tokens": [
+              "78.50%"
+            ],
+            "token_coverage": 0.8,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "4897"
+                ],
+                "evidence_values": [
+                  "4897"
+                ],
+                "matched_values": [
+                  "4897"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": true,
+                "claim_values": [
+                  "78.50%"
+                ],
+                "evidence_values": [
+                  "22.40%"
+                ],
+                "matched_values": [],
+                "unmatched_values": [
+                  "78.50%"
+                ],
+                "passed": false
+              },
+              "decimals": {
+                "applicable": true,
+                "claim_values": [
+                  ".50"
+                ],
+                "evidence_values": [
+                  ".40",
+                  "0.224"
+                ],
+                "matched_values": [],
+                "unmatched_values": [
+                  ".50"
+                ],
+                "passed": false
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 0.333333,
+            "support_score": 0.613333,
+            "passed": false,
+            "failure_reasons": [
+              "The cited evidence does not match claim entities: percentages, decimals"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "unsupported_ranking_score_still_blocked",
+      "answer": "PR #3073 has a governed ranking score of 0.677534 [E3].",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "failed_entity_detected": true
+      },
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 1,
+        "groundedness_rate": 0.0,
+        "mean_support_score": 0.4,
+        "invalid_citations": [],
+        "passed": false,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #3073 has a governed ranking score of 0.677534 [E3].",
+            "citations": [
+              "E3"
+            ],
+            "valid_citations": [
+              "E3"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #3073 unified review priority pr #3073 has high review priority. recommended action: review this pull request promptly. review_priority high",
+            "claim_tokens": [
+              "pull_request",
+              "#3073",
+              "governance",
+              "ranking",
+              "score",
+              "0.677534"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#3073"
+            ],
+            "unsupported_tokens": [
+              "governance",
+              "ranking",
+              "score",
+              "0.677534"
+            ],
+            "token_coverage": 0.333333,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "3073"
+                ],
+                "evidence_values": [
+                  "3073"
+                ],
+                "matched_values": [
+                  "3073"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": true,
+                "claim_values": [
+                  "0.677534"
+                ],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [
+                  "0.677534"
+                ],
+                "passed": false
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 0.5,
+            "support_score": 0.4,
+            "passed": false,
+            "failure_reasons": [
+              "The cited evidence has insufficient lexical or approved semantic support for the claim.",
+              "The cited evidence does not match claim entities: decimals",
+              "Important domain concepts are absent from the cited evidence: governance",
+              "The overall claim-to-evidence support score is below 0.60."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "wrong_pr_number_still_blocked",
+      "answer": "PR #9999 requires a human governance review [E2].",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "failed_entity_detected": true
+      },
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 1,
+        "groundedness_rate": 0.0,
+        "mean_support_score": 0.5,
+        "invalid_citations": [],
+        "passed": false,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #9999 requires a human governance review [E2].",
+            "citations": [
+              "E2"
+            ],
+            "valid_citations": [
+              "E2"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5736 deterministic policy intelligence pr #5736 requires manual governance review. the manual_review_required field is true. manual_review_required true",
+            "claim_tokens": [
+              "pull_request",
+              "#9999",
+              "required",
+              "manual",
+              "governance",
+              "review"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "required",
+              "manual",
+              "governance",
+              "review"
+            ],
+            "unsupported_tokens": [
+              "#9999"
+            ],
+            "token_coverage": 0.833333,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "9999"
+                ],
+                "evidence_values": [
+                  "5736"
+                ],
+                "matched_values": [],
+                "unmatched_values": [
+                  "9999"
+                ],
+                "passed": false
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "true"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 0.0,
+            "support_score": 0.5,
+            "passed": false,
+            "failure_reasons": [
+              "The cited evidence does not match claim entities: pr_numbers",
+              "The overall claim-to-evidence support score is below 0.60."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

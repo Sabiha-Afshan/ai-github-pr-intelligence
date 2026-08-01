@@ -1,0 +1,20 @@
+{
+  "stage": "8E",
+  "stage_name": "Realistic Hybrid Retrieval Evaluation",
+  "status": "needs_improvement",
+  "positive_case_count": 21,
+  "negative_case_count": 4,
+  "positive_hit_rate_at_5": 0.619048,
+  "positive_precision_at_5": 0.542857,
+  "positive_mean_reciprocal_rank": 0.527778,
+  "negative_correct_abstention_rate": 0.0,
+  "mean_latency_ms": 261.277,
+  "threshold_checks": {
+    "positive_hit_rate_passed": false,
+    "positive_mrr_passed": false,
+    "noisy_identifier_passed": true,
+    "paraphrased_section_passed": false,
+    "metadata_condition_passed": true
+  },
+  "detailed_report_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_8e_realistic_retrieval_results.json"
+}

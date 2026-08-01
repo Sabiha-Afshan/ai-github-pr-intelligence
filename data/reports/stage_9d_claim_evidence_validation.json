@@ -1,0 +1,1231 @@
+{
+  "stage": "9D",
+  "stage_name": "Claim-to-Evidence Groundedness Validation",
+  "status": "passed",
+  "case_count": 10,
+  "passed_count": 10,
+  "failed_count": 0,
+  "results": [
+    {
+      "case_id": "supported_identity_claim",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "groundedness": true,
+        "unsupported_count": true
+      },
+      "answer": "PR #5336 was opened by dannyi96 [E1].",
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5336 was opened by dannyi96 [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 pr identity pr #5336 was created by dannyi96. the pull request title is type hint fix for flask.send_file. the pr was closed and merged on 2023-11-15. author dannyi96 state closed merged true merged_at 2023-11-15",
+            "claim_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "dannyi96"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "dannyi96"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5336"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [
+                  "5336"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "2023-11-15"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "true"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": true,
+                "claim_values": [
+                  "dannyi96"
+                ],
+                "evidence_values": [
+                  "dannyi96"
+                ],
+                "matched_values": [
+                  "dannyi96"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "supported_merge_date",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "groundedness": true,
+        "unsupported_count": true
+      },
+      "answer": "PR #5336 was merged on 2023-11-15 [E1].",
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5336 was merged on 2023-11-15 [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 pr identity pr #5336 was created by dannyi96. the pull request title is type hint fix for flask.send_file. the pr was closed and merged on 2023-11-15. author dannyi96 state closed merged true merged_at 2023-11-15",
+            "claim_tokens": [
+              "pull_request",
+              "#5336",
+              "merged",
+              "2023-11-15"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5336",
+              "merged",
+              "2023-11-15"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5336"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [
+                  "5336"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": true,
+                "claim_values": [
+                  "2023-11-15"
+                ],
+                "evidence_values": [
+                  "2023-11-15"
+                ],
+                "matched_values": [
+                  "2023-11-15"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "true"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "dannyi96"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "wrong_merge_date",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "groundedness": true,
+        "unsupported_count": true,
+        "failed_entity_detected": true
+      },
+      "answer": "PR #5336 was merged on 2024-01-01 [E1].",
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 1,
+        "groundedness_rate": 0.0,
+        "mean_support_score": 0.65,
+        "invalid_citations": [],
+        "passed": false,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5336 was merged on 2024-01-01 [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 pr identity pr #5336 was created by dannyi96. the pull request title is type hint fix for flask.send_file. the pr was closed and merged on 2023-11-15. author dannyi96 state closed merged true merged_at 2023-11-15",
+            "claim_tokens": [
+              "pull_request",
+              "#5336",
+              "merged",
+              "2024-01-01"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5336",
+              "merged"
+            ],
+            "unsupported_tokens": [
+              "2024-01-01"
+            ],
+            "token_coverage": 0.75,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5336"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [
+                  "5336"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": true,
+                "claim_values": [
+                  "2024-01-01"
+                ],
+                "evidence_values": [
+                  "2023-11-15"
+                ],
+                "matched_values": [],
+                "unmatched_values": [
+                  "2024-01-01"
+                ],
+                "passed": false
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "true"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "dannyi96"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 0.5,
+            "support_score": 0.65,
+            "passed": false,
+            "failure_reasons": [
+              "The cited evidence does not match claim entities: dates"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "wrong_pr_number",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "groundedness": true,
+        "unsupported_count": true,
+        "failed_entity_detected": true
+      },
+      "answer": "PR #9999 was opened by dannyi96 [E1].",
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 1,
+        "groundedness_rate": 0.0,
+        "mean_support_score": 0.65,
+        "invalid_citations": [],
+        "passed": false,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #9999 was opened by dannyi96 [E1].",
+            "citations": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 pr identity pr #5336 was created by dannyi96. the pull request title is type hint fix for flask.send_file. the pr was closed and merged on 2023-11-15. author dannyi96 state closed merged true merged_at 2023-11-15",
+            "claim_tokens": [
+              "pull_request",
+              "#9999",
+              "created",
+              "dannyi96"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "created",
+              "dannyi96"
+            ],
+            "unsupported_tokens": [
+              "#9999"
+            ],
+            "token_coverage": 0.75,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "9999"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [],
+                "unmatched_values": [
+                  "9999"
+                ],
+                "passed": false
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "2023-11-15"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [
+                  "true"
+                ],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": true,
+                "claim_values": [
+                  "dannyi96"
+                ],
+                "evidence_values": [
+                  "dannyi96"
+                ],
+                "matched_values": [
+                  "dannyi96"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 0.5,
+            "support_score": 0.65,
+            "passed": false,
+            "failure_reasons": [
+              "The cited evidence does not match claim entities: pr_numbers"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "supported_prediction",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "groundedness": true,
+        "unsupported_count": true
+      },
+      "answer": "The predicted merge probability for PR #5336 is 47.01% [E2].",
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "The predicted merge probability for PR #5336 is 47.01% [E2].",
+            "citations": [
+              "E2"
+            ],
+            "valid_citations": [
+              "E2"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 predictive intelligence the predicted merge probability for pr #5336 is 47.01%. this value is a model prediction and is not a confirmed outcome. merge_probability 0.4701 prediction_type model prediction",
+            "claim_tokens": [
+              "prediction",
+              "merged",
+              "probability",
+              "pull_request",
+              "#5336",
+              "47.01%"
+            ],
+            "supported_tokens": [
+              "prediction",
+              "merged",
+              "probability",
+              "pull_request",
+              "#5336",
+              "47.01%"
+            ],
+            "unsupported_tokens": [],
+            "token_coverage": 1.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5336"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [
+                  "5336"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": true,
+                "claim_values": [
+                  "47.01%"
+                ],
+                "evidence_values": [
+                  "47.01%"
+                ],
+                "matched_values": [
+                  "47.01%"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": true,
+                "claim_values": [
+                  ".01"
+                ],
+                "evidence_values": [
+                  ".01",
+                  "0.4701"
+                ],
+                "matched_values": [
+                  ".01"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 1.0,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "wrong_prediction_percentage",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "groundedness": true,
+        "unsupported_count": true,
+        "failed_entity_detected": true
+      },
+      "answer": "The predicted merge probability for PR #5336 is 87.50% [E2].",
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 1,
+        "groundedness_rate": 0.0,
+        "mean_support_score": 0.633333,
+        "invalid_citations": [],
+        "passed": false,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "The predicted merge probability for PR #5336 is 87.50% [E2].",
+            "citations": [
+              "E2"
+            ],
+            "valid_citations": [
+              "E2"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5336 predictive intelligence the predicted merge probability for pr #5336 is 47.01%. this value is a model prediction and is not a confirmed outcome. merge_probability 0.4701 prediction_type model prediction",
+            "claim_tokens": [
+              "prediction",
+              "merged",
+              "probability",
+              "pull_request",
+              "#5336",
+              "87.50%"
+            ],
+            "supported_tokens": [
+              "prediction",
+              "merged",
+              "probability",
+              "pull_request",
+              "#5336"
+            ],
+            "unsupported_tokens": [
+              "87.50%"
+            ],
+            "token_coverage": 0.833333,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5336"
+                ],
+                "evidence_values": [
+                  "5336"
+                ],
+                "matched_values": [
+                  "5336"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": true,
+                "claim_values": [
+                  "87.50%"
+                ],
+                "evidence_values": [
+                  "47.01%"
+                ],
+                "matched_values": [],
+                "unmatched_values": [
+                  "87.50%"
+                ],
+                "passed": false
+              },
+              "decimals": {
+                "applicable": true,
+                "claim_values": [
+                  ".50"
+                ],
+                "evidence_values": [
+                  ".01",
+                  "0.4701"
+                ],
+                "matched_values": [],
+                "unmatched_values": [
+                  ".50"
+                ],
+                "passed": false
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 0.333333,
+            "support_score": 0.633333,
+            "passed": false,
+            "failure_reasons": [
+              "The cited evidence does not match claim entities: percentages, decimals"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "supported_manual_review",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "groundedness": true,
+        "unsupported_count": true
+      },
+      "answer": "PR #5736 requires manual governance review because manual_review_required is True [E3].",
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 1,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 0.933333,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5736 requires manual governance review because manual_review_required is True [E3].",
+            "citations": [
+              "E3"
+            ],
+            "valid_citations": [
+              "E3"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5736 deterministic policy intelligence pr #5736 requires manual governance review. the manual_review_required field is true and the policy risk band is critical. manual_review_required true policy_risk_band critical",
+            "claim_tokens": [
+              "pull_request",
+              "#5736",
+              "required",
+              "manual",
+              "governance",
+              "review",
+              "because",
+              "manual_review_required",
+              "true"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5736",
+              "required",
+              "manual",
+              "governance",
+              "review",
+              "manual_review_required",
+              "true"
+            ],
+            "unsupported_tokens": [
+              "because"
+            ],
+            "token_coverage": 0.888889,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5736"
+                ],
+                "evidence_values": [
+                  "5736"
+                ],
+                "matched_values": [
+                  "5736"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": true,
+                "claim_values": [
+                  "true"
+                ],
+                "evidence_values": [
+                  "true"
+                ],
+                "matched_values": [
+                  "true"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 0.933333,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "wrong_manual_review_boolean",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "groundedness": true,
+        "unsupported_count": true,
+        "failed_entity_detected": true
+      },
+      "answer": "PR #5736 does not require manual governance review because manual_review_required is False [E3].",
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 1,
+        "groundedness_rate": 0.0,
+        "mean_support_score": 0.62,
+        "invalid_citations": [],
+        "passed": false,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5736 does not require manual governance review because manual_review_required is False [E3].",
+            "citations": [
+              "E3"
+            ],
+            "valid_citations": [
+              "E3"
+            ],
+            "invalid_citations": [],
+            "requires_validation": true,
+            "evidence_text": "pr #5736 deterministic policy intelligence pr #5736 requires manual governance review. the manual_review_required field is true and the policy risk band is critical. manual_review_required true policy_risk_band critical",
+            "claim_tokens": [
+              "pull_request",
+              "#5736",
+              "not",
+              "required",
+              "manual",
+              "governance",
+              "review",
+              "because",
+              "manual_review_required",
+              "false"
+            ],
+            "supported_tokens": [
+              "pull_request",
+              "#5736",
+              "required",
+              "manual",
+              "governance",
+              "review",
+              "manual_review_required"
+            ],
+            "unsupported_tokens": [
+              "not",
+              "because",
+              "false"
+            ],
+            "token_coverage": 0.7,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5736"
+                ],
+                "evidence_values": [
+                  "5736"
+                ],
+                "matched_values": [
+                  "5736"
+                ],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": true,
+                "claim_values": [
+                  "false"
+                ],
+                "evidence_values": [
+                  "true"
+                ],
+                "matched_values": [],
+                "unmatched_values": [
+                  "false"
+                ],
+                "passed": false
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 0.5,
+            "support_score": 0.62,
+            "passed": false,
+            "failure_reasons": [
+              "The cited evidence does not match claim entities: booleans"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "invalid_evidence_identifier",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "groundedness": true,
+        "unsupported_count": true,
+        "invalid_citation_detected": true
+      },
+      "answer": "PR #5336 was opened by dannyi96 [E9].",
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 1,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 1,
+        "groundedness_rate": 0.0,
+        "mean_support_score": 0.0,
+        "invalid_citations": [
+          "E9"
+        ],
+        "passed": false,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "PR #5336 was opened by dannyi96 [E9].",
+            "citations": [
+              "E9"
+            ],
+            "valid_citations": [],
+            "invalid_citations": [
+              "E9"
+            ],
+            "requires_validation": true,
+            "evidence_text": "",
+            "claim_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "dannyi96"
+            ],
+            "supported_tokens": [],
+            "unsupported_tokens": [
+              "pull_request",
+              "#5336",
+              "created",
+              "dannyi96"
+            ],
+            "token_coverage": 0.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": true,
+                "claim_values": [
+                  "5336"
+                ],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [
+                  "5336"
+                ],
+                "passed": false
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": true,
+                "claim_values": [
+                  "dannyi96"
+                ],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [
+                  "dannyi96"
+                ],
+                "passed": false
+              }
+            },
+            "entity_coverage": 0.0,
+            "support_score": 0.0,
+            "passed": false,
+            "failure_reasons": [
+              "The claim contains invalid evidence identifiers: E9",
+              "The cited evidence does not match claim entities: pr_numbers, authors",
+              "Important domain concepts are absent from the cited evidence: created",
+              "The overall claim-to-evidence support score is below 0.60."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "out_of_domain_abstention",
+      "passed": true,
+      "checks": {
+        "passed": true,
+        "groundedness": true,
+        "unsupported_count": true
+      },
+      "answer": "This question is outside the scope of the GitHub PR Intelligence system.",
+      "validation": {
+        "sentence_count": 1,
+        "factual_claim_count": 0,
+        "supported_claim_count": 0,
+        "unsupported_claim_count": 0,
+        "groundedness_rate": 1.0,
+        "mean_support_score": 1.0,
+        "invalid_citations": [],
+        "passed": true,
+        "claim_results": [
+          {
+            "sentence_index": 1,
+            "claim": "This question is outside the scope of the GitHub PR Intelligence system.",
+            "citations": [],
+            "valid_citations": [],
+            "invalid_citations": [],
+            "requires_validation": false,
+            "evidence_text": "",
+            "claim_tokens": [
+              "question",
+              "outside",
+              "scope",
+              "github",
+              "pull_request",
+              "intelligence",
+              "system"
+            ],
+            "supported_tokens": [],
+            "unsupported_tokens": [
+              "question",
+              "outside",
+              "scope",
+              "github",
+              "pull_request",
+              "intelligence",
+              "system"
+            ],
+            "token_coverage": 0.0,
+            "entity_checks": {
+              "pr_numbers": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "dates": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "percentages": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "decimals": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "booleans": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              },
+              "authors": {
+                "applicable": false,
+                "claim_values": [],
+                "evidence_values": [],
+                "matched_values": [],
+                "unmatched_values": [],
+                "passed": true
+              }
+            },
+            "entity_coverage": 1.0,
+            "support_score": 0.4,
+            "passed": true,
+            "failure_reasons": []
+          }
+        ]
+      }
+    }
+  ]
+}

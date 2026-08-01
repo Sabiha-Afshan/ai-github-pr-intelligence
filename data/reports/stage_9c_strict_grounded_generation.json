@@ -1,0 +1,525 @@
+{
+  "stage": "9C",
+  "stage_name": "Strict Sentence-Level Citation Governance Integration",
+  "status": "passed",
+  "case_count": 4,
+  "passed_count": 4,
+  "failed_count": 0,
+  "results": [
+    {
+      "case_id": "fully_cited_answer_released",
+      "passed": true,
+      "checks": {
+        "action": true,
+        "answer_released": true,
+        "validation_passed": true,
+        "uncited_count": true
+      },
+      "response": {
+        "query": "What do we know about pull request 5336?",
+        "action": "answer",
+        "message": "A grounded response passed sentence-level citation governance.",
+        "answer": "PR #5336 was opened by dannyi96 [E1]. The PR was merged on 2023-11-15 [E1].",
+        "generation_executed": true,
+        "answer_released": true,
+        "insufficient_evidence": false,
+        "model": "stub-model",
+        "evidence_used": [
+          "E1"
+        ],
+        "evidence_count": 1,
+        "sentence_validation": {
+          "sentence_count": 2,
+          "factual_sentence_count": 2,
+          "cited_factual_sentence_count": 2,
+          "uncited_factual_sentence_count": 0,
+          "citation_coverage": 1.0,
+          "invalid_citations": [],
+          "passed": true,
+          "sentence_results": [
+            {
+              "sentence_index": 1,
+              "sentence": "PR #5336 was opened by dannyi96 [E1].",
+              "citations": [
+                "E1"
+              ],
+              "valid_citations": [
+                "E1"
+              ],
+              "invalid_citations": [],
+              "requires_citation": true,
+              "citation_present": true,
+              "passed": true
+            },
+            {
+              "sentence_index": 2,
+              "sentence": "The PR was merged on 2023-11-15 [E1].",
+              "citations": [
+                "E1"
+              ],
+              "valid_citations": [
+                "E1"
+              ],
+              "invalid_citations": [],
+              "requires_citation": true,
+              "citation_present": true,
+              "passed": true
+            }
+          ]
+        },
+        "base_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "answer",
+          "message": "A grounded response was generated.",
+          "answer": "PR #5336 was opened by dannyi96 [E1]. The PR was merged on 2023-11-15 [E1].",
+          "evidence_used": [
+            "E1"
+          ],
+          "insufficient_evidence": false,
+          "limitations": [],
+          "retrieval_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "retrieve",
+            "message": "Relevant pull-request evidence was retrieved successfully.",
+            "retrieval_executed": true,
+            "query_understanding": {
+              "original_query": "What do we know about pull request 5336?",
+              "normalised_query": "what do we know about pull request 5336?",
+              "expanded_query": "what do we know about pull request 5336?",
+              "pr_number": 5336,
+              "is_repository_query": true,
+              "is_out_of_domain": false,
+              "domain_confidence": 0.73,
+              "detected_sections": [],
+              "metadata_conditions": [],
+              "matched_repository_terms": [
+                "pull request"
+              ],
+              "matched_out_of_domain_terms": []
+            },
+            "results": [],
+            "trace": {
+              "action": "retrieve"
+            }
+          },
+          "evidence": [
+            {
+              "evidence_id": "E1",
+              "rank": 1,
+              "pr_number": 5336,
+              "section": "PR identity",
+              "text": "PR #5336 was opened by dannyi96. The title is type hint fix for flask.send_file. The PR was merged on 2023-11-15.",
+              "governed_score": 0.8,
+              "metadata": {}
+            }
+          ],
+          "citation_validation": {
+            "citations_found": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "uncited_factual_answer": false,
+            "passed": true
+          },
+          "model": "stub-model",
+          "generation_executed": true,
+          "generation_latency_ms": 10.0,
+          "prompt_eval_count": 100,
+          "eval_count": 50,
+          "total_duration_ms": 20.0,
+          "raw_model_response": {},
+          "trace": {
+            "generation_action": "completed"
+          }
+        },
+        "trace": {
+          "base_action": "answer",
+          "strict_action": "answer",
+          "generation_executed": true,
+          "sentence_validation_executed": true,
+          "answer_released": true,
+          "sentence_count": 2,
+          "factual_sentence_count": 2,
+          "cited_factual_sentence_count": 2,
+          "uncited_factual_sentence_count": 0,
+          "citation_coverage": 1.0,
+          "invalid_citations": [],
+          "reason": "Every factual sentence contained at least one valid evidence citation."
+        }
+      }
+    },
+    {
+      "case_id": "uncited_sentence_blocked",
+      "passed": true,
+      "checks": {
+        "action": true,
+        "answer_released": true,
+        "validation_passed": true,
+        "uncited_count": true,
+        "unsafe_answer_hidden": true
+      },
+      "response": {
+        "query": "What do we know about pull request 5336?",
+        "action": "abstain_citation_validation",
+        "message": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+        "answer": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+        "generation_executed": true,
+        "answer_released": false,
+        "insufficient_evidence": true,
+        "model": "stub-model",
+        "evidence_used": [],
+        "evidence_count": 1,
+        "sentence_validation": {
+          "sentence_count": 2,
+          "factual_sentence_count": 2,
+          "cited_factual_sentence_count": 1,
+          "uncited_factual_sentence_count": 1,
+          "citation_coverage": 0.5,
+          "invalid_citations": [],
+          "passed": false,
+          "sentence_results": [
+            {
+              "sentence_index": 1,
+              "sentence": "PR #5336 was opened by dannyi96 [E1].",
+              "citations": [
+                "E1"
+              ],
+              "valid_citations": [
+                "E1"
+              ],
+              "invalid_citations": [],
+              "requires_citation": true,
+              "citation_present": true,
+              "passed": true
+            },
+            {
+              "sentence_index": 2,
+              "sentence": "The PR was merged on 2023-11-15.",
+              "citations": [],
+              "valid_citations": [],
+              "invalid_citations": [],
+              "requires_citation": true,
+              "citation_present": false,
+              "passed": false
+            }
+          ]
+        },
+        "base_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "answer",
+          "message": "A grounded response was generated.",
+          "answer": "PR #5336 was opened by dannyi96 [E1]. The PR was merged on 2023-11-15.",
+          "evidence_used": [
+            "E1"
+          ],
+          "insufficient_evidence": false,
+          "limitations": [],
+          "retrieval_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "retrieve",
+            "message": "Relevant pull-request evidence was retrieved successfully.",
+            "retrieval_executed": true,
+            "query_understanding": {
+              "original_query": "What do we know about pull request 5336?",
+              "normalised_query": "what do we know about pull request 5336?",
+              "expanded_query": "what do we know about pull request 5336?",
+              "pr_number": 5336,
+              "is_repository_query": true,
+              "is_out_of_domain": false,
+              "domain_confidence": 0.73,
+              "detected_sections": [],
+              "metadata_conditions": [],
+              "matched_repository_terms": [
+                "pull request"
+              ],
+              "matched_out_of_domain_terms": []
+            },
+            "results": [],
+            "trace": {
+              "action": "retrieve"
+            }
+          },
+          "evidence": [
+            {
+              "evidence_id": "E1",
+              "rank": 1,
+              "pr_number": 5336,
+              "section": "PR identity",
+              "text": "PR #5336 was opened by dannyi96. The title is type hint fix for flask.send_file. The PR was merged on 2023-11-15.",
+              "governed_score": 0.8,
+              "metadata": {}
+            }
+          ],
+          "citation_validation": {
+            "citations_found": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "uncited_factual_answer": false,
+            "passed": true
+          },
+          "model": "stub-model",
+          "generation_executed": true,
+          "generation_latency_ms": 10.0,
+          "prompt_eval_count": 100,
+          "eval_count": 50,
+          "total_duration_ms": 20.0,
+          "raw_model_response": {},
+          "trace": {
+            "generation_action": "completed"
+          }
+        },
+        "trace": {
+          "base_action": "answer",
+          "strict_action": "abstain_citation_validation",
+          "generation_executed": true,
+          "sentence_validation_executed": true,
+          "answer_released": false,
+          "sentence_count": 2,
+          "factual_sentence_count": 2,
+          "cited_factual_sentence_count": 1,
+          "uncited_factual_sentence_count": 1,
+          "citation_coverage": 0.5,
+          "invalid_citations": [],
+          "withheld_answer": "PR #5336 was opened by dannyi96 [E1]. The PR was merged on 2023-11-15.",
+          "reason": "The generated answer failed sentence-level citation governance."
+        }
+      }
+    },
+    {
+      "case_id": "invalid_citation_blocked",
+      "passed": true,
+      "checks": {
+        "action": true,
+        "answer_released": true,
+        "validation_passed": true,
+        "uncited_count": true,
+        "unsafe_answer_hidden": true
+      },
+      "response": {
+        "query": "What do we know about pull request 5336?",
+        "action": "abstain_citation_validation",
+        "message": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+        "answer": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+        "generation_executed": true,
+        "answer_released": false,
+        "insufficient_evidence": true,
+        "model": "stub-model",
+        "evidence_used": [],
+        "evidence_count": 1,
+        "sentence_validation": {
+          "sentence_count": 1,
+          "factual_sentence_count": 1,
+          "cited_factual_sentence_count": 0,
+          "uncited_factual_sentence_count": 1,
+          "citation_coverage": 0.0,
+          "invalid_citations": [
+            "E9"
+          ],
+          "passed": false,
+          "sentence_results": [
+            {
+              "sentence_index": 1,
+              "sentence": "PR #5336 was opened by dannyi96 [E9].",
+              "citations": [
+                "E9"
+              ],
+              "valid_citations": [],
+              "invalid_citations": [
+                "E9"
+              ],
+              "requires_citation": true,
+              "citation_present": false,
+              "passed": false
+            }
+          ]
+        },
+        "base_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "answer",
+          "message": "A grounded response was generated.",
+          "answer": "PR #5336 was opened by dannyi96 [E9].",
+          "evidence_used": [
+            "E1"
+          ],
+          "insufficient_evidence": false,
+          "limitations": [],
+          "retrieval_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "retrieve",
+            "message": "Relevant pull-request evidence was retrieved successfully.",
+            "retrieval_executed": true,
+            "query_understanding": {
+              "original_query": "What do we know about pull request 5336?",
+              "normalised_query": "what do we know about pull request 5336?",
+              "expanded_query": "what do we know about pull request 5336?",
+              "pr_number": 5336,
+              "is_repository_query": true,
+              "is_out_of_domain": false,
+              "domain_confidence": 0.73,
+              "detected_sections": [],
+              "metadata_conditions": [],
+              "matched_repository_terms": [
+                "pull request"
+              ],
+              "matched_out_of_domain_terms": []
+            },
+            "results": [],
+            "trace": {
+              "action": "retrieve"
+            }
+          },
+          "evidence": [
+            {
+              "evidence_id": "E1",
+              "rank": 1,
+              "pr_number": 5336,
+              "section": "PR identity",
+              "text": "PR #5336 was opened by dannyi96. The title is type hint fix for flask.send_file. The PR was merged on 2023-11-15.",
+              "governed_score": 0.8,
+              "metadata": {}
+            }
+          ],
+          "citation_validation": {
+            "citations_found": [
+              "E1"
+            ],
+            "valid_citations": [
+              "E1"
+            ],
+            "invalid_citations": [],
+            "uncited_factual_answer": false,
+            "passed": true
+          },
+          "model": "stub-model",
+          "generation_executed": true,
+          "generation_latency_ms": 10.0,
+          "prompt_eval_count": 100,
+          "eval_count": 50,
+          "total_duration_ms": 20.0,
+          "raw_model_response": {},
+          "trace": {
+            "generation_action": "completed"
+          }
+        },
+        "trace": {
+          "base_action": "answer",
+          "strict_action": "abstain_citation_validation",
+          "generation_executed": true,
+          "sentence_validation_executed": true,
+          "answer_released": false,
+          "sentence_count": 1,
+          "factual_sentence_count": 1,
+          "cited_factual_sentence_count": 0,
+          "uncited_factual_sentence_count": 1,
+          "citation_coverage": 0.0,
+          "invalid_citations": [
+            "E9"
+          ],
+          "withheld_answer": "PR #5336 was opened by dannyi96 [E9].",
+          "reason": "The generated answer failed sentence-level citation governance."
+        }
+      }
+    },
+    {
+      "case_id": "out_of_domain_message_released",
+      "passed": true,
+      "checks": {
+        "action": true,
+        "answer_released": true,
+        "validation_passed": true,
+        "uncited_count": true
+      },
+      "response": {
+        "query": "What will the weather be in Dubai tomorrow?",
+        "action": "abstain_out_of_domain",
+        "message": "This question is outside the scope of the GitHub PR Intelligence system.",
+        "answer": "This question is outside the scope of the GitHub PR Intelligence system.",
+        "generation_executed": false,
+        "answer_released": true,
+        "insufficient_evidence": true,
+        "model": null,
+        "evidence_used": [],
+        "evidence_count": 0,
+        "sentence_validation": {
+          "sentence_count": 0,
+          "factual_sentence_count": 0,
+          "cited_factual_sentence_count": 0,
+          "uncited_factual_sentence_count": 0,
+          "citation_coverage": 1.0,
+          "invalid_citations": [],
+          "passed": true,
+          "sentence_results": []
+        },
+        "base_response": {
+          "query": "What will the weather be in Dubai tomorrow?",
+          "action": "abstain_out_of_domain",
+          "message": "This question is outside the scope of the GitHub PR Intelligence system.",
+          "answer": "This question is outside the scope of the GitHub PR Intelligence system.",
+          "evidence_used": [],
+          "insufficient_evidence": true,
+          "limitations": [
+            "LLM generation was not executed because governed retrieval abstained."
+          ],
+          "retrieval_response": {
+            "query": "What will the weather be in Dubai tomorrow?",
+            "action": "abstain_out_of_domain",
+            "message": "This question is outside the scope of the GitHub PR Intelligence system.",
+            "retrieval_executed": false,
+            "query_understanding": {
+              "original_query": "What will the weather be in Dubai tomorrow?",
+              "normalised_query": "what will the weather be in dubai tomorrow?",
+              "expanded_query": "what will the weather be in dubai tomorrow?",
+              "pr_number": null,
+              "is_repository_query": false,
+              "is_out_of_domain": true,
+              "domain_confidence": 0.0,
+              "detected_sections": [],
+              "metadata_conditions": [],
+              "matched_repository_terms": [],
+              "matched_out_of_domain_terms": [
+                "weather"
+              ]
+            },
+            "results": [],
+            "trace": {
+              "action": "abstain_out_of_domain"
+            }
+          },
+          "evidence": [],
+          "citation_validation": {
+            "citations_found": [],
+            "valid_citations": [],
+            "invalid_citations": [],
+            "uncited_factual_answer": false,
+            "passed": true
+          },
+          "model": null,
+          "generation_executed": false,
+          "generation_latency_ms": 0.0,
+          "prompt_eval_count": null,
+          "eval_count": null,
+          "total_duration_ms": null,
+          "raw_model_response": null,
+          "trace": {
+            "generation_action": "skipped"
+          }
+        },
+        "trace": {
+          "base_action": "abstain_out_of_domain",
+          "strict_action": "abstain_out_of_domain",
+          "generation_executed": false,
+          "sentence_validation_executed": false,
+          "answer_released": true,
+          "reason": "The governed retrieval layer abstained before LLM generation."
+        }
+      }
+    }
+  ]
+}

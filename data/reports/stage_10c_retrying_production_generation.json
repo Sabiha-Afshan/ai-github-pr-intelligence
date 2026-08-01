@@ -1,0 +1,2054 @@
+{
+  "stage": "10C",
+  "stage_name": "Citation-Aware Repair and Fail-Closed Retry",
+  "status": "passed",
+  "case_count": 4,
+  "passed_count": 4,
+  "failed_count": 0,
+  "results": [
+    {
+      "case_id": "valid_repair_released",
+      "passed": true,
+      "checks": {
+        "action": true,
+        "answer_released": true,
+        "repair_attempted": true,
+        "repair_succeeded": true,
+        "final_citation_validation": true,
+        "final_groundedness": true
+      },
+      "response": {
+        "query": "What do we know about pull request 5336?",
+        "action": "answer",
+        "answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was closed and merged on 2023-11-15 [E1]. The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+        "answer_released": true,
+        "generation_executed": true,
+        "repair_attempted": true,
+        "repair_succeeded": true,
+        "initial_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "abstain_citation_validation",
+          "message": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+          "answer": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+          "generation_executed": true,
+          "answer_released": false,
+          "insufficient_evidence": true,
+          "model": "stub-model",
+          "evidence_used": [],
+          "evidence_count": 2,
+          "sentence_validation": {
+            "sentence_count": 4,
+            "factual_sentence_count": 4,
+            "cited_factual_sentence_count": 3,
+            "uncited_factual_sentence_count": 1,
+            "citation_coverage": 0.75,
+            "invalid_citations": [],
+            "passed": false,
+            "sentence_results": [
+              {
+                "sentence_index": 1,
+                "sentence": "PR #5336 was opened by dannyi96 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": true,
+                "passed": true
+              },
+              {
+                "sentence_index": 2,
+                "sentence": "The PR title is 'type hint fix for flask.send_file' [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": true,
+                "passed": true
+              },
+              {
+                "sentence_index": 3,
+                "sentence": "It was closed and merged on 2023-11-15.",
+                "citations": [],
+                "valid_citations": [],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": false,
+                "passed": false
+              },
+              {
+                "sentence_index": 4,
+                "sentence": "The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+                "citations": [
+                  "E4"
+                ],
+                "valid_citations": [
+                  "E4"
+                ],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": true,
+                "passed": true
+              }
+            ]
+          },
+          "claim_validation": {
+            "sentence_count": 0,
+            "factual_claim_count": 0,
+            "supported_claim_count": 0,
+            "unsupported_claim_count": 0,
+            "groundedness_rate": 1.0,
+            "mean_support_score": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "claim_results": []
+          },
+          "base_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "answer",
+            "message": "A grounded response was generated.",
+            "answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was closed and merged on 2023-11-15. The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+            "evidence_used": [
+              "E1",
+              "E4"
+            ],
+            "insufficient_evidence": false,
+            "limitations": [],
+            "retrieval_response": {
+              "query": "What do we know about pull request 5336?",
+              "action": "retrieve",
+              "message": "Relevant pull-request evidence was retrieved successfully.",
+              "retrieval_executed": true,
+              "query_understanding": {
+                "original_query": "What do we know about pull request 5336?",
+                "normalised_query": "what do we know about pull request 5336?",
+                "expanded_query": "what do we know about pull request 5336?",
+                "pr_number": 5336,
+                "is_repository_query": true,
+                "is_out_of_domain": false,
+                "domain_confidence": 0.73,
+                "detected_sections": [],
+                "metadata_conditions": [],
+                "matched_repository_terms": [
+                  "pull request"
+                ],
+                "matched_out_of_domain_terms": []
+              },
+              "results": [],
+              "trace": {
+                "action": "retrieve"
+              }
+            },
+            "evidence": [
+              {
+                "evidence_id": "E1",
+                "rank": 1,
+                "pr_number": 5336,
+                "section": "PR identity",
+                "text": "PR #5336 was opened by dannyi96. The PR title is type hint fix for flask.send_file. It was closed and merged on 2023-11-15.",
+                "governed_score": 0.9,
+                "metadata": {
+                  "author": "dannyi96",
+                  "merged": true,
+                  "merged_at": "2023-11-15"
+                }
+              },
+              {
+                "evidence_id": "E4",
+                "rank": 4,
+                "pr_number": 5336,
+                "section": "Predictive intelligence",
+                "text": "The predicted merge probability for PR #5336 is 47.01%. This is a model prediction and not a confirmed outcome.",
+                "governed_score": 0.75,
+                "metadata": {
+                  "merge_probability": 0.4701
+                }
+              }
+            ],
+            "citation_validation": {
+              "citations_found": [
+                "E1",
+                "E4"
+              ],
+              "valid_citations": [
+                "E1",
+                "E4"
+              ],
+              "invalid_citations": [],
+              "uncited_factual_answer": false,
+              "passed": true
+            },
+            "model": "stub-model",
+            "generation_executed": true,
+            "generation_latency_ms": 10.0,
+            "prompt_eval_count": 100,
+            "eval_count": 50,
+            "total_duration_ms": 20.0,
+            "raw_model_response": {},
+            "trace": {
+              "generation_action": "completed"
+            }
+          },
+          "trace": {
+            "base_action": "answer",
+            "production_action": "abstain_citation_validation",
+            "generation_executed": true,
+            "sentence_validation_executed": true,
+            "claim_validation_executed": false,
+            "answer_released": false,
+            "citation_coverage": 0.75,
+            "uncited_factual_sentence_count": 1,
+            "invalid_citations": [],
+            "withheld_answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was closed and merged on 2023-11-15. The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+            "reason": "The generated answer failed sentence-level citation validation."
+          }
+        },
+        "final_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "answer",
+          "message": "The grounded response passed citation and claim-support governance.",
+          "answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was closed and merged on 2023-11-15 [E1]. The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+          "generation_executed": true,
+          "answer_released": true,
+          "insufficient_evidence": false,
+          "model": "stub-model",
+          "evidence_used": [
+            "E1",
+            "E4"
+          ],
+          "evidence_count": 2,
+          "sentence_validation": {
+            "sentence_count": 4,
+            "factual_sentence_count": 4,
+            "cited_factual_sentence_count": 4,
+            "uncited_factual_sentence_count": 0,
+            "citation_coverage": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "sentence_results": [
+              {
+                "sentence_index": 1,
+                "sentence": "PR #5336 was opened by dannyi96 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": true,
+                "passed": true
+              },
+              {
+                "sentence_index": 2,
+                "sentence": "The PR title is 'type hint fix for flask.send_file' [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": true,
+                "passed": true
+              },
+              {
+                "sentence_index": 3,
+                "sentence": "It was closed and merged on 2023-11-15 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": true,
+                "passed": true
+              },
+              {
+                "sentence_index": 4,
+                "sentence": "The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+                "citations": [
+                  "E4"
+                ],
+                "valid_citations": [
+                  "E4"
+                ],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": true,
+                "passed": true
+              }
+            ]
+          },
+          "claim_validation": {
+            "sentence_count": 4,
+            "factual_claim_count": 4,
+            "supported_claim_count": 4,
+            "unsupported_claim_count": 0,
+            "groundedness_rate": 1.0,
+            "mean_support_score": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "claim_results": [
+              {
+                "sentence_index": 1,
+                "claim": "PR #5336 was opened by dannyi96 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_validation": true,
+                "evidence_text": "pr #5336 pr identity pr #5336 was opened by dannyi96. the pr title is type hint fix for flask.send_file. it was closed and merged on 2023-11-15. author dannyi96 merged true merged_at 2023-11-15",
+                "claim_tokens": [
+                  "pull_request",
+                  "#5336",
+                  "opened",
+                  "dannyi96"
+                ],
+                "supported_tokens": [
+                  "pull_request",
+                  "#5336",
+                  "opened",
+                  "dannyi96"
+                ],
+                "unsupported_tokens": [],
+                "token_coverage": 1.0,
+                "entity_checks": {
+                  "pr_numbers": {
+                    "applicable": true,
+                    "claim_values": [
+                      "5336"
+                    ],
+                    "evidence_values": [
+                      "5336"
+                    ],
+                    "matched_values": [
+                      "5336"
+                    ],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "dates": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "2023-11-15"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "percentages": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "decimals": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "booleans": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "true"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  }
+                },
+                "entity_coverage": 1.0,
+                "support_score": 1.0,
+                "passed": true,
+                "failure_reasons": []
+              },
+              {
+                "sentence_index": 2,
+                "claim": "The PR title is 'type hint fix for flask.send_file' [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_validation": true,
+                "evidence_text": "pr #5336 pr identity pr #5336 was opened by dannyi96. the pr title is type hint fix for flask.send_file. it was closed and merged on 2023-11-15. author dannyi96 merged true merged_at 2023-11-15",
+                "claim_tokens": [
+                  "pull_request",
+                  "title",
+                  "type",
+                  "hint",
+                  "fix",
+                  "flask.send_file"
+                ],
+                "supported_tokens": [
+                  "pull_request",
+                  "title",
+                  "type",
+                  "hint",
+                  "fix",
+                  "flask.send_file"
+                ],
+                "unsupported_tokens": [],
+                "token_coverage": 1.0,
+                "entity_checks": {
+                  "pr_numbers": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "5336"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "dates": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "2023-11-15"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "percentages": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "decimals": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "booleans": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "true"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  }
+                },
+                "entity_coverage": 1.0,
+                "support_score": 1.0,
+                "passed": true,
+                "failure_reasons": []
+              },
+              {
+                "sentence_index": 3,
+                "claim": "It was closed and merged on 2023-11-15 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_validation": true,
+                "evidence_text": "pr #5336 pr identity pr #5336 was opened by dannyi96. the pr title is type hint fix for flask.send_file. it was closed and merged on 2023-11-15. author dannyi96 merged true merged_at 2023-11-15",
+                "claim_tokens": [
+                  "closed",
+                  "merged",
+                  "2023-11-15"
+                ],
+                "supported_tokens": [
+                  "closed",
+                  "merged",
+                  "2023-11-15"
+                ],
+                "unsupported_tokens": [],
+                "token_coverage": 1.0,
+                "entity_checks": {
+                  "pr_numbers": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "5336"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "dates": {
+                    "applicable": true,
+                    "claim_values": [
+                      "2023-11-15"
+                    ],
+                    "evidence_values": [
+                      "2023-11-15"
+                    ],
+                    "matched_values": [
+                      "2023-11-15"
+                    ],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "percentages": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "decimals": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "booleans": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "true"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  }
+                },
+                "entity_coverage": 1.0,
+                "support_score": 1.0,
+                "passed": true,
+                "failure_reasons": []
+              },
+              {
+                "sentence_index": 4,
+                "claim": "The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+                "citations": [
+                  "E4"
+                ],
+                "valid_citations": [
+                  "E4"
+                ],
+                "invalid_citations": [],
+                "requires_validation": true,
+                "evidence_text": "pr #5336 predictive intelligence the predicted merge probability for pr #5336 is 47.01%. this is a model prediction and not a confirmed outcome. merge_probability 0.4701",
+                "claim_tokens": [
+                  "prediction",
+                  "merged",
+                  "probability",
+                  "47.01%",
+                  "not",
+                  "confirmed",
+                  "outcome"
+                ],
+                "supported_tokens": [
+                  "prediction",
+                  "merged",
+                  "probability",
+                  "47.01%",
+                  "not",
+                  "confirmed",
+                  "outcome"
+                ],
+                "unsupported_tokens": [],
+                "token_coverage": 1.0,
+                "entity_checks": {
+                  "pr_numbers": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "5336"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "dates": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "percentages": {
+                    "applicable": true,
+                    "claim_values": [
+                      "47.01%"
+                    ],
+                    "evidence_values": [
+                      "47.01%"
+                    ],
+                    "matched_values": [
+                      "47.01%"
+                    ],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "decimals": {
+                    "applicable": true,
+                    "claim_values": [
+                      ".01"
+                    ],
+                    "evidence_values": [
+                      ".01",
+                      "0.4701"
+                    ],
+                    "matched_values": [
+                      ".01"
+                    ],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "booleans": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  }
+                },
+                "entity_coverage": 1.0,
+                "support_score": 1.0,
+                "passed": true,
+                "failure_reasons": []
+              }
+            ]
+          },
+          "base_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "answer",
+            "message": "A grounded response was generated.",
+            "answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was closed and merged on 2023-11-15 [E1]. The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+            "evidence_used": [
+              "E1",
+              "E4"
+            ],
+            "insufficient_evidence": false,
+            "limitations": [],
+            "retrieval_response": {
+              "query": "What do we know about pull request 5336?",
+              "action": "retrieve",
+              "message": "Relevant pull-request evidence was retrieved successfully.",
+              "retrieval_executed": true,
+              "query_understanding": {
+                "original_query": "What do we know about pull request 5336?",
+                "normalised_query": "what do we know about pull request 5336?",
+                "expanded_query": "what do we know about pull request 5336?",
+                "pr_number": 5336,
+                "is_repository_query": true,
+                "is_out_of_domain": false,
+                "domain_confidence": 0.73,
+                "detected_sections": [],
+                "metadata_conditions": [],
+                "matched_repository_terms": [
+                  "pull request"
+                ],
+                "matched_out_of_domain_terms": []
+              },
+              "results": [],
+              "trace": {
+                "action": "retrieve"
+              }
+            },
+            "evidence": [
+              {
+                "evidence_id": "E1",
+                "rank": 1,
+                "pr_number": 5336,
+                "section": "PR identity",
+                "text": "PR #5336 was opened by dannyi96. The PR title is type hint fix for flask.send_file. It was closed and merged on 2023-11-15.",
+                "governed_score": 0.9,
+                "metadata": {
+                  "author": "dannyi96",
+                  "merged": true,
+                  "merged_at": "2023-11-15"
+                }
+              },
+              {
+                "evidence_id": "E4",
+                "rank": 4,
+                "pr_number": 5336,
+                "section": "Predictive intelligence",
+                "text": "The predicted merge probability for PR #5336 is 47.01%. This is a model prediction and not a confirmed outcome.",
+                "governed_score": 0.75,
+                "metadata": {
+                  "merge_probability": 0.4701
+                }
+              }
+            ],
+            "citation_validation": {
+              "citations_found": [
+                "E1",
+                "E4"
+              ],
+              "valid_citations": [
+                "E1",
+                "E4"
+              ],
+              "invalid_citations": [],
+              "uncited_factual_answer": false,
+              "passed": true
+            },
+            "model": "stub-model",
+            "generation_executed": true,
+            "generation_latency_ms": 10.0,
+            "prompt_eval_count": 100,
+            "eval_count": 50,
+            "total_duration_ms": 20.0,
+            "raw_model_response": {},
+            "trace": {
+              "generation_action": "completed",
+              "citation_repair_attempted": true,
+              "citation_repair_succeeded": true,
+              "original_answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was closed and merged on 2023-11-15. The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+              "repaired_answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was closed and merged on 2023-11-15 [E1]. The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4]."
+            }
+          },
+          "trace": {
+            "base_action": "answer",
+            "production_action": "answer",
+            "generation_executed": true,
+            "sentence_validation_executed": true,
+            "claim_validation_executed": true,
+            "answer_released": true,
+            "citation_coverage": 1.0,
+            "groundedness_rate": 1.0,
+            "mean_support_score": 1.0,
+            "unsupported_claim_count": 0,
+            "invalid_citations": [],
+            "reason": "Every factual sentence had a valid citation and every factual claim was supported by the cited evidence."
+          }
+        },
+        "repair_result": {
+          "attempted": true,
+          "succeeded": true,
+          "original_answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was closed and merged on 2023-11-15. The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+          "repaired_answer": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was closed and merged on 2023-11-15 [E1]. The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4].",
+          "model": "stub-model",
+          "latency_ms": 5.0,
+          "error": null,
+          "raw_response": {
+            "message": {
+              "content": "PR #5336 was opened by dannyi96 [E1]. The PR title is 'type hint fix for flask.send_file' [E1]. It was closed and merged on 2023-11-15 [E1]. The predicted merge probability is 47.01%, but this is not a confirmed outcome [E4]."
+            }
+          }
+        },
+        "trace": {
+          "initial_action": "abstain_citation_validation",
+          "repair_attempted": true,
+          "repair_model_succeeded": true,
+          "repair_succeeded": true,
+          "final_action": "answer",
+          "final_answer_released": true,
+          "final_citation_coverage": 1.0,
+          "final_groundedness_rate": 1.0,
+          "reason": "The repaired answer was released only after citation and groundedness validation."
+        }
+      }
+    },
+    {
+      "case_id": "unsupported_repair_blocked",
+      "passed": true,
+      "checks": {
+        "action": true,
+        "answer_released": true,
+        "repair_attempted": true,
+        "repair_succeeded": true
+      },
+      "response": {
+        "query": "What do we know about pull request 5336?",
+        "action": "abstain_groundedness_validation",
+        "answer": "The system retrieved relevant pull-request evidence, but one or more generated claims were not sufficiently supported by the cited evidence. The answer was withheld to prevent unsupported claims.",
+        "answer_released": false,
+        "generation_executed": true,
+        "repair_attempted": true,
+        "repair_succeeded": false,
+        "initial_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "abstain_citation_validation",
+          "message": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+          "answer": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+          "generation_executed": true,
+          "answer_released": false,
+          "insufficient_evidence": true,
+          "model": "stub-model",
+          "evidence_used": [],
+          "evidence_count": 2,
+          "sentence_validation": {
+            "sentence_count": 1,
+            "factual_sentence_count": 1,
+            "cited_factual_sentence_count": 0,
+            "uncited_factual_sentence_count": 1,
+            "citation_coverage": 0.0,
+            "invalid_citations": [],
+            "passed": false,
+            "sentence_results": [
+              {
+                "sentence_index": 1,
+                "sentence": "PR #5336 was closed and merged on 2023-11-15.",
+                "citations": [],
+                "valid_citations": [],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": false,
+                "passed": false
+              }
+            ]
+          },
+          "claim_validation": {
+            "sentence_count": 0,
+            "factual_claim_count": 0,
+            "supported_claim_count": 0,
+            "unsupported_claim_count": 0,
+            "groundedness_rate": 1.0,
+            "mean_support_score": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "claim_results": []
+          },
+          "base_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "answer",
+            "message": "A grounded response was generated.",
+            "answer": "PR #5336 was closed and merged on 2023-11-15.",
+            "evidence_used": [
+              "E1",
+              "E4"
+            ],
+            "insufficient_evidence": false,
+            "limitations": [],
+            "retrieval_response": {
+              "query": "What do we know about pull request 5336?",
+              "action": "retrieve",
+              "message": "Relevant pull-request evidence was retrieved successfully.",
+              "retrieval_executed": true,
+              "query_understanding": {
+                "original_query": "What do we know about pull request 5336?",
+                "normalised_query": "what do we know about pull request 5336?",
+                "expanded_query": "what do we know about pull request 5336?",
+                "pr_number": 5336,
+                "is_repository_query": true,
+                "is_out_of_domain": false,
+                "domain_confidence": 0.73,
+                "detected_sections": [],
+                "metadata_conditions": [],
+                "matched_repository_terms": [
+                  "pull request"
+                ],
+                "matched_out_of_domain_terms": []
+              },
+              "results": [],
+              "trace": {
+                "action": "retrieve"
+              }
+            },
+            "evidence": [
+              {
+                "evidence_id": "E1",
+                "rank": 1,
+                "pr_number": 5336,
+                "section": "PR identity",
+                "text": "PR #5336 was opened by dannyi96. The PR title is type hint fix for flask.send_file. It was closed and merged on 2023-11-15.",
+                "governed_score": 0.9,
+                "metadata": {
+                  "author": "dannyi96",
+                  "merged": true,
+                  "merged_at": "2023-11-15"
+                }
+              },
+              {
+                "evidence_id": "E4",
+                "rank": 4,
+                "pr_number": 5336,
+                "section": "Predictive intelligence",
+                "text": "The predicted merge probability for PR #5336 is 47.01%. This is a model prediction and not a confirmed outcome.",
+                "governed_score": 0.75,
+                "metadata": {
+                  "merge_probability": 0.4701
+                }
+              }
+            ],
+            "citation_validation": {
+              "citations_found": [
+                "E1",
+                "E4"
+              ],
+              "valid_citations": [
+                "E1",
+                "E4"
+              ],
+              "invalid_citations": [],
+              "uncited_factual_answer": false,
+              "passed": true
+            },
+            "model": "stub-model",
+            "generation_executed": true,
+            "generation_latency_ms": 10.0,
+            "prompt_eval_count": 100,
+            "eval_count": 50,
+            "total_duration_ms": 20.0,
+            "raw_model_response": {},
+            "trace": {
+              "generation_action": "completed"
+            }
+          },
+          "trace": {
+            "base_action": "answer",
+            "production_action": "abstain_citation_validation",
+            "generation_executed": true,
+            "sentence_validation_executed": true,
+            "claim_validation_executed": false,
+            "answer_released": false,
+            "citation_coverage": 0.0,
+            "uncited_factual_sentence_count": 1,
+            "invalid_citations": [],
+            "withheld_answer": "PR #5336 was closed and merged on 2023-11-15.",
+            "reason": "The generated answer failed sentence-level citation validation."
+          }
+        },
+        "final_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "abstain_groundedness_validation",
+          "message": "The system retrieved relevant pull-request evidence, but one or more generated claims were not sufficiently supported by the cited evidence. The answer was withheld to prevent unsupported claims.",
+          "answer": "The system retrieved relevant pull-request evidence, but one or more generated claims were not sufficiently supported by the cited evidence. The answer was withheld to prevent unsupported claims.",
+          "generation_executed": true,
+          "answer_released": false,
+          "insufficient_evidence": true,
+          "model": "stub-model",
+          "evidence_used": [],
+          "evidence_count": 2,
+          "sentence_validation": {
+            "sentence_count": 1,
+            "factual_sentence_count": 1,
+            "cited_factual_sentence_count": 1,
+            "uncited_factual_sentence_count": 0,
+            "citation_coverage": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "sentence_results": [
+              {
+                "sentence_index": 1,
+                "sentence": "PR #5336 was closed and merged on 2024-01-01 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": true,
+                "passed": true
+              }
+            ]
+          },
+          "claim_validation": {
+            "sentence_count": 1,
+            "factual_claim_count": 1,
+            "supported_claim_count": 0,
+            "unsupported_claim_count": 1,
+            "groundedness_rate": 0.0,
+            "mean_support_score": 0.68,
+            "invalid_citations": [],
+            "passed": false,
+            "claim_results": [
+              {
+                "sentence_index": 1,
+                "claim": "PR #5336 was closed and merged on 2024-01-01 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_validation": true,
+                "evidence_text": "pr #5336 pr identity pr #5336 was opened by dannyi96. the pr title is type hint fix for flask.send_file. it was closed and merged on 2023-11-15. author dannyi96 merged true merged_at 2023-11-15",
+                "claim_tokens": [
+                  "pull_request",
+                  "#5336",
+                  "closed",
+                  "merged",
+                  "2024-01-01"
+                ],
+                "supported_tokens": [
+                  "pull_request",
+                  "#5336",
+                  "closed",
+                  "merged"
+                ],
+                "unsupported_tokens": [
+                  "2024-01-01"
+                ],
+                "token_coverage": 0.8,
+                "entity_checks": {
+                  "pr_numbers": {
+                    "applicable": true,
+                    "claim_values": [
+                      "5336"
+                    ],
+                    "evidence_values": [
+                      "5336"
+                    ],
+                    "matched_values": [
+                      "5336"
+                    ],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "dates": {
+                    "applicable": true,
+                    "claim_values": [
+                      "2024-01-01"
+                    ],
+                    "evidence_values": [
+                      "2023-11-15"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [
+                      "2024-01-01"
+                    ],
+                    "passed": false
+                  },
+                  "percentages": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "decimals": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "booleans": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "true"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  }
+                },
+                "entity_coverage": 0.5,
+                "support_score": 0.68,
+                "passed": false,
+                "failure_reasons": [
+                  "The cited evidence does not match claim entities: dates"
+                ]
+              }
+            ]
+          },
+          "base_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "answer",
+            "message": "A grounded response was generated.",
+            "answer": "PR #5336 was closed and merged on 2024-01-01 [E1].",
+            "evidence_used": [
+              "E1"
+            ],
+            "insufficient_evidence": false,
+            "limitations": [],
+            "retrieval_response": {
+              "query": "What do we know about pull request 5336?",
+              "action": "retrieve",
+              "message": "Relevant pull-request evidence was retrieved successfully.",
+              "retrieval_executed": true,
+              "query_understanding": {
+                "original_query": "What do we know about pull request 5336?",
+                "normalised_query": "what do we know about pull request 5336?",
+                "expanded_query": "what do we know about pull request 5336?",
+                "pr_number": 5336,
+                "is_repository_query": true,
+                "is_out_of_domain": false,
+                "domain_confidence": 0.73,
+                "detected_sections": [],
+                "metadata_conditions": [],
+                "matched_repository_terms": [
+                  "pull request"
+                ],
+                "matched_out_of_domain_terms": []
+              },
+              "results": [],
+              "trace": {
+                "action": "retrieve"
+              }
+            },
+            "evidence": [
+              {
+                "evidence_id": "E1",
+                "rank": 1,
+                "pr_number": 5336,
+                "section": "PR identity",
+                "text": "PR #5336 was opened by dannyi96. The PR title is type hint fix for flask.send_file. It was closed and merged on 2023-11-15.",
+                "governed_score": 0.9,
+                "metadata": {
+                  "author": "dannyi96",
+                  "merged": true,
+                  "merged_at": "2023-11-15"
+                }
+              },
+              {
+                "evidence_id": "E4",
+                "rank": 4,
+                "pr_number": 5336,
+                "section": "Predictive intelligence",
+                "text": "The predicted merge probability for PR #5336 is 47.01%. This is a model prediction and not a confirmed outcome.",
+                "governed_score": 0.75,
+                "metadata": {
+                  "merge_probability": 0.4701
+                }
+              }
+            ],
+            "citation_validation": {
+              "citations_found": [
+                "E1",
+                "E4"
+              ],
+              "valid_citations": [
+                "E1",
+                "E4"
+              ],
+              "invalid_citations": [],
+              "uncited_factual_answer": false,
+              "passed": true
+            },
+            "model": "stub-model",
+            "generation_executed": true,
+            "generation_latency_ms": 10.0,
+            "prompt_eval_count": 100,
+            "eval_count": 50,
+            "total_duration_ms": 20.0,
+            "raw_model_response": {},
+            "trace": {
+              "generation_action": "completed",
+              "citation_repair_attempted": true,
+              "citation_repair_succeeded": true,
+              "original_answer": "PR #5336 was closed and merged on 2023-11-15.",
+              "repaired_answer": "PR #5336 was closed and merged on 2024-01-01 [E1]."
+            }
+          },
+          "trace": {
+            "base_action": "answer",
+            "production_action": "abstain_groundedness_validation",
+            "generation_executed": true,
+            "sentence_validation_executed": true,
+            "claim_validation_executed": true,
+            "answer_released": false,
+            "citation_coverage": 1.0,
+            "groundedness_rate": 0.0,
+            "mean_support_score": 0.68,
+            "unsupported_claim_count": 1,
+            "invalid_citations": [],
+            "withheld_answer": "PR #5336 was closed and merged on 2024-01-01 [E1].",
+            "reason": "One or more factual claims were not supported by their cited evidence."
+          }
+        },
+        "repair_result": {
+          "attempted": true,
+          "succeeded": true,
+          "original_answer": "PR #5336 was closed and merged on 2023-11-15.",
+          "repaired_answer": "PR #5336 was closed and merged on 2024-01-01 [E1].",
+          "model": "stub-model",
+          "latency_ms": 5.0,
+          "error": null,
+          "raw_response": {
+            "message": {
+              "content": "PR #5336 was closed and merged on 2024-01-01 [E1]."
+            }
+          }
+        },
+        "trace": {
+          "initial_action": "abstain_citation_validation",
+          "repair_attempted": true,
+          "repair_model_succeeded": true,
+          "repair_succeeded": false,
+          "final_action": "abstain_groundedness_validation",
+          "final_answer_released": false,
+          "final_citation_coverage": 1.0,
+          "final_groundedness_rate": 0.0,
+          "reason": "The repair output failed one or more governance checks and remained withheld."
+        }
+      }
+    },
+    {
+      "case_id": "failed_repair_remains_blocked",
+      "passed": true,
+      "checks": {
+        "action": true,
+        "answer_released": true,
+        "repair_attempted": true,
+        "repair_succeeded": true
+      },
+      "response": {
+        "query": "What do we know about pull request 5336?",
+        "action": "abstain_citation_validation",
+        "answer": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+        "answer_released": false,
+        "generation_executed": true,
+        "repair_attempted": true,
+        "repair_succeeded": false,
+        "initial_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "abstain_citation_validation",
+          "message": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+          "answer": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+          "generation_executed": true,
+          "answer_released": false,
+          "insufficient_evidence": true,
+          "model": "stub-model",
+          "evidence_used": [],
+          "evidence_count": 2,
+          "sentence_validation": {
+            "sentence_count": 1,
+            "factual_sentence_count": 1,
+            "cited_factual_sentence_count": 0,
+            "uncited_factual_sentence_count": 1,
+            "citation_coverage": 0.0,
+            "invalid_citations": [],
+            "passed": false,
+            "sentence_results": [
+              {
+                "sentence_index": 1,
+                "sentence": "PR #5336 was closed and merged on 2023-11-15.",
+                "citations": [],
+                "valid_citations": [],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": false,
+                "passed": false
+              }
+            ]
+          },
+          "claim_validation": {
+            "sentence_count": 0,
+            "factual_claim_count": 0,
+            "supported_claim_count": 0,
+            "unsupported_claim_count": 0,
+            "groundedness_rate": 1.0,
+            "mean_support_score": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "claim_results": []
+          },
+          "base_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "answer",
+            "message": "A grounded response was generated.",
+            "answer": "PR #5336 was closed and merged on 2023-11-15.",
+            "evidence_used": [
+              "E1",
+              "E4"
+            ],
+            "insufficient_evidence": false,
+            "limitations": [],
+            "retrieval_response": {
+              "query": "What do we know about pull request 5336?",
+              "action": "retrieve",
+              "message": "Relevant pull-request evidence was retrieved successfully.",
+              "retrieval_executed": true,
+              "query_understanding": {
+                "original_query": "What do we know about pull request 5336?",
+                "normalised_query": "what do we know about pull request 5336?",
+                "expanded_query": "what do we know about pull request 5336?",
+                "pr_number": 5336,
+                "is_repository_query": true,
+                "is_out_of_domain": false,
+                "domain_confidence": 0.73,
+                "detected_sections": [],
+                "metadata_conditions": [],
+                "matched_repository_terms": [
+                  "pull request"
+                ],
+                "matched_out_of_domain_terms": []
+              },
+              "results": [],
+              "trace": {
+                "action": "retrieve"
+              }
+            },
+            "evidence": [
+              {
+                "evidence_id": "E1",
+                "rank": 1,
+                "pr_number": 5336,
+                "section": "PR identity",
+                "text": "PR #5336 was opened by dannyi96. The PR title is type hint fix for flask.send_file. It was closed and merged on 2023-11-15.",
+                "governed_score": 0.9,
+                "metadata": {
+                  "author": "dannyi96",
+                  "merged": true,
+                  "merged_at": "2023-11-15"
+                }
+              },
+              {
+                "evidence_id": "E4",
+                "rank": 4,
+                "pr_number": 5336,
+                "section": "Predictive intelligence",
+                "text": "The predicted merge probability for PR #5336 is 47.01%. This is a model prediction and not a confirmed outcome.",
+                "governed_score": 0.75,
+                "metadata": {
+                  "merge_probability": 0.4701
+                }
+              }
+            ],
+            "citation_validation": {
+              "citations_found": [
+                "E1",
+                "E4"
+              ],
+              "valid_citations": [
+                "E1",
+                "E4"
+              ],
+              "invalid_citations": [],
+              "uncited_factual_answer": false,
+              "passed": true
+            },
+            "model": "stub-model",
+            "generation_executed": true,
+            "generation_latency_ms": 10.0,
+            "prompt_eval_count": 100,
+            "eval_count": 50,
+            "total_duration_ms": 20.0,
+            "raw_model_response": {},
+            "trace": {
+              "generation_action": "completed"
+            }
+          },
+          "trace": {
+            "base_action": "answer",
+            "production_action": "abstain_citation_validation",
+            "generation_executed": true,
+            "sentence_validation_executed": true,
+            "claim_validation_executed": false,
+            "answer_released": false,
+            "citation_coverage": 0.0,
+            "uncited_factual_sentence_count": 1,
+            "invalid_citations": [],
+            "withheld_answer": "PR #5336 was closed and merged on 2023-11-15.",
+            "reason": "The generated answer failed sentence-level citation validation."
+          }
+        },
+        "final_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "abstain_citation_validation",
+          "message": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+          "answer": "The system retrieved relevant pull-request evidence, but the generated answer did not meet sentence-level citation requirements. The answer was withheld to prevent unsupported or insufficiently cited claims.",
+          "generation_executed": true,
+          "answer_released": false,
+          "insufficient_evidence": true,
+          "model": "stub-model",
+          "evidence_used": [],
+          "evidence_count": 2,
+          "sentence_validation": {
+            "sentence_count": 1,
+            "factual_sentence_count": 1,
+            "cited_factual_sentence_count": 0,
+            "uncited_factual_sentence_count": 1,
+            "citation_coverage": 0.0,
+            "invalid_citations": [],
+            "passed": false,
+            "sentence_results": [
+              {
+                "sentence_index": 1,
+                "sentence": "PR #5336 was closed and merged on 2023-11-15.",
+                "citations": [],
+                "valid_citations": [],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": false,
+                "passed": false
+              }
+            ]
+          },
+          "claim_validation": {
+            "sentence_count": 0,
+            "factual_claim_count": 0,
+            "supported_claim_count": 0,
+            "unsupported_claim_count": 0,
+            "groundedness_rate": 1.0,
+            "mean_support_score": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "claim_results": []
+          },
+          "base_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "answer",
+            "message": "A grounded response was generated.",
+            "answer": "PR #5336 was closed and merged on 2023-11-15.",
+            "evidence_used": [
+              "E1",
+              "E4"
+            ],
+            "insufficient_evidence": false,
+            "limitations": [],
+            "retrieval_response": {
+              "query": "What do we know about pull request 5336?",
+              "action": "retrieve",
+              "message": "Relevant pull-request evidence was retrieved successfully.",
+              "retrieval_executed": true,
+              "query_understanding": {
+                "original_query": "What do we know about pull request 5336?",
+                "normalised_query": "what do we know about pull request 5336?",
+                "expanded_query": "what do we know about pull request 5336?",
+                "pr_number": 5336,
+                "is_repository_query": true,
+                "is_out_of_domain": false,
+                "domain_confidence": 0.73,
+                "detected_sections": [],
+                "metadata_conditions": [],
+                "matched_repository_terms": [
+                  "pull request"
+                ],
+                "matched_out_of_domain_terms": []
+              },
+              "results": [],
+              "trace": {
+                "action": "retrieve"
+              }
+            },
+            "evidence": [
+              {
+                "evidence_id": "E1",
+                "rank": 1,
+                "pr_number": 5336,
+                "section": "PR identity",
+                "text": "PR #5336 was opened by dannyi96. The PR title is type hint fix for flask.send_file. It was closed and merged on 2023-11-15.",
+                "governed_score": 0.9,
+                "metadata": {
+                  "author": "dannyi96",
+                  "merged": true,
+                  "merged_at": "2023-11-15"
+                }
+              },
+              {
+                "evidence_id": "E4",
+                "rank": 4,
+                "pr_number": 5336,
+                "section": "Predictive intelligence",
+                "text": "The predicted merge probability for PR #5336 is 47.01%. This is a model prediction and not a confirmed outcome.",
+                "governed_score": 0.75,
+                "metadata": {
+                  "merge_probability": 0.4701
+                }
+              }
+            ],
+            "citation_validation": {
+              "citations_found": [
+                "E1",
+                "E4"
+              ],
+              "valid_citations": [
+                "E1",
+                "E4"
+              ],
+              "invalid_citations": [],
+              "uncited_factual_answer": false,
+              "passed": true
+            },
+            "model": "stub-model",
+            "generation_executed": true,
+            "generation_latency_ms": 10.0,
+            "prompt_eval_count": 100,
+            "eval_count": 50,
+            "total_duration_ms": 20.0,
+            "raw_model_response": {},
+            "trace": {
+              "generation_action": "completed"
+            }
+          },
+          "trace": {
+            "base_action": "answer",
+            "production_action": "abstain_citation_validation",
+            "generation_executed": true,
+            "sentence_validation_executed": true,
+            "claim_validation_executed": false,
+            "answer_released": false,
+            "citation_coverage": 0.0,
+            "uncited_factual_sentence_count": 1,
+            "invalid_citations": [],
+            "withheld_answer": "PR #5336 was closed and merged on 2023-11-15.",
+            "reason": "The generated answer failed sentence-level citation validation."
+          }
+        },
+        "repair_result": {
+          "attempted": true,
+          "succeeded": false,
+          "original_answer": "PR #5336 was closed and merged on 2023-11-15.",
+          "repaired_answer": null,
+          "model": "stub-model",
+          "latency_ms": 5.0,
+          "error": "Simulated repair failure.",
+          "raw_response": null
+        },
+        "trace": {
+          "initial_action": "abstain_citation_validation",
+          "repair_attempted": true,
+          "repair_succeeded": false,
+          "final_action": "abstain_citation_validation",
+          "reason": "Citation repair failed. The original answer remained withheld."
+        }
+      }
+    },
+    {
+      "case_id": "already_valid_answer_skips_repair",
+      "passed": true,
+      "checks": {
+        "action": true,
+        "answer_released": true,
+        "repair_attempted": true,
+        "repair_succeeded": true,
+        "final_citation_validation": true,
+        "final_groundedness": true
+      },
+      "response": {
+        "query": "What do we know about pull request 5336?",
+        "action": "answer",
+        "answer": "PR #5336 was closed and merged on 2023-11-15 [E1].",
+        "answer_released": true,
+        "generation_executed": true,
+        "repair_attempted": false,
+        "repair_succeeded": false,
+        "initial_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "answer",
+          "message": "The grounded response passed citation and claim-support governance.",
+          "answer": "PR #5336 was closed and merged on 2023-11-15 [E1].",
+          "generation_executed": true,
+          "answer_released": true,
+          "insufficient_evidence": false,
+          "model": "stub-model",
+          "evidence_used": [
+            "E1",
+            "E4"
+          ],
+          "evidence_count": 2,
+          "sentence_validation": {
+            "sentence_count": 1,
+            "factual_sentence_count": 1,
+            "cited_factual_sentence_count": 1,
+            "uncited_factual_sentence_count": 0,
+            "citation_coverage": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "sentence_results": [
+              {
+                "sentence_index": 1,
+                "sentence": "PR #5336 was closed and merged on 2023-11-15 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": true,
+                "passed": true
+              }
+            ]
+          },
+          "claim_validation": {
+            "sentence_count": 1,
+            "factual_claim_count": 1,
+            "supported_claim_count": 1,
+            "unsupported_claim_count": 0,
+            "groundedness_rate": 1.0,
+            "mean_support_score": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "claim_results": [
+              {
+                "sentence_index": 1,
+                "claim": "PR #5336 was closed and merged on 2023-11-15 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_validation": true,
+                "evidence_text": "pr #5336 pr identity pr #5336 was opened by dannyi96. the pr title is type hint fix for flask.send_file. it was closed and merged on 2023-11-15. author dannyi96 merged true merged_at 2023-11-15",
+                "claim_tokens": [
+                  "pull_request",
+                  "#5336",
+                  "closed",
+                  "merged",
+                  "2023-11-15"
+                ],
+                "supported_tokens": [
+                  "pull_request",
+                  "#5336",
+                  "closed",
+                  "merged",
+                  "2023-11-15"
+                ],
+                "unsupported_tokens": [],
+                "token_coverage": 1.0,
+                "entity_checks": {
+                  "pr_numbers": {
+                    "applicable": true,
+                    "claim_values": [
+                      "5336"
+                    ],
+                    "evidence_values": [
+                      "5336"
+                    ],
+                    "matched_values": [
+                      "5336"
+                    ],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "dates": {
+                    "applicable": true,
+                    "claim_values": [
+                      "2023-11-15"
+                    ],
+                    "evidence_values": [
+                      "2023-11-15"
+                    ],
+                    "matched_values": [
+                      "2023-11-15"
+                    ],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "percentages": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "decimals": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "booleans": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "true"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  }
+                },
+                "entity_coverage": 1.0,
+                "support_score": 1.0,
+                "passed": true,
+                "failure_reasons": []
+              }
+            ]
+          },
+          "base_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "answer",
+            "message": "A grounded response was generated.",
+            "answer": "PR #5336 was closed and merged on 2023-11-15 [E1].",
+            "evidence_used": [
+              "E1",
+              "E4"
+            ],
+            "insufficient_evidence": false,
+            "limitations": [],
+            "retrieval_response": {
+              "query": "What do we know about pull request 5336?",
+              "action": "retrieve",
+              "message": "Relevant pull-request evidence was retrieved successfully.",
+              "retrieval_executed": true,
+              "query_understanding": {
+                "original_query": "What do we know about pull request 5336?",
+                "normalised_query": "what do we know about pull request 5336?",
+                "expanded_query": "what do we know about pull request 5336?",
+                "pr_number": 5336,
+                "is_repository_query": true,
+                "is_out_of_domain": false,
+                "domain_confidence": 0.73,
+                "detected_sections": [],
+                "metadata_conditions": [],
+                "matched_repository_terms": [
+                  "pull request"
+                ],
+                "matched_out_of_domain_terms": []
+              },
+              "results": [],
+              "trace": {
+                "action": "retrieve"
+              }
+            },
+            "evidence": [
+              {
+                "evidence_id": "E1",
+                "rank": 1,
+                "pr_number": 5336,
+                "section": "PR identity",
+                "text": "PR #5336 was opened by dannyi96. The PR title is type hint fix for flask.send_file. It was closed and merged on 2023-11-15.",
+                "governed_score": 0.9,
+                "metadata": {
+                  "author": "dannyi96",
+                  "merged": true,
+                  "merged_at": "2023-11-15"
+                }
+              },
+              {
+                "evidence_id": "E4",
+                "rank": 4,
+                "pr_number": 5336,
+                "section": "Predictive intelligence",
+                "text": "The predicted merge probability for PR #5336 is 47.01%. This is a model prediction and not a confirmed outcome.",
+                "governed_score": 0.75,
+                "metadata": {
+                  "merge_probability": 0.4701
+                }
+              }
+            ],
+            "citation_validation": {
+              "citations_found": [
+                "E1",
+                "E4"
+              ],
+              "valid_citations": [
+                "E1",
+                "E4"
+              ],
+              "invalid_citations": [],
+              "uncited_factual_answer": false,
+              "passed": true
+            },
+            "model": "stub-model",
+            "generation_executed": true,
+            "generation_latency_ms": 10.0,
+            "prompt_eval_count": 100,
+            "eval_count": 50,
+            "total_duration_ms": 20.0,
+            "raw_model_response": {},
+            "trace": {
+              "generation_action": "completed"
+            }
+          },
+          "trace": {
+            "base_action": "answer",
+            "production_action": "answer",
+            "generation_executed": true,
+            "sentence_validation_executed": true,
+            "claim_validation_executed": true,
+            "answer_released": true,
+            "citation_coverage": 1.0,
+            "groundedness_rate": 1.0,
+            "mean_support_score": 1.0,
+            "unsupported_claim_count": 0,
+            "invalid_citations": [],
+            "reason": "Every factual sentence had a valid citation and every factual claim was supported by the cited evidence."
+          }
+        },
+        "final_response": {
+          "query": "What do we know about pull request 5336?",
+          "action": "answer",
+          "message": "The grounded response passed citation and claim-support governance.",
+          "answer": "PR #5336 was closed and merged on 2023-11-15 [E1].",
+          "generation_executed": true,
+          "answer_released": true,
+          "insufficient_evidence": false,
+          "model": "stub-model",
+          "evidence_used": [
+            "E1",
+            "E4"
+          ],
+          "evidence_count": 2,
+          "sentence_validation": {
+            "sentence_count": 1,
+            "factual_sentence_count": 1,
+            "cited_factual_sentence_count": 1,
+            "uncited_factual_sentence_count": 0,
+            "citation_coverage": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "sentence_results": [
+              {
+                "sentence_index": 1,
+                "sentence": "PR #5336 was closed and merged on 2023-11-15 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_citation": true,
+                "citation_present": true,
+                "passed": true
+              }
+            ]
+          },
+          "claim_validation": {
+            "sentence_count": 1,
+            "factual_claim_count": 1,
+            "supported_claim_count": 1,
+            "unsupported_claim_count": 0,
+            "groundedness_rate": 1.0,
+            "mean_support_score": 1.0,
+            "invalid_citations": [],
+            "passed": true,
+            "claim_results": [
+              {
+                "sentence_index": 1,
+                "claim": "PR #5336 was closed and merged on 2023-11-15 [E1].",
+                "citations": [
+                  "E1"
+                ],
+                "valid_citations": [
+                  "E1"
+                ],
+                "invalid_citations": [],
+                "requires_validation": true,
+                "evidence_text": "pr #5336 pr identity pr #5336 was opened by dannyi96. the pr title is type hint fix for flask.send_file. it was closed and merged on 2023-11-15. author dannyi96 merged true merged_at 2023-11-15",
+                "claim_tokens": [
+                  "pull_request",
+                  "#5336",
+                  "closed",
+                  "merged",
+                  "2023-11-15"
+                ],
+                "supported_tokens": [
+                  "pull_request",
+                  "#5336",
+                  "closed",
+                  "merged",
+                  "2023-11-15"
+                ],
+                "unsupported_tokens": [],
+                "token_coverage": 1.0,
+                "entity_checks": {
+                  "pr_numbers": {
+                    "applicable": true,
+                    "claim_values": [
+                      "5336"
+                    ],
+                    "evidence_values": [
+                      "5336"
+                    ],
+                    "matched_values": [
+                      "5336"
+                    ],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "dates": {
+                    "applicable": true,
+                    "claim_values": [
+                      "2023-11-15"
+                    ],
+                    "evidence_values": [
+                      "2023-11-15"
+                    ],
+                    "matched_values": [
+                      "2023-11-15"
+                    ],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "percentages": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "decimals": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  },
+                  "booleans": {
+                    "applicable": false,
+                    "claim_values": [],
+                    "evidence_values": [
+                      "true"
+                    ],
+                    "matched_values": [],
+                    "unmatched_values": [],
+                    "passed": true
+                  }
+                },
+                "entity_coverage": 1.0,
+                "support_score": 1.0,
+                "passed": true,
+                "failure_reasons": []
+              }
+            ]
+          },
+          "base_response": {
+            "query": "What do we know about pull request 5336?",
+            "action": "answer",
+            "message": "A grounded response was generated.",
+            "answer": "PR #5336 was closed and merged on 2023-11-15 [E1].",
+            "evidence_used": [
+              "E1",
+              "E4"
+            ],
+            "insufficient_evidence": false,
+            "limitations": [],
+            "retrieval_response": {
+              "query": "What do we know about pull request 5336?",
+              "action": "retrieve",
+              "message": "Relevant pull-request evidence was retrieved successfully.",
+              "retrieval_executed": true,
+              "query_understanding": {
+                "original_query": "What do we know about pull request 5336?",
+                "normalised_query": "what do we know about pull request 5336?",
+                "expanded_query": "what do we know about pull request 5336?",
+                "pr_number": 5336,
+                "is_repository_query": true,
+                "is_out_of_domain": false,
+                "domain_confidence": 0.73,
+                "detected_sections": [],
+                "metadata_conditions": [],
+                "matched_repository_terms": [
+                  "pull request"
+                ],
+                "matched_out_of_domain_terms": []
+              },
+              "results": [],
+              "trace": {
+                "action": "retrieve"
+              }
+            },
+            "evidence": [
+              {
+                "evidence_id": "E1",
+                "rank": 1,
+                "pr_number": 5336,
+                "section": "PR identity",
+                "text": "PR #5336 was opened by dannyi96. The PR title is type hint fix for flask.send_file. It was closed and merged on 2023-11-15.",
+                "governed_score": 0.9,
+                "metadata": {
+                  "author": "dannyi96",
+                  "merged": true,
+                  "merged_at": "2023-11-15"
+                }
+              },
+              {
+                "evidence_id": "E4",
+                "rank": 4,
+                "pr_number": 5336,
+                "section": "Predictive intelligence",
+                "text": "The predicted merge probability for PR #5336 is 47.01%. This is a model prediction and not a confirmed outcome.",
+                "governed_score": 0.75,
+                "metadata": {
+                  "merge_probability": 0.4701
+                }
+              }
+            ],
+            "citation_validation": {
+              "citations_found": [
+                "E1",
+                "E4"
+              ],
+              "valid_citations": [
+                "E1",
+                "E4"
+              ],
+              "invalid_citations": [],
+              "uncited_factual_answer": false,
+              "passed": true
+            },
+            "model": "stub-model",
+            "generation_executed": true,
+            "generation_latency_ms": 10.0,
+            "prompt_eval_count": 100,
+            "eval_count": 50,
+            "total_duration_ms": 20.0,
+            "raw_model_response": {},
+            "trace": {
+              "generation_action": "completed"
+            }
+          },
+          "trace": {
+            "base_action": "answer",
+            "production_action": "answer",
+            "generation_executed": true,
+            "sentence_validation_executed": true,
+            "claim_validation_executed": true,
+            "answer_released": true,
+            "citation_coverage": 1.0,
+            "groundedness_rate": 1.0,
+            "mean_support_score": 1.0,
+            "unsupported_claim_count": 0,
+            "invalid_citations": [],
+            "reason": "Every factual sentence had a valid citation and every factual claim was supported by the cited evidence."
+          }
+        },
+        "repair_result": {
+          "attempted": false,
+          "succeeded": false,
+          "original_answer": "PR #5336 was closed and merged on 2023-11-15 [E1].",
+          "repaired_answer": null,
+          "model": null,
+          "latency_ms": 0.0,
+          "error": null,
+          "raw_response": null
+        },
+        "trace": {
+          "initial_action": "answer",
+          "repair_attempted": false,
+          "repair_succeeded": false,
+          "final_action": "answer",
+          "reason": "Citation repair was not applicable."
+        }
+      }
+    }
+  ]
+}

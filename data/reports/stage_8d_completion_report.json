@@ -1,0 +1,21 @@
+{
+  "stage": "8D",
+  "stage_name": "Hybrid Retrieval Quality Evaluation",
+  "status": "passed",
+  "evaluation_case_count": 16,
+  "exact_pr_case_count": 10,
+  "section_case_count": 6,
+  "overall_hit_rate_at_5": 1.0,
+  "overall_precision_at_5": 1.0,
+  "mean_reciprocal_rank": 1.0,
+  "mean_latency_ms": 163.777,
+  "exact_pr_hit_rate_at_5": 1.0,
+  "section_hit_rate_at_5": 1.0,
+  "threshold_checks": {
+    "overall_hit_rate_passed": true,
+    "overall_mrr_passed": true,
+    "exact_pr_hit_rate_passed": true,
+    "section_hit_rate_passed": true
+  },
+  "detailed_results_path": "C:\\Users\\sabih\\OneDrive\\Desktop\\Courseworks\\AI GitHub PR Intelligence\\data\\reports\\stage_8d_retrieval_evaluation_results.json"
+}

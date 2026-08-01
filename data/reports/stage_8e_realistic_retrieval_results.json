@@ -1,0 +1,1849 @@
+{
+  "stage": "8E",
+  "stage_name": "Realistic Hybrid Retrieval Evaluation",
+  "status": "needs_improvement",
+  "positive_case_count": 21,
+  "negative_case_count": 4,
+  "abstention_threshold": 0.45,
+  "overall_positive_metrics": {
+    "hit_rate_at_5": 0.619048,
+    "precision_at_5": 0.542857,
+    "mean_reciprocal_rank": 0.527778,
+    "mean_latency_ms": 261.277
+  },
+  "negative_case_metrics": {
+    "correct_abstention_rate": 0.0
+  },
+  "category_summaries": {
+    "noisy_identifier": {
+      "category": "noisy_identifier",
+      "case_count": 5,
+      "hit_rate_at_5": 0.8,
+      "precision_at_5": 0.8,
+      "mean_reciprocal_rank": 0.8
+    },
+    "paraphrased_section": {
+      "category": "paraphrased_section",
+      "case_count": 10,
+      "hit_rate_at_5": 0.4,
+      "precision_at_5": 0.34,
+      "mean_reciprocal_rank": 0.333333
+    },
+    "metadata_condition": {
+      "category": "metadata_condition",
+      "case_count": 6,
+      "hit_rate_at_5": 0.833333,
+      "precision_at_5": 0.666667,
+      "mean_reciprocal_rank": 0.625
+    }
+  },
+  "thresholds": {
+    "minimum_positive_hit_rate_at_5": 0.7,
+    "minimum_positive_mrr": 0.55,
+    "minimum_noisy_identifier_hit_rate": 0.8,
+    "minimum_paraphrased_section_hit_rate": 0.6,
+    "minimum_metadata_condition_hit_rate": 0.5
+  },
+  "threshold_checks": {
+    "positive_hit_rate_passed": false,
+    "positive_mrr_passed": false,
+    "noisy_identifier_passed": true,
+    "paraphrased_section_passed": false,
+    "metadata_condition_passed": true
+  },
+  "positive_results": [
+    {
+      "case_id": "noisy_identifier_2575",
+      "category": "noisy_identifier",
+      "query": "Can you show me what happened with pull request 2575?",
+      "relevance_description": "Any result belonging to PR #2575",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 229.716,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 2575,
+          "section": "PR identity",
+          "hybrid_score": 0.4,
+          "semantic_score": 0.0,
+          "keyword_score": 1.0,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_e20ee705a751383bac54",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 2575 - Title: docs: add Hasura as hosted deployment option - Author: shahidhk - State: closed - Created at: 2018-01-03 10:46:23+00:00 - Merged at: Not merged or unavai"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 2575,
+          "section": "PR description",
+          "hybrid_score": 0.242757,
+          "semantic_score": 0.0,
+          "keyword_score": 0.371027,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_1c21033dcbf4b6065b86",
+          "text_preview": "PR description - Title: docs: add Hasura as hosted deployment option - Description present: True - Detailed description detected: True - Description word count: 119 - Description text: Hasura is Kubernetes based microser"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 2575,
+          "section": "Change evidence",
+          "hybrid_score": 0.15,
+          "semantic_score": 0.0,
+          "keyword_score": 0.0,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_97f989e63562a0d00ff6",
+          "text_preview": "Change evidence - Total changed lines: 1 - Additions: 1 - Deletions: 0 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 0 - Test ch"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 2575,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.15,
+          "semantic_score": 0.0,
+          "keyword_score": 0.0,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_562f834bd08520e80352",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted not to merge - Merge probability: 12.41% - Merge prediction confidence: 87.59% - Merge decision threshold: 42.50% - Delay outcome: Not applicable because the delay model"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 2575,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.15,
+          "semantic_score": 0.0,
+          "keyword_score": 0.0,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_3a24fd2e675d318bff3f",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 0/100 - Policy risk band: Low - Triggered rule count: 0 - Triggered rules: No deterministic policy rules triggered - Triggered categories: No triggered categories - "
+        }
+      ]
+    },
+    {
+      "case_id": "noisy_identifier_3412",
+      "category": "noisy_identifier",
+      "query": "Find the review information for PR#3412, please.",
+      "relevance_description": "Any result belonging to PR #3412",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 35.976,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 3412,
+          "section": "Unified review priority",
+          "hybrid_score": 0.4,
+          "semantic_score": 0.0,
+          "keyword_score": 1.0,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_b0118185b9d142abb792",
+          "text_preview": "Unified review priority - Review priority: Moderate - Review priority score: 44.59/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance no"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 3412,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.345114,
+          "semantic_score": 0.0,
+          "keyword_score": 0.780458,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_154815ec986f279a2303",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 38/100 - Policy risk band: Moderate - Triggered rule count: 3 - Triggered rules: PR007, PR011, PR012 - Triggered categories: Complexity, Governance, Operations - Man"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 3412,
+          "section": "PR description",
+          "hybrid_score": 0.284196,
+          "semantic_score": 0.0,
+          "keyword_score": 0.536785,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_52f76f991cc28dfbd83a",
+          "text_preview": "change is good overall, in that users would be able to add some async usage to their existing codebases. I would also like to note that they can switch to Quart if their usage becomes mostly async. This allows for async "
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 3412,
+          "section": "PR description",
+          "hybrid_score": 0.185573,
+          "semantic_score": 0.0,
+          "keyword_score": 0.142291,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_4f0ef12e69618101e216",
+          "text_preview": "PR description - Title: Add `async` support - Description present: True - Detailed description detected: True - Description word count: 208 - Description text: This will require Python 2 support to be dropped, which as I"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 3412,
+          "section": "Change evidence",
+          "hybrid_score": 0.15,
+          "semantic_score": 0.0,
+          "keyword_score": 0.0,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_5681e48137bfb617ee05",
+          "text_preview": "Change evidence - Total changed lines: 403 - Additions: 380 - Deletions: 23 - Changed files: 13 - Files added: 2 - Files modified: 11 - Files removed: 0 - Commit count: 5 - Requested reviewer count: 0 - Label count: 1 - "
+        }
+      ]
+    },
+    {
+      "case_id": "noisy_identifier_4298",
+      "category": "noisy_identifier",
+      "query": "I need the risk and prediction details for pr 4298.",
+      "relevance_description": "Any result belonging to PR #4298",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 39.127,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 4298,
+          "section": "PR description",
+          "hybrid_score": 0.4,
+          "semantic_score": 0.0,
+          "keyword_score": 1.0,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_dde3079be258855ad771",
+          "text_preview": "handle_my_http_exception(e: HTTPException) -> ResponseReturnValue: return \"error\", e.code # FAIL - since handler is accepting broader exception than declared in errorhandler parameter @app.errorhandler(Exception) def han"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 4298,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.348954,
+          "semantic_score": 0.0,
+          "keyword_score": 0.795817,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_64bc04e26a76a8f7f1fd",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 10/100 - Policy risk band: Low - Triggered rule count: 1 - Triggered rules: PR012 - Triggered categories: Complexity - Manual review required: False - Rule recommend"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 4298,
+          "section": "PR description",
+          "hybrid_score": 0.338428,
+          "semantic_score": 0.0,
+          "keyword_score": 0.75371,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_07fef6136896e4666832",
+          "text_preview": "PR description - Title: fix errorhandler type check - Description present: True - Detailed description detected: True - Description word count: 334 - Description text: - fixes #4295 Not really sure what was wrong with th"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 4298,
+          "section": "Unified review priority",
+          "hybrid_score": 0.302933,
+          "semantic_score": 0.0,
+          "keyword_score": 0.61173,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_57750518c6795b8fb046",
+          "text_preview": "Unified review priority - Review priority: Moderate - Review priority score: 27.42/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance no"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 4298,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.288154,
+          "semantic_score": 0.0,
+          "keyword_score": 0.552615,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_6c562907202f4b26e8bc",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 58.97% - Merge prediction confidence: 58.97% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge delay greater than 48 hour"
+        }
+      ]
+    },
+    {
+      "case_id": "noisy_identifier_5336",
+      "category": "noisy_identifier",
+      "query": "Open the evidence associated with pull request number 5336.",
+      "relevance_description": "Any result belonging to PR #5336",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0,
+      "first_relevant_rank": null,
+      "latency_ms": 353.135,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 3587,
+          "section": "PR description",
+          "hybrid_score": 0.793794,
+          "semantic_score": 1.0,
+          "keyword_score": 0.775178,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_0def8c553bc569144d44",
+          "text_preview": "I cant predict the next version number :) * add a changelog entry if this patch changes code Done Tests, coverage, and docs will be run automatically when you submit the pull request, but running them yourself can save t"
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 5911,
+          "section": "PR identity",
+          "hybrid_score": 0.691212,
+          "semantic_score": 0.890332,
+          "keyword_score": 0.628051,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_b84bd75a943783060a49",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 5911 - Title: Fix request resource leak when teardown handlers raise - Author: THE-Amrit-mahto-05 - State: closed - Created at: 2026-02-06 21:12:31+00:00 - Merged at: "
+        },
+        {
+          "rank": 3,
+          "relevant": false,
+          "pr_number": 2588,
+          "section": "PR description",
+          "hybrid_score": 0.667789,
+          "semantic_score": 0.882589,
+          "keyword_score": 0.552944,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_6414f1510b100e0a34d4",
+          "text_preview": "to the relevant docstrings or pages * add ``versionadded`` or ``versionchanged`` directives to relevant docstrings * add a changelog entry if this patch changes code Tests, coverage, and docs will be run automatically wh"
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 5271,
+          "section": "PR description",
+          "hybrid_score": 0.651487,
+          "semantic_score": 0.925553,
+          "keyword_score": 0.38462,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_d5edf3cd173323601885",
+          "text_preview": "<summary>Commits</summary> <ul> <li><a href=\"https://github.com/actions/cache/commit/704facf57e6136b1bc63b828d79edcd491f0ee84\"><code>704facf</code></a> Merge pull request <a href=\"https://redirect.github.com/actions/cach"
+        },
+        {
+          "rank": 5,
+          "relevant": false,
+          "pr_number": 2699,
+          "section": "Change evidence",
+          "hybrid_score": 0.567204,
+          "semantic_score": 0.897496,
+          "keyword_score": 0.114826,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_ae61265a10216de5a9a4",
+          "text_preview": "Change evidence - Total changed lines: 354 - Additions: 341 - Deletions: 13 - Changed files: 21 - Files added: 14 - Files modified: 7 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 0 - "
+        }
+      ]
+    },
+    {
+      "case_id": "noisy_identifier_6013",
+      "category": "noisy_identifier",
+      "query": "What do we know about #6013 in the Flask repository?",
+      "relevance_description": "Any result belonging to PR #6013",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 36.782,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 6013,
+          "section": "PR identity",
+          "hybrid_score": 0.4,
+          "semantic_score": 0.0,
+          "keyword_score": 1.0,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_44366d2e27fd4a048ad0",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 6013 - Title: autoescape selection uses case-insensitive comparison - Author: davidism - State: closed - Created at: 2026-05-02 03:56:17+00:00 - Merged at: 2026-05-02 "
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 6013,
+          "section": "Unified review priority",
+          "hybrid_score": 0.189783,
+          "semantic_score": 0.0,
+          "keyword_score": 0.159132,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_8e7ccaa1587058f283d9",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 13.69/100 - Recommended next action: Proceed through the standard review workflow and monitor for new policy or delay signals. - Governance note"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 6013,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.189509,
+          "semantic_score": 0.0,
+          "keyword_score": 0.158034,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_73a1145024e6e7d939bf",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 8/100 - Policy risk band: Low - Triggered rule count: 1 - Triggered rules: PR002 - Triggered categories: Documentation - Manual review required: False - Rule recomme"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 6013,
+          "section": "PR description",
+          "hybrid_score": 0.15,
+          "semantic_score": 0.0,
+          "keyword_score": 0.0,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_d1b59c6b03d4c7862b25",
+          "text_preview": "PR description - Title: autoescape selection uses case-insensitive comparison - Description present: True - Detailed description detected: False - Description word count: 12 - Description text: Use case-insensitive compa"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 6013,
+          "section": "Change evidence",
+          "hybrid_score": 0.15,
+          "semantic_score": 0.0,
+          "keyword_score": 0.0,
+          "exact_match_score": 1.0,
+          "chunk_id": "prchunk_6b28a1756d5fd347a4c5",
+          "text_preview": "Change evidence - Total changed lines: 7 - Additions: 6 - Deletions: 1 - Changed files: 2 - Files added: 0 - Files modified: 2 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 0 - Test ch"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_change_evidence_1",
+      "category": "paraphrased_section",
+      "query": "Which contributions look unusually large and could be difficult for a reviewer to inspect?",
+      "relevance_description": "Section equals 'Change evidence'",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 338.831,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 2600,
+          "section": "Change evidence",
+          "hybrid_score": 0.609266,
+          "semantic_score": 1.0,
+          "keyword_score": 0.037066,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_e267f410e6849629271d",
+          "text_preview": "Change evidence - Total changed lines: 182 - Additions: 180 - Deletions: 2 - Changed files: 5 - Files added: 2 - Files modified: 3 - Files removed: 0 - Commit count: 6 - Requested reviewer count: 0 - Label count: 0 - Tes"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5896,
+          "section": "Change evidence",
+          "hybrid_score": 0.601713,
+          "semantic_score": 0.987411,
+          "keyword_score": 0.037066,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_f455878ee37fdccaa227",
+          "text_preview": "Change evidence - Total changed lines: 149 - Additions: 147 - Deletions: 2 - Changed files: 2 - Files added: 0 - Files modified: 2 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 0 - Tes"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5630,
+          "section": "Change evidence",
+          "hybrid_score": 0.598555,
+          "semantic_score": 0.982147,
+          "keyword_score": 0.037066,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_84375544b7c857afc4e2",
+          "text_preview": "Change evidence - Total changed lines: 137 - Additions: 90 - Deletions: 47 - Changed files: 3 - Files added: 0 - Files modified: 3 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Tes"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 4399,
+          "section": "Change evidence",
+          "hybrid_score": 0.59781,
+          "semantic_score": 0.980905,
+          "keyword_score": 0.037066,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_bcb3fefca27825f81bb1",
+          "text_preview": "Change evidence - Total changed lines: 50 - Additions: 25 - Deletions: 25 - Changed files: 2 - Files added: 0 - Files modified: 2 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 4401,
+          "section": "Change evidence",
+          "hybrid_score": 0.596464,
+          "semantic_score": 0.978663,
+          "keyword_score": 0.037066,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_f3778bd5104ba57a7e95",
+          "text_preview": "Change evidence - Total changed lines: 50 - Additions: 25 - Deletions: 25 - Changed files: 2 - Files added: 0 - Files modified: 2 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_change_evidence_2",
+      "category": "paraphrased_section",
+      "query": "Find code submissions touching lots of files or containing a heavy volume of edits.",
+      "relevance_description": "Section equals 'Change evidence'",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 325.829,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 3183,
+          "section": "Change evidence",
+          "hybrid_score": 0.633016,
+          "semantic_score": 1.0,
+          "keyword_score": 0.132062,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_895012051ead821b0016",
+          "text_preview": "Change evidence - Total changed lines: 7,261 - Additions: 3,798 - Deletions: 3,463 - Changed files: 65 - Files added: 1 - Files modified: 64 - Files removed: 0 - Commit count: 2 - Requested reviewer count: 0 - Label coun"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 4173,
+          "section": "Change evidence",
+          "hybrid_score": 0.627988,
+          "semantic_score": 0.99162,
+          "keyword_score": 0.132062,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_67c5547938330269bcfb",
+          "text_preview": "Change evidence - Total changed lines: 4,864 - Additions: 2,814 - Deletions: 2,050 - Changed files: 23 - Files added: 3 - Files modified: 19 - Files removed: 1 - Commit count: 4 - Requested reviewer count: 0 - Label coun"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5713,
+          "section": "Change evidence",
+          "hybrid_score": 0.626626,
+          "semantic_score": 0.989157,
+          "keyword_score": 0.132527,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_6199423820f9e5a38495",
+          "text_preview": "Change evidence - Total changed lines: 48,534 - Additions: 48,432 - Deletions: 102 - Changed files: 192 - Files added: 184 - Files modified: 1 - Files removed: 1 - Commit count: 4 - Requested reviewer count: 0 - Label co"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 3876,
+          "section": "Change evidence",
+          "hybrid_score": 0.624422,
+          "semantic_score": 0.985677,
+          "keyword_score": 0.132062,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_fd21fef74af5eac69ef6",
+          "text_preview": "Change evidence - Total changed lines: 9,548 - Additions: 4,056 - Deletions: 5,492 - Changed files: 153 - Files added: 15 - Files modified: 125 - Files removed: 13 - Commit count: 285 - Requested reviewer count: 0 - Labe"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5068,
+          "section": "Change evidence",
+          "hybrid_score": 0.623475,
+          "semantic_score": 0.984292,
+          "keyword_score": 0.1316,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_a1c92d32319271666341",
+          "text_preview": "Change evidence - Total changed lines: 47,125 - Additions: 26,696 - Deletions: 20,429 - Changed files: 334 - Files added: 146 - Files modified: 78 - Files removed: 107 - Commit count: 2,325 - Requested reviewer count: 0 "
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_policy_1",
+      "category": "paraphrased_section",
+      "query": "Which changes should be escalated for a human governance check?",
+      "relevance_description": "Section equals 'Deterministic policy intelligence'",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0,
+      "first_relevant_rank": null,
+      "latency_ms": 330.772,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 5108,
+          "section": "Unified review priority",
+          "hybrid_score": 0.696903,
+          "semantic_score": 1.0,
+          "keyword_score": 0.387612,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_5c66cdf47df53681f622",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 10.01/100 - Recommended next action: Proceed through the standard review workflow and monitor for new policy or delay signals. - Governance note"
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 3173,
+          "section": "Unified review priority",
+          "hybrid_score": 0.694591,
+          "semantic_score": 0.996147,
+          "keyword_score": 0.387612,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_0e5bac92e7b56d2fd717",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 16.09/100 - Recommended next action: Proceed through the standard review workflow and monitor for new policy or delay signals. - Governance note"
+        },
+        {
+          "rank": 3,
+          "relevant": false,
+          "pr_number": 3101,
+          "section": "Unified review priority",
+          "hybrid_score": 0.694349,
+          "semantic_score": 0.995744,
+          "keyword_score": 0.387612,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_f2febce68e01ef348e02",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 16.01/100 - Recommended next action: Proceed through the standard review workflow and monitor for new policy or delay signals. - Governance note"
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 4921,
+          "section": "Unified review priority",
+          "hybrid_score": 0.692569,
+          "semantic_score": 0.992777,
+          "keyword_score": 0.387612,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_0a4943818937ec682506",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 17.10/100 - Recommended next action: Proceed through the standard review workflow and monitor for new policy or delay signals. - Governance note"
+        },
+        {
+          "rank": 5,
+          "relevant": false,
+          "pr_number": 2577,
+          "section": "Unified review priority",
+          "hybrid_score": 0.692439,
+          "semantic_score": 0.99256,
+          "keyword_score": 0.387612,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_4d7f070e4000d83c0703",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 11.14/100 - Recommended next action: Proceed through the standard review workflow and monitor for new policy or delay signals. - Governance note"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_policy_2",
+      "category": "paraphrased_section",
+      "query": "Show changes that violated several repository controls or review policies.",
+      "relevance_description": "Section equals 'Deterministic policy intelligence'",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0,
+      "first_relevant_rank": null,
+      "latency_ms": 325.232,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 3412,
+          "section": "Change evidence",
+          "hybrid_score": 0.676716,
+          "semantic_score": 1.0,
+          "keyword_score": 0.306865,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_5681e48137bfb617ee05",
+          "text_preview": "Change evidence - Total changed lines: 403 - Additions: 380 - Deletions: 23 - Changed files: 13 - Files added: 2 - Files modified: 11 - Files removed: 0 - Commit count: 5 - Requested reviewer count: 0 - Label count: 1 - "
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 4933,
+          "section": "Change evidence",
+          "hybrid_score": 0.66495,
+          "semantic_score": 0.98039,
+          "keyword_score": 0.306865,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_49abab2e77d42d7a6d2f",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 3,
+          "relevant": false,
+          "pr_number": 5184,
+          "section": "Change evidence",
+          "hybrid_score": 0.66495,
+          "semantic_score": 0.98039,
+          "keyword_score": 0.306865,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_f38fd85cefbc312d934e",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 5005,
+          "section": "Change evidence",
+          "hybrid_score": 0.66495,
+          "semantic_score": 0.98039,
+          "keyword_score": 0.306865,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_4c3a727e31d0fa202be8",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 5,
+          "relevant": false,
+          "pr_number": 5273,
+          "section": "Change evidence",
+          "hybrid_score": 0.664294,
+          "semantic_score": 0.979296,
+          "keyword_score": 0.306865,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_6ebf16f6aabc20c4babd",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_prediction_1",
+      "category": "paraphrased_section",
+      "query": "Which submissions appear unlikely to get accepted?",
+      "relevance_description": "Section equals 'Predictive intelligence'",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0,
+      "first_relevant_rank": null,
+      "latency_ms": 310.809,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 2861,
+          "section": "PR description",
+          "hybrid_score": 0.715743,
+          "semantic_score": 1.0,
+          "keyword_score": 0.462973,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_f58da11fa6d91024c523",
+          "text_preview": "but I would have noticed them quicker and submitted this PR a day earlier if I had seen them mentioned in the README. So I thought an explicit call-out to the existing contributing guidelines (which were well-written and"
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 3129,
+          "section": "PR description",
+          "hybrid_score": 0.672143,
+          "semantic_score": 0.772072,
+          "keyword_score": 0.835599,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_c5f43386a7b61385f98c",
+          "text_preview": "PR description - Title: Fix some HTML injection paths in examples - Description present: True - Detailed description detected: False - Description word count: 19 - Description text: These are unlikely to be copy-pasted b"
+        },
+        {
+          "rank": 3,
+          "relevant": false,
+          "pr_number": 5451,
+          "section": "PR description",
+          "hybrid_score": 0.579654,
+          "semantic_score": 0.936019,
+          "keyword_score": 0.072172,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_8c6223288bdd67298a0d",
+          "text_preview": "(<a href=\"https://redirect.github.com/actions/checkout/issues/1642\">#1642</a>)</li> <li><a href=\"https://github.com/actions/checkout/commit/556e4c3cb0b8b54b734286d5439adadcb0a8cb92\"><code>556e4c3</code></a> Bump tough-co"
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 3733,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.572054,
+          "semantic_score": 0.953424,
+          "keyword_score": 0.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_858cc72ade5c90ef3c2f",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 6 - Triggered rules: PR002, PR003, PR005, PR006, PR011, PR012 - Triggered categories: Complexity, Docume"
+        },
+        {
+          "rank": 5,
+          "relevant": false,
+          "pr_number": 4936,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.54891,
+          "semantic_score": 0.914851,
+          "keyword_score": 0.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_0dbba4cd56f23a7d2c6a",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 6 - Triggered rules: PR003, PR004, PR005, PR006, PR011, PR012 - Triggered categories: Complexity, Docume"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_prediction_2",
+      "category": "paraphrased_section",
+      "query": "Find work items that may remain open for a long time before being integrated.",
+      "relevance_description": "Section equals 'Predictive intelligence'",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0,
+      "first_relevant_rank": null,
+      "latency_ms": 299.652,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 3636,
+          "section": "PR description",
+          "hybrid_score": 0.650063,
+          "semantic_score": 0.821442,
+          "keyword_score": 0.628791,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_37f48120ff2247e43710",
+          "text_preview": "update run and/or open at any time) - Automerge options (never/patch/minor, and dev/runtime dependencies) - Out-of-range updates (receive only lockfile updates, if desired) - Security updates (receive only security updat"
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 3773,
+          "section": "PR description",
+          "hybrid_score": 0.644817,
+          "semantic_score": 0.940952,
+          "keyword_score": 0.320981,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_3400218e164504db0799",
+          "text_preview": "as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`. [//]: # (dependabot-automerge-start) If all status checks pass Dependabot will automatically merge this p"
+        },
+        {
+          "rank": 3,
+          "relevant": false,
+          "pr_number": 4358,
+          "section": "PR description",
+          "hybrid_score": 0.642976,
+          "semantic_score": 0.937885,
+          "keyword_score": 0.320981,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_c81fc1c927d2449c1f2e",
+          "text_preview": "with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`. [//]: # (dependabot-automerge-start) [//]: # (dependabot-automerge-end) --- <details> <summa"
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 4181,
+          "section": "PR description",
+          "hybrid_score": 0.641697,
+          "semantic_score": 1.0,
+          "keyword_score": 0.166788,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_2bd21838f832459b2f3f",
+          "text_preview": "commands and options</summary> <br /> You can trigger Dependabot actions by commenting on this PR: - `@dependabot rebase` will rebase this PR - `@dependabot recreate` will recreate this PR, overwriting any edits that hav"
+        },
+        {
+          "rank": 5,
+          "relevant": false,
+          "pr_number": 5451,
+          "section": "PR description",
+          "hybrid_score": 0.632509,
+          "semantic_score": 0.994083,
+          "keyword_score": 0.144237,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_bda504b55de26fdbc6fa",
+          "text_preview": "`@dependabot rebase`. [//]: # (dependabot-automerge-start) [//]: # (dependabot-automerge-end) --- <details> <summary>Dependabot commands and options</summary> <br /> You can trigger Dependabot actions by commenting on th"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_priority_1",
+      "category": "paraphrased_section",
+      "query": "What should the maintainers look at first?",
+      "relevance_description": "Section equals 'Unified review priority'",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 0.333333,
+      "first_relevant_rank": 3,
+      "latency_ms": 303.675,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 3183,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.608228,
+          "semantic_score": 0.986215,
+          "keyword_score": 0.065996,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_19133280c7317e902cea",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 98/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR002, PR004, PR005, PR007, PR009, PR011, PR012 - Triggered categories: Complexity, "
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 5844,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.605804,
+          "semantic_score": 0.989396,
+          "keyword_score": 0.048667,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_985b970ba8efeae270b3",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR003, PR004, PR005, PR006, PR007, PR011, PR012 - Triggered categories: Complexity,"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5423,
+          "section": "Unified review priority",
+          "hybrid_score": 0.6,
+          "semantic_score": 1.0,
+          "keyword_score": 0.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_d68ee23591dadffc6bb1",
+          "text_preview": "Unified review priority - Review priority: Critical - Review priority score: 74.04/100 - Recommended next action: Escalate for mandatory policy, security or senior maintainer review before approval. - Governance note: hu"
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 5713,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.598964,
+          "semantic_score": 0.977996,
+          "keyword_score": 0.048667,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_c7c05f84816c66381682",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR003, PR005, PR006, PR007, PR009, PR011, PR012 - Triggered categories: Complexity,"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5346,
+          "section": "Unified review priority",
+          "hybrid_score": 0.593019,
+          "semantic_score": 0.988365,
+          "keyword_score": 0.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_b1b387ee274f11abb7f9",
+          "text_preview": "Unified review priority - Review priority: Critical - Review priority score: 64.11/100 - Recommended next action: Escalate for mandatory policy, security or senior maintainer review before approval. - Governance note: hu"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_priority_2",
+      "category": "paraphrased_section",
+      "query": "Show the recommended reviewer action and urgency.",
+      "relevance_description": "Section equals 'Unified review priority'",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 306.152,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 3011,
+          "section": "Unified review priority",
+          "hybrid_score": 0.85,
+          "semantic_score": 1.0,
+          "keyword_score": 1.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_9844e6bb3a30ec7ca84b",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.60/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5659,
+          "section": "Unified review priority",
+          "hybrid_score": 0.849763,
+          "semantic_score": 0.999606,
+          "keyword_score": 1.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_06334acb771d4ad625b1",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.85/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5671,
+          "section": "Unified review priority",
+          "hybrid_score": 0.849763,
+          "semantic_score": 0.999606,
+          "keyword_score": 1.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_da2518def3cc3d3af0fc",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.85/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 3456,
+          "section": "Unified review priority",
+          "hybrid_score": 0.848497,
+          "semantic_score": 0.997495,
+          "keyword_score": 1.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_edaa6dd3708c2b44e93f",
+          "text_preview": "Unified review priority - Review priority: Moderate - Review priority score: 32.24/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance no"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5723,
+          "section": "Unified review priority",
+          "hybrid_score": 0.848346,
+          "semantic_score": 0.997244,
+          "keyword_score": 1.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_695ef898785ec86e5dce",
+          "text_preview": "Unified review priority - Review priority: Routine - Review priority score: 24.18/100 - Recommended next action: Prioritize reviewer assignment and follow-up because the PR has elevated merge-delay risk. - Governance not"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_description_1",
+      "category": "paraphrased_section",
+      "query": "Find submissions where the author gave a useful explanation of the proposed change.",
+      "relevance_description": "Section equals 'PR description'",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0,
+      "first_relevant_rank": null,
+      "latency_ms": 297.913,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 5273,
+          "section": "Change evidence",
+          "hybrid_score": 0.6,
+          "semantic_score": 1.0,
+          "keyword_score": 0.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_6ebf16f6aabc20c4babd",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 5271,
+          "section": "Change evidence",
+          "hybrid_score": 0.6,
+          "semantic_score": 1.0,
+          "keyword_score": 0.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_3b0f9981582a17eb9d6c",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 3,
+          "relevant": false,
+          "pr_number": 3489,
+          "section": "Change evidence",
+          "hybrid_score": 0.599897,
+          "semantic_score": 0.999828,
+          "keyword_score": 0.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_f31aa21209afa97e0939",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 1 - Label count: 0 - Test ch"
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 4254,
+          "section": "Change evidence",
+          "hybrid_score": 0.599294,
+          "semantic_score": 0.998824,
+          "keyword_score": 0.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_590b31f9ce9c74f67811",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Test ch"
+        },
+        {
+          "rank": 5,
+          "relevant": false,
+          "pr_number": 4276,
+          "section": "Change evidence",
+          "hybrid_score": 0.599294,
+          "semantic_score": 0.998824,
+          "keyword_score": 0.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_454d355d50b58a6683f7",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Test ch"
+        }
+      ]
+    },
+    {
+      "case_id": "paraphrase_identity_1",
+      "category": "paraphrased_section",
+      "query": "Who opened the change, when was it opened, and what was its title?",
+      "relevance_description": "Section equals 'PR identity'",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0,
+      "first_relevant_rank": null,
+      "latency_ms": 319.021,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 5526,
+          "section": "Change evidence",
+          "hybrid_score": 0.609454,
+          "semantic_score": 1.0,
+          "keyword_score": 0.037818,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_c5862e975c59536be07a",
+          "text_preview": "Change evidence - Total changed lines: 134 - Additions: 81 - Deletions: 53 - Changed files: 4 - Files added: 0 - Files modified: 4 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 0 - Tes"
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 3652,
+          "section": "Change evidence",
+          "hybrid_score": 0.604392,
+          "semantic_score": 0.991562,
+          "keyword_score": 0.037818,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_72fd4dd0a6f906c5bd8e",
+          "text_preview": "Change evidence - Total changed lines: 52 - Additions: 29 - Deletions: 23 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 0 - Test"
+        },
+        {
+          "rank": 3,
+          "relevant": false,
+          "pr_number": 3059,
+          "section": "Change evidence",
+          "hybrid_score": 0.604365,
+          "semantic_score": 0.991517,
+          "keyword_score": 0.037818,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_7333f8bbeb464a1a69f7",
+          "text_preview": "Change evidence - Total changed lines: 67 - Additions: 62 - Deletions: 5 - Changed files: 4 - Files added: 0 - Files modified: 4 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 0 - Test "
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 5217,
+          "section": "Change evidence",
+          "hybrid_score": 0.604272,
+          "semantic_score": 0.991362,
+          "keyword_score": 0.037818,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_83f88c511c6513ad5a10",
+          "text_preview": "Change evidence - Total changed lines: 55 - Additions: 29 - Deletions: 26 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 2 - Requested reviewer count: 0 - Label count: 1 - Test"
+        },
+        {
+          "rank": 5,
+          "relevant": false,
+          "pr_number": 2993,
+          "section": "Change evidence",
+          "hybrid_score": 0.601997,
+          "semantic_score": 0.987571,
+          "keyword_score": 0.037818,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_829815655edcc24ae8d1",
+          "text_preview": "Change evidence - Total changed lines: 59 - Additions: 4 - Deletions: 55 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Test "
+        }
+      ]
+    },
+    {
+      "case_id": "condition_critical_manual_review",
+      "category": "metadata_condition",
+      "query": "Show critical pull requests that must be reviewed manually.",
+      "relevance_description": "Critical policy risk and manual review required",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.6,
+      "reciprocal_rank": 0.5,
+      "first_relevant_rank": 2,
+      "latency_ms": 252.857,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 3082,
+          "section": "PR description",
+          "hybrid_score": 0.691391,
+          "semantic_score": 0.919465,
+          "keyword_score": 0.558849,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_a143503f13aa52f81428",
+          "text_preview": "* add tests that fail without the patch * ensure all tests pass with ``pytest`` * add documentation to the relevant docstrings or pages * add ``versionadded`` or ``versionchanged`` directives to relevant docstrings * add"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 4173,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.667996,
+          "semantic_score": 1.0,
+          "keyword_score": 0.271984,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_bf2c6112b5f456d55b95",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 8 - Triggered rules: PR002, PR003, PR004, PR005, PR006, PR009, PR011, PR012 - Triggered categories: Comp"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5017,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.662637,
+          "semantic_score": 0.98436,
+          "keyword_score": 0.288083,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_608427704b4094107c96",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR003, PR004, PR005, PR006, PR008, PR011, PR012 - Triggered categories: Complexity,"
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 2588,
+          "section": "PR description",
+          "hybrid_score": 0.659091,
+          "semantic_score": 0.935153,
+          "keyword_score": 0.391997,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_6414f1510b100e0a34d4",
+          "text_preview": "to the relevant docstrings or pages * add ``versionadded`` or ``versionchanged`` directives to relevant docstrings * add a changelog entry if this patch changes code Tests, coverage, and docs will be run automatically wh"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 4936,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.647329,
+          "semantic_score": 0.950083,
+          "keyword_score": 0.309117,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_0dbba4cd56f23a7d2c6a",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 6 - Triggered rules: PR003, PR004, PR005, PR006, PR011, PR012 - Triggered categories: Complexity, Docume"
+        }
+      ]
+    },
+    {
+      "case_id": "condition_high_review_priority",
+      "category": "metadata_condition",
+      "query": "Find changes with high or critical review urgency.",
+      "relevance_description": "Review priority is High or Critical",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 267.898,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 4933,
+          "section": "Change evidence",
+          "hybrid_score": 0.68846,
+          "semantic_score": 1.0,
+          "keyword_score": 0.353842,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_49abab2e77d42d7a6d2f",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5184,
+          "section": "Change evidence",
+          "hybrid_score": 0.68846,
+          "semantic_score": 1.0,
+          "keyword_score": 0.353842,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_f38fd85cefbc312d934e",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 5005,
+          "section": "Change evidence",
+          "hybrid_score": 0.68846,
+          "semantic_score": 1.0,
+          "keyword_score": 0.353842,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_4c3a727e31d0fa202be8",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 4515,
+          "section": "Change evidence",
+          "hybrid_score": 0.687591,
+          "semantic_score": 0.998551,
+          "keyword_score": 0.353842,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_71416863e74a9aa78baf",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Test ch"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 4665,
+          "section": "Change evidence",
+          "hybrid_score": 0.687591,
+          "semantic_score": 0.998551,
+          "keyword_score": 0.353842,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_358dc8c97302b4d8b003",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Test ch"
+        }
+      ]
+    },
+    {
+      "case_id": "condition_low_merge_probability",
+      "category": "metadata_condition",
+      "query": "Which pull requests have a low chance of being merged?",
+      "relevance_description": "Merge probability is below 40 percent",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 0.25,
+      "first_relevant_rank": 4,
+      "latency_ms": 288.963,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 5271,
+          "section": "PR description",
+          "hybrid_score": 0.733659,
+          "semantic_score": 1.0,
+          "keyword_score": 0.534635,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_d5edf3cd173323601885",
+          "text_preview": "<summary>Commits</summary> <ul> <li><a href=\"https://github.com/actions/cache/commit/704facf57e6136b1bc63b828d79edcd491f0ee84\"><code>704facf</code></a> Merge pull request <a href=\"https://redirect.github.com/actions/cach"
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 5376,
+          "section": "PR description",
+          "hybrid_score": 0.686888,
+          "semantic_score": 0.963688,
+          "keyword_score": 0.434701,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_9b5b1b21f52a32bab14c",
+          "text_preview": "Merge pull request <a href=\"https://redirect.github.com/actions/download-artifact/issues/259\">#259</a> from actions/robherley/glob-downloads</li> <li><a href=\"https://github.com/actions/download-artifact/commit/3181fe853"
+        },
+        {
+          "rank": 3,
+          "relevant": false,
+          "pr_number": 3773,
+          "section": "PR description",
+          "hybrid_score": 0.637296,
+          "semantic_score": 0.932183,
+          "keyword_score": 0.311942,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_3400218e164504db0799",
+          "text_preview": "as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`. [//]: # (dependabot-automerge-start) If all status checks pass Dependabot will automatically merge this p"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 3467,
+          "section": "PR identity",
+          "hybrid_score": 0.625798,
+          "semantic_score": 0.910878,
+          "keyword_score": 0.317083,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_85c46d6b4bba637c58cf",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 3467 - Title: Merge pull request #1 from pallets/master - Author: DragonFang-Qy - State: closed - Created at: 2020-01-14 02:12:47+00:00 - Merged at: Not merged or unav"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 2682,
+          "section": "PR identity",
+          "hybrid_score": 0.625624,
+          "semantic_score": 0.910588,
+          "keyword_score": 0.317083,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_8334560b59a91d483272",
+          "text_preview": "PR identity - Repository: pallets/flask - PR number: 2682 - Title: Merge pull request #1 from pallets/master - Author: zhi-guan - State: closed - Created at: 2018-04-06 09:25:36+00:00 - Merged at: Not merged or unavailab"
+        }
+      ]
+    },
+    {
+      "case_id": "condition_delay_risk",
+      "category": "metadata_condition",
+      "query": "Find merged changes expected to take longer than normal to complete.",
+      "relevance_description": "Delay score exists and delay prediction equals 1",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "reciprocal_rank": 0.0,
+      "first_relevant_rank": null,
+      "latency_ms": 283.192,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": false,
+          "pr_number": 4271,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.640432,
+          "semantic_score": 1.0,
+          "keyword_score": 0.161727,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_a51c1fd78d2fc946ba9e",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 86.51% - Merge prediction confidence: 86.51% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        },
+        {
+          "rank": 2,
+          "relevant": false,
+          "pr_number": 3173,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.638656,
+          "semantic_score": 0.997041,
+          "keyword_score": 0.161727,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_1062f740a9eba02c320c",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 47.04% - Merge prediction confidence: 47.04% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        },
+        {
+          "rank": 3,
+          "relevant": false,
+          "pr_number": 5737,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.637746,
+          "semantic_score": 0.995524,
+          "keyword_score": 0.161727,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_c610595fd3ee7390099d",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 78.11% - Merge prediction confidence: 78.11% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        },
+        {
+          "rank": 4,
+          "relevant": false,
+          "pr_number": 3816,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.637535,
+          "semantic_score": 0.995172,
+          "keyword_score": 0.161727,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_4cb8004d6e4a66551c7a",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 80.00% - Merge prediction confidence: 80.00% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        },
+        {
+          "rank": 5,
+          "relevant": false,
+          "pr_number": 4972,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.637055,
+          "semantic_score": 0.994372,
+          "keyword_score": 0.161727,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_e4c498c9f84232d23533",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 88.56% - Merge prediction confidence: 88.56% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        }
+      ]
+    },
+    {
+      "case_id": "condition_multiple_rules",
+      "category": "metadata_condition",
+      "query": "Show changes that triggered several different repository rules.",
+      "relevance_description": "Triggered rule count is at least 3",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 271.016,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 4515,
+          "section": "Change evidence",
+          "hybrid_score": 0.672429,
+          "semantic_score": 1.0,
+          "keyword_score": 0.289714,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_71416863e74a9aa78baf",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Test ch"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 4665,
+          "section": "Change evidence",
+          "hybrid_score": 0.672429,
+          "semantic_score": 1.0,
+          "keyword_score": 0.289714,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_358dc8c97302b4d8b003",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 1 - Test ch"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 4933,
+          "section": "Change evidence",
+          "hybrid_score": 0.672343,
+          "semantic_score": 0.999858,
+          "keyword_score": 0.289714,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_49abab2e77d42d7a6d2f",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5184,
+          "section": "Change evidence",
+          "hybrid_score": 0.672343,
+          "semantic_score": 0.999858,
+          "keyword_score": 0.289714,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_f38fd85cefbc312d934e",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 5005,
+          "section": "Change evidence",
+          "hybrid_score": 0.672343,
+          "semantic_score": 0.999858,
+          "keyword_score": 0.289714,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_4c3a727e31d0fa202be8",
+          "text_preview": "Change evidence - Total changed lines: 2 - Additions: 1 - Deletions: 1 - Changed files: 1 - Files added: 0 - Files modified: 1 - Files removed: 0 - Commit count: 1 - Requested reviewer count: 0 - Label count: 2 - Test ch"
+        }
+      ]
+    },
+    {
+      "case_id": "condition_security_governance",
+      "category": "metadata_condition",
+      "query": "Find changes associated with security or governance concerns.",
+      "relevance_description": "Triggered categories contain Security or Governance",
+      "is_negative_case": false,
+      "result_count": 5,
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_relevant_rank": 1,
+      "latency_ms": 270.273,
+      "results": [
+        {
+          "rank": 1,
+          "relevant": true,
+          "pr_number": 4173,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.817177,
+          "semantic_score": 0.99767,
+          "keyword_score": 0.874299,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_bf2c6112b5f456d55b95",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 100/100 - Policy risk band: Critical - Triggered rule count: 8 - Triggered rules: PR002, PR003, PR004, PR005, PR006, PR009, PR011, PR012 - Triggered categories: Comp"
+        },
+        {
+          "rank": 2,
+          "relevant": true,
+          "pr_number": 5798,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.808288,
+          "semantic_score": 0.93048,
+          "keyword_score": 1.0,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_c47992b2a6a40e3241f6",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 96/100 - Policy risk band: Critical - Triggered rule count: 5 - Triggered rules: PR002, PR003, PR005, PR006, PR011 - Triggered categories: Documentation, Governance,"
+        },
+        {
+          "rank": 3,
+          "relevant": true,
+          "pr_number": 3183,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.803709,
+          "semantic_score": 1.0,
+          "keyword_score": 0.814837,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_19133280c7317e902cea",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 98/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR002, PR004, PR005, PR007, PR009, PR011, PR012 - Triggered categories: Complexity, "
+        },
+        {
+          "rank": 4,
+          "relevant": true,
+          "pr_number": 5457,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.774885,
+          "semantic_score": 0.930048,
+          "keyword_score": 0.867427,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_5c0017d56f7cafc1a6ad",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 86/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR002, PR005, PR007, PR008, PR010, PR011, PR012 - Triggered categories: Complexity, "
+        },
+        {
+          "rank": 5,
+          "relevant": true,
+          "pr_number": 3876,
+          "section": "Deterministic policy intelligence",
+          "hybrid_score": 0.771649,
+          "semantic_score": 0.946567,
+          "keyword_score": 0.814837,
+          "exact_match_score": 0.0,
+          "chunk_id": "prchunk_89773e6fd01d3ab3dce4",
+          "text_preview": "Deterministic policy intelligence - Policy risk score: 96/100 - Policy risk band: Critical - Triggered rule count: 7 - Triggered rules: PR002, PR005, PR007, PR009, PR010, PR011, PR012 - Triggered categories: Complexity, "
+        }
+      ]
+    }
+  ],
+  "negative_results": [
+    {
+      "case_id": "negative_weather",
+      "category": "negative_out_of_domain",
+      "query": "What will the weather be in Dubai tomorrow?",
+      "relevance_description": "No repository chunk should be treated as relevant",
+      "is_negative_case": true,
+      "result_count": 5,
+      "top_hybrid_score": 0.684545,
+      "abstention_threshold": 0.45,
+      "abstained": false,
+      "latency_ms": 268.256,
+      "results": [
+        {
+          "rank": 1,
+          "pr_number": 4319,
+          "section": "PR description",
+          "hybrid_score": 0.684545,
+          "chunk_id": "prchunk_2fb48c9398feff58415a",
+          "text_preview": "PR description - Title: Bump jinja2 from 3.0.1 to 3.0.2 - Description present: True - Detailed description detected: True - Description word count: 448 - Description text: Bumps [jinja2](https://github.com/pallets/jinja)"
+        },
+        {
+          "rank": 2,
+          "pr_number": 5541,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.586419,
+          "chunk_id": "prchunk_05bd77973c18119a9aa4",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 66.62% - Merge prediction confidence: 66.62% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        },
+        {
+          "rank": 3,
+          "pr_number": 5264,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.583199,
+          "chunk_id": "prchunk_f383e4fa0c7a6fa4ee8f",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 62.44% - Merge prediction confidence: 62.44% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        },
+        {
+          "rank": 4,
+          "pr_number": 5476,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.58287,
+          "chunk_id": "prchunk_1172d51e0b6c6bf8bbae",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 66.33% - Merge prediction confidence: 66.33% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        },
+        {
+          "rank": 5,
+          "pr_number": 2719,
+          "section": "Predictive intelligence",
+          "hybrid_score": 0.581914,
+          "chunk_id": "prchunk_5c0070a0ec1b98de43c9",
+          "text_preview": "Predictive intelligence - Merge outcome: Predicted to merge - Merge probability: 60.60% - Merge prediction confidence: 60.60% - Merge decision threshold: 42.50% - Delay outcome: Predicted merge within 48 hours - Delay pr"
+        }
+      ]
+    },
+    {
+      "case_id": "negative_salary",
+      "category": "negative_out_of_domain",
+      "query": "Calculate the monthly salary after UAE tax.",
+      "relevance_description": "No repository chunk should be treated as relevant",
+      "is_negative_case": true,
+      "result_count": 5,
+      "top_hybrid_score": 0.62802,
+      "abstention_threshold": 0.45,
+      "abstained": false,
+      "latency_ms": 280.945,
+      "results": [
+        {
+          "rank": 1,
+          "pr_number": 3855,
+          "section": "PR description",
+          "hybrid_score": 0.62802,
+          "chunk_id": "prchunk_7c1f6827b67cb567543a",
+          "text_preview": "for this repo and language - `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language - `@dependabot use this milestone` will set the current milestone as "
+        },
+        {
+          "rank": 2,
+          "pr_number": 5401,
+          "section": "PR description",
+          "hybrid_score": 0.616796,
+          "chunk_id": "prchunk_44e9ecb5db7851e82f58",
+          "text_preview": "for xpasses when <code>-rX</code> is set.</li> <li>For xpasses, add <code>-</code> in summary between test name and reason, to match how xfail is displayed.</li> </ul> </li> <li><a href=\"https://redirect.github.com/pytes"
+        },
+        {
+          "rank": 3,
+          "pr_number": 4358,
+          "section": "PR description",
+          "hybrid_score": 0.609905,
+          "chunk_id": "prchunk_04e8aa697ff19e718b1e",
+          "text_preview": "of :meth:`~cryptography.x509.Attributes.get_attribute_for_oid` on the new :class:`~cryptography.x509.Attributes` object. * Fixed handling of PEM files to allow loading when certificate and key are in the same file. * Fix"
+        },
+        {
+          "rank": 4,
+          "pr_number": 3774,
+          "section": "PR description",
+          "hybrid_score": 0.609123,
+          "chunk_id": "prchunk_914ada077bae83fd0f4f",
+          "text_preview": "<li><a href=\"https://github.com/pytest-dev/pytest/commit/050c2df737f7c6c3b1de7a6f375de107edcb6873\"><code>050c2df</code></a> Use multiple issue template types and mention Discussions (<a href=\"https://github-redirect.depe"
+        },
+        {
+          "rank": 5,
+          "pr_number": 3686,
+          "section": "PR description",
+          "hybrid_score": 0.607009,
+          "chunk_id": "prchunk_dab772a6d6b51f9a8e96",
+          "text_preview": "default for future PRs for this repo and language - `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language - `@dependabot use this milestone` will set th"
+        }
+      ]
+    },
+    {
+      "case_id": "negative_recipe",
+      "category": "negative_out_of_domain",
+      "query": "Give me a recipe for chocolate cake.",
+      "relevance_description": "No repository chunk should be treated as relevant",
+      "is_negative_case": true,
+      "result_count": 5,
+      "top_hybrid_score": 0.685861,
+      "abstention_threshold": 0.45,
+      "abstained": false,
+      "latency_ms": 399.332,
+      "results": [
+        {
+          "rank": 1,
+          "pr_number": 3369,
+          "section": "PR description",
+          "hybrid_score": 0.685861,
+          "chunk_id": "prchunk_2118669c165649ac3a87",
+          "text_preview": "PR description - Title: get_cookie_name in SessionInterface for easier overriding in SecureCookieSessionInterface - Description present: True - Detailed description detected: True - Description word count: 232 - Descript"
+        },
+        {
+          "rank": 2,
+          "pr_number": 5425,
+          "section": "PR description",
+          "hybrid_score": 0.614461,
+          "chunk_id": "prchunk_d54c6beedf5390db697e",
+          "text_preview": "<li><a href=\"https://github.com/jazzband/pip-tools/commit/d673c8e1228b2223cd3bb7ad24a7271b82ab9f8c\"><code>d673c8e</code></a> Merge pull request <a href=\"https://redirect.github.com/jazzband/pip-tools/issues/2015\">#2015</"
+        },
+        {
+          "rank": 3,
+          "pr_number": 3907,
+          "section": "PR description",
+          "hybrid_score": 0.59938,
+          "chunk_id": "prchunk_de106b5e0f76f3770f10",
+          "text_preview": "PR description - Title: Add syntatic sugar for route registration - Description present: True - Detailed description detected: True - Description word count: 190 - Description text: I know we briefly discussed this, but "
+        },
+        {
+          "rank": 4,
+          "pr_number": 2699,
+          "section": "PR description",
+          "hybrid_score": 0.598897,
+          "chunk_id": "prchunk_0c030f0301fc4c3b19a4",
+          "text_preview": "PR description - Title: add javascript ajax example - Description present: True - Detailed description detected: False - Description word count: 30 - Description text: I removed the jQuery example when rewriting the tuto"
+        },
+        {
+          "rank": 5,
+          "pr_number": 3030,
+          "section": "PR description",
+          "hybrid_score": 0.558052,
+          "chunk_id": "prchunk_9b099b233f53bc0d9199",
+          "text_preview": "PR description - Title: [Docs] Add simple analogy to app factories doc - Description present: True - Detailed description detected: False - Description word count: 19 - Description text: Added an analogy that illustrates"
+        }
+      ]
+    },
+    {
+      "case_id": "negative_flight",
+      "category": "negative_out_of_domain",
+      "query": "Find the cheapest flight from India to London.",
+      "relevance_description": "No repository chunk should be treated as relevant",
+      "is_negative_case": true,
+      "result_count": 5,
+      "top_hybrid_score": 0.625861,
+      "abstention_threshold": 0.45,
+      "abstained": false,
+      "latency_ms": 253.652,
+      "results": [
+        {
+          "rank": 1,
+          "pr_number": 3868,
+          "section": "PR description",
+          "hybrid_score": 0.625861,
+          "chunk_id": "prchunk_0a89bc36f53709547733",
+          "text_preview": "PR description - Title: Update views.rst: fix the routes sample code - Description present: True - Detailed description detected: False - Description word count: 10 - Description text: Update the sample code at `views.rs"
+        },
+        {
+          "rank": 2,
+          "pr_number": 5538,
+          "section": "PR description",
+          "hybrid_score": 0.620377,
+          "chunk_id": "prchunk_b93fb93ac3d7932f18d9",
+          "text_preview": "<code>sphinx.util.display.status_iterator</code>).</li> <li>Removed <code>sphinx.util.SkipProgressMessage</code> (use <code>sphinx.util.display.SkipProgressMessage</code>).</li> <li>Removed <code>sphinx.util.progress_mes"
+        },
+        {
+          "rank": 3,
+          "pr_number": 5896,
+          "section": "PR description",
+          "hybrid_score": 0.531158,
+          "chunk_id": "prchunk_2780ad96d0cb0b03b097",
+          "text_preview": "while time.time() < end: s.get(f'http://127.0.0.1:6000/template?q={random.randint(0,10**6)}') n += 1 print(f'\\n{n} requests in 5s ({n/5:.0f} req/s)') import os; os._exit(0) Thread(target=bench).start() app.run(port=6000,"
+        },
+        {
+          "rank": 4,
+          "pr_number": 4133,
+          "section": "PR description",
+          "hybrid_score": 0.499849,
+          "chunk_id": "prchunk_2b605117b656c85ac66e",
+          "text_preview": "PR description - Title: HTTP method validation - Description present: True - Detailed description detected: True - Description word count: 119 - Description text: I Added a function to check if a method in the input stri"
+        },
+        {
+          "rank": 5,
+          "pr_number": 4648,
+          "section": "PR description",
+          "hybrid_score": 0.498443,
+          "chunk_id": "prchunk_dfa1feaa7db897ae55b3",
+          "text_preview": "This did not seem to fall into any criteria for creating an issue ticket <!-- Ensure each step in CONTRIBUTING.rst is complete by adding an \"x\" to each box below. If only docs were changed, these aren't relevant and can "
+        }
+      ]
+    }
+  ]
+}
