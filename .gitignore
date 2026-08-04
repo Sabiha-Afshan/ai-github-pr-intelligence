@@ -1,4 +1,4 @@
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 
@@ -7,7 +7,7 @@ venv/
 *.pem
 *.key
 
-# Python
+# Python caches and test artefacts
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -26,7 +26,7 @@ logs/
 # Local Streamlit configuration
 .streamlit/secrets.toml
 
-# Local model and vector-store files
+# Generated models and vector-store files
 *.faiss
 *.index
 *.npy
@@ -40,7 +40,15 @@ logs/
 # Generated vector-store metadata
 data/vector_store/pr_chunk_metadata.jsonl
 
-# Local caches
+# Generated knowledge-base files
+data/knowledge_base/*.jsonl
+
+# Generated checkpoints and evaluation outputs
+data/checkpoints/
+data/evaluation/
+evaluation/
+
+# Local model and package caches
 .cache/
 huggingface/
 
@@ -52,30 +60,5 @@ huggingface/
 .DS_Store
 Thumbs.db
 
-# Editor
+# Editor-specific local settings
 .vscode/settings.json
-
-# Large generated outputs
-data/checkpoints/
-data/evaluation/
-evaluation/
-
-
-# Generated embeddings and serialized models
-*.npy
-*.npz
-*.joblib
-*.pkl
-*.pickle
-*.bin
-*.safetensors
-
-# Generated vector metadata
-data/vector_store/pr_chunk_metadata.jsonl
-
-# Model and package caches
-.cache/
-huggingface/
-
-# Optional generated knowledge-base files
-data/knowledge_base/*.jsonl
