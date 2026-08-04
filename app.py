@@ -41,23 +41,6 @@ pages = {
             title="PR Intelligence",
             icon=":material/insights:",
         ),
-        st.Page(
-            "pages/03_Model_and_System_Evaluation.py",
-            title="Model & System Evaluation",
-            icon=":material/analytics:",
-        ),
-    ],
-    "AI and Documentation": [
-        st.Page(
-            "pages/04_AI_PR_Analyst.py",
-            title="AI PR Analyst",
-            icon=":material/smart_toy:",
-        ),
-        st.Page(
-            "pages/05_Project_Documentation.py",
-            title="Project Documentation",
-            icon=":material/menu_book:",
-        ),
     ],
 }
 
@@ -67,8 +50,7 @@ navigation = st.navigation(
 )
 
 logger.info(
-    "Streamlit application router loaded. "
-    "Selected page: %s",
+    "Streamlit application router loaded. Selected page: %s",
     navigation.title,
 )
 
